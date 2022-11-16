@@ -4,8 +4,8 @@
 	desc = "A red, violent alien with four legs and two deadly scythes. Its eyes hone sharply onto its prey..."
 	icon = 'icons/Xeno/2x2_Xenos.dmi'
 	icon_state = "Mantis Walking"
-	health = 150
-	maxHealth = 150
+	health = XENO_HEALTH_MULT * 150
+	maxHealth = XENO_HEALTH_MULT * 150
 	plasma_stored = 50
 	pixel_x = -16
 	old_x = -16

@@ -4,8 +4,8 @@
 	desc = "A bulky, six-legged alien with a horn. Its carapace seems quite durable."
 	icon = 'icons/Xeno/2x2_Xenos.dmi'
 	icon_state = "Beetle Walking"
-	health = 200
-	maxHealth = 200
+	health = XENO_HEALTH_MULT * 200
+	maxHealth = XENO_HEALTH_MULT * 200
 	plasma_stored = 50
 	pixel_x = -16
 	old_x = -16

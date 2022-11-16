@@ -8,8 +8,8 @@
 	attack_sound = null
 	friendly = "nuzzles"
 	wall_smash = 0
-	health = 500
-	maxHealth = 500
+	health = XENO_HEALTH_MULT * 500
+	maxHealth = XENO_HEALTH_MULT * 500
 	plasma_stored = 300
 	pixel_x = -16
 	old_x = -16

@@ -538,7 +538,7 @@
 	add_slowdown(slowdown_stacks)
 	adjust_blurriness(slowdown_stacks) //Cosmetic eye blur SFX
 
-	apply_damage(damage, STAMINA, updating_health = TRUE) //Armor penetrating stamina also applies.
+	apply_damage(damage, STAMINA, updating_health = XENO_HEALTH_MULT * TRUE) //Armor penetrating stamina also applies.
 	shake_camera(src, 2, 1)
 	Shake(4, 4, 2 SECONDS)
 

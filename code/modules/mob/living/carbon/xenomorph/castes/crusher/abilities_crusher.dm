@@ -149,7 +149,7 @@
 	if(!X.issamexenohive(A) && isliving(A)) //Friendly xenos don't take damage.
 		var/damage = toss_distance * 6
 		var/mob/living/L = A
-		L.take_overall_damage_armored(damage, BRUTE, "melee", updating_health = TRUE)
+		L.take_overall_damage_armored(damage, BRUTE, "melee", updating_health = XENO_HEALTH_MULT * TRUE)
 		shake_camera(L, 2, 2)
 		playsound(A, pick('sound/weapons/alien_claw_block.ogg','sound/weapons/alien_bite2.ogg'), 50, 1)
 

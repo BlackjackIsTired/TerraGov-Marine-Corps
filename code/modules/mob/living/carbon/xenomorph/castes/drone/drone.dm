@@ -4,8 +4,8 @@
 	desc = "An Alien Drone"
 	icon = 'icons/Xeno/48x48_Xenos.dmi'
 	icon_state = "Drone Walking"
-	health = 120
-	maxHealth = 120
+	health = XENO_HEALTH_MULT * 120
+	maxHealth = XENO_HEALTH_MULT * 120
 	plasma_stored = 350
 	tier = XENO_TIER_ONE
 	upgrade = XENO_UPGRADE_ZERO

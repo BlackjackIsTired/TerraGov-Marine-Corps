@@ -4,8 +4,8 @@
 	desc = "A huge alien with an enormous armored head crest."
 	icon = 'icons/Xeno/2x2_Xenos.dmi'
 	icon_state = "Crusher Walking"
-	health = 300
-	maxHealth = 300
+	health = XENO_HEALTH_MULT * 300
+	maxHealth = XENO_HEALTH_MULT * 300
 	plasma_stored = 200
 	tier = XENO_TIER_THREE
 	upgrade = XENO_UPGRADE_ZERO

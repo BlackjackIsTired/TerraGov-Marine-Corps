@@ -48,7 +48,7 @@
 				affecting = H.get_limb("chest") //Gotta have a torso?!
 			var/armor_block = H.get_soft_armor("melee", affecting)
 			H.apply_damage(damage, BRUTE, affecting, armor_block) //Crap base damage after armour...
-			H.apply_damage(damage, STAMINA, updating_health = TRUE) //...But some sweet armour ignoring Stamina
+			H.apply_damage(damage, STAMINA, updating_health = XENO_HEALTH_MULT * TRUE) //...But some sweet armour ignoring Stamina
 			H.Paralyze(5) //trip and go
 		GLOB.round_statistics.defender_tail_sweep_hits++
 		SSblackbox.record_feedback("tally", "round_statistics", 1, "defender_tail_sweep_hits")
@@ -374,7 +374,7 @@
 
 	X.do_jitter_animation(1000)
 	X.set_sunder(0)
-	X.heal_overall_damage(25, 25, updating_health = TRUE)
+	X.heal_overall_damage(25, 25, updating_health = XENO_HEALTH_MULT * TRUE)
 	add_cooldown()
 	return succeed_activate()
 
@@ -442,7 +442,7 @@
 			affecting = slapped.get_limb("chest")
 		var/armor_block = slapped.get_soft_armor("melee", affecting)
 		slapped.apply_damage(damage, BRUTE, affecting, armor_block)
-		slapped.apply_damage(damage, STAMINA, updating_health = TRUE)
+		slapped.apply_damage(damage, STAMINA, updating_health = XENO_HEALTH_MULT * TRUE)
 		slapped.Paralyze(3)
 		shake_camera(slapped, 2, 1)
 

@@ -38,8 +38,8 @@
 
 	acid_spray_duration = 10 SECONDS
 	acid_spray_range = 5
-	acid_spray_damage = 16
-	acid_spray_damage_on_hit = 35
+	acid_spray_damage = XENO_ACID_DAM_MULT * 16
+	acid_spray_damage_on_hit = XENO_ACID_DAM_MULT * 35
 	acid_spray_structure_damage = 45
 
 	// *** Pheromones *** //
@@ -93,7 +93,7 @@
 	spit_delay = 1.2 SECONDS
 	spit_types = list(/datum/ammo/xeno/toxin/heavy/upgrade1, /datum/ammo/xeno/acid/heavy)
 
-	acid_spray_damage_on_hit = 39
+	acid_spray_damage_on_hit = XENO_ACID_DAM_MULT * 39
 	acid_spray_structure_damage = 53
 
 	// *** Pheromones *** //
@@ -127,7 +127,7 @@
 	spit_delay = 1.1 SECONDS
 	spit_types = list(/datum/ammo/xeno/toxin/heavy/upgrade2, /datum/ammo/xeno/acid/heavy)
 
-	acid_spray_damage_on_hit = 43
+	acid_spray_damage_on_hit = XENO_ACID_DAM_MULT * 43
 	acid_spray_structure_damage = 61
 
 	// *** Pheromones *** //
@@ -162,7 +162,7 @@
 	spit_delay = 1 SECONDS
 	spit_types = list(/datum/ammo/xeno/toxin/heavy/upgrade3, /datum/ammo/xeno/acid/heavy)
 
-	acid_spray_damage_on_hit = 47
+	acid_spray_damage_on_hit = XENO_ACID_DAM_MULT * 47
 	acid_spray_structure_damage = 69
 
 	// *** Pheromones *** //
@@ -194,7 +194,7 @@
 	spit_delay = 1 SECONDS
 	spit_types = list(/datum/ammo/xeno/toxin/heavy/upgrade3, /datum/ammo/xeno/acid/heavy)
 
-	acid_spray_damage_on_hit = 47
+	acid_spray_damage_on_hit = XENO_ACID_DAM_MULT * 47
 	acid_spray_structure_damage = 69
 
 	// *** Pheromones *** //

@@ -22,7 +22,7 @@
 
 	// *** Health *** //
 	max_health = XENO_HEALTH_MULT * 50
-	crit_health = -25
+	crit_health = XENO_HEALTH_MULT * -25
 
 	// *** Evolution *** //
 	evolution_threshold = 50
