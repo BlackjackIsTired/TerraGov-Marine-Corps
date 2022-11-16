@@ -16,8 +16,8 @@
 
 	a_intent = INTENT_HELP
 
-	health = 1000
-	maxHealth = 1000
+	health = XENO_HEALTH_MULT * 1000
+	maxhealth = XENO_HEALTH_MULT * 1000
 	plasma_stored = 5
 	tier = XENO_TIER_ZERO
 	upgrade = XENO_UPGRADE_BASETYPE
@@ -34,7 +34,7 @@
 	///The core of our hivemind
 	var/obj/structure/xeno/hivemindcore/core
 	///The minimum health we can have
-	var/minimum_health = -300
+	var/minimum_health = XENO_HEALTH_MULT * -300
 
 /mob/living/carbon/xenomorph/hivemind/Initialize(mapload)
 	. = ..()
@@ -54,13 +54,13 @@
 /mob/living/carbon/xenomorph/hivemind/updatehealth()
 	if(on_fire)
 		ExtinguishMob()
-	health = maxHealth - getFireLoss() - getBruteLoss() //Xenos can only take brute and fire damage.
+	health = XENO_HEALTH_MULT * maxHealth - getFireLoss() - getBruteLoss() //Xenos can only take brute and fire damage.
 	if(health <= 0 && !(status_flags & INCORPOREAL))
 		setBruteLoss(0)
 		setFireLoss(-minimum_health)
 		change_form()
 		remove_status_effect(/datum/status_effect/spacefreeze)
-	health = maxHealth - getFireLoss() - getBruteLoss()
+	health = XENO_HEALTH_MULT * maxHealth - getFireLoss() - getBruteLoss()
 	med_hud_set_health()
 	if(TIMER_COOLDOWN_CHECK(src, COOLDOWN_HIVEMIND_MANIFESTATION))
 		return

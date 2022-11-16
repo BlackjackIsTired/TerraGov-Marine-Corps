@@ -1,0 +1,14 @@
+//Global Mults
+#define PROJ_DAM_MULT 1.5
+
+//Marine Mults
+#define MARINE_BASE_SLOWDOWN_MULT 1.15
+#define SHOTGUN_DAMAGE_MULT 0.7
+#define SMG_DAMAGE_MULT 0.65
+
+// Xeno Mults
+#define XENO_MELEE_DAM_MULT 1.5
+#define XENO_HEALTH_MULT 1.5
+#define XENO_SPEED_MULT -0.15
+#define XENO_ACID_DAM_MULT 1.5
+#define XENO_BOMB_STRENGTH_MULT 1.5

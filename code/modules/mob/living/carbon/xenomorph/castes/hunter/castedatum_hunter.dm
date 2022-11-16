@@ -11,11 +11,11 @@
 	wound_type = "hunter" //used to match appropriate wound overlays
 
 	// *** Melee Attacks *** //
-	melee_damage = 21
+	melee_damage = XENO_MELEE_DAM_MULT * 21
 	attack_delay = 7
 
 	// *** Speed *** //
-	speed = -1.1
+	speed = XENO_SPEED_MULT * -1.1
 	weeds_speed_mod = -0.1
 
 	// *** Plasma *** //
@@ -23,7 +23,7 @@
 	plasma_gain = 10
 
 	// *** Health *** //
-	max_health = 230
+	maxhealth = XENO_HEALTH_MULT * 230
 
 	// *** Evolution *** //
 	evolution_threshold = 180
@@ -62,8 +62,8 @@
 	)
 
 	// *** Vent Crawl Parameters *** //
-	vent_enter_speed = HUNTER_VENT_CRAWL_TIME
-	vent_exit_speed = HUNTER_VENT_CRAWL_TIME
+	vent_enter_speed = XENO_SPEED_MULT * HUNTER_VENT_CRAWL_TIME
+	vent_exit_speed = XENO_SPEED_MULT * HUNTER_VENT_CRAWL_TIME
 	silent_vent_crawl = TRUE
 
 /datum/xeno_caste/hunter/young
@@ -77,14 +77,14 @@
 	upgrade = XENO_UPGRADE_ONE
 
 	// *** Speed *** //
-	speed = -1.2
+	speed = XENO_SPEED_MULT * -1.2
 
 	// *** Plasma *** //
 	plasma_max = 150
 	plasma_gain = 15
 
 	// *** Health *** //
-	max_health = 250
+	maxhealth = XENO_HEALTH_MULT * 250
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_TWO_MATURE_THRESHOLD
@@ -101,17 +101,17 @@
 	upgrade = XENO_UPGRADE_TWO
 
 	// *** Melee Attacks *** //
-	melee_damage = 24
+	melee_damage = XENO_MELEE_DAM_MULT * 24
 
 	// *** Speed *** //
-	speed = -1.3
+	speed = XENO_SPEED_MULT * -1.3
 
 	// *** Plasma *** //
 	plasma_max = 200
 	plasma_gain = 18
 
 	// *** Health *** //
-	max_health = 270
+	maxhealth = XENO_HEALTH_MULT * 270
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_TWO_ELDER_THRESHOLD
@@ -129,17 +129,17 @@
 	ancient_message = "We are the epitome of the hunter. Few can stand against us in open combat."
 
 	// *** Melee Attacks *** //
-	melee_damage = 24
+	melee_damage = XENO_MELEE_DAM_MULT * 24
 
 	// *** Speed *** //
-	speed = -1.4
+	speed = XENO_SPEED_MULT * -1.4
 
 	// *** Plasma *** //
 	plasma_max = 200
 	plasma_gain = 18
 
 	// *** Health *** //
-	max_health = 290
+	maxhealth = XENO_HEALTH_MULT * 290
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_TWO_ANCIENT_THRESHOLD
@@ -157,17 +157,17 @@
 	ancient_message = "We are the ultimate predator. Let the hunt begin."
 
 	// *** Melee Attacks *** //
-	melee_damage = 24
+	melee_damage = XENO_MELEE_DAM_MULT * 24
 
 	// *** Speed *** //
-	speed = -1.4
+	speed = XENO_SPEED_MULT * -1.4
 
 	// *** Plasma *** //
 	plasma_max = 200
 	plasma_gain = 18
 
 	// *** Health *** //
-	max_health = 290
+	maxhealth = XENO_HEALTH_MULT * 290
 	// *** Defense *** //
 	soft_armor = list(MELEE = 55, BULLET = 30, LASER = 30, ENERGY = 30, BOMB = 0, BIO = 18, FIRE = 30, ACID = 18)
 

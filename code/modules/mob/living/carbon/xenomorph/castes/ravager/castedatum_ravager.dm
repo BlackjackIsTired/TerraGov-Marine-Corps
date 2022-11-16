@@ -9,11 +9,11 @@
 	wound_type = "ravager" //used to match appropriate wound overlays
 
 	// *** Melee Attacks *** //
-	melee_damage = 28
+	melee_damage = XENO_MELEE_DAM_MULT * 28
 	attack_delay = 7
 
 	// *** Speed *** //
-	speed = -0.7
+	speed = XENO_SPEED_MULT * -0.7
 
 	// *** Plasma *** //
 	plasma_max = 600
@@ -22,7 +22,7 @@
 	plasma_icon_state = "fury"
 
 	// *** Health *** //
-	max_health = 290
+	maxhealth = XENO_HEALTH_MULT * 290
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_YOUNG_THRESHOLD
@@ -75,14 +75,14 @@
 	upgrade = XENO_UPGRADE_ONE
 
 	// *** Speed *** //
-	speed = -0.8
+	speed = XENO_SPEED_MULT * -0.8
 
 	// *** Plasma *** //
 	plasma_max = 700 //Enables using either both abilities at once or one after another
 	plasma_gain = 5
 
 	// *** Health *** //
-	max_health = 310
+	maxhealth = XENO_HEALTH_MULT * 310
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_MATURE_THRESHOLD
@@ -97,10 +97,10 @@
 	upgrade = XENO_UPGRADE_TWO
 
 	// *** Melee Attacks *** //
-	melee_damage = 30
+	melee_damage = XENO_MELEE_DAM_MULT * 30
 
 	// *** Speed *** //
-	speed = -0.9
+	speed = XENO_SPEED_MULT * -0.9
 
 	// *** Plasma *** //
 	plasma_max = 750
@@ -108,7 +108,7 @@
 	plasma_regen_limit = 0.6
 
 	// *** Health *** //
-	max_health = 330
+	maxhealth = XENO_HEALTH_MULT * 330
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_ELDER_THRESHOLD
@@ -123,17 +123,17 @@
 	upgrade = XENO_UPGRADE_THREE
 
 	// *** Melee Attacks *** //
-	melee_damage = 30
+	melee_damage = XENO_MELEE_DAM_MULT * 30
 
 	// *** Speed *** //
-	speed = -1
+	speed = XENO_SPEED_MULT * -1
 
 	// *** Plasma *** //
 	plasma_max = 800
 	plasma_gain = 15
 
 	// *** Health *** //
-	max_health = 350
+	maxhealth = XENO_HEALTH_MULT * 350
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_ANCIENT_THRESHOLD
@@ -148,17 +148,17 @@
 	upgrade = XENO_UPGRADE_FOUR
 
 	// *** Melee Attacks *** //
-	melee_damage = 30
+	melee_damage = XENO_MELEE_DAM_MULT * 30
 
 	// *** Speed *** //
-	speed = -1
+	speed = XENO_SPEED_MULT * -1
 
 	// *** Plasma *** //
 	plasma_max = 800
 	plasma_gain = 15
 
 	// *** Health *** //
-	max_health = 350
+	maxhealth = XENO_HEALTH_MULT * 350
 
 	// *** Defense *** //
 	soft_armor = list(MELEE = 50, BULLET = 55, LASER = 50, ENERGY = 50, BOMB = 10, BIO = 40, FIRE = 70, ACID = 40)

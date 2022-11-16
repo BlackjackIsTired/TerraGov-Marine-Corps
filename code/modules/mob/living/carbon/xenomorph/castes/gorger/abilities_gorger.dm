@@ -130,7 +130,7 @@
 	owner_xeno.visible_message(target_human, span_danger("[owner_xeno] stabs its tail into [target_human]!"));\
 	playsound(target_human, "alien_claw_flesh", 25, TRUE);\
 	target_human.emote("scream");\
-	target_human.apply_damage(damage = 4, damagetype = BRUTE, def_zone = BODY_ZONE_HEAD, blocked = 0, sharp = TRUE, edge = FALSE, updating_health = TRUE);\
+	target_human.apply_damage(damage = 4, damagetype = BRUTE, def_zone = BODY_ZONE_HEAD, blocked = 0, sharp = TRUE, edge = FALSE, updating_health = XENO_HEALTH_MULT * TRUE);\
 \
 	var/drain_healing = GORGER_DRAIN_HEAL;\
 	HEAL_XENO_DAMAGE(owner_xeno, drain_healing, TRUE);\
@@ -443,7 +443,7 @@
 	var/mob/living/carbon/xenomorph/owner_xeno = owner
 	// cancel the buff when at full health to conserve plasma, otherwise don't cancel
 	if(owner_xeno.has_status_effect(STATUS_EFFECT_XENO_FEAST))
-		return owner_xeno.health == owner_xeno.maxHealth
+		return owner_xeno.health = XENO_HEALTH_MULT *= owner_xeno.maxHealth
 	// small damage has more efficient alternatives to be healed with
 	if(owner_xeno.health > owner_xeno.maxHealth * 0.7)
 		return FALSE

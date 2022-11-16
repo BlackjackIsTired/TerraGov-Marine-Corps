@@ -9,17 +9,17 @@
 	wound_type = "king" //used to match appropriate wound overlays
 
 	// *** Melee Attacks *** //
-	melee_damage = 20
+	melee_damage = XENO_MELEE_DAM_MULT * 20
 
 	// *** Speed *** //
-	speed = 0
+	speed = XENO_SPEED_MULT * 0
 
 	// *** Plasma *** //
 	plasma_max = 900
 	plasma_gain = 40
 
 	// *** Health *** //
-	max_health = 450
+	maxhealth = XENO_HEALTH_MULT * 450
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_YOUNG_THRESHOLD
@@ -64,14 +64,14 @@
 	upgrade = XENO_UPGRADE_ONE
 
 	// *** Speed *** //
-	speed = -0.1
+	speed = XENO_SPEED_MULT * -0.1
 
 	// *** Plasma *** //
 	plasma_max = 1000
 	plasma_gain = 50
 
 	// *** Health *** //
-	max_health = 500
+	maxhealth = XENO_HEALTH_MULT * 500
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_MATURE_THRESHOLD
@@ -86,17 +86,17 @@
 	upgrade = XENO_UPGRADE_TWO
 
 	// *** Melee Attacks *** //
-	melee_damage = 25
+	melee_damage = XENO_MELEE_DAM_MULT * 25
 
 	// *** Speed *** //
-	speed = -0.2
+	speed = XENO_SPEED_MULT * -0.2
 
 	// *** Plasma *** //
 	plasma_max = 1100
 	plasma_gain = 60
 
 	// *** Health *** //
-	max_health = 600
+	maxhealth = XENO_HEALTH_MULT * 600
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_ELDER_THRESHOLD
@@ -113,17 +113,17 @@
 	upgrade = XENO_UPGRADE_THREE
 
 	// *** Melee Attacks *** //
-	melee_damage = 30
+	melee_damage = XENO_MELEE_DAM_MULT * 30
 
 	// *** Speed *** //
-	speed = -0.3
+	speed = XENO_SPEED_MULT * -0.3
 
 	// *** Plasma *** //
 	plasma_max = 1200
 	plasma_gain = 70
 
 	// *** Health *** //
-	max_health = 700
+	maxhealth = XENO_HEALTH_MULT * 700
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_ANCIENT_THRESHOLD

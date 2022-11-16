@@ -9,17 +9,17 @@
 	wound_type = "spitter" //used to match appropriate wound overlays
 
 	// *** Melee Attacks *** //
-	melee_damage = 17
+	melee_damage = XENO_MELEE_DAM_MULT * 17
 
 	// *** Speed *** //
-	speed = -0.3
+	speed = XENO_SPEED_MULT * -0.3
 
 	// *** Plasma *** //
 	plasma_max = 650
 	plasma_gain = 21
 
 	// *** Health *** //
-	max_health = 250
+	maxhealth = XENO_HEALTH_MULT * 250
 
 	// *** Evolution *** //
 	evolution_threshold = 180
@@ -46,8 +46,8 @@
 	spit_types = list(/datum/ammo/xeno/acid/medium) //Gotta give them their own version of heavy acid; kludgy but necessary as 100 plasma is way too costly.
 
 	acid_spray_duration = 10 SECONDS
-	acid_spray_damage_on_hit = 35
-	acid_spray_damage = 16
+	acid_spray_damage_on_hit = XENO_ACID_DAM_MULT * 35
+	acid_spray_damage = XENO_ACID_DAM_MULT *  16
 	acid_spray_structure_damage = 45
 
 	// *** Abilities *** //
@@ -73,14 +73,14 @@
 	upgrade = XENO_UPGRADE_ONE
 
 	// *** Speed *** //
-	speed = -0.4
+	speed = XENO_SPEED_MULT * -0.4
 
 	// *** Plasma *** //
 	plasma_max = 800
 	plasma_gain = 25
 
 	// *** Health *** //
-	max_health = 270
+	maxhealth = XENO_HEALTH_MULT * 270
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_TWO_MATURE_THRESHOLD
@@ -100,17 +100,17 @@
 	upgrade = XENO_UPGRADE_TWO
 
 	// *** Melee Attacks *** //
-	melee_damage = 20
+	melee_damage = XENO_MELEE_DAM_MULT * 20
 
 	// *** Speed *** //
-	speed = -0.5
+	speed = XENO_SPEED_MULT * -0.5
 
 	// *** Plasma *** //
 	plasma_max = 875
 	plasma_gain = 28
 
 	// *** Health *** //
-	max_health = 290
+	maxhealth = XENO_HEALTH_MULT * 290
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_TWO_ELDER_THRESHOLD
@@ -130,17 +130,17 @@
 	upgrade = XENO_UPGRADE_THREE
 
 	// *** Melee Attacks *** //
-	melee_damage = 20
+	melee_damage = XENO_MELEE_DAM_MULT * 20
 
 	// *** Speed *** //
-	speed = -0.6
+	speed = XENO_SPEED_MULT * -0.6
 
 	// *** Plasma *** //
 	plasma_max = 925
 	plasma_gain = 30
 
 	// *** Health *** //
-	max_health = 310
+	maxhealth = XENO_HEALTH_MULT * 310
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_TWO_ANCIENT_THRESHOLD
@@ -158,17 +158,17 @@
 	primordial_message = "Our suppression is unmatched! Let nothing show its head!"
 
 	// *** Melee Attacks *** //
-	melee_damage = 20
+	melee_damage = XENO_MELEE_DAM_MULT * 20
 
 	// *** Speed *** //
-	speed = -0.6
+	speed = XENO_SPEED_MULT * -0.6
 
 	// *** Plasma *** //
 	plasma_max = 925
 	plasma_gain = 30
 
 	// *** Health *** //
-	max_health = 310
+	maxhealth = XENO_HEALTH_MULT * 310
 
 	// *** Defense *** //
 	soft_armor = list(MELEE = 25, BULLET = 35, LASER = 35, ENERGY = 35, BOMB = 0, BIO = 20, FIRE = 35, ACID = 20)

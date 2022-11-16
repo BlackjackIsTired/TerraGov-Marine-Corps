@@ -10,17 +10,17 @@
 	wound_type = "queen" //used to match appropriate wound overlays
 
 	// *** Melee Attacks *** //
-	melee_damage = 20
+	melee_damage = XENO_MELEE_DAM_MULT * 20
 
 	// *** Speed *** //
-	speed = 0
+	speed = XENO_SPEED_MULT * 0
 
 	// *** Plasma *** //
 	plasma_max = 900
 	plasma_gain = 40
 
 	// *** Health *** //
-	max_health = 425
+	maxhealth = XENO_HEALTH_MULT * 425
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_YOUNG_THRESHOLD
@@ -85,14 +85,14 @@
 	upgrade = XENO_UPGRADE_ONE
 
 	// *** Speed *** //
-	speed = -0.1
+	speed = XENO_SPEED_MULT * -0.1
 
 	// *** Plasma *** //
 	plasma_max = 1000
 	plasma_gain = 50
 
 	// *** Health *** //
-	max_health = 450
+	maxhealth = XENO_HEALTH_MULT * 450
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_MATURE_THRESHOLD
@@ -115,17 +115,17 @@
 	upgrade = XENO_UPGRADE_TWO
 
 	// *** Melee Attacks *** //
-	melee_damage = 23
+	melee_damage = XENO_MELEE_DAM_MULT * 23
 
 	// *** Speed *** //
-	speed = -0.2
+	speed = XENO_SPEED_MULT * -0.2
 
 	// *** Plasma *** //
 	plasma_max = 1100
 	plasma_gain = 60
 
 	// *** Health *** //
-	max_health = 475
+	maxhealth = XENO_HEALTH_MULT * 475
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_ELDER_THRESHOLD
@@ -148,17 +148,17 @@
 	upgrade = XENO_UPGRADE_THREE
 
 	// *** Melee Attacks *** //
-	melee_damage = 23
+	melee_damage = XENO_MELEE_DAM_MULT * 23
 
 	// *** Speed *** //
-	speed = -0.3
+	speed = XENO_SPEED_MULT * -0.3
 
 	// *** Plasma *** //
 	plasma_max = 1200
 	plasma_gain = 70
 
 	// *** Health *** //
-	max_health = 500
+	maxhealth = XENO_HEALTH_MULT * 500
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_ANCIENT_THRESHOLD
@@ -181,17 +181,17 @@
 	primordial_message = "Destiny bows to our will as the universe trembles before us."
 	upgrade = XENO_UPGRADE_FOUR
 	// *** Melee Attacks *** //
-	melee_damage = 23
+	melee_damage = XENO_MELEE_DAM_MULT * 23
 
 	// *** Speed *** //
-	speed = -0.3
+	speed = XENO_SPEED_MULT * -0.3
 
 	// *** Plasma *** //
 	plasma_max = 1200
 	plasma_gain = 70
 
 	// *** Health *** //
-	max_health = 500
+	maxhealth = XENO_HEALTH_MULT * 500
 
 	// *** Defense *** //
 	soft_armor = list(MELEE = 65, BULLET = 65, LASER = 65, ENERGY = 65, BOMB = 30, BIO = 60, FIRE = 60, ACID = 60)

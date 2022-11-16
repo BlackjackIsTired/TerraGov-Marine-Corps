@@ -9,10 +9,10 @@
 	upgrade = XENO_UPGRADE_BASETYPE
 
 	// *** Melee Attacks *** //
-	melee_damage = 16
+	melee_damage = XENO_MELEE_DAM_MULT * 16
 
 	// *** Speed *** //
-	speed = -0.8
+	speed = XENO_SPEED_MULT * -0.8
 	weeds_speed_mod = -0.4
 
 	// *** Plasma *** //
@@ -20,7 +20,7 @@
 	plasma_gain = 25
 
 	// *** Health *** //
-	max_health = 225
+	maxhealth = XENO_HEALTH_MULT * 225
 
 	// *** Evolution *** //
 	evolution_threshold = 80
@@ -79,14 +79,14 @@
 	upgrade = XENO_UPGRADE_ONE
 
 	// *** Speed *** //
-	speed = -0.9
+	speed = XENO_SPEED_MULT * -0.9
 
 	// *** Plasma *** //
 	plasma_max = 800
 	plasma_gain = 30
 
 	// *** Health *** //
-	max_health = 250
+	maxhealth = XENO_HEALTH_MULT * 250
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_ONE_MATURE_THRESHOLD
@@ -104,17 +104,17 @@
 	upgrade = XENO_UPGRADE_TWO
 
 	// *** Melee Attacks *** //
-	melee_damage = 18
+	melee_damage = XENO_MELEE_DAM_MULT * 18
 
 	// *** Speed *** //
-	speed = -1.0
+	speed = XENO_SPEED_MULT * -1.0
 
 	// *** Plasma *** //
 	plasma_max = 900
 	plasma_gain = 35
 
 	// *** Health *** //
-	max_health = 275
+	maxhealth = XENO_HEALTH_MULT * 275
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_ONE_ELDER_THRESHOLD
@@ -132,17 +132,17 @@
 	upgrade = XENO_UPGRADE_THREE
 
 	// *** Melee Attacks *** //
-	melee_damage = 18
+	melee_damage = XENO_MELEE_DAM_MULT * 18
 
 	// *** Speed *** //
-	speed = -1.2
+	speed = XENO_SPEED_MULT * -1.2
 
 	// *** Plasma *** //
 	plasma_max = 1000
 	plasma_gain = 40
 
 	// *** Health *** //
-	max_health = 300
+	maxhealth = XENO_HEALTH_MULT * 300
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_ONE_ANCIENT_THRESHOLD
@@ -160,17 +160,17 @@
 	upgrade = XENO_UPGRADE_FOUR
 
 	// *** Melee Attacks *** //
-	melee_damage = 18
+	melee_damage = XENO_MELEE_DAM_MULT * 18
 
 	// *** Speed *** //
-	speed = -1.2
+	speed = XENO_SPEED_MULT * -1.2
 
 	// *** Plasma *** //
 	plasma_max = 1000
 	plasma_gain = 40
 
 	// *** Health *** //
-	max_health = 300
+	maxhealth = XENO_HEALTH_MULT * 300
 
 	// *** Evolution *** //
 	upgrade_threshold = 660

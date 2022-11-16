@@ -4,8 +4,8 @@
 	desc = "A large, powerfully muscled xeno with seemingly more vitality than others."
 	icon = 'icons/Xeno/2x2_Xenos.dmi'
 	icon_state = "Gorger Walking"
-	health = 600
-	maxHealth = 600
+	health = XENO_HEALTH_MULT * 600
+	maxhealth = XENO_HEALTH_MULT * 600
 	plasma_stored = 100
 	pixel_x = -16
 	old_x = -16

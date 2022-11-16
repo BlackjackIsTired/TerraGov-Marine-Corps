@@ -12,17 +12,17 @@
 	gib_flick = "larva_gib"
 
 	// *** Melee Attacks *** //
-	melee_damage = 0
+	melee_damage = XENO_MELEE_DAM_MULT * 0
 
 	// *** Speed *** //
-	speed = -1.6
+	speed = XENO_SPEED_MULT * -1.6
 
 	// *** Plasma *** //
 	plasma_gain = 1
 
 	// *** Health *** //
-	max_health = 50
-	crit_health = -25
+	maxhealth = XENO_HEALTH_MULT * 50
+	crit_health = XENO_HEALTH_MULT * -25
 
 	// *** Evolution *** //
 	evolution_threshold = 50
@@ -51,8 +51,8 @@
 	)
 
 	// *** Vent Crawl Parameters *** //
-	vent_enter_speed = LARVA_VENT_CRAWL_TIME
-	vent_exit_speed = LARVA_VENT_CRAWL_TIME
+	vent_enter_speed = XENO_SPEED_MULT * LARVA_VENT_CRAWL_TIME
+	vent_exit_speed = XENO_SPEED_MULT * LARVA_VENT_CRAWL_TIME
 	silent_vent_crawl = TRUE
 
 /datum/xeno_caste/larva/young

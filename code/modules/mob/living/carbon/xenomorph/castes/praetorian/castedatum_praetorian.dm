@@ -9,17 +9,17 @@
 	wound_type = "praetorian" //used to match appropriate wound overlays
 
 	// *** Melee Attacks *** //
-	melee_damage = 20
+	melee_damage = XENO_MELEE_DAM_MULT * 20
 
 	// *** Speed *** //
-	speed = -0.2
+	speed = XENO_SPEED_MULT * -0.2
 
 	// *** Plasma *** //
 	plasma_max = 800
 	plasma_gain = 50
 
 	// *** Health *** //
-	max_health = 290
+	maxhealth = XENO_HEALTH_MULT * 290
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_YOUNG_THRESHOLD
@@ -38,8 +38,8 @@
 
 	acid_spray_duration = 10 SECONDS
 	acid_spray_range = 5
-	acid_spray_damage = 16
-	acid_spray_damage_on_hit = 35
+	acid_spray_damage = XENO_ACID_DAM_MULT *  16
+	acid_spray_damage_on_hit = XENO_ACID_DAM_MULT * 35
 	acid_spray_structure_damage = 45
 
 	// *** Pheromones *** //
@@ -74,14 +74,14 @@
 	upgrade = XENO_UPGRADE_ONE
 
 	// *** Speed *** //
-	speed = -0.3
+	speed = XENO_SPEED_MULT * -0.3
 
 	// *** Plasma *** //
 	plasma_max = 900
 	plasma_gain = 60
 
 	// *** Health *** //
-	max_health = 320
+	maxhealth = XENO_HEALTH_MULT * 320
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_MATURE_THRESHOLD
@@ -93,7 +93,7 @@
 	spit_delay = 1.2 SECONDS
 	spit_types = list(/datum/ammo/xeno/toxin/heavy/upgrade1, /datum/ammo/xeno/acid/heavy)
 
-	acid_spray_damage_on_hit = 39
+	acid_spray_damage_on_hit = XENO_ACID_DAM_MULT * 39
 	acid_spray_structure_damage = 53
 
 	// *** Pheromones *** //
@@ -105,17 +105,17 @@
 	upgrade = XENO_UPGRADE_TWO
 
 	// *** Melee Attacks *** //
-	melee_damage = 23
+	melee_damage = XENO_MELEE_DAM_MULT * 23
 
 	// *** Speed *** //
-	speed = -0.4
+	speed = XENO_SPEED_MULT * -0.4
 
 	// *** Plasma *** //
 	plasma_max = 1000
 	plasma_gain = 70
 
 	// *** Health *** //
-	max_health = 340
+	maxhealth = XENO_HEALTH_MULT * 340
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_ELDER_THRESHOLD
@@ -127,7 +127,7 @@
 	spit_delay = 1.1 SECONDS
 	spit_types = list(/datum/ammo/xeno/toxin/heavy/upgrade2, /datum/ammo/xeno/acid/heavy)
 
-	acid_spray_damage_on_hit = 43
+	acid_spray_damage_on_hit = XENO_ACID_DAM_MULT * 43
 	acid_spray_structure_damage = 61
 
 	// *** Pheromones *** //
@@ -140,17 +140,17 @@
 	ancient_message = "We are the strongest ranged fighter around. Our spit is devastating and we can fire nearly a constant stream."
 
 	// *** Melee Attacks *** //
-	melee_damage = 23
+	melee_damage = XENO_MELEE_DAM_MULT * 23
 
 	// *** Speed *** //
-	speed = -0.5
+	speed = XENO_SPEED_MULT * -0.5
 
 	// *** Plasma *** //
 	plasma_max = 1000
 	plasma_gain = 80
 
 	// *** Health *** //
-	max_health = 360
+	maxhealth = XENO_HEALTH_MULT * 360
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_ANCIENT_THRESHOLD
@@ -162,7 +162,7 @@
 	spit_delay = 1 SECONDS
 	spit_types = list(/datum/ammo/xeno/toxin/heavy/upgrade3, /datum/ammo/xeno/acid/heavy)
 
-	acid_spray_damage_on_hit = 47
+	acid_spray_damage_on_hit = XENO_ACID_DAM_MULT * 47
 	acid_spray_structure_damage = 69
 
 	// *** Pheromones *** //
@@ -175,17 +175,17 @@
 	primordial_message = "The strongest of acids flows through our veins, let's reduce them to dust."
 
 	// *** Melee Attacks *** //
-	melee_damage = 23
+	melee_damage = XENO_MELEE_DAM_MULT * 23
 
 	// *** Speed *** //
-	speed = -0.5
+	speed = XENO_SPEED_MULT * -0.5
 
 	// *** Plasma *** //
 	plasma_max = 1000
 	plasma_gain = 80
 
 	// *** Health *** //
-	max_health = 360
+	maxhealth = XENO_HEALTH_MULT * 360
 
 	// *** Defense *** //
 	soft_armor = list(MELEE = 45, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 10, BIO = 38, FIRE = 50, ACID = 38)
@@ -194,7 +194,7 @@
 	spit_delay = 1 SECONDS
 	spit_types = list(/datum/ammo/xeno/toxin/heavy/upgrade3, /datum/ammo/xeno/acid/heavy)
 
-	acid_spray_damage_on_hit = 47
+	acid_spray_damage_on_hit = XENO_ACID_DAM_MULT * 47
 	acid_spray_structure_damage = 69
 
 	// *** Pheromones *** //

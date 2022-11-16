@@ -12,10 +12,10 @@
 	wound_type = "gorger" //used to match appropriate wound overlays
 
 	// *** Melee Attacks *** //
-	melee_damage = 15
+	melee_damage = XENO_MELEE_DAM_MULT * 15
 
 	// *** Speed *** //
-	speed = -0.6
+	speed = XENO_SPEED_MULT * -0.6
 	weeds_speed_mod = 0.2
 
 	// *** Plasma *** //
@@ -25,7 +25,7 @@
 	plasma_icon_state = "fury"
 
 	// *** Health *** //
-	max_health = 400
+	maxhealth = XENO_HEALTH_MULT * 400
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_YOUNG_THRESHOLD
@@ -71,13 +71,13 @@
 	upgrade = XENO_UPGRADE_ONE
 
 	// *** Speed *** //
-	speed = -0.6
+	speed = XENO_SPEED_MULT * -0.6
 
 	// *** Plasma *** //
 	plasma_max = 250
 
 	// *** Health *** //
-	max_health = 450
+	maxhealth = XENO_HEALTH_MULT * 450
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_MATURE_THRESHOLD
@@ -97,13 +97,13 @@
 	upgrade = XENO_UPGRADE_TWO
 
 	// *** Melee Attacks *** //
-	melee_damage = 20
+	melee_damage = XENO_MELEE_DAM_MULT * 20
 
 	// *** Plasma *** //
 	plasma_max = 300
 
 	// *** Health *** //
-	max_health = 500
+	maxhealth = XENO_HEALTH_MULT * 500
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_ELDER_THRESHOLD
@@ -122,13 +122,13 @@
 	upgrade = XENO_UPGRADE_THREE
 
 	// *** Melee Attacks *** //
-	melee_damage = 20
+	melee_damage = XENO_MELEE_DAM_MULT * 20
 
 	// *** Plasma *** //
 	plasma_max = 400
 
 	// *** Health *** //
-	max_health = 600
+	maxhealth = XENO_HEALTH_MULT * 600
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_ANCIENT_THRESHOLD
@@ -147,13 +147,13 @@
 	upgrade = XENO_UPGRADE_FOUR
 
 	// *** Melee Attacks *** //
-	melee_damage = 20
+	melee_damage = XENO_MELEE_DAM_MULT * 20
 
 	// *** Plasma *** //
 	plasma_max = 400
 
 	// *** Health *** //
-	max_health = 600
+	maxhealth = XENO_HEALTH_MULT * 600
 
 	// *** Defense *** //
 	soft_armor = list(MELEE = 20, BULLET = 20, LASER = 20, ENERGY = 20, BOMB = 10, BIO = 20, FIRE = 20, ACID = 20)

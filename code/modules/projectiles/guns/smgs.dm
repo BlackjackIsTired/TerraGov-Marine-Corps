@@ -130,6 +130,7 @@
 	burst_amount = 0
 	upper_akimbo_accuracy = 4
 	lower_akimbo_accuracy = 2
+	damage_mult = SMG_DAMAGE_MULT
 
 	placed_overlay_iconstate = "t90"
 
@@ -220,7 +221,7 @@
 	burst_amount = 4
 	accuracy_mult = 1.1
 	accuracy_mult_unwielded = 1
-	damage_mult = 1.2
+	damage_mult = SMG_DAMAGE_MULT * 1.2
 	aim_slowdown = 0.2
 	scatter = 3
 
@@ -261,7 +262,7 @@
 	accuracy_mult_unwielded = 0.9
 	scatter = 5
 	scatter_unwielded = 10
-	damage_mult = 1.2
+	damage_mult = SMG_DAMAGE_MULT * 1.2
 
 //-------------------------------------------------------
 //SKORPION //Based on the same thing.

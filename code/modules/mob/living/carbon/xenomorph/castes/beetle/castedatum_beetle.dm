@@ -11,17 +11,17 @@
 	upgrade = XENO_UPGRADE_BASETYPE
 
 	// *** Melee Attacks *** //
-	melee_damage = 17
+	melee_damage = XENO_MELEE_DAM_MULT * 17
 
 	// *** Speed *** //
-	speed = 0
+	speed = XENO_SPEED_MULT * 0
 
 	// *** Plasma *** //
 	plasma_max = 320 ///4 forward charges
 	plasma_gain = 10
 
 	// *** Health *** //
-	max_health = 260
+	maxhealth = XENO_HEALTH_MULT * 260
 
 	// *** Flags *** //
 	caste_flags = CASTE_DO_NOT_ALERT_LOW_LIFE|CASTE_IS_A_MINION

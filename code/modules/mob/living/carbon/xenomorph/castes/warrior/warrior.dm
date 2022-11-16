@@ -4,8 +4,8 @@
 	desc = "A beefy, alien with an armored carapace."
 	icon = 'icons/Xeno/2x2_Xenos.dmi'
 	icon_state = "Warrior Walking"
-	health = 200
-	maxHealth = 200
+	health = XENO_HEALTH_MULT * 200
+	maxhealth = XENO_HEALTH_MULT * 200
 	plasma_stored = 50
 	pixel_x = -16
 	old_x = -16
@@ -79,7 +79,7 @@
 	victim.do_resist_grab()
 
 
-/mob/living/carbon/xenomorph/warrior/hitby(atom/movable/AM, speed = 5)
+/mob/living/carbon/xenomorph/warrior/hitby(atom/movable/AM, speed = XENO_SPEED_MULT * 5)
 	if(ishuman(AM))
 		return
 	..()

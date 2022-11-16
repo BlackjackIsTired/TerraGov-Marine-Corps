@@ -8,17 +8,17 @@
 	upgrade = XENO_UPGRADE_BASETYPE
 	wound_type = ""
 	// *** Melee Attacks *** //
-	melee_damage = 0
+	melee_damage = XENO_MELEE_DAM_MULT * 0
 
 	// *** Speed *** //
-	speed = 0
+	speed = XENO_SPEED_MULT * 0
 
 	// *** Plasma *** //
 	plasma_max = 600 //  75 is the cost of plant_weeds
 	plasma_gain = 60
 
 	// *** Health *** //
-	max_health = 100
+	maxhealth = XENO_HEALTH_MULT * 100
 
 	// *** Flags *** //
 	caste_flags = CASTE_INNATE_PLASMA_REGEN|CASTE_FIRE_IMMUNE|CASTE_IS_BUILDER|CASTE_DO_NOT_ALERT_LOW_LIFE
@@ -70,4 +70,4 @@
 
 	aura_strength = 4 //Good pheros
 
-	speed = 1.5
+	speed = XENO_SPEED_MULT * 1.5

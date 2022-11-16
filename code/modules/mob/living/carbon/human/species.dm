@@ -322,6 +322,7 @@
 	unarmed_type = /datum/unarmed_attack/punch
 	species_flags = HAS_SKIN_TONE|HAS_LIPS|HAS_UNDERWEAR
 	count_human = TRUE
+	slowdown = 1 * MARINE_BASE_SLOWDOWN_MULT
 
 	screams = list(MALE = "male_scream", FEMALE = "female_scream")
 	paincries = list(MALE = "male_pain", FEMALE = "female_pain")
@@ -349,7 +350,7 @@
 	icobase = 'icons/mob/human_races/r_vatgrown.dmi'
 	brute_mod = 1.05
 	burn_mod = 1.05
-	slowdown = 1.05
+	slowdown = 1.05 * MARINE_BASE_SLOWDOWN_MULT
 	joinable_roundstart = FALSE
 
 /datum/species/human/vatgrown/random_name(gender)
@@ -368,7 +369,7 @@
 	name_plural = "Early Vat-Grown Humans"
 	brute_mod = 1.3
 	burn_mod = 1.3
-	slowdown = 1.3
+	slowdown = 1.3 * MARINE_BASE_SLOWDOWN_MULT
 
 	var/timerid
 
@@ -402,7 +403,7 @@ GLOBAL_VAR_INIT(join_as_robot_allowed, TRUE)
 
 	unarmed_type = /datum/unarmed_attack/punch/strong
 	total_health = 100
-	slowdown = SHOES_SLOWDOWN //because they don't wear boots.
+	slowdown = SHOES_SLOWDOWN * MARINE_BASE_SLOWDOWN_MULT //because they don't wear boots.
 
 	cold_level_1 = -1
 	cold_level_2 = -1
@@ -474,7 +475,8 @@ GLOBAL_VAR_INIT(join_as_robot_allowed, TRUE)
 
 	brute_mod = 0.70
 	burn_mod = 0.70 //Synthetics should not be instantly melted by acid compared to humans - This is a test to hopefully fix very glaring issues involving synthetics taking 2.6 trillion damage when so much as touching acid
-
+	slowdown = 1 * MARINE_BASE_SLOWDOWN_MULT
+	
 	cold_level_1 = -1
 	cold_level_2 = -1
 	cold_level_3 = -1
@@ -526,6 +528,7 @@ GLOBAL_VAR_INIT(join_as_robot_allowed, TRUE)
 	total_health = 125
 	brute_mod = 0.70
 	burn_mod = 0.70
+	slowdown = 1 * MARINE_BASE_SLOWDOWN_MULT
 
 	cold_level_1 = -1
 	cold_level_2 = -1

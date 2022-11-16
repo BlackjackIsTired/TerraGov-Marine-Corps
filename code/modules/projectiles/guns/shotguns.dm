@@ -29,6 +29,7 @@
 	movement_acc_penalty_mult = 2
 	lower_akimbo_accuracy = 3
 	upper_akimbo_accuracy = 5
+	damage_mult = SHOTGUN_DAMAGE_MULT
 
 	placed_overlay_iconstate = "shotgun"
 
@@ -62,7 +63,7 @@
 	fire_delay = 15 //one shot every 1.5 seconds.
 	accuracy_mult_unwielded = 0.5 //you need to wield this gun for any kind of accuracy
 	scatter_unwielded = 10
-	damage_mult = 0.75  //normalizing gun for vendors; damage reduced by 25% to compensate for faster fire rate; still higher DPS than T-32.
+	damage_mult = SHOTGUN_DAMAGE_MULT * 0.75  //normalizing gun for vendors; damage reduced by 25% to compensate for faster fire rate; still higher DPS than T-32.
 	recoil = 2
 	recoil_unwielded = 4
 	aim_slowdown = 0.4
@@ -106,7 +107,7 @@
 	accuracy_mult_unwielded = 0.65
 	scatter = 3
 	scatter_unwielded = 12
-	damage_mult = 0.7  //30% less damage. Faster firerate.
+	damage_mult = SHOTGUN_DAMAGE_MULT * 0.7  //30% less damage. Faster firerate.
 	recoil = 0 //It has a stock on the sprite.
 	recoil_unwielded = 2
 	wield_delay = 1 SECONDS
@@ -125,7 +126,7 @@
 	detach_delay = 3 SECONDS
 	flags_gun_features = GUN_IS_ATTACHMENT|GUN_AMMO_COUNTER|GUN_ATTACHMENT_FIRE_ONLY|GUN_WIELDED_STABLE_FIRING_ONLY|GUN_CAN_POINTBLANK|GUN_WIELDED_FIRING_ONLY
 	default_ammo_type = /datum/ammo/bullet/shotgun/buckshot
-	damage_mult = 0.6 // 40% less damage, but MUCH higher falloff.
+	damage_mult = SHOTGUN_DAMAGE_MULT * 0.6 // 40% less damage, but MUCH higher falloff.
 	damage_falloff_mult = 2
 	scatter = 3
 	fire_delay = 20 // Base shotgun fire delay.
@@ -301,7 +302,7 @@
 	)
 
 	fire_delay = 15
-	damage_mult = 0.75
+	damage_mult = SHOTGUN_DAMAGE_MULT * 0.75
 	accuracy_mult = 1.25
 	accuracy_mult_unwielded = 1
 	scatter_unwielded = 10
@@ -681,7 +682,7 @@
 	attachable_offset = list("muzzle_x" = 40, "muzzle_y" = 17,"rail_x" = 12, "rail_y" = 23, "under_x" = 29, "under_y" = 12, "stock_x" = 13, "stock_y" = 15)
 
 	fire_delay = 1.75 SECONDS
-	damage_mult = 0.9
+	damage_mult = SHOTGUN_DAMAGE_MULT * 0.9
 	wield_delay = 0.75 SECONDS
 	burst_amount = 2
 	burst_delay = 0.01 SECONDS //basically instantaneous two shots
@@ -727,7 +728,7 @@
 	accuracy_mult_unwielded = 0.6
 	scatter = 4
 	scatter_unwielded = 16
-	damage_mult = 0.85
+	damage_mult = SHOTGUN_DAMAGE_MULT * 0.85
 	recoil = 1
 	recoil_unwielded = 4
 	aim_slowdown = 0.35

@@ -11,17 +11,17 @@
 	wound_type = "carrier" //used to match appropriate wound overlays
 
 	// *** Melee Attacks *** //
-	melee_damage = 17
+	melee_damage = XENO_MELEE_DAM_MULT * 17
 
 	// *** Speed *** //
-	speed = 0
+	speed = XENO_SPEED_MULT * 0
 
 	// *** Plasma *** //
 	plasma_max = 500
 	plasma_gain = 20
 
 	// *** Health *** //
-	max_health = 250
+	maxhealth = XENO_HEALTH_MULT * 250
 
 	// *** Evolution *** //
 	evolution_threshold = 180
@@ -79,14 +79,14 @@
 	upgrade = XENO_UPGRADE_ONE
 
 	// *** Speed *** //
-	speed = -0.1
+	speed = XENO_SPEED_MULT * -0.1
 
 	// *** Plasma *** //
 	plasma_max = 600
 	plasma_gain = 25
 
 	// *** Health *** //
-	max_health = 275
+	maxhealth = XENO_HEALTH_MULT * 275
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_TWO_MATURE_THRESHOLD
@@ -108,17 +108,17 @@
 	upgrade = XENO_UPGRADE_TWO
 
 	// *** Melee Attacks *** //
-	melee_damage = 20
+	melee_damage = XENO_MELEE_DAM_MULT * 20
 
 	// *** Speed *** //
-	speed = -0.2
+	speed = XENO_SPEED_MULT * -0.2
 
 	// *** Plasma *** //
 	plasma_max = 700
 	plasma_gain = 30
 
 	// *** Health *** //
-	max_health = 300
+	maxhealth = XENO_HEALTH_MULT * 300
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_TWO_ELDER_THRESHOLD
@@ -140,17 +140,17 @@
 	ancient_message = "We are the master of huggers. We shall throw them like baseballs at the marines!"
 
 	// *** Melee Attacks *** //
-	melee_damage = 20
+	melee_damage = XENO_MELEE_DAM_MULT * 20
 
 	// *** Speed *** //
-	speed = -0.3
+	speed = XENO_SPEED_MULT * -0.3
 
 	// *** Plasma *** //
 	plasma_max = 800
 	plasma_gain = 38
 
 	// *** Health *** //
-	max_health = 325
+	maxhealth = XENO_HEALTH_MULT * 325
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_TWO_ANCIENT_THRESHOLD
@@ -172,17 +172,17 @@
 	primordial_message = ""
 
 	// *** Melee Attacks *** //
-	melee_damage = 20
+	melee_damage = XENO_MELEE_DAM_MULT * 20
 
 	// *** Speed *** //
-	speed = -0.3
+	speed = XENO_SPEED_MULT * -0.3
 
 	// *** Plasma *** //
 	plasma_max = 800
 	plasma_gain = 38
 
 	// *** Health *** //
-	max_health = 325
+	maxhealth = XENO_HEALTH_MULT * 325
 
 	// *** Defense *** //
 	soft_armor = list(MELEE = 30, BULLET = 30, LASER = 30, ENERGY = 30, BOMB = 0, BIO = 10, FIRE = 30, ACID = 10)

@@ -9,17 +9,17 @@
 	wound_type = "wraith" //used to match appropriate wound overlays
 
 	// *** Melee Attacks *** //
-	melee_damage = 17
+	melee_damage = XENO_MELEE_DAM_MULT * 17
 
 	// *** Speed *** //
-	speed = -1
+	speed = XENO_SPEED_MULT * -1
 
 	// *** Plasma *** //
 	plasma_max = 200
 	plasma_gain = 15
 
 	// *** Health *** //
-	max_health = 200
+	maxhealth = XENO_HEALTH_MULT * 200
 
 	// *** Evolution *** //
 	evolution_threshold = 180
@@ -64,14 +64,14 @@
 	upgrade = XENO_UPGRADE_ONE
 
 	// *** Speed *** //
-	speed = -1.1
+	speed = XENO_SPEED_MULT * -1.1
 
 	// *** Plasma *** //
 	plasma_max = 300
 	plasma_gain = 20
 
 	// *** Health *** //
-	max_health = 230
+	maxhealth = XENO_HEALTH_MULT * 230
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_TWO_MATURE_THRESHOLD
@@ -87,17 +87,17 @@
 	upgrade = XENO_UPGRADE_TWO
 
 	// *** Melee Attacks *** //
-	melee_damage = 20
+	melee_damage = XENO_MELEE_DAM_MULT * 20
 
 	// *** Speed *** //
-	speed = -1.2
+	speed = XENO_SPEED_MULT * -1.2
 
 	// *** Plasma *** //
 	plasma_max = 350
 	plasma_gain = 23
 
 	// *** Health *** //
-	max_health = 250
+	maxhealth = XENO_HEALTH_MULT * 250
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_TWO_ELDER_THRESHOLD
@@ -113,17 +113,17 @@
 	upgrade = XENO_UPGRADE_THREE
 
 	// *** Melee Attacks *** //
-	melee_damage = 20
+	melee_damage = XENO_MELEE_DAM_MULT * 20
 
 	// *** Speed *** //
-	speed = -1.25
+	speed = XENO_SPEED_MULT * -1.25
 
 	// *** Plasma *** //
 	plasma_max = 400
 	plasma_gain = 25
 
 	// *** Health *** //
-	max_health = 260
+	maxhealth = XENO_HEALTH_MULT * 260
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_TWO_ANCIENT_THRESHOLD
@@ -138,17 +138,17 @@
 	upgrade = XENO_UPGRADE_FOUR
 
 	// *** Melee Attacks *** //
-	melee_damage = 20
+	melee_damage = XENO_MELEE_DAM_MULT * 20
 
 	// *** Speed *** //
-	speed = -1.25
+	speed = XENO_SPEED_MULT * -1.25
 
 	// *** Plasma *** //
 	plasma_max = 400
 	plasma_gain = 25
 
 	// *** Health *** //
-	max_health = 260
+	maxhealth = XENO_HEALTH_MULT * 260
 
 	// *** Defense *** //
 	soft_armor = list(MELEE = 40, BULLET = 40, LASER = 20, ENERGY = 20, BOMB = 0, BIO = 18, FIRE = 30, ACID = 18)
