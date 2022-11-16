@@ -5,7 +5,7 @@
 	icon = 'icons/Xeno/48x48_Xenos.dmi'
 	icon_state = "Hunter Running"
 	health = XENO_HEALTH_MULT * 150
-	maxhealth = XENO_HEALTH_MULT * 150
+	maxHealth = XENO_HEALTH_MULT * 150
 	plasma_stored = 50
 	tier = XENO_TIER_TWO
 	upgrade = XENO_UPGRADE_ZERO

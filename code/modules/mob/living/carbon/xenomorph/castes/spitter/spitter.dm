@@ -5,7 +5,7 @@
 	icon = 'icons/Xeno/2x2_Xenos.dmi'
 	icon_state = "Spitter Walking"
 	health = XENO_HEALTH_MULT * 180
-	maxhealth = XENO_HEALTH_MULT * 180
+	maxHealth = XENO_HEALTH_MULT * 180
 	plasma_stored = 150
 	pixel_x = -16
 	old_x = -16

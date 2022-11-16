@@ -5,7 +5,7 @@
 	icon = 'icons/Xeno/2x2_Xenos.dmi'
 	icon_state = "Hivelord Walking"
 	health = XENO_HEALTH_MULT * 250
-	maxhealth = XENO_HEALTH_MULT * 250
+	maxHealth = XENO_HEALTH_MULT * 250
 	plasma_stored = 200
 	pixel_x = -16
 	old_x = -16

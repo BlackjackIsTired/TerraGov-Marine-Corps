@@ -9,7 +9,7 @@
 	friendly = "nuzzles"
 	wall_smash = FALSE
 	health = XENO_HEALTH_MULT * 240
-	maxhealth = XENO_HEALTH_MULT * 240
+	maxHealth = XENO_HEALTH_MULT * 240
 	plasma_stored = 300
 	pixel_x = -16
 	old_x = -16

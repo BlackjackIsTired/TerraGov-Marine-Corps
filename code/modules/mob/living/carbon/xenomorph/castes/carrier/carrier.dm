@@ -5,7 +5,7 @@
 	icon = 'icons/Xeno/2x2_Xenos.dmi' //They are now like, 2x2
 	icon_state = "Carrier Walking"
 	health = XENO_HEALTH_MULT * 200
-	maxhealth = XENO_HEALTH_MULT * 200
+	maxHealth = XENO_HEALTH_MULT * 200
 	plasma_stored = 50
 	///Number of huggers the carrier is currently carrying
 	var/huggers = 0

@@ -21,7 +21,7 @@
 	plasma_gain = 20
 
 	// *** Health *** //
-	maxhealth = XENO_HEALTH_MULT * 150
+	max_health = XENO_HEALTH_MULT * 150
 
 	// *** Flags *** //
 	caste_flags = CASTE_DO_NOT_ALERT_LOW_LIFE|CASTE_IS_A_MINION

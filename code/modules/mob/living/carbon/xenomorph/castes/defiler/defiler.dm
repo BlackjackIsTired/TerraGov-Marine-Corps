@@ -5,7 +5,7 @@
 	icon = 'icons/Xeno/2x2_Xenos.dmi'
 	icon_state = "Defiler Walking"
 	health = XENO_HEALTH_MULT * 225
-	maxhealth = XENO_HEALTH_MULT * 225
+	maxHealth = XENO_HEALTH_MULT * 225
 	plasma_stored = 400
 	pixel_x = -16
 	old_x = -16

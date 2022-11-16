@@ -5,7 +5,7 @@
 	icon = 'icons/Xeno/2x2_Xenos.dmi' //They are now like, 2x1 or something
 	icon_state = "Runner Walking"
 	health = XENO_HEALTH_MULT * 100
-	maxhealth = XENO_HEALTH_MULT * 100
+	maxHealth = XENO_HEALTH_MULT * 100
 	plasma_stored = 50
 	flags_pass = PASSTABLE
 	tier = XENO_TIER_ONE

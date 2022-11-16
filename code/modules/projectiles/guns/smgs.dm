@@ -25,6 +25,7 @@
 	recoil_unwielded = 0.5
 	akimbo_additional_delay = 0.2
 	movement_acc_penalty_mult = 3
+	damage_mult = SMG_DAMAGE_MULT
 
 //-------------------------------------------------------
 // MP-19 Machinepistol. It fits here more.

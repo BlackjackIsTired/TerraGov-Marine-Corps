@@ -21,7 +21,7 @@
 	plasma_gain = 1
 
 	// *** Health *** //
-	maxhealth = XENO_HEALTH_MULT * 50
+	max_health = XENO_HEALTH_MULT * 50
 	crit_health = XENO_HEALTH_MULT * -25
 
 	// *** Evolution *** //

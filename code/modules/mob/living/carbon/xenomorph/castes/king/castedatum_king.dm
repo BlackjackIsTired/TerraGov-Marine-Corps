@@ -19,7 +19,7 @@
 	plasma_gain = 40
 
 	// *** Health *** //
-	maxhealth = XENO_HEALTH_MULT * 450
+	max_health = XENO_HEALTH_MULT * 450
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_YOUNG_THRESHOLD
@@ -71,7 +71,7 @@
 	plasma_gain = 50
 
 	// *** Health *** //
-	maxhealth = XENO_HEALTH_MULT * 500
+	max_health = XENO_HEALTH_MULT * 500
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_MATURE_THRESHOLD
@@ -96,7 +96,7 @@
 	plasma_gain = 60
 
 	// *** Health *** //
-	maxhealth = XENO_HEALTH_MULT * 600
+	max_health = XENO_HEALTH_MULT * 600
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_ELDER_THRESHOLD
@@ -123,7 +123,7 @@
 	plasma_gain = 70
 
 	// *** Health *** //
-	maxhealth = XENO_HEALTH_MULT * 700
+	max_health = XENO_HEALTH_MULT * 700
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_ANCIENT_THRESHOLD

@@ -5,7 +5,7 @@
 
 	a_intent = INTENT_HELP //Forces help intent for all interactions.
 
-	maxhealth = XENO_HEALTH_MULT * 35
+	maxHealth = XENO_HEALTH_MULT * 35
 	health = XENO_HEALTH_MULT * 35
 	see_in_dark = 8
 	flags_pass = PASSTABLE | PASSMOB | PASSXENO

@@ -19,7 +19,7 @@
 	plasma_gain = 50
 
 	// *** Health *** //
-	maxhealth = XENO_HEALTH_MULT * 290
+	max_health = XENO_HEALTH_MULT * 290
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_YOUNG_THRESHOLD
@@ -38,7 +38,7 @@
 
 	acid_spray_duration = 10 SECONDS
 	acid_spray_range = 5
-	acid_spray_damage = XENO_ACID_DAM_MULT *  16
+	acid_spray_damage = XENO_ACID_DAM_MULT * 16
 	acid_spray_damage_on_hit = XENO_ACID_DAM_MULT * 35
 	acid_spray_structure_damage = 45
 
@@ -81,7 +81,7 @@
 	plasma_gain = 60
 
 	// *** Health *** //
-	maxhealth = XENO_HEALTH_MULT * 320
+	max_health = XENO_HEALTH_MULT * 320
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_MATURE_THRESHOLD
@@ -115,7 +115,7 @@
 	plasma_gain = 70
 
 	// *** Health *** //
-	maxhealth = XENO_HEALTH_MULT * 340
+	max_health = XENO_HEALTH_MULT * 340
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_ELDER_THRESHOLD
@@ -150,7 +150,7 @@
 	plasma_gain = 80
 
 	// *** Health *** //
-	maxhealth = XENO_HEALTH_MULT * 360
+	max_health = XENO_HEALTH_MULT * 360
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_ANCIENT_THRESHOLD
@@ -185,7 +185,7 @@
 	plasma_gain = 80
 
 	// *** Health *** //
-	maxhealth = XENO_HEALTH_MULT * 360
+	max_health = XENO_HEALTH_MULT * 360
 
 	// *** Defense *** //
 	soft_armor = list(MELEE = 45, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 10, BIO = 38, FIRE = 50, ACID = 38)

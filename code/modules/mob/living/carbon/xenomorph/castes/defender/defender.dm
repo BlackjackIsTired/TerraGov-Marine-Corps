@@ -5,7 +5,7 @@
 	icon = 'icons/Xeno/2x2_Xenos.dmi'
 	icon_state = "Defender Walking"
 	health = XENO_HEALTH_MULT * 200
-	maxhealth = XENO_HEALTH_MULT * 200
+	maxHealth = XENO_HEALTH_MULT * 200
 	plasma_stored = 50
 	pixel_x = -16
 	old_x = -16

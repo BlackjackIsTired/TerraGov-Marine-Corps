@@ -17,7 +17,7 @@
 	a_intent = INTENT_HELP
 
 	health = XENO_HEALTH_MULT * 1000
-	maxhealth = XENO_HEALTH_MULT * 1000
+	maxHealth = XENO_HEALTH_MULT * 1000
 	plasma_stored = 5
 	tier = XENO_TIER_ZERO
 	upgrade = XENO_UPGRADE_BASETYPE

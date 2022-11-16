@@ -5,7 +5,7 @@
 	icon = 'icons/Xeno/48x48_Xenos.dmi'
 	icon_state = "Sentinel Walking"
 	health = XENO_HEALTH_MULT * 150
-	maxhealth = XENO_HEALTH_MULT * 150
+	maxHealth = XENO_HEALTH_MULT * 150
 	plasma_stored = 75
 	pixel_x = -12
 	old_x = -12
