@@ -112,7 +112,7 @@
 	to_chat(X, span_xenodanger("Our stinger successfully discharges accelerant into our victim."))
 	to_chat(living_target, span_danger("You feel horrible pain as something sharp forcibly pierces your thorax."))
 	living_target.apply_damage(50, STAMINA)
-	living_target.apply_damage(5, BRUTE, "chest", updating_health = XENO_HEALTH_MULT * TRUE)
+	living_target.apply_damage(5, BRUTE, "chest", updating_health = TRUE)
 	living_target.emote("scream")
 
 	var/defile_strength_multiplier = 0.5

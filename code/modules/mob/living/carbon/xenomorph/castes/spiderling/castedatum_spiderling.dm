@@ -21,7 +21,7 @@
 	plasma_gain = 1
 
 	// *** Health *** //
-	maxhealth = XENO_HEALTH_MULT * 125
+	max_health = XENO_HEALTH_MULT * 125
 
 	// *** Flags *** //
 	caste_flags = CASTE_NOT_IN_BIOSCAN|CASTE_DO_NOT_ANNOUNCE_DEATH|CASTE_DO_NOT_ALERT_LOW_LIFE

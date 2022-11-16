@@ -4,8 +4,8 @@
 	desc = "A large, powerfully muscled xeno replete with dripping spines and gas leaking dorsal vents."
 	icon = 'icons/Xeno/2x2_Xenos.dmi'
 	icon_state = "Defiler Walking"
-	health = XENO_HEALTH_MULT * 225
-	maxhealth = XENO_HEALTH_MULT * 225
+	health = 225
+	maxHealth = 225
 	plasma_stored = 400
 	pixel_x = -16
 	old_x = -16

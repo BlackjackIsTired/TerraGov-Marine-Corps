@@ -115,7 +115,7 @@
 	var/datum/action/xeno_action/activable/essence_link/essence_link_action = owner.actions_by_path[/datum/action/xeno_action/activable/essence_link]
 	var/heal_multiplier = 1
 	if(essence_link_action.existing_link?.link_target == target)
-		var/remaining_health = XENO_HEALTH_MULT * round(target.maxHealth - (target.getBruteLoss() + target.getFireLoss()))
+		var/remaining_health = round(target.maxHealth - (target.getBruteLoss() + target.getFireLoss()))
 		var/health_threshold = round(target.maxHealth / 10) // 10% of the target's maximum health
 		target.apply_status_effect(STATUS_EFFECT_XENO_SALVE_REGEN)
 		if(essence_link_action.existing_link.stacks > 0 && remaining_health <= health_threshold)

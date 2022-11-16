@@ -4,8 +4,8 @@
 	desc = "A widow spawn, it chitters angrily without any sense of self-preservation, only to obey the widow's will."
 	icon = 'icons/Xeno/Effects.dmi'
 	icon_state = "Spiderling Running"
-	health = XENO_HEALTH_MULT * 250
-	maxhealth = XENO_HEALTH_MULT * 250
+	health = 250
+	maxHealth = 250
 	plasma_stored = 200
 	pixel_x = 0
 	old_x = 0

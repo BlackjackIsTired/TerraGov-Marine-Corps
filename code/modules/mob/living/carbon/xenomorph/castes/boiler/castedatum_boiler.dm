@@ -21,7 +21,7 @@
 	plasma_gain = 30
 
 	// *** Health *** //
-	maxhealth = XENO_HEALTH_MULT * 250
+	max_health = XENO_HEALTH_MULT * 250
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_YOUNG_THRESHOLD
@@ -47,13 +47,13 @@
 
 	// *** Boiler Abilities *** //
 	max_ammo = 4
-	bomb_strength = XENO_BOMB_STRENGTH_MULT * 1 //Multiplier to the effectiveness of the boiler glob.
+	bomb_strength = 1 //Multiplier to the effectiveness of the boiler glob.
 	bomb_delay = 32 SECONDS
 	ammo_multiplier = 1.5 SECONDS
 
 	acid_spray_duration = 10 SECONDS
-	acid_spray_damage = XENO_ACID_DAM_MULT *  16
-	acid_spray_damage_on_hit = XENO_ACID_DAM_MULT * 35
+	acid_spray_damage = 16
+	acid_spray_damage_on_hit = 35
 	acid_spray_structure_damage = 45
 
 	actions = list(
@@ -87,7 +87,7 @@
 	plasma_gain = 35
 
 	// *** Health *** //
-	maxhealth = XENO_HEALTH_MULT * 270
+	max_health = XENO_HEALTH_MULT * 270
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_MATURE_THRESHOLD
@@ -98,12 +98,12 @@
 	// *** Ranged Attack *** //
 	spit_delay = 3 SECONDS
 
-	acid_spray_damage_on_hit = XENO_ACID_DAM_MULT * 39
+	acid_spray_damage_on_hit = 39
 	acid_spray_structure_damage = 53
 
 	// *** Boiler Abilities *** //
 	max_ammo = 5
-	bomb_strength = XENO_BOMB_STRENGTH_MULT * 1.1
+	bomb_strength = 1.1
 
 	bomb_delay = 32 SECONDS
 
@@ -123,7 +123,7 @@
 	plasma_gain = 40
 
 	// *** Health *** //
-	maxhealth = XENO_HEALTH_MULT * 290
+	max_health = XENO_HEALTH_MULT * 290
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_ELDER_THRESHOLD
@@ -134,12 +134,12 @@
 	// *** Ranged Attack *** //
 	spit_delay = 2 SECONDS
 
-	acid_spray_damage_on_hit = XENO_ACID_DAM_MULT * 43
+	acid_spray_damage_on_hit = 43
 	acid_spray_structure_damage = 61
 
 	// *** Boiler Abilities *** //
 	max_ammo = 6
-	bomb_strength = XENO_BOMB_STRENGTH_MULT * 1.2
+	bomb_strength = 1.2
 
 	bomb_delay = 32 SECONDS
 
@@ -160,7 +160,7 @@
 	plasma_gain = 50
 
 	// *** Health *** //
-	maxhealth = XENO_HEALTH_MULT * 325
+	max_health = XENO_HEALTH_MULT * 325
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_THREE_ANCIENT_THRESHOLD
@@ -171,12 +171,12 @@
 	// *** Ranged Attack *** //
 	spit_delay = 1 SECONDS
 
-	acid_spray_damage_on_hit = XENO_ACID_DAM_MULT * 47
+	acid_spray_damage_on_hit = 47
 	acid_spray_structure_damage = 69
 
 	// *** Boiler Abilities *** //
 	max_ammo = 7
-	bomb_strength = XENO_BOMB_STRENGTH_MULT * 1.3
+	bomb_strength = 1.3
 
 	bomb_delay = 27 SECONDS
 
@@ -197,7 +197,7 @@
 	plasma_gain = 50
 
 	// *** Health *** //
-	maxhealth = XENO_HEALTH_MULT * 325
+	max_health = XENO_HEALTH_MULT * 325
 
 	// *** Defense *** //
 	soft_armor = list(MELEE = 45, BULLET = 45, LASER = 45, ENERGY = 45, BOMB = 0, BIO = 37, FIRE = 45, ACID = 37)
@@ -206,12 +206,12 @@
 	spit_delay = 1 SECONDS
 	spit_types = list(/datum/ammo/xeno/boiler_gas, /datum/ammo/xeno/boiler_gas/lance, /datum/ammo/xeno/boiler_gas/corrosive, /datum/ammo/xeno/boiler_gas/corrosive/lance)
 
-	acid_spray_damage_on_hit = XENO_ACID_DAM_MULT * 47
+	acid_spray_damage_on_hit = 47
 	acid_spray_structure_damage = 69
 
 	// *** Boiler Abilities *** //
 	max_ammo = 7
-	bomb_strength = XENO_BOMB_STRENGTH_MULT * 1.3
+	bomb_strength = 1.3
 
 	bomb_delay = 27 SECONDS
 

@@ -21,7 +21,7 @@
 	plasma_gain = 30
 
 	// *** Health *** //
-	maxhealth = XENO_HEALTH_MULT * 325
+	max_health = XENO_HEALTH_MULT * 325
 
 	// *** Evolution *** //
 	evolution_threshold = 180
@@ -90,7 +90,7 @@
 	plasma_gain = 35
 
 	// *** Health *** //
-	maxhealth = XENO_HEALTH_MULT * 350
+	max_health = XENO_HEALTH_MULT * 350
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_TWO_MATURE_THRESHOLD
@@ -118,7 +118,7 @@
 	plasma_gain = 40
 
 	// *** Health *** //
-	maxhealth = XENO_HEALTH_MULT * 375
+	max_health = XENO_HEALTH_MULT * 375
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_TWO_ELDER_THRESHOLD
@@ -146,7 +146,7 @@
 	plasma_gain = 45
 
 	// *** Health *** //
-	maxhealth = XENO_HEALTH_MULT * 400
+	max_health = XENO_HEALTH_MULT * 400
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_TWO_ANCIENT_THRESHOLD
@@ -174,7 +174,7 @@
 	plasma_gain = 45
 
 	// *** Health *** //
-	maxhealth = XENO_HEALTH_MULT * 400
+	max_health = XENO_HEALTH_MULT * 400
 	// *** Defense *** //
 	soft_armor = list(MELEE = 45, BULLET = 45, LASER = 45, ENERGY = 45, BOMB = 20, BIO = 23, FIRE = 45, ACID = 20)
 

@@ -19,7 +19,7 @@
 	plasma_gain = 21
 
 	// *** Health *** //
-	maxhealth = XENO_HEALTH_MULT * 250
+	max_health = XENO_HEALTH_MULT * 250
 
 	// *** Evolution *** //
 	evolution_threshold = 180
@@ -46,8 +46,8 @@
 	spit_types = list(/datum/ammo/xeno/acid/medium) //Gotta give them their own version of heavy acid; kludgy but necessary as 100 plasma is way too costly.
 
 	acid_spray_duration = 10 SECONDS
-	acid_spray_damage_on_hit = XENO_ACID_DAM_MULT * 35
-	acid_spray_damage = XENO_ACID_DAM_MULT *  16
+	acid_spray_damage_on_hit = 35
+	acid_spray_damage = 16
 	acid_spray_structure_damage = 45
 
 	// *** Abilities *** //
@@ -80,7 +80,7 @@
 	plasma_gain = 25
 
 	// *** Health *** //
-	maxhealth = XENO_HEALTH_MULT * 270
+	max_health = XENO_HEALTH_MULT * 270
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_TWO_MATURE_THRESHOLD
@@ -110,7 +110,7 @@
 	plasma_gain = 28
 
 	// *** Health *** //
-	maxhealth = XENO_HEALTH_MULT * 290
+	max_health = XENO_HEALTH_MULT * 290
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_TWO_ELDER_THRESHOLD
@@ -140,7 +140,7 @@
 	plasma_gain = 30
 
 	// *** Health *** //
-	maxhealth = XENO_HEALTH_MULT * 310
+	max_health = XENO_HEALTH_MULT * 310
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_TWO_ANCIENT_THRESHOLD
@@ -168,7 +168,7 @@
 	plasma_gain = 30
 
 	// *** Health *** //
-	maxhealth = XENO_HEALTH_MULT * 310
+	max_health = XENO_HEALTH_MULT * 310
 
 	// *** Defense *** //
 	soft_armor = list(MELEE = 25, BULLET = 35, LASER = 35, ENERGY = 35, BOMB = 0, BIO = 20, FIRE = 35, ACID = 20)
