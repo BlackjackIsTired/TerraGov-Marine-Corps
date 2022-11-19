@@ -21,6 +21,7 @@
 	damage_falloff_mult = 0.5
 	upper_akimbo_accuracy = 5
 	lower_akimbo_accuracy = 3
+	damage_mult = RIFLE_DAMAGE_MULT
 
 //-------------------------------------------------------
 //AR-18 Carbine
@@ -371,7 +372,7 @@
 	wield_delay = 0.7 SECONDS
 	burst_amount = 3
 	aim_slowdown = 0.4
-	damage_mult = 1.05 //Has smaller magazines
+	damage_mult = RIFLE_DAMAGE_MULT * 1.05 //Has smaller magazines
 
 
 
@@ -414,7 +415,7 @@
 
 	burst_delay = 0.2 SECONDS
 	accuracy_mult = 1.15
-	damage_mult = 1.5
+	damage_mult = RIFLE_DAMAGE_MULT * 1.5
 	scatter = -2
 	force = 20
 
@@ -592,7 +593,7 @@
 	burst_delay = 0.15 SECONDS
 	accuracy_mult = 1.1
 	wield_delay = 0.5 SECONDS
-	damage_mult = 1.2
+	damage_mult = RIFLE_DAMAGE_MULT * 1.2
 
 /obj/item/weapon/gun/rifle/m16/freelancer
 	starting_attachment_types = list(/obj/item/attachable/magnetic_harness, /obj/item/attachable/bayonet, /obj/item/weapon/gun/shotgun/combat/masterkey)
@@ -654,7 +655,7 @@
 	burst_delay = 0.15 SECONDS
 	accuracy_mult = 1.15
 	wield_delay = 0.5 SECONDS
-	damage_mult = 1.2
+	damage_mult = RIFLE_DAMAGE_MULT * 1.2
 	scatter = 1
 	movement_acc_penalty_mult = 4
 
@@ -968,7 +969,7 @@
 	burst_amount = 2
 	accuracy_mult = 1.25
 	accuracy_mult_unwielded = 0.8
-	damage_mult = 1.3
+	damage_mult = RIFLE_DAMAGE_MULT * 1.3
 
 /obj/item/weapon/gun/rifle/type71/seasonal
 	desc = "The primary rifle of many space pirates and militias, the Type 71 is a reliable rifle chambered in 7.62x39mm, firing in three round bursts to conserve ammunition."
