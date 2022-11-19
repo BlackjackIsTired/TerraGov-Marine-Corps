@@ -10,7 +10,7 @@
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_TOGGLE_STEALTH,
 	)
-	cooldown_timer = HUNTER_STEALTH_COOLDOWN
+	cooldown_timer = XENO_ABILITY_COOLDOWN * HUNTER_STEALTH_COOLDOWN
 	var/last_stealth = null
 	var/stealth = FALSE
 	var/can_sneak_attack = FALSE
@@ -287,7 +287,7 @@
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_HUNTER_MARK,
 	)
-	cooldown_timer = 60 SECONDS
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 60 SECONDS
 	///the target marked
 	var/atom/movable/marked_target
 
@@ -370,7 +370,7 @@
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_PSYCHIC_TRACE,
 	)
-	cooldown_timer = HUNTER_PSYCHIC_TRACE_COOLDOWN
+	cooldown_timer = XENO_ABILITY_COOLDOWN * HUNTER_PSYCHIC_TRACE_COOLDOWN
 
 /datum/action/xeno_action/psychic_trace/can_use_action(silent = FALSE, override_flags)
 	. = ..()
@@ -440,7 +440,7 @@
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_MIRAGE,
 	)
-	cooldown_timer = 30 SECONDS
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 30 SECONDS
 	///How long will the illusions live
 	var/illusion_life_time = 10 SECONDS
 	///How many illusions are created

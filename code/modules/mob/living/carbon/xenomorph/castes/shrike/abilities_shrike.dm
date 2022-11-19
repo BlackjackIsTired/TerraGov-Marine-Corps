@@ -7,7 +7,7 @@
 	name = "Call of the Burrowed"
 	action_icon_state = "larva_growth"
 	plasma_cost = 400
-	cooldown_timer = 2 MINUTES
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 2 MINUTES
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_CALL_OF_THE_BURROWED,
 	)
@@ -57,7 +57,7 @@
 	name = "Psychic Fling"
 	action_icon_state = "fling"
 	mechanics_text = "Sends an enemy or an item flying. A close ranged ability."
-	cooldown_timer = 12 SECONDS
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 12 SECONDS
 	plasma_cost = 100
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_PSYCHIC_FLING,
@@ -140,7 +140,7 @@
 	name = "Unrelenting Force"
 	action_icon_state = "screech"
 	mechanics_text = "Unleashes our raw psychic power, pushing aside anyone who stands in our path."
-	cooldown_timer = 50 SECONDS
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 50 SECONDS
 	plasma_cost = 300
 	keybind_flags = XACT_KEYBIND_USE_ABILITY | XACT_IGNORE_SELECTED_ABILITY
 	keybinding_signals = list(
@@ -222,7 +222,7 @@
 	name = "Psychic Cure"
 	action_icon_state = "heal_xeno"
 	mechanics_text = "Heal and remove debuffs from a target."
-	cooldown_timer = 1 MINUTES
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 1 MINUTES
 	plasma_cost = 200
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_PSYCHIC_CURE,
@@ -305,7 +305,7 @@
 	action_icon_state = "place_trap"
 	mechanics_text = "Place an acid well that can put out fires."
 	plasma_cost = 400
-	cooldown_timer = 2 MINUTES
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 2 MINUTES
 
 /datum/action/xeno_action/place_acidwell/can_use_action(silent = FALSE, override_flags)
 	. = ..()
@@ -346,7 +346,7 @@
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_GRAV_NADE,
 	)
-	cooldown_timer = 1 MINUTES
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 1 MINUTES
 
 /datum/action/xeno_action/activable/gravity_grenade/use_ability(atom/A)
 	var/turf/T = get_turf(owner)

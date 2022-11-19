@@ -7,7 +7,7 @@
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_NEUROGAS_GRENADE,
 	)
 	plasma_cost = 300
-	cooldown_timer = 1 MINUTES
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 1 MINUTES
 
 /datum/action/xeno_action/activable/neurogas_grenade/use_ability(atom/A)
 	. = ..()

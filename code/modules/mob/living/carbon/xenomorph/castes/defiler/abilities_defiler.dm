@@ -67,7 +67,7 @@
 	mechanics_text = "Channel to inject an adjacent target with an accelerant that violently reacts with xeno toxins, releasing gas and dealing heavy tox damage in proportion to the amount in their system."
 	ability_name = "defiler sting"
 	plasma_cost = 100
-	cooldown_timer = 20 SECONDS
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 20 SECONDS
 	target_flags = XABB_MOB_TARGET
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_DEFILE,
@@ -163,7 +163,7 @@
 	mechanics_text = "Channel for 3 seconds to emit a cloud of noxious smoke, based on selected reagent, that follows the Defiler. You must remain stationary while channeling; moving will cancel the ability but will still cost plasma."
 	ability_name = "emit neurogas"
 	plasma_cost = 200
-	cooldown_timer = 40 SECONDS
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 40 SECONDS
 	keybind_flags = XACT_KEYBIND_USE_ABILITY|XACT_IGNORE_SELECTED_ABILITY
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_EMIT_NEUROGAS,
@@ -283,7 +283,7 @@
 	mechanics_text = "Inject an egg with toxins, killing the larva, but filling it full with gas ready to explode."
 	ability_name = "inject neurogas"
 	plasma_cost = 100
-	cooldown_timer = 5 SECONDS
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 5 SECONDS
 	keybind_flags = XACT_KEYBIND_USE_ABILITY
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_INJECT_EGG_NEUROGAS,
@@ -407,7 +407,7 @@
 	action_icon_state = "reagent_slash"
 	mechanics_text = "For a short duration the next 3 slashes made will inject a small amount of selected toxin."
 	ability_name = "reagent slash"
-	cooldown_timer = 6 SECONDS
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 6 SECONDS
 	plasma_cost = 100
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_REAGENT_SLASH,
@@ -509,7 +509,7 @@
 	action_icon_state = "tail_attack"
 	mechanics_text = "Throw one of your tentacles forward to grab a tallhost or item."
 	ability_name = "Tentacle"
-	cooldown_timer = 20 SECONDS
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 20 SECONDS
 	plasma_cost = 200
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_TENTACLE,

@@ -308,4 +308,4 @@ GLOBAL_LIST_INIT(boiler_glob_image_list, list(
 // *********** Acid spray
 // ***************************************
 /datum/action/xeno_action/activable/spray_acid/line/boiler
-	cooldown_timer = 9 SECONDS
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 9 SECONDS

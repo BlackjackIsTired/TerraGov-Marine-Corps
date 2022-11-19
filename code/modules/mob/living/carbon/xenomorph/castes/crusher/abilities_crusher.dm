@@ -7,7 +7,7 @@
 	mechanics_text = "Knocks all adjacent targets away and down."
 	ability_name = "stomp"
 	plasma_cost = 100
-	cooldown_timer = 20 SECONDS
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 20 SECONDS
 	keybind_flags = XACT_KEYBIND_USE_ABILITY
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_STOMP,
@@ -68,7 +68,7 @@
 	mechanics_text = "Fling an adjacent target over and behind you. Also works over barricades."
 	ability_name = "crest toss"
 	plasma_cost = 75
-	cooldown_timer = 12 SECONDS
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 12 SECONDS
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_CRESTTOSS,
 	)
@@ -179,7 +179,7 @@
 	mechanics_text = "Charges up the crushers charge in place, then unleashes the full bulk of the crusher at the target location. Does not crush in diagonal directions."
 	ability_name = "rapid advance"
 	plasma_cost = 175
-	cooldown_timer = 30 SECONDS
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 30 SECONDS
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_ADVANCE,
 	)

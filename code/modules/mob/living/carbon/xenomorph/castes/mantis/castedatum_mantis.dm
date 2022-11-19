@@ -17,8 +17,8 @@
 	speed = XENO_SPEED_MULT * -0.6
 
 	// *** Plasma *** //
-	plasma_max = 600 //3 ravage
-	plasma_gain = 20
+	plasma_max = XENO_PLASMA_MULT * 600 //3 ravage
+	plasma_gain = XENO_PLASMA_GAIN_MULT * 20
 
 	// *** Health *** //
 	max_health = XENO_HEALTH_MULT * 150

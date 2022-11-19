@@ -19,8 +19,8 @@
 	weeds_speed_mod = 0.2
 
 	// *** Plasma *** //
-	plasma_max = 200
-	plasma_gain = 0
+	plasma_max = XENO_PLASMA_MULT * 200
+	plasma_gain = XENO_PLASMA_GAIN_MULT * 0
 	plasma_regen_limit = 0
 	plasma_icon_state = "fury"
 
@@ -28,7 +28,7 @@
 	max_health = XENO_HEALTH_MULT * 400
 
 	// *** Evolution *** //
-	upgrade_threshold = TIER_THREE_YOUNG_THRESHOLD
+	upgrade_threshold = XENO_UPG_MULT * TIER_THREE_YOUNG_THRESHOLD
 
 	deevolves_to = list(/mob/living/carbon/xenomorph/warrior, /mob/living/carbon/xenomorph/hivelord)
 
@@ -44,8 +44,8 @@
 
 	// *** Gorger Abilities *** //
 	overheal_max = 200
-	drain_plasma_gain = 20
-	carnage_plasma_gain = 25
+	drain_plasma_gain = XENO_PLASMA_GAIN_MULT * 20
+	carnage_plasma_gain = XENO_PLASMA_GAIN_MULT * 25
 	feast_plasma_drain = 20
 
 	actions = list(
@@ -74,21 +74,21 @@
 	speed = XENO_SPEED_MULT * -0.6
 
 	// *** Plasma *** //
-	plasma_max = 250
+	plasma_max = XENO_PLASMA_MULT * 250
 
 	// *** Health *** //
 	max_health = XENO_HEALTH_MULT * 450
 
 	// *** Evolution *** //
-	upgrade_threshold = TIER_THREE_MATURE_THRESHOLD
+	upgrade_threshold = XENO_UPG_MULT * TIER_THREE_MATURE_THRESHOLD
 
 	// *** Defense *** //
 	soft_armor = list(MELEE = 10, BULLET = 10, LASER = 10, ENERGY = 10, BOMB = 10, BIO = 10, FIRE = 10, ACID = 10)
 
 	// *** Gorger Abilities *** //
 	overheal_max = 225
-	drain_plasma_gain = 20
-	carnage_plasma_gain = 30
+	drain_plasma_gain = XENO_PLASMA_GAIN_MULT * 20
+	carnage_plasma_gain = XENO_PLASMA_GAIN_MULT * 30
 
 /datum/xeno_caste/gorger/elder
 	upgrade_name = "Elder"
@@ -100,21 +100,21 @@
 	melee_damage = XENO_MELEE_DAM_MULT * 20
 
 	// *** Plasma *** //
-	plasma_max = 300
+	plasma_max = XENO_PLASMA_MULT * 300
 
 	// *** Health *** //
 	max_health = XENO_HEALTH_MULT * 500
 
 	// *** Evolution *** //
-	upgrade_threshold = TIER_THREE_ELDER_THRESHOLD
+	upgrade_threshold = XENO_UPG_MULT * TIER_THREE_ELDER_THRESHOLD
 
 	// *** Defense *** //
 	soft_armor = list(MELEE = 15, BULLET = 15, LASER = 15, ENERGY = 15, BOMB = 10, BIO = 15, FIRE = 15, ACID = 15)
 
 	// *** Gorger Abilities *** //
 	overheal_max = 250
-	drain_plasma_gain = 30
-	carnage_plasma_gain = 35
+	drain_plasma_gain = XENO_PLASMA_GAIN_MULT * 30
+	carnage_plasma_gain = XENO_PLASMA_GAIN_MULT * 35
 
 /datum/xeno_caste/gorger/ancient
 	upgrade_name = "Ancient"
@@ -125,21 +125,21 @@
 	melee_damage = XENO_MELEE_DAM_MULT * 20
 
 	// *** Plasma *** //
-	plasma_max = 400
+	plasma_max = XENO_PLASMA_MULT * 400
 
 	// *** Health *** //
 	max_health = XENO_HEALTH_MULT * 600
 
 	// *** Evolution *** //
-	upgrade_threshold = TIER_THREE_ANCIENT_THRESHOLD
+	upgrade_threshold = XENO_UPG_MULT * TIER_THREE_ANCIENT_THRESHOLD
 
 	// *** Defense *** //
 	soft_armor = list(MELEE = 20, BULLET = 20, LASER = 20, ENERGY = 20, BOMB = 10, BIO = 20, FIRE = 20, ACID = 20)
 
 	// *** Gorger Abilities *** //
 	overheal_max = 275
-	drain_plasma_gain = 40
-	carnage_plasma_gain = 40
+	drain_plasma_gain = XENO_PLASMA_GAIN_MULT * 40
+	carnage_plasma_gain = XENO_PLASMA_GAIN_MULT * 40
 
 /datum/xeno_caste/gorger/primordial
 	upgrade_name = "Primordial"
@@ -150,7 +150,7 @@
 	melee_damage = XENO_MELEE_DAM_MULT * 20
 
 	// *** Plasma *** //
-	plasma_max = 400
+	plasma_max = XENO_PLASMA_MULT * 400
 
 	// *** Health *** //
 	max_health = XENO_HEALTH_MULT * 600
@@ -160,8 +160,8 @@
 
 	// *** Gorger Abilities *** //
 	overheal_max = 275
-	drain_plasma_gain = 40
-	carnage_plasma_gain = 40
+	drain_plasma_gain = XENO_PLASMA_GAIN_MULT * 40
+	carnage_plasma_gain = XENO_PLASMA_GAIN_MULT * 40
 
 	actions = list(
 		/datum/action/xeno_action/xeno_resting,

@@ -41,7 +41,7 @@ GLOBAL_LIST_INIT(hugger_images_list,  list(
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_THROW_HUGGER,
 	)
-	cooldown_timer = 3 SECONDS
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 3 SECONDS
 
 /datum/action/xeno_action/activable/throw_hugger/get_cooldown()
 	var/mob/living/carbon/xenomorph/carrier/X = owner
@@ -153,7 +153,7 @@ GLOBAL_LIST_INIT(hugger_images_list,  list(
 	action_icon_state = "spawn_hugger"
 	mechanics_text = "Spawn a facehugger that is stored on your body."
 	plasma_cost = 200
-	cooldown_timer = 10 SECONDS
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 10 SECONDS
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_SPAWN_HUGGER,
 	)
@@ -191,7 +191,7 @@ GLOBAL_LIST_INIT(hugger_images_list,  list(
 	action_icon_state = "carrier_panic"
 	mechanics_text = "Drop all stored huggers in a fit of panic. Uses all remaining plasma!"
 	plasma_cost = 10
-	cooldown_timer = 50 SECONDS
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 50 SECONDS
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_DROP_ALL_HUGGER,
 	)
@@ -297,7 +297,7 @@ GLOBAL_LIST_INIT(hugger_images_list,  list(
 	action_icon_state = "hugger_turret"
 	mechanics_text = "Build a hugger turret"
 	plasma_cost = 800
-	cooldown_timer = 5 MINUTES
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 5 MINUTES
 
 /datum/action/xeno_action/build_hugger_turret/can_use_action(silent, override_flags)
 	. = ..()

@@ -21,15 +21,15 @@
 	speed = XENO_SPEED_MULT * -1.3
 
 	// *** Plasma *** //
-	plasma_max = 150
-	plasma_gain = 5
+	plasma_max = XENO_PLASMA_MULT * 150
+	plasma_gain = XENO_PLASMA_GAIN_MULT * 5
 
 	// *** Health *** //
 	max_health = XENO_HEALTH_MULT * 175
 
 	// *** Evolution *** //
-	evolution_threshold = 80
-	upgrade_threshold = TIER_ONE_YOUNG_THRESHOLD
+	evolution_threshold = XENO_EVO_MULT * 80
+	upgrade_threshold = XENO_UPG_MULT * TIER_ONE_YOUNG_THRESHOLD
 
 	evolves_to = list(
 		/mob/living/carbon/xenomorph/hunter,
@@ -79,14 +79,14 @@
 	speed = XENO_SPEED_MULT * -1.3
 
 	// *** Plasma *** //
-	plasma_max = 175
-	plasma_gain = 7
+	plasma_max = XENO_PLASMA_MULT * 175
+	plasma_gain = XENO_PLASMA_GAIN_MULT * 7
 
 	// *** Health *** //
 	max_health = XENO_HEALTH_MULT * 200
 
 	// *** Evolution *** //
-	upgrade_threshold = TIER_ONE_MATURE_THRESHOLD
+	upgrade_threshold = XENO_UPG_MULT * TIER_ONE_MATURE_THRESHOLD
 
 	// *** Defense *** //
 	soft_armor = list(MELEE = 16, BULLET = 10, LASER = 10, ENERGY = 10, BOMB = 0, BIO = 3, FIRE = 10, ACID = 3)
@@ -109,14 +109,14 @@
 	speed = XENO_SPEED_MULT * -1.4
 
 	// *** Plasma *** //
-	plasma_max = 200
-	plasma_gain = 9
+	plasma_max = XENO_PLASMA_MULT * 200
+	plasma_gain = XENO_PLASMA_GAIN_MULT * 9
 
 	// *** Health *** //
 	max_health = XENO_HEALTH_MULT * 225
 
 	// *** Evolution *** //
-	upgrade_threshold = TIER_ONE_ELDER_THRESHOLD
+	upgrade_threshold = XENO_UPG_MULT * TIER_ONE_ELDER_THRESHOLD
 
 	// *** Defense *** //
 	soft_armor = list(MELEE = 18, BULLET = 15, LASER = 15, ENERGY = 15, BOMB = 0, BIO = 5, FIRE = 15, ACID = 5)
@@ -139,14 +139,14 @@
 	speed = XENO_SPEED_MULT * -1.5
 
 	// *** Plasma *** //
-	plasma_max = 200
-	plasma_gain = 11
+	plasma_max = XENO_PLASMA_MULT * 200
+	plasma_gain = XENO_PLASMA_GAIN_MULT * 11
 
 	// *** Health *** //
 	max_health = XENO_HEALTH_MULT * 240
 
 	// *** Evolution *** //
-	upgrade_threshold = TIER_ONE_ANCIENT_THRESHOLD
+	upgrade_threshold = XENO_UPG_MULT * TIER_ONE_ANCIENT_THRESHOLD
 
 	// *** Defense *** //
 	soft_armor = list(MELEE = 20, BULLET = 19, LASER = 19, ENERGY = 19, BOMB = 0, BIO = 7, FIRE = 19, ACID = 7)
@@ -169,8 +169,8 @@
 	speed = XENO_SPEED_MULT * -1.5
 
 	// *** Plasma *** //
-	plasma_max = 200
-	plasma_gain = 11
+	plasma_max = XENO_PLASMA_MULT * 200
+	plasma_gain = XENO_PLASMA_GAIN_MULT * 11
 
 	// *** Health *** //
 	max_health = XENO_HEALTH_MULT * 240

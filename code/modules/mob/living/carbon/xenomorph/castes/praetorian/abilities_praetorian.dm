@@ -7,7 +7,7 @@
 	mechanics_text = "Spray a cone of dangerous acid at your target."
 	ability_name = "spray acid"
 	plasma_cost = 300
-	cooldown_timer = 40 SECONDS
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 40 SECONDS
 
 /datum/action/xeno_action/activable/spray_acid/cone/use_ability(atom/A)
 	var/mob/living/carbon/xenomorph/X = owner
@@ -133,7 +133,7 @@ GLOBAL_LIST_INIT(acid_spray_hit, typecacheof(list(/obj/structure/barricade, /obj
 	mechanics_text = "Instantly dash, tackling the first marine in your path. If you manage to tackle someone, gain another weaker cast of the ability."
 	ability_name = "acid dash"
 	plasma_cost = 250
-	cooldown_timer = 30 SECONDS
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 30 SECONDS
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_ACID_DASH,
 	)

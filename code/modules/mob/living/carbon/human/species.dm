@@ -115,9 +115,9 @@
 		"eyes" =     /datum/internal_organ/eyes
 		)
 
-	var/knock_down_reduction = 1 //how much the knocked_down effect is reduced per Life call.
-	var/stun_reduction = 1 //how much the stunned effect is reduced per Life call.
-	var/knock_out_reduction = 1 //same thing
+	var/knock_down_reduction = 2 //how much the knocked_down effect is reduced per Life call.
+	var/stun_reduction = 2 //how much the stunned effect is reduced per Life call.
+	var/knock_out_reduction = 2 //same thing
 	var/lighting_alpha
 	var/see_in_dark
 

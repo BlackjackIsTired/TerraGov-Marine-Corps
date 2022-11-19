@@ -106,7 +106,7 @@
 	action_icon_state = "build_tunnel"
 	mechanics_text = "Create a tunnel entrance. Use again to create the tunnel exit."
 	plasma_cost = 200
-	cooldown_timer = 120 SECONDS
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 120 SECONDS
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_BUILD_TUNNEL,
 	)
@@ -195,7 +195,7 @@
 	action_icon_state = "resin_jelly_pod"
 	mechanics_text = "Place down a dispenser that allows xenos to retrieve fireproof jelly."
 	plasma_cost = 500
-	cooldown_timer = 1 MINUTES
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 1 MINUTES
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_PLACE_JELLY_POD,
 	)
@@ -235,7 +235,7 @@
 	action_icon_state = "resin_jelly"
 	mechanics_text = "Create a fireproof jelly."
 	plasma_cost = 100
-	cooldown_timer = 20 SECONDS
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 20 SECONDS
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_CREATE_JELLY,
 	)
@@ -263,7 +263,7 @@
 	name = "Healing Infusion"
 	action_icon_state = "healing_infusion"
 	mechanics_text = "Psychically infuses a friendly xeno with regenerative energies, greatly improving its natural healing. Doesn't work if the target can't naturally heal."
-	cooldown_timer = 12.5 SECONDS
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 12.5 SECONDS
 	plasma_cost = 200
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_HEALING_INFUSION,
@@ -345,7 +345,7 @@
 	action_icon_state = "place_trap"
 	mechanics_text = "Sow the seeds of an alien plant."
 	plasma_cost = 200
-	cooldown_timer = 45 SECONDS
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 45 SECONDS
 	use_state_flags = XACT_USE_LYING
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_DROP_PLANT,

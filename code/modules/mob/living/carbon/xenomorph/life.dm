@@ -140,7 +140,7 @@
 		hud_set_plasma() // since we used some plasma via the aura
 		return
 
-	var/plasma_gain = xeno_caste.plasma_gain
+	var/plasma_gain = XENO_PLASMA_GAIN_MULT * xeno_caste.plasma_gain
 
 	if(lying_angle || resting)
 		plasma_gain *= 2  // Doubled for resting

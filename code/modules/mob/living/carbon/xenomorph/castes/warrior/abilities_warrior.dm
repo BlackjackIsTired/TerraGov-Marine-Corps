@@ -6,7 +6,7 @@
 	action_icon_state = "agility_on"
 	mechanics_text = "Move an all fours for greater speed. Cannot use abilities while in this mode."
 	ability_name = "toggle agility"
-	cooldown_timer = 0.5 SECONDS
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 0.5 SECONDS
 	use_state_flags = XACT_USE_AGILITY
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_TOGGLE_AGILITY,
@@ -59,7 +59,7 @@
 	mechanics_text = "Pounce up to 5 tiles and grab a target, knocking them down and putting them in your grasp."
 	ability_name = "lunge"
 	plasma_cost = 25
-	cooldown_timer = 20 SECONDS
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 20 SECONDS
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_LUNGE,
 	)
@@ -172,7 +172,7 @@
 	mechanics_text = "Knock a target flying up to 5 tiles away."
 	ability_name = "fling"
 	plasma_cost = 18
-	cooldown_timer = 20 SECONDS //Shared cooldown with Grapple Toss
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 20 SECONDS //Shared cooldown with Grapple Toss
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_FLING,
 	)
@@ -273,7 +273,7 @@
 	mechanics_text = "Throw a creature you're grappling up to 3 tiles away."
 	ability_name = "grapple toss"
 	plasma_cost = 18
-	cooldown_timer = 20 SECONDS //Shared cooldown with Fling
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 20 SECONDS //Shared cooldown with Fling
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_GRAPPLE_TOSS,
 	)
@@ -351,7 +351,7 @@
 	mechanics_text = "Strike a target, inflicting stamina damage, stagger and slowdown. Deals double damage, stagger and slowdown to grappled targets. Deals quadruple damage to structures and machinery."
 	ability_name = "punch"
 	plasma_cost = 12
-	cooldown_timer = 10 SECONDS
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 10 SECONDS
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_PUNCH,
 	)

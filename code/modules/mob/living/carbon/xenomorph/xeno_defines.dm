@@ -41,15 +41,15 @@
 
 	// *** Regeneration Delay ***//
 	///Time after you take damage before a xenomorph can regen.
-	var/regen_delay = 10 SECONDS
+	var/regen_delay = 0 SECONDS
 	///Regeneration power increases by this amount evey decisecond.
 	var/regen_ramp_amount = 0.005
 
 	// *** Plasma *** //
 	///How much plasma a caste can have at max.
-	var/plasma_max = 10
+	var/plasma_max = XENO_PLASMA_MULT * 10
 	///How much plasma a caste gains every life tick.
-	var/plasma_gain = 5
+	var/plasma_gain = XENO_PLASMA_GAIN_MULT * 5
 	///up to how % much plasma regens in decimals, generally used if you have a special way of regeninng plasma.
 	var/plasma_regen_limit = 1
 
@@ -64,9 +64,9 @@
 
 	// *** Evolution *** //
 	///Threshold amount of evo points to next evolution
-	var/evolution_threshold = 0
+	var/evolution_threshold = XENO_EVO_MULT * 0
 	///Threshold amount of upgrade points to next maturity
-	var/upgrade_threshold = 0
+	var/upgrade_threshold = XENO_UPG_MULT * 0
 
 	///Type paths to the castes that this xenomorph can evolve to
 	var/list/evolves_to = list()
@@ -171,9 +171,9 @@
 	///Maximum amount of overheal that can be gained
 	var/overheal_max = 150
 	///Amount of plasma gained from draining someone
-	var/drain_plasma_gain = 0
+	var/drain_plasma_gain = XENO_PLASMA_GAIN_MULT * 0
 	///Amount of plasma gained from clashing after activating carnage
-	var/carnage_plasma_gain = 0
+	var/carnage_plasma_gain = XENO_PLASMA_GAIN_MULT * 0
 	///Amount of plasma drained each tick while feast buff is actuve
 	var/feast_plasma_drain = 0
 

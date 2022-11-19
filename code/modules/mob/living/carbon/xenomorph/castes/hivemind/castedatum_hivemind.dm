@@ -14,8 +14,8 @@
 	speed = XENO_SPEED_MULT * 0
 
 	// *** Plasma *** //
-	plasma_max = 600 //  75 is the cost of plant_weeds
-	plasma_gain = 60
+	plasma_max = XENO_PLASMA_MULT * 600 //  75 is the cost of plant_weeds
+	plasma_gain = XENO_PLASMA_GAIN_MULT * 60
 
 	// *** Health *** //
 	max_health = XENO_HEALTH_MULT * 100

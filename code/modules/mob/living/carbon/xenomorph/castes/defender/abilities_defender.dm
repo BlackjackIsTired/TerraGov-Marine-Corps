@@ -8,7 +8,7 @@
 	ability_name = "tail sweep"
 	plasma_cost = 35
 	use_state_flags = XACT_USE_CRESTED
-	cooldown_timer = 12 SECONDS
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 12 SECONDS
 	keybind_flags = XACT_KEYBIND_USE_ABILITY
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_TAIL_SWEEP,
@@ -91,7 +91,7 @@
 	action_icon_state = "charge"
 	mechanics_text = "Charge up to 4 tiles and knockdown any targets in our way."
 	ability_name = "charge"
-	cooldown_timer = 10 SECONDS
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 10 SECONDS
 	plasma_cost = 80
 	use_state_flags = XACT_USE_CRESTED|XACT_USE_FORTIFIED
 	keybinding_signals = list(
@@ -195,7 +195,7 @@
 	mechanics_text = "Increase your resistance to projectiles at the cost of move speed. Can use abilities while in Crest Defense."
 	ability_name = "toggle crest defense"
 	use_state_flags = XACT_USE_FORTIFIED|XACT_USE_CRESTED // duh
-	cooldown_timer = 1 SECONDS
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 1 SECONDS
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_CREST_DEFENSE,
 	)
@@ -272,7 +272,7 @@
 	mechanics_text = "Plant yourself for a large defensive boost."
 	ability_name = "fortify"
 	use_state_flags = XACT_USE_FORTIFIED|XACT_USE_CRESTED // duh
-	cooldown_timer = 1 SECONDS
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 1 SECONDS
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_FORTIFY,
 	)
@@ -347,7 +347,7 @@
 	ability_name = "regenerate skin"
 	use_state_flags = XACT_USE_FORTIFIED|XACT_USE_CRESTED|XACT_TARGET_SELF|XACT_IGNORE_SELECTED_ABILITY|XACT_KEYBIND_USE_ABILITY
 	plasma_cost = 160
-	cooldown_timer = 1 MINUTES
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 1 MINUTES
 	keybind_flags = XACT_KEYBIND_USE_ABILITY
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_REGENERATE_SKIN,
@@ -389,7 +389,7 @@
 	ability_name = "centrifugal force"
 	plasma_cost = 15
 	use_state_flags = XACT_USE_CRESTED
-	cooldown_timer = 30 SECONDS
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 30 SECONDS
 	keybind_flags = XACT_KEYBIND_USE_ABILITY
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_CENTRIFUGAL_FORCE,

@@ -7,7 +7,7 @@
 	action_icon_state = "nightfall"
 	ability_name = "Nightfall"
 	mechanics_text = "Shut down all electrical lights nearby for 10 seconds."
-	cooldown_timer = 45 SECONDS
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 45 SECONDS
 	plasma_cost = 100
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_NIGHTFALL,
@@ -42,7 +42,7 @@
 	mechanics_text = "Increases the localized gravity in an area and crushes everything in it."
 	ability_name = "Gravity crush"
 	plasma_cost = 200
-	cooldown_timer = 30 SECONDS
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 30 SECONDS
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_GRAVITY_CRUSH,
 	)
@@ -136,7 +136,7 @@
 	mechanics_text = "Summons all xenos in a hive to the caller's location, uses all plasma to activate."
 	ability_name = "Psychic summon"
 	plasma_cost = 900 //uses all an young kings plasma
-	cooldown_timer = 10 MINUTES
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 10 MINUTES
 	keybind_flags = XACT_KEYBIND_USE_ABILITY
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_HIVE_SUMMON,

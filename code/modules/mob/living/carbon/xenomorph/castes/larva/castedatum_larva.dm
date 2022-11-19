@@ -18,14 +18,14 @@
 	speed = XENO_SPEED_MULT * -1.6
 
 	// *** Plasma *** //
-	plasma_gain = 1
+	plasma_gain = XENO_PLASMA_GAIN_MULT * 1
 
 	// *** Health *** //
 	max_health = XENO_HEALTH_MULT * 50
 	crit_health = XENO_HEALTH_MULT * -25
 
 	// *** Evolution *** //
-	evolution_threshold = 50
+	evolution_threshold = XENO_EVO_MULT * 50
 	evolves_to = list(
 		/mob/living/carbon/xenomorph/drone,
 		/mob/living/carbon/xenomorph/runner,
