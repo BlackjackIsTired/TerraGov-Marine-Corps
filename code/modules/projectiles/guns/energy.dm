@@ -7,7 +7,7 @@
 	rounds_per_shot = 10 //100 shots.
 	flags_gun_features = GUN_AMMO_COUNTER|GUN_AMMO_COUNT_BY_SHOTS_REMAINING|GUN_NO_PITCH_SHIFT_NEAR_EMPTY
 	general_codex_key = "energy weapons"
-
+	damage_mult = ENERGY_DAMAGE_MULT
 	placed_overlay_iconstate = "laser"
 	reciever_flags = AMMO_RECIEVER_MAGAZINES|AMMO_RECIEVER_DO_NOT_EJECT_HANDFULS|AMMO_RECIEVER_CYCLE_ONLY_BEFORE_FIRE
 	default_ammo_type = /obj/item/cell/lasgun

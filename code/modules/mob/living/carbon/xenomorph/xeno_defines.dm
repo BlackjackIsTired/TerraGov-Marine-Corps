@@ -41,7 +41,7 @@
 
 	// *** Regeneration Delay ***//
 	///Time after you take damage before a xenomorph can regen.
-	var/regen_delay = 0 SECONDS
+	var/regen_delay = 1 SECONDS
 	///Regeneration power increases by this amount evey decisecond.
 	var/regen_ramp_amount = 0.005
 

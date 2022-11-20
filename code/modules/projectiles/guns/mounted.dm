@@ -41,6 +41,7 @@
 	accuracy_mult = 1.2 //it's got a bipod
 	burst_accuracy_mult = 2
 	burst_scatter_mult = 0
+	damage_mult = MOUNTED_DAMAGE_MULT
 
 	flags_item = IS_DEPLOYABLE|TWOHANDED
 	flags_gun_features = GUN_AMMO_COUNTER|GUN_DEPLOYED_FIRE_ONLY|GUN_WIELDED_FIRING_ONLY|GUN_IFF
@@ -85,6 +86,7 @@
 	)
 	flags_item =  IS_DEPLOYABLE|TWOHANDED|DEPLOYED_NO_PICKUP|DEPLOY_ON_INITIALIZE
 	soft_armor = list(MELEE = 0, BULLET = 100, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 100, FIRE = 0, ACID = 0)
+	damage_mult = MOUNTED_DAMAGE_MULT
 
 //-------------------------------------------------------
 //MG-2005 mounted minigun
@@ -109,6 +111,7 @@
 	fire_delay = 0.15 SECONDS
 	windup_delay = 0.4 SECONDS
 	windup_sound = 'sound/weapons/guns/fire/tank_minigun_start.ogg'
+	damage_mult = MOUNTED_DAMAGE_MULT
 
 	flags_item = IS_DEPLOYABLE|TWOHANDED|DEPLOYED_NO_PICKUP|DEPLOY_ON_INITIALIZE
 	flags_gun_features = GUN_AMMO_COUNTER|GUN_DEPLOYED_FIRE_ONLY|GUN_WIELDED_FIRING_ONLY|GUN_IFF
@@ -146,6 +149,7 @@
 	scatter = 10
 	deployed_scatter_change = -10
 	fire_delay = 0.4 SECONDS
+	damage_mult = MOUNTED_DAMAGE_MULT
 
 	flags_item = IS_DEPLOYABLE|TWOHANDED|DEPLOYED_NO_PICKUP|DEPLOY_ON_INITIALIZE
 	flags_gun_features = GUN_AMMO_COUNTER|GUN_DEPLOYED_FIRE_ONLY|GUN_WIELDED_FIRING_ONLY|GUN_IFF
@@ -184,6 +188,7 @@
 	scatter = 10
 	deployed_scatter_change = -10
 	fire_delay = 0.7 SECONDS
+	damage_mult = MOUNTED_DAMAGE_MULT
 
 	flags_item = IS_DEPLOYABLE|TWOHANDED|DEPLOYED_NO_PICKUP|DEPLOY_ON_INITIALIZE
 	flags_gun_features = GUN_AMMO_COUNTER|GUN_DEPLOYED_FIRE_ONLY|GUN_WIELDED_FIRING_ONLY
@@ -226,6 +231,7 @@
 	deployed_scatter_change = -10
 	windup_delay = 1 SECONDS
 	fire_delay = 3 SECONDS
+	damage_mult = MOUNTED_DAMAGE_MULT
 
 	flags_item = IS_DEPLOYABLE|TWOHANDED|DEPLOYED_NO_PICKUP|DEPLOY_ON_INITIALIZE
 	flags_gun_features = GUN_AMMO_COUNTER|GUN_DEPLOYED_FIRE_ONLY|GUN_WIELDED_FIRING_ONLY
@@ -254,6 +260,7 @@
 	aim_slowdown = 3
 	scatter = 30
 	deployed_scatter_change = -27
+	damage_mult = MOUNTED_DAMAGE_MULT
 
 	fire_delay = 0.5
 	burst_amount = 3
@@ -285,6 +292,7 @@
 	deployed_scatter_change = -8
 	fire_delay = 0.2 SECONDS
 	accuracy_mult = 1.1 //it's mounted
+	damage_mult = MOUNTED_DAMAGE_MULT
 
 	burst_amount = 1
 
@@ -368,6 +376,7 @@
 	deploy_time = 1 SECONDS
 	undeploy_time = 0.5 SECONDS
 	max_integrity = 200
+	damage_mult = MOUNTED_DAMAGE_MULT
 
 /obj/item/weapon/gun/standard_mmg/machinegunner
 	starting_attachment_types = list(/obj/item/attachable/stock/irremoveable/t27, /obj/item/attachable/scope/mini)
@@ -410,6 +419,7 @@
 	burst_amount = 1
 	undeploy_time = 2000 SECONDS
 	max_integrity = 500
+	damage_mult = MOUNTED_DAMAGE_MULT
 	deployable_item = /obj/machinery/deployable/mounted/moveable/atgun
 
 /obj/machinery/deployable/mounted/moveable/atgun

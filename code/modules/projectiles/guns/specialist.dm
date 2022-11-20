@@ -20,6 +20,7 @@ Note that this means that snipers will have a slowdown of 3, due to the scope
 	aim_slowdown = 1
 	gun_skill_category = GUN_SKILL_RIFLES
 	wield_delay = 1 SECONDS
+	damage_mult = SPECIALIST_DAMAGE_MULT
 
 //Pow! Headshot
 

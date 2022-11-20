@@ -8,23 +8,23 @@
 
 
 //Pain or shock reduction for different reagents
-#define PAIN_REDUCTION_VERY_LIGHT -5 //alkysine
-#define PAIN_REDUCTION_LIGHT -15 //inaprovaline
-#define PAIN_REDUCTION_MEDIUM -25 //synaptizine
-#define PAIN_REDUCTION_HEAVY -35 //paracetamol
-#define PAIN_REDUCTION_VERY_HEAVY -50 //tramadol
-#define PAIN_REDUCTION_SUPER_HEAVY -100 //oxycodone
+#define PAIN_REDUCTION_VERY_LIGHT 0 //alkysine
+#define PAIN_REDUCTION_LIGHT -5 //inaprovaline
+#define PAIN_REDUCTION_MEDIUM -10 //synaptizine
+#define PAIN_REDUCTION_HEAVY -15 //paracetamol
+#define PAIN_REDUCTION_VERY_HEAVY -25 //tramadol
+#define PAIN_REDUCTION_SUPER_HEAVY -50 //oxycodone
 
 
-#define PAIN_REACTIVITY 0.15
+#define PAIN_REACTIVITY 0.075
 
 
 //Nutrition
 
-#define NUTRITION_STARVING 150
-#define NUTRITION_HUNGRY 250
-#define NUTRITION_WELLFED 400
-#define NUTRITION_OVERFED 450
+#define NUTRITION_STARVING 0
+#define NUTRITION_HUNGRY 0
+#define NUTRITION_WELLFED 1
+#define NUTRITION_OVERFED 9999
 
 //=================================================
 /*
@@ -494,7 +494,7 @@ GLOBAL_LIST_INIT(xenoupgradetiers, list(XENO_UPGRADE_BASETYPE, XENO_UPGRADE_INVA
 #define XENO_HIVEMIND_DETECTION_COOLDOWN 1 MINUTES
 
 #define XENO_PARALYZE_NORMALIZATION_MULTIPLIER 5 //Multiplies an input to normalize xeno paralyze duration times.
-#define XENO_STUN_NORMALIZATION_MULTIPLIER 2 //Multiplies an input to normalize xeno stun duration times.
+#define XENO_STUN_NORMALIZATION_MULTIPLIER 1 //Multiplies an input to normalize xeno stun duration times.
 
 #define CANNOT_HOLD_EGGS 0
 #define CAN_HOLD_TWO_HANDS 1
@@ -606,7 +606,7 @@ GLOBAL_LIST_INIT(xenoupgradetiers, list(XENO_UPGRADE_BASETYPE, XENO_UPGRADE_INVA
 #define GORGER_REGURGITATE_DELAY 1 SECONDS
 #define GORGER_DEVOUR_DELAY 2 SECONDS
 #define GORGER_DRAIN_INSTANCES 2 // amuont of times the target is drained
-#define GORGER_DRAIN_DELAY 1 SECONDS // time needed to drain a marine once
+#define GORGER_DRAIN_DELAY 0.5 SECONDS // time needed to drain a marine once
 #define GORGER_DRAIN_HEAL 40 // overheal gained each time the target is drained
 #define GORGER_DRAIN_BLOOD_DRAIN 20 // amount of plasma drained when feeding on something
 #define GORGER_TRANSFUSION_HEAL 0.3 // in %
@@ -716,7 +716,7 @@ GLOBAL_LIST_INIT(xenoupgradetiers, list(XENO_UPGRADE_BASETYPE, XENO_UPGRADE_INVA
 
 //misc
 
-#define STANDARD_SLOWDOWN_REGEN 0.3
+#define STANDARD_SLOWDOWN_REGEN 0.6
 
 #define HYPERVENE_REMOVAL_AMOUNT 8
 

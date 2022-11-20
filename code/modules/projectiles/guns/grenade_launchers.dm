@@ -20,6 +20,7 @@ The Grenade Launchers
 	cocked_sound = 'sound/weapons/guns/interact/m92_cocked.ogg'
 	general_codex_key = "explosive weapons"
 	default_ammo_type = /obj/item/explosive/grenade
+	damage_mult = LAUNCHER_DAMAGE_MULT
 
 	allowed_ammo_types = list(
 		/obj/item/explosive/grenade,

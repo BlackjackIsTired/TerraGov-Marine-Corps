@@ -36,6 +36,7 @@
 	scatter = -2
 	scatter_unwielded = 4
 	akimbo_additional_delay = 0.9
+	damage_mult = PISTOL_DAMAGE_MULT
 
 	placed_overlay_iconstate = "pistol"
 
@@ -227,7 +228,7 @@
 	fire_delay = 0.2 SECONDS
 	accuracy_mult = 1.05
 	accuracy_mult_unwielded = 0.85
-	damage_mult = 1.15
+	damage_mult = PISTOL_DAMAGE_MULT * 1.15
 	recoil = -2
 	recoil_unwielded = -1
 
@@ -289,7 +290,7 @@
 	fire_delay = 0.6 SECONDS
 	accuracy_mult = 1.2
 	accuracy_mult_unwielded = 1.15
-	damage_mult = 0.5
+	damage_mult = PISTOL_DAMAGE_MULT * 0.5
 
 
 //-------------------------------------------------------
@@ -377,7 +378,7 @@
 	fire_delay = 0.2 SECONDS
 	accuracy_mult = 1.3
 	scatter_unwielded = 2
-	damage_mult = 1.3
+	damage_mult = PISTOL_DAMAGE_MULT * 1.3
 	aim_slowdown = 0.1
 
 /obj/item/weapon/gun/pistol/c99/tranq
@@ -471,7 +472,7 @@
 
 	fire_delay = 1 SECONDS
 	burst_delay = 0.5 SECONDS
-	damage_mult = 1.2
+	damage_mult = PISTOL_DAMAGE_MULT * 1.2
 	recoil = 1
 	recoil_unwielded = 2
 	accuracy_mult_unwielded = 0.7

@@ -16,6 +16,7 @@
 	scatter_unwielded = 0
 	burst_scatter_mult = 0
 	burst_amount = 4
+	damage_mult = SENTRY_DAMAGE_MULT
 
 	ignored_terrains = list(
 		/obj/machinery/deployable/mounted,
