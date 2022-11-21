@@ -10,7 +10,7 @@
 	wound_type = "widow"
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 16
+	melee_damage = XENO_MELEE_DAM_MULT * 25
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -0.2
@@ -20,7 +20,7 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 40
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 300
+	max_health = XENO_HEALTH_MULT * 450
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_THREE_YOUNG_THRESHOLD
@@ -32,7 +32,7 @@
 	can_flags = CASTE_CAN_BE_QUEEN_HEALED|CASTE_CAN_BE_GIVEN_PLASMA|CASTE_CAN_BE_LEADER|CASTE_CAN_BECOME_KING
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 15, BULLET = 15, LASER = 15, ENERGY = 15, BOMB = 5, BIO = 5, FIRE = 0, ACID = 5)
+	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Minimap Icon *** //
 	minimap_icon = "widow"
@@ -70,7 +70,7 @@
 
 /datum/xeno_caste/widow/mature
 	upgrade_name = "Mature"
-	caste_desc = "So this is what a fly in a spider's web feels like."
+	caste_desc = "So this is what a fly in a spider's web feels like. This one has L-Class Defenses."
 
 	upgrade = XENO_UPGRADE_ONE
 
@@ -82,24 +82,24 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 45
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 350
+	max_health = XENO_HEALTH_MULT * 450
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_THREE_MATURE_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 20, BULLET = 20, LASER = 20, ENERGY = 20, BOMB = 10, BIO = 5, FIRE = 5, ACID = 5)
+	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Widow Abilities *** //
 	max_spiderlings = 3
 
 /datum/xeno_caste/widow/elder
 	upgrade_name = "Elder"
-	caste_desc = "And they said Arachnophobia was irrational..."
+	caste_desc = "And they said Arachnophobia was irrational... This one has L-Class Defenses."
 	upgrade = XENO_UPGRADE_TWO
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 16
+	melee_damage = XENO_MELEE_DAM_MULT * 25
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -0.4
@@ -109,25 +109,25 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 50
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 400
+	max_health = XENO_HEALTH_MULT * 450
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_THREE_ELDER_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 25, BULLET = 25, LASER = 25, ENERGY = 25, BOMB = 13, BIO = 7, FIRE = 10, ACID = 7)
+	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Widow Abilities *** //
 	max_spiderlings = 4
 
 /datum/xeno_caste/widow/ancient
 	upgrade_name = "Ancient"
-	caste_desc = "Like a spider web that you walk into, it won't be easy to get rid of it's owner."
+	caste_desc = "Like a spider web that you walk into, it won't be easy to get rid of it's owner. This one has L-Class Defenses."
 	ancient_message = "By our hand is the fabric of life weaved and by our hand shall it be undone."
 	upgrade = XENO_UPGRADE_THREE
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 18
+	melee_damage = XENO_MELEE_DAM_MULT * 25
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -0.5
@@ -143,19 +143,19 @@
 	upgrade_threshold = XENO_UPG_MULT * TIER_THREE_ANCIENT_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 30, BULLET = 30, LASER = 30, ENERGY = 30, BOMB = 15, BIO = 10, FIRE = 15, ACID = 10)
+	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Widow Abilities *** //
 	max_spiderlings = 5
 
 /datum/xeno_caste/widow/primordial
 	upgrade_name = "Primordial"
-	caste_desc = "At times, life is just like a web. You fall, and a spider called accident, at the center, takes you to hell."
+	caste_desc = "At times, life is just like a web. You fall, and a spider called accident, at the center, takes you to hell. This one has L-Class Defenses."
 	primordial_message = "We weave the threads of fate that our victims life hangs from."
 	upgrade = XENO_UPGRADE_FOUR
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 18
+	melee_damage = XENO_MELEE_DAM_MULT * 25
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -0.5
@@ -168,7 +168,7 @@
 	max_health = XENO_HEALTH_MULT * 450
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 30, BULLET = 30, LASER = 30, ENERGY = 30, BOMB = 15, BIO = 10, FIRE = 15, ACID = 10)
+	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Widow Abilities *** //
 	max_spiderlings = 5

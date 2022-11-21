@@ -9,7 +9,7 @@
 	wound_type = "wraith" //used to match appropriate wound overlays
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 17
+	melee_damage = XENO_MELEE_DAM_MULT * 20
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -1
@@ -19,7 +19,7 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 15
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 200
+	max_health = XENO_HEALTH_MULT * 300
 
 	// *** Evolution *** //
 	evolution_threshold = XENO_EVO_MULT * 180
@@ -36,7 +36,7 @@
 	can_flags = CASTE_CAN_BE_QUEEN_HEALED|CASTE_CAN_VENT_CRAWL|CASTE_CAN_BE_GIVEN_PLASMA|CASTE_CAN_BE_LEADER|CASTE_CAN_BECOME_KING
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 25, BULLET = 25, LASER = 5, ENERGY = 5, BOMB = 0, BIO = 10, FIRE = 15, ACID = 10)
+	soft_armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = 0)
 
 	// *** Minimap Icon *** //
 	minimap_icon = "wraith"
@@ -59,7 +59,7 @@
 
 /datum/xeno_caste/wraith/mature
 	upgrade_name = "Mature"
-	caste_desc = "A manipulator of space and time. It looks a little more dangerous."
+	caste_desc = "A manipulator of space and time. This one has N-Class Defenses. It looks a little more dangerous."
 
 	upgrade = XENO_UPGRADE_ONE
 
@@ -71,18 +71,18 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 20
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 230
+	max_health = XENO_HEALTH_MULT * 300
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_TWO_MATURE_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 30, BULLET = 30, LASER = 10, ENERGY = 10, BOMB = 0, BIO = 15, FIRE = 20, ACID = 15)
+	soft_armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = 0)
 
 
 /datum/xeno_caste/wraith/elder
 	upgrade_name = "Elder"
-	caste_desc = "A manipulator of space and time. It looks pretty strong."
+	caste_desc = "A manipulator of space and time. This one has N-Class Defenses. It looks pretty strong."
 
 	upgrade = XENO_UPGRADE_TWO
 
@@ -97,13 +97,13 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 23
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 250
+	max_health = XENO_HEALTH_MULT * 300
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_TWO_ELDER_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 35, BULLET = 35, LASER = 15, ENERGY = 15, BOMB = 0, BIO = 18, FIRE = 25, ACID = 18)
+	soft_armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = 0)
 
 
 /datum/xeno_caste/wraith/ancient
@@ -123,13 +123,13 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 25
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 260
+	max_health = XENO_HEALTH_MULT * 300
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_TWO_ANCIENT_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 40, BULLET = 40, LASER = 20, ENERGY = 20, BOMB = 0, BIO = 18, FIRE = 30, ACID = 18)
+	soft_armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = 0)
 
 /datum/xeno_caste/wraith/primordial
 	upgrade_name = "Primordial"
@@ -148,10 +148,10 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 25
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 260
+	max_health = XENO_HEALTH_MULT * 300
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 40, BULLET = 40, LASER = 20, ENERGY = 20, BOMB = 0, BIO = 18, FIRE = 30, ACID = 18)
+	soft_armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = 0)
 
 	actions = list(
 		/datum/action/xeno_action/xeno_resting,

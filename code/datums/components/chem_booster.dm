@@ -59,15 +59,15 @@
 	///Information about how reagents boost the system's effects.
 	var/reagent_info = ""
 	///Vali brute healing is multiplied by this
-	var/brute_heal_amp = 1
+	var/brute_heal_amp = 1.1
 	///Vali burn healing is multiplied by this
-	var/burn_heal_amp = 1
+	var/burn_heal_amp = 1.1
 	///Vali toxin healing is multiplied by this
-	var/tox_heal = 0
+	var/tox_heal = 0.1
 	///Vali stamina regen is multiplied by this
-	var/stamina_regen_amp = 1
+	var/stamina_regen_amp = 1.1
 	///Vali movement speed buff is this value
-	var/movement_boost = 0
+	var/movement_boost = 0.1
 	///How much time left on vali heal till necrosis occurs
 	var/vali_necro_timer
 
@@ -79,7 +79,7 @@
 	var/static/list/reagent_stats = list(
 		/datum/reagent/medicine/bicaridine = list(NAME = "Bicaridine", REQ = 5, BRUTE_AMP = 0.1, BURN_AMP = 0, TOX_HEAL = 0, STAM_REG_AMP = 0, SPEED_BOOST = 0),
 		/datum/reagent/medicine/kelotane = list(NAME = "Kelotane", REQ = 5, BRUTE_AMP = 0, BURN_AMP = 0.1, TOX_HEAL = 0, STAM_REG_AMP = 0, SPEED_BOOST = 0),
-		/datum/reagent/medicine/paracetamol = list(NAME = "Paracetamol", REQ = 5, BRUTE_AMP = 0, BURN_AMP = 0, TOX_HEAL = 0, STAM_REG_AMP = 0.2, SPEED_BOOST = -0.1),
+		/datum/reagent/medicine/paracetamol = list(NAME = "Paracetamol", REQ = 5, BRUTE_AMP = 0.002, BURN_AMP = 0.03, TOX_HEAL = 0, STAM_REG_AMP = 0.2, SPEED_BOOST = -0.05),
 		/datum/reagent/medicine/meralyne = list(NAME = "Meralyne", REQ = 5, BRUTE_AMP = 0.2, BURN_AMP = 0, TOX_HEAL = 0, STAM_REG_AMP = 0, SPEED_BOOST = 0),
 		/datum/reagent/medicine/dermaline = list(NAME = "Dermaline", REQ = 5, BRUTE_AMP = 0, BURN_AMP = 0.2, TOX_HEAL = 0, STAM_REG_AMP = 0, SPEED_BOOST = 0),
 		/datum/reagent/medicine/dylovene = list(NAME = "Dylovene", REQ = 5, BRUTE_AMP = 0, BURN_AMP = 0, TOX_HEAL = 0.5, STAM_REG_AMP = 0, SPEED_BOOST = 0),
@@ -187,7 +187,7 @@
 
 	wearer.adjustToxLoss(-tox_heal*boost_amount)
 	wearer.heal_limb_damage(6*boost_amount*brute_heal_amp, 6*boost_amount*burn_heal_amp)
-	vali_necro_timer = world.time - processing_start
+	vali_necro_timer = world.time - processing_start * -900
 	if(vali_necro_timer > 20 SECONDS)
 		return
 	if(connected_weapon)
@@ -239,7 +239,7 @@
 	if(boost_on)
 		STOP_PROCESSING(SSobj, src)
 		wearer.clear_fullscreen("degeneration")
-		vali_necro_timer = world.time - processing_start
+		vali_necro_timer = world.time - processing_start * -900
 		var/necrotized_counter = FLOOR(min(vali_necro_timer, 20 SECONDS)/200 + (vali_necro_timer-20 SECONDS)/100, 1)
 		if(necrotized_counter >= 1)
 			for(var/X in shuffle(wearer.limbs))

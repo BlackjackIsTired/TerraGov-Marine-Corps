@@ -2,14 +2,14 @@
 	caste_name = "Ravager"
 	display_name = "Ravager"
 	upgrade_name = ""
-	caste_desc = "A brutal, devastating front-line attacker."
+	caste_desc = "A brutal, devastating front-line attacker. This one has L-Class Defenses."
 	caste_type_path = /mob/living/carbon/xenomorph/ravager
 	tier = XENO_TIER_THREE
 	upgrade = XENO_UPGRADE_BASETYPE
 	wound_type = "ravager" //used to match appropriate wound overlays
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 28
+	melee_damage = XENO_MELEE_DAM_MULT * 35
 	attack_delay = 7
 
 	// *** Speed *** //
@@ -22,7 +22,7 @@
 	plasma_icon_state = "fury"
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 290
+	max_health = XENO_HEALTH_MULT * 450
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_THREE_YOUNG_THRESHOLD
@@ -34,7 +34,7 @@
 	can_flags = CASTE_CAN_BE_QUEEN_HEALED|CASTE_CAN_BE_LEADER|CASTE_CAN_BECOME_KING
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 35, BULLET = 40, LASER = 30, ENERGY = 30, BOMB = 10, BIO = 30, FIRE = 50, ACID = 30)
+	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
 	charge_type = CHARGE_TYPE_LARGE
@@ -70,7 +70,7 @@
 
 /datum/xeno_caste/ravager/mature
 	upgrade_name = "Mature"
-	caste_desc = "A brutal, devastating front-line attacker. It looks a little more dangerous."
+	caste_desc = "A brutal, devastating front-line attacker. This one has L-Class Defenses. It looks a little more dangerous."
 
 	upgrade = XENO_UPGRADE_ONE
 
@@ -82,22 +82,22 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 5
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 310
+	max_health = XENO_HEALTH_MULT * 450
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_THREE_MATURE_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 40, BULLET = 45, LASER = 40, ENERGY = 40, BOMB = 10, BIO = 35, FIRE = 55, ACID = 35)
+	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 /datum/xeno_caste/ravager/elder
 	upgrade_name = "Elder"
-	caste_desc = "A brutal, devastating front-line attacker. It looks pretty strong."
+	caste_desc = "A brutal, devastating front-line attacker. This one has L-Class Defenses. It looks pretty strong."
 
 	upgrade = XENO_UPGRADE_TWO
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 30
+	melee_damage = XENO_MELEE_DAM_MULT * 35
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -0.9
@@ -108,13 +108,13 @@
 	plasma_regen_limit = 0.6
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 330
+	max_health = XENO_HEALTH_MULT * 450
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_THREE_ELDER_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 45, BULLET = 50, LASER = 45, ENERGY = 45, BOMB = 10, BIO = 38, FIRE = 65, ACID = 38)
+	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 /datum/xeno_caste/ravager/ancient
 	upgrade_name = "Ancient"
@@ -123,7 +123,7 @@
 	upgrade = XENO_UPGRADE_THREE
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 30
+	melee_damage = XENO_MELEE_DAM_MULT * 35
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -1
@@ -133,13 +133,13 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 15
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 350
+	max_health = XENO_HEALTH_MULT * 450
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_THREE_ANCIENT_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 50, BULLET = 55, LASER = 50, ENERGY = 50, BOMB = 10, BIO = 40, FIRE = 70, ACID = 40)
+	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 /datum/xeno_caste/ravager/primordial
 	upgrade_name = "Primordial"
@@ -148,7 +148,7 @@
 	upgrade = XENO_UPGRADE_FOUR
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 30
+	melee_damage = XENO_MELEE_DAM_MULT * 35
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -1
@@ -158,10 +158,10 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 15
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 350
+	max_health = XENO_HEALTH_MULT * 450
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 50, BULLET = 55, LASER = 50, ENERGY = 50, BOMB = 10, BIO = 40, FIRE = 70, ACID = 40)
+	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Abilities *** //
 	actions = list(

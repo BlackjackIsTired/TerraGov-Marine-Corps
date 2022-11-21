@@ -11,7 +11,7 @@
 	upgrade = XENO_UPGRADE_BASETYPE
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 12
+	melee_damage = XENO_MELEE_DAM_MULT * 10
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -0.5
@@ -21,17 +21,17 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 10
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 130
+	max_health = XENO_HEALTH_MULT * 150
 
 	// *** Flags *** //
 	caste_flags = CASTE_DO_NOT_ALERT_LOW_LIFE|CASTE_IS_A_MINION
 	can_flags = CASTE_CAN_BE_QUEEN_HEALED
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 15, BULLET = 15, LASER = 15, ENERGY = 15, BOMB = 0, BIO = 15, FIRE = 15, ACID = 15)
+	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
-	spit_delay = 1.8 SECONDS
+	spit_delay = 1.3 SECONDS
 	spit_types = list(/datum/ammo/xeno/acid/passthrough)
 
 	minimap_icon = "xenominion"

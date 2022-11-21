@@ -153,7 +153,7 @@ GLOBAL_LIST_INIT(hugger_images_list,  list(
 	action_icon_state = "spawn_hugger"
 	mechanics_text = "Spawn a facehugger that is stored on your body."
 	plasma_cost = 200
-	cooldown_timer = XENO_ABILITY_COOLDOWN * 10 SECONDS
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 1 SECONDS
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_SPAWN_HUGGER,
 	)

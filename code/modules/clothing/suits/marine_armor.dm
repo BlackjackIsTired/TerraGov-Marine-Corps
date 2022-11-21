@@ -18,7 +18,7 @@
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
 	blood_overlay_type = "armor"
-	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 45, BOMB = 45, BIO = 45, FIRE = 45, ACID = 50)
+	soft_armor = list(MELEE = 50, BULLET = 60, LASER = 60, ENERGY = 45, BOMB = 45, BIO = 45, FIRE = 45, ACID = 50)
 	siemens_coefficient = 0.7
 	permeability_coefficient = 0.8
 	slowdown = 0.5
@@ -111,7 +111,7 @@
 	name = "\improper M3-H pattern marine armor"
 	desc = "A standard Marine M3 Heavy Build Pattern Chestplate. Increased protection at the cost of slowdown."
 	icon_state = "1"
-	soft_armor = list(MELEE = 65, BULLET = 70, LASER = 70, ENERGY = 30, BOMB = 60, BIO = 50, FIRE = 50, ACID = 55)
+	soft_armor = list(MELEE = 70, BULLET = 70, LASER = 70, ENERGY = 30, BOMB = 60, BIO = 50, FIRE = 50, ACID = 55)
 	slowdown = SLOWDOWN_ARMOR_HEAVY
 
 /obj/item/clothing/suit/storage/marine/M3LB
@@ -134,7 +134,7 @@
 	name = "\improper M3-IS pattern marine armor"
 	desc = "A standard Marine M3 Integrated Storage Pattern Chestplate. Increased encumbrance and storage capacity."
 	icon_state = "4"
-	soft_armor = list(MELEE = 60, BULLET = 65, LASER = 65, ENERGY = 20, BOMB = 50, BIO = 35, FIRE = 35, ACID = 50)
+	soft_armor = list(MELEE = 70, BULLET = 65, LASER = 65, ENERGY = 20, BOMB = 50, BIO = 35, FIRE = 35, ACID = 50)
 	slowdown = SLOWDOWN_ARMOR_HEAVY
 	pockets = /obj/item/storage/internal/suit/marine/M3IS
 
@@ -177,7 +177,7 @@
 	name = "\improper PAS-10 pattern leader armor"
 	desc = "A lightweight suit of carbon fiber body armor built for quick movement. Use it to toggle the built-in flashlight."
 	icon_state = "7"
-	soft_armor = list(MELEE = 40, BULLET = 55, LASER = 55, ENERGY = 40, BOMB = 40, BIO = 40, FIRE = 40, ACID = 45)
+	soft_armor = list(MELEE = 35, BULLET = 55, LASER = 55, ENERGY = 40, BOMB = 40, BIO = 40, FIRE = 40, ACID = 45)
 	slowdown = SLOWDOWN_ARMOR_LIGHT
 	light_range = 8
 	pockets = /obj/item/storage/internal/suit/leader
@@ -303,6 +303,12 @@
 
 //===========================SPECIALIST================================
 
+/obj/item/clothing/suit/storage/marine/specialist/b19
+	name = "\improper B19 experimental armor"
+	desc = "A heavy, rugged set of experimental armor plates for when you really, really need to not die horribly. Slowdown has been reduced for this experimental piece of equipment via actuators located along the length of the leg plating. \nHas an automated diagnostics and medical system for keeping its wearer alive."
+	icon_state = "xarmor"
+	slowdown = SLOWDOWN_ARMOR_LIGHT
+	soft_armor = list(MELEE = 85, BULLET = 85, LASER = 85, ENERGY = 85, BOMB = 85, BIO = 85, FIRE = 85, ACID = 85)
 
 /obj/item/clothing/suit/storage/marine/specialist
 	name = "\improper B18 defensive armor"

@@ -13,6 +13,22 @@
 	new /obj/item/clothing/gloves/marine/specialist(src)
 	new /obj/item/clothing/suit/storage/marine/specialist(src)
 	new /obj/item/clothing/head/helmet/marine/specialist(src)
+	
+/obj/item/storage/box/b19
+	name = "\improper B19-Series experimental armor crate"
+	desc = "A large case containing an experiemental suit of B19 armor for the discerning specialist."
+	icon = 'icons/Marine/marine-weapons.dmi'
+	icon_state = "armor_case"
+	w_class = WEIGHT_CLASS_HUGE
+	storage_slots = 3
+	can_hold = list() //Nada. Once you take the stuff out it doesn't fit back in.
+	foldable = null
+
+/obj/item/storage/box/b19/Initialize(mapload, ...)
+	. = ..()
+	new /obj/item/clothing/gloves/marine/specialist/b19(src)
+	new /obj/item/clothing/suit/storage/marine/specialist/b19(src)
+	new /obj/item/clothing/head/helmet/marine/specialist/b19(src)
 
 /obj/item/storage/box/m42c_system
 	name = "\improper antimaterial scoped rifle system (recon set)"

@@ -2,7 +2,7 @@
 	caste_name = "Crusher"
 	display_name = "Crusher"
 	upgrade_name = ""
-	caste_desc = "A huge tanky xenomorph."
+	caste_desc = "A huge tanky xenomorph. This one has H-Class defenses."
 	caste_type_path = /mob/living/carbon/xenomorph/crusher
 
 	tier = XENO_TIER_THREE
@@ -10,7 +10,7 @@
 	wound_type = "crusher" //used to match appropriate wound overlays
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 21
+	melee_damage = XENO_MELEE_DAM_MULT * 25
 	attack_delay = 8
 
 	// *** Speed *** //
@@ -21,7 +21,7 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 10
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 325
+	max_health = XENO_HEALTH_MULT * 450
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_THREE_YOUNG_THRESHOLD
@@ -32,7 +32,7 @@
 	can_flags = CASTE_CAN_BE_QUEEN_HEALED|CASTE_CAN_BE_GIVEN_PLASMA|CASTE_CAN_BE_LEADER|CASTE_CAN_BECOME_KING
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 70, BULLET = 60, LASER = 60, ENERGY = 60, BOMB = 100, BIO = 80, FIRE = 25, ACID = 80)
+	soft_armor = list(MELEE = 70, BULLET = 70, LASER = 70, ENERGY = 60, BOMB = 50, BIO = 50, FIRE = 50, ACID = 60)
 
 	// *** Minimap Icon *** //
 	minimap_icon = "crusher"
@@ -67,7 +67,7 @@
 
 /datum/xeno_caste/crusher/mature
 	upgrade_name = "Mature"
-	caste_desc = "A huge tanky xenomorph. It looks a little more dangerous."
+	caste_desc = "A huge tanky xenomorph. This one has H-Class defenses. It looks a little more dangerous."
 
 	upgrade = XENO_UPGRADE_ONE
 
@@ -79,13 +79,13 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 15
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 345
+	max_health = XENO_HEALTH_MULT * 450
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_THREE_MATURE_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 75, BULLET = 65, LASER = 65, ENERGY = 65, BOMB = 100, BIO = 90, FIRE = 30, ACID = 90)
+	soft_armor = list(MELEE = 75, BULLET = 75, LASER = 75, ENERGY = 75, BOMB = 100, BIO = 75, FIRE = 75, ACID = 75)
 
 	// *** Abilities *** //
 	stomp_damage = 50
@@ -93,12 +93,12 @@
 
 /datum/xeno_caste/crusher/elder
 	upgrade_name = "Elder"
-	caste_desc = "A huge tanky xenomorph. It looks pretty strong."
+	caste_desc = "A huge tanky xenomorph. This one has H-Class defenses. It looks pretty strong."
 
 	upgrade = XENO_UPGRADE_TWO
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 24
+	melee_damage = XENO_MELEE_DAM_MULT * 25
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -0.1
@@ -108,13 +108,13 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 30
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 370
+	max_health = XENO_HEALTH_MULT * 450
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_THREE_ELDER_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 80, BULLET = 70, LASER = 70, ENERGY = 70, BOMB = 100, BIO = 95, FIRE = 35, ACID = 95)
+	soft_armor = list(MELEE = 75, BULLET = 75, LASER = 75, ENERGY = 75, BOMB = 100, BIO = 75, FIRE = 75, ACID = 75)
 
 	// *** Abilities *** //
 	stomp_damage = 55
@@ -127,7 +127,7 @@
 	upgrade = XENO_UPGRADE_THREE
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 24
+	melee_damage = XENO_MELEE_DAM_MULT * 25
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -0.1
@@ -137,13 +137,13 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 30
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 400
+	max_health = XENO_HEALTH_MULT * 450
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_THREE_ANCIENT_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 90, BULLET = 75, LASER = 75, ENERGY = 75, BOMB = 100, BIO = 100, FIRE = 40, ACID = 100)
+	soft_armor = list(MELEE = 75, BULLET = 75, LASER = 75, ENERGY = 75, BOMB = 100, BIO = 75, FIRE = 75, ACID = 75)
 	// *** Abilities *** //
 	stomp_damage = 60
 	crest_toss_distance = 6
@@ -156,7 +156,7 @@
 	upgrade = XENO_UPGRADE_FOUR
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 24
+	melee_damage = XENO_MELEE_DAM_MULT * 25
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -0.1
@@ -166,10 +166,10 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 30
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 400
+	max_health = XENO_HEALTH_MULT * 450
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 90, BULLET = 75, LASER = 75, ENERGY = 75, BOMB = 100, BIO = 100, FIRE = 40, ACID = 100)
+	soft_armor = list(MELEE = 75, BULLET = 75, LASER = 75, ENERGY = 75, BOMB = 100, BIO = 75, FIRE = 75, ACID = 75)
 	// *** Abilities *** //
 	stomp_damage = 60
 	crest_toss_distance = 6

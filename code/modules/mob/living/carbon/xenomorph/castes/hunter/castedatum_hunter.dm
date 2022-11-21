@@ -2,7 +2,7 @@
 	caste_name = "Hunter"
 	display_name = "Hunter"
 	upgrade_name = ""
-	caste_desc = "A fast, powerful front line combatant."
+	caste_desc = "A builder of REALLY BIG hives. This one has L-Class Defenses."
 
 	caste_type_path = /mob/living/carbon/xenomorph/hunter
 
@@ -11,7 +11,7 @@
 	wound_type = "hunter" //used to match appropriate wound overlays
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 21
+	melee_damage = XENO_MELEE_DAM_MULT * 25
 	attack_delay = 7
 
 	// *** Speed *** //
@@ -23,7 +23,7 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 10
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 230
+	max_health = XENO_HEALTH_MULT * 300
 
 	// *** Evolution *** //
 	evolution_threshold = XENO_EVO_MULT * 180
@@ -37,7 +37,7 @@
 	can_flags = CASTE_CAN_BE_QUEEN_HEALED|CASTE_CAN_VENT_CRAWL|CASTE_CAN_BE_GIVEN_PLASMA|CASTE_CAN_BE_LEADER|CASTE_CAN_BECOME_KING
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 40, BULLET = 15, LASER = 15, ENERGY = 15, BOMB = 0, BIO = 10, FIRE = 15, ACID = 10)
+	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
 	charge_type = CHARGE_TYPE_MEDIUM
@@ -73,7 +73,7 @@
 
 /datum/xeno_caste/hunter/mature
 	upgrade_name = "Mature"
-	caste_desc = "A fast, powerful front line combatant. It looks a little more dangerous."
+	caste_desc = "A builder of REALLY BIG hives. This one has L-Class Defenses. It looks a little more dangerous."
 	upgrade = XENO_UPGRADE_ONE
 
 	// *** Speed *** //
@@ -84,24 +84,24 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 15
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 250
+	max_health = XENO_HEALTH_MULT * 300
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_TWO_MATURE_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 45, BULLET = 20, LASER = 20, ENERGY = 20, BOMB = 0, BIO = 15, FIRE = 20, ACID = 15)
+	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
 	pounce_delay = 12.5 SECONDS
 
 /datum/xeno_caste/hunter/elder
 	upgrade_name = "Elder"
-	caste_desc = "A fast, powerful front line combatant. It looks pretty strong."
+	caste_desc = "A builder of REALLY BIG hives. This one has L-Class Defenses. It looks pretty strong."
 	upgrade = XENO_UPGRADE_TWO
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 24
+	melee_damage = XENO_MELEE_DAM_MULT * 25
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -1.3
@@ -111,25 +111,25 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 18
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 270
+	max_health = XENO_HEALTH_MULT * 300
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_TWO_ELDER_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 50, BULLET = 25, LASER = 25, ENERGY = 25, BOMB = 0, BIO = 18, FIRE = 25, ACID = 18)
+	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
 	pounce_delay = 11.0 SECONDS
 
 /datum/xeno_caste/hunter/ancient
 	upgrade_name = "Ancient"
-	caste_desc = "A fast, powerful front line combatant. It looks extremely deadly."
+	caste_desc = "A builder of REALLY BIG hives. This one has L-Class Defenses. It looks extremely deadly."
 	upgrade = XENO_UPGRADE_THREE
 	ancient_message = "We are the epitome of the hunter. Few can stand against us in open combat."
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 24
+	melee_damage = XENO_MELEE_DAM_MULT * 25
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -1.4
@@ -139,13 +139,13 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 18
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 290
+	max_health = XENO_HEALTH_MULT * 300
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_TWO_ANCIENT_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 55, BULLET = 30, LASER = 30, ENERGY = 30, BOMB = 0, BIO = 18, FIRE = 30, ACID = 18)
+	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
 	pounce_delay = 10.0 SECONDS
@@ -157,7 +157,7 @@
 	ancient_message = "We are the ultimate predator. Let the hunt begin."
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 24
+	melee_damage = XENO_MELEE_DAM_MULT * 25
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -1.4
@@ -167,9 +167,9 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 18
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 290
+	max_health = XENO_HEALTH_MULT * 300
 	// *** Defense *** //
-	soft_armor = list(MELEE = 55, BULLET = 30, LASER = 30, ENERGY = 30, BOMB = 0, BIO = 18, FIRE = 30, ACID = 18)
+	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
 	pounce_delay = 10.0 SECONDS

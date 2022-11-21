@@ -78,7 +78,7 @@ Key procs
 
 ///Set or update the global movespeed config on a mob
 /mob/proc/update_config_movespeed()
-	add_movespeed_modifier(MOVESPEED_ID_CONFIG_SPEEDMOD, FALSE, 100, override = TRUE, multiplicative_slowdown = get_config_multiplicative_speed())
+	add_movespeed_modifier(MOVESPEED_ID_CONFIG_SPEEDMOD, FALSE, GLOBAL_MOVEMENT_SPEED, override = TRUE, multiplicative_slowdown = get_config_multiplicative_speed())
 
 ///Get the global config movespeed of a mob by type
 /mob/proc/get_config_multiplicative_speed()

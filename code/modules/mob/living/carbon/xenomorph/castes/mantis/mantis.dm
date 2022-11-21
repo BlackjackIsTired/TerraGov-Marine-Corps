@@ -1,11 +1,11 @@
 /mob/living/carbon/xenomorph/mantis
-	caste_base_type = /mob/living/carbon/xenomorph/mantis
-	name = "Mantis"
+	caste_base_type = /mob/living/carbon/xenomorph/drone
+	name = "Drone Minion"
 	desc = "A red, violent alien with four legs and two deadly scythes. Its eyes hone sharply onto its prey..."
-	icon = 'icons/Xeno/2x2_Xenos.dmi'
-	icon_state = "Mantis Walking"
-	health = XENO_HEALTH_MULT * 150
-	maxHealth = XENO_HEALTH_MULT * 150
+	icon = 'icons/Xeno/48x48_Xenos.dmi'
+	icon_state = "Drone Walking"
+	health = XENO_NPC_HEALTH_MULT * 150
+	maxHealth = XENO_NPC_HEALTH_MULT * 150
 	plasma_stored = 50
 	pixel_x = -16
 	old_x = -16

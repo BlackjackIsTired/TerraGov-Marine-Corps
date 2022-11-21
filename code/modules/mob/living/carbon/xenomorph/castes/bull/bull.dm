@@ -1,13 +1,13 @@
 /mob/living/carbon/xenomorph/bull
 	caste_base_type = /mob/living/carbon/xenomorph/bull
-	name = "Bull"
+	name = "Bull Minion"
 	desc = "A bright red alien with a matching temper."
 	icon = 'icons/Xeno/2x2_Xenos.dmi'
 	icon_state = "Bull Walking"
-	health = XENO_HEALTH_MULT * 160
-	maxHealth = XENO_HEALTH_MULT * 160
+	health = XENO_NPC_HEALTH_MULT * 160
+	maxHealth = XENO_NPC_HEALTH_MULT * 160
 	plasma_stored = 200
-	tier = XENO_TIER_TWO
+	tier = XENO_TIER_MINION
 	upgrade = XENO_UPGRADE_ZERO
 
 	pixel_x = -16

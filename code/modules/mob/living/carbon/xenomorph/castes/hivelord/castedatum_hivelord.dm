@@ -2,14 +2,14 @@
 	caste_name = "Hivelord"
 	display_name = "Hivelord"
 	upgrade_name = ""
-	caste_desc = "A builder of REALLY BIG hives."
+	caste_desc = "A builder of REALLY BIG hives. This one has L-Class Defenses."
 	caste_type_path = /mob/living/carbon/xenomorph/hivelord
 	tier = XENO_TIER_TWO
 	upgrade = XENO_UPGRADE_BASETYPE
 	wound_type = "hivelord" //used to match appropriate wound overlays
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 17
+	melee_damage = XENO_MELEE_DAM_MULT * 15
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * 0.4
@@ -37,7 +37,7 @@
 	can_flags = CASTE_CAN_BE_QUEEN_HEALED|CASTE_CAN_HOLD_FACEHUGGERS|CASTE_CAN_BE_GIVEN_PLASMA|CASTE_CAN_BE_LEADER|CASTE_CAN_HOLD_JELLY|CASTE_CAN_BECOME_KING
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 15, BULLET = 15, LASER = 15, ENERGY = 15, BOMB = 0, BIO = 10, FIRE = 15, ACID = 10)
+	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
 	spit_delay = 1.3 SECONDS
@@ -80,7 +80,7 @@
 
 /datum/xeno_caste/hivelord/mature
 	upgrade_name = "Mature"
-	caste_desc = "A builder of REALLY BIG hives. It looks a little more dangerous."
+	caste_desc = "A builder of REALLY BIG hives. This one has L-Class Defenses. It looks a little more dangerous."
 	upgrade = XENO_UPGRADE_ONE
 
 	// *** Speed *** //
@@ -91,13 +91,13 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 60
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 325
+	max_health = XENO_HEALTH_MULT * 300
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_TWO_MATURE_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 20, BULLET = 20, LASER = 20, ENERGY = 20, BOMB = 0, BIO = 15, FIRE = 20, ACID = 15)
+	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
 	spit_delay = 1.3 SECONDS
@@ -108,11 +108,11 @@
 
 /datum/xeno_caste/hivelord/elder
 	upgrade_name = "Elder"
-	caste_desc = "A builder of REALLY BIG hives. It looks pretty strong."
+	caste_desc = "A builder of REALLY BIG hives. This one has L-Class Defenses. It looks pretty strong."
 	upgrade = XENO_UPGRADE_TWO
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 20
+	melee_damage = XENO_MELEE_DAM_MULT * 15
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * 0.2
@@ -122,13 +122,13 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 63
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 340
+	max_health = XENO_HEALTH_MULT * 300
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_TWO_ELDER_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 25, BULLET = 25, LASER = 25, ENERGY = 25, BOMB = 0, BIO = 18, FIRE = 25, ACID = 18)
+	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
 	spit_delay = 1.3 SECONDS
@@ -144,7 +144,7 @@
 	upgrade = XENO_UPGRADE_THREE
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 20
+	melee_damage = XENO_MELEE_DAM_MULT * 15
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * 0.1
@@ -154,13 +154,13 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 65
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 350
+	max_health = XENO_HEALTH_MULT * 300
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_TWO_ANCIENT_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 30, BULLET = 30, LASER = 30, ENERGY = 30, BOMB = 0, BIO = 20, FIRE = 30, ACID = 20)
+	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
 	spit_delay = 1.3 SECONDS
@@ -177,7 +177,7 @@
 	upgrade = XENO_UPGRADE_FOUR
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 20
+	melee_damage = XENO_MELEE_DAM_MULT * 15
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * 0.1
@@ -190,7 +190,7 @@
 	max_health = XENO_HEALTH_MULT * 350
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 30, BULLET = 30, LASER = 30, ENERGY = 30, BOMB = 0, BIO = 20, FIRE = 30, ACID = 20)
+	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
 	spit_delay = 1.3 SECONDS

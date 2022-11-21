@@ -348,7 +348,7 @@
 	action_icon_state = "emit_pheromones"
 	plasma_cost = 30
 	mechanics_text = "Opens your pheromone options."
-	use_state_flags = XACT_USE_STAGGERED|XACT_USE_NOTTURF|XACT_USE_BUSY|XACT_USE_LYING
+	use_state_flags = XACT_USE_NOTTURF|XACT_USE_BUSY|XACT_USE_LYING
 
 /datum/action/xeno_action/pheromones/proc/apply_pheros(phero_choice)
 	var/mob/living/carbon/xenomorph/X = owner
@@ -1141,7 +1141,7 @@
 	name = "Psy drain"
 	action_icon_state = "headbite"
 	mechanics_text = "Drain the victim of its life force to gain larva and psych points"
-	use_state_flags = XACT_USE_STAGGERED|XACT_USE_FORTIFIED|XACT_USE_CRESTED //can't use while staggered, defender fortified or crest down
+	use_state_flags = XACT_USE_FORTIFIED|XACT_USE_CRESTED //can't use while staggered, defender fortified or crest down
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_HEADBITE,
 	)
@@ -1235,7 +1235,7 @@
 	name = "Cocoon"
 	action_icon_state = "regurgitate"
 	mechanics_text = "Devour your victim to cocoon it in your belly. This cocoon will automatically be ejected later, and while the marine inside it still has life force it will give psychic points."
-	use_state_flags = XACT_USE_STAGGERED|XACT_USE_FORTIFIED|XACT_USE_CRESTED //can't use while staggered, defender fortified or crest down
+	use_state_flags = XACT_USE_FORTIFIED|XACT_USE_CRESTED //can't use while staggered, defender fortified or crest down
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_REGURGITATE,
 	)

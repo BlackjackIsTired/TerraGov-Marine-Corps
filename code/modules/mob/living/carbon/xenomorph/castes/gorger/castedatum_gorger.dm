@@ -2,7 +2,7 @@
 	caste_name = "Gorger"
 	display_name = "Gorger"
 	upgrade_name = ""
-	caste_desc = "A frightening looking, bulky alien creature that drips with a familiar red fluid."
+	caste_desc = "A frightening looking, bulky alien creature that drips with a familiar red fluid. This one has M-Class Defenses."
 	caste_type_path = /mob/living/carbon/xenomorph/gorger
 	ancient_message = "We are eternal. We will persevere where others will dry and wither."
 	primordial_message = "There is nothing we can't withstand."
@@ -25,7 +25,7 @@
 	plasma_icon_state = "fury"
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 400
+	max_health = XENO_HEALTH_MULT * 450
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_THREE_YOUNG_THRESHOLD
@@ -37,7 +37,7 @@
 	can_flags = CASTE_CAN_BE_QUEEN_HEALED|CASTE_CAN_BE_LEADER|CASTE_CAN_BECOME_KING
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 5, BULLET = 5, LASER = 5, ENERGY = 5, BOMB = 10, BIO = 5, FIRE = 5, ACID = 5)
+	soft_armor = list(MELEE = 45, BULLET = 65, LASER = 65, ENERGY = 55, BOMB = 50, BIO = 50, FIRE = 50, ACID = 55)
 
 	// *** Minimap Icon *** //
 	minimap_icon = "gorger"
@@ -66,7 +66,7 @@
 
 /datum/xeno_caste/gorger/mature
 	upgrade_name = "Mature"
-	caste_desc = "A frightening looking, bulky alien creature that drips with a familiar red fluid. It looks a little more dangerous."
+	caste_desc = "A frightening looking, bulky alien creature that drips with a familiar red fluid. This one has M-Class Defenses. It looks a little more dangerous."
 
 	upgrade = XENO_UPGRADE_ONE
 
@@ -83,7 +83,7 @@
 	upgrade_threshold = XENO_UPG_MULT * TIER_THREE_MATURE_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 10, BULLET = 10, LASER = 10, ENERGY = 10, BOMB = 10, BIO = 10, FIRE = 10, ACID = 10)
+	soft_armor = list(MELEE = 45, BULLET = 65, LASER = 65, ENERGY = 55, BOMB = 50, BIO = 50, FIRE = 50, ACID = 55)
 
 	// *** Gorger Abilities *** //
 	overheal_max = 225
@@ -92,18 +92,18 @@
 
 /datum/xeno_caste/gorger/elder
 	upgrade_name = "Elder"
-	caste_desc = "A frightening looking, bulky alien creature that drips with a familiar red fluid. It looks pretty strong."
+	caste_desc = "A frightening looking, bulky alien creature that drips with a familiar red fluid. This one has M-Class Defenses. It looks pretty strong."
 
 	upgrade = XENO_UPGRADE_TWO
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 20
+	melee_damage = XENO_MELEE_DAM_MULT * 15
 
 	// *** Plasma *** //
 	plasma_max = XENO_PLASMA_MULT * 300
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 500
+	max_health = XENO_HEALTH_MULT * 450
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_THREE_ELDER_THRESHOLD
@@ -122,10 +122,10 @@
 	upgrade = XENO_UPGRADE_THREE
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 20
+	melee_damage = XENO_MELEE_DAM_MULT * 15
 
 	// *** Plasma *** //
-	plasma_max = XENO_PLASMA_MULT * 400
+	plasma_max = XENO_PLASMA_MULT * 450
 
 	// *** Health *** //
 	max_health = XENO_HEALTH_MULT * 600
@@ -134,7 +134,7 @@
 	upgrade_threshold = XENO_UPG_MULT * TIER_THREE_ANCIENT_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 20, BULLET = 20, LASER = 20, ENERGY = 20, BOMB = 10, BIO = 20, FIRE = 20, ACID = 20)
+	soft_armor = list(MELEE = 45, BULLET = 65, LASER = 65, ENERGY = 55, BOMB = 50, BIO = 50, FIRE = 50, ACID = 55)
 
 	// *** Gorger Abilities *** //
 	overheal_max = 275
@@ -147,7 +147,7 @@
 	upgrade = XENO_UPGRADE_FOUR
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 20
+	melee_damage = XENO_MELEE_DAM_MULT * 15
 
 	// *** Plasma *** //
 	plasma_max = XENO_PLASMA_MULT * 400

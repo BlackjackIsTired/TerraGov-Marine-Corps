@@ -19,7 +19,7 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 8
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 290
+	max_health = XENO_HEALTH_MULT * 300
 
 	// *** Evolution *** //
 	evolution_threshold = XENO_EVO_MULT * 180
@@ -33,7 +33,7 @@
 	can_flags = CASTE_CAN_BE_QUEEN_HEALED|CASTE_CAN_BE_GIVEN_PLASMA|CASTE_CAN_BE_LEADER|CASTE_CAN_BECOME_KING
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 30, BULLET = 40, LASER = 40, ENERGY = 30, BOMB = 20, BIO = 36, FIRE = 40, ACID = 36)
+	soft_armor = list(MELEE = 45, BULLET = 65, LASER = 65, ENERGY = 55, BOMB = 50, BIO = 50, FIRE = 50, ACID = 55)
 
 	// *** Minimap Icon *** //
 	minimap_icon = "warrior"
@@ -60,7 +60,7 @@
 
 /datum/xeno_caste/warrior/mature
 	upgrade_name = "Mature"
-	caste_desc = "An alien with an armored carapace. It looks a little more dangerous."
+	caste_desc = "An alien with an armored carapace. This one has M-Class Defenses. It looks a little more dangerous."
 
 	upgrade = XENO_UPGRADE_ONE
 
@@ -72,13 +72,13 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 10
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 310
+	max_health = XENO_HEALTH_MULT * 300
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_TWO_MATURE_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 34, BULLET = 45, LASER = 45, ENERGY = 34, BOMB = 20, BIO = 36, FIRE = 45, ACID = 36)
+	soft_armor = list(MELEE = 45, BULLET = 65, LASER = 65, ENERGY = 55, BOMB = 50, BIO = 50, FIRE = 50, ACID = 55)
 
 	// *** Warrior Abilities *** //
 	agility_speed_increase = -0.6
@@ -86,12 +86,12 @@
 
 /datum/xeno_caste/warrior/elder
 	upgrade_name = "Elder"
-	caste_desc = "An alien with an armored carapace. It looks pretty strong."
+	caste_desc = "An alien with an armored carapace. This one has M-Class Defenses. It looks pretty strong."
 
 	upgrade = XENO_UPGRADE_TWO
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 23
+	melee_damage = XENO_MELEE_DAM_MULT * 20
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -0.45
@@ -101,13 +101,13 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 11
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 330
+	max_health = XENO_HEALTH_MULT * 300
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_TWO_ELDER_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 38, BULLET = 50, LASER = 50, ENERGY = 38, BOMB = 20, BIO = 40, FIRE = 50, ACID = 40)
+	soft_armor = list(MELEE = 45, BULLET = 65, LASER = 65, ENERGY = 55, BOMB = 50, BIO = 50, FIRE = 50, ACID = 55)
 
 	// *** Warrior Abilities *** //
 	agility_speed_increase = -0.6
@@ -120,7 +120,7 @@
 	upgrade = XENO_UPGRADE_THREE
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 23
+	melee_damage = XENO_MELEE_DAM_MULT * 20
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -0.5
@@ -130,13 +130,13 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 12
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 350
+	max_health = XENO_HEALTH_MULT * 300
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_TWO_ANCIENT_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 42, BULLET = 55, LASER = 55, ENERGY = 42, BOMB = 20, BIO = 50, FIRE = 55, ACID = 50)
+	soft_armor = list(MELEE = 45, BULLET = 65, LASER = 65, ENERGY = 55, BOMB = 50, BIO = 50, FIRE = 50, ACID = 55)
 
 	// *** Warrior Abilities *** //
 	agility_speed_increase = -0.6
@@ -149,7 +149,7 @@
 	upgrade = XENO_UPGRADE_FOUR
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 23
+	melee_damage = XENO_MELEE_DAM_MULT * 20
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -0.5
@@ -159,10 +159,10 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 12
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 350
+	max_health = XENO_HEALTH_MULT * 300
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 42, BULLET = 55, LASER = 55, ENERGY = 42, BOMB = 20, BIO = 50, FIRE = 55, ACID = 50)
+	soft_armor = list(MELEE = 45, BULLET = 65, LASER = 65, ENERGY = 55, BOMB = 50, BIO = 50, FIRE = 50, ACID = 55)
 
 	// *** Warrior Abilities *** //
 	agility_speed_increase = -0.6

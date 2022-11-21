@@ -1,15 +1,15 @@
 /mob/living/carbon/xenomorph/warrior
 	caste_base_type = /mob/living/carbon/xenomorph/warrior
-	name = "Warrior"
+	name = "Warrior Minion"
 	desc = "A beefy, alien with an armored carapace."
 	icon = 'icons/Xeno/2x2_Xenos.dmi'
 	icon_state = "Warrior Walking"
-	health = XENO_HEALTH_MULT * 200
-	maxHealth = XENO_HEALTH_MULT * 200
+	health = XENO_NPC_HEALTH_MULT * 300
+	maxHealth = XENO_NPC_HEALTH_MULT * 300
 	plasma_stored = 50
 	pixel_x = -16
 	old_x = -16
-	tier = XENO_TIER_TWO
+	tier = XENO_TIER_MINION
 	upgrade = XENO_UPGRADE_ZERO
 	///How many stacks of combo do we have ? Interacts with every ability.
 	var/combo = 0

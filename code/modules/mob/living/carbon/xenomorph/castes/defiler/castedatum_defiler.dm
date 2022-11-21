@@ -2,7 +2,7 @@
 	caste_name = "Defiler"
 	display_name = "Defiler"
 	upgrade_name = ""
-	caste_desc = "A frightening looking, bulky xeno that drips with suspect green fluids."
+	caste_desc = "A frightening looking, bulky xeno that drips with suspect green fluids. This one has M-Class Defenses."
 
 	caste_type_path = /mob/living/carbon/xenomorph/defiler
 
@@ -11,7 +11,7 @@
 	wound_type = "defiler" //used to match appropriate wound overlays
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 23
+	melee_damage = XENO_MELEE_DAM_MULT * 25
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -0.7
@@ -21,7 +21,7 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 20
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 300
+	max_health = XENO_HEALTH_MULT * 450
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_THREE_YOUNG_THRESHOLD
@@ -34,7 +34,7 @@
 	can_flags = CASTE_CAN_BE_QUEEN_HEALED|CASTE_CAN_BE_GIVEN_PLASMA|CASTE_CAN_BE_LEADER|CASTE_CAN_VENT_CRAWL|CASTE_CAN_BECOME_KING
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 30, BULLET = 30, LASER = 30, ENERGY = 30, BOMB = 0, BIO = 30, FIRE = 25, ACID = 30)
+	soft_armor = list(MELEE = 45, BULLET = 65, LASER = 65, ENERGY = 55, BOMB = 50, BIO = 50, FIRE = 50, ACID = 55)
 
 	// *** Minimap Icon *** //
 	minimap_icon = "defiler"
@@ -74,7 +74,7 @@
 
 /datum/xeno_caste/defiler/mature
 	upgrade_name = "Mature"
-	caste_desc = "A frightening looking, bulky xeno that drips with suspect green fluids. It looks a little more dangerous."
+	caste_desc = "A frightening looking, bulky xeno that drips with suspect green fluids. This one has M-Class Defenses. It looks a little more dangerous."
 
 	upgrade = XENO_UPGRADE_ONE
 
@@ -86,25 +86,25 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 25
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 325
+	max_health = XENO_HEALTH_MULT * 450
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_THREE_MATURE_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 35, BULLET = 35, LASER = 35, ENERGY = 35, BOMB = 0, BIO = 35, FIRE = 30, ACID = 35)
+	soft_armor = list(MELEE = 45, BULLET = 65, LASER = 65, ENERGY = 55, BOMB = 50, BIO = 50, FIRE = 50, ACID = 55)
 
 	// *** Pheromones *** //
 	aura_strength = 2 //Defilers aura begins at 1.7 and ends at 2.6. It's .1 better than a carrier at ancient.
 
 /datum/xeno_caste/defiler/elder
 	upgrade_name = "Elder"
-	caste_desc = "A frightening looking, bulky xeno that drips with suspect green fluids. It looks pretty strong."
+	caste_desc = "A frightening looking, bulky xeno that drips with suspect green fluids. This one has M-Class Defenses. It looks pretty strong."
 
 	upgrade = XENO_UPGRADE_TWO
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 26
+	melee_damage = XENO_MELEE_DAM_MULT * 25
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -0.9
@@ -114,13 +114,13 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 30
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 350
+	max_health = XENO_HEALTH_MULT * 450
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_THREE_ELDER_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 40, BULLET = 40, LASER = 40, ENERGY = 40, BOMB = 0, BIO = 38, FIRE = 35, ACID = 38)
+	soft_armor = list(MELEE = 45, BULLET = 65, LASER = 65, ENERGY = 55, BOMB = 50, BIO = 50, FIRE = 50, ACID = 55)
 
 		// *** Pheromones *** //
 	aura_strength = 2.1 //Defilers aura begins at 1.7 and ends at 2.6. It's .1 better than a carrier at ancient.
@@ -132,7 +132,7 @@
 	upgrade = XENO_UPGRADE_THREE
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 26
+	melee_damage = XENO_MELEE_DAM_MULT * 25
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -1
@@ -142,13 +142,13 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 35
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 375
+	max_health = XENO_HEALTH_MULT * 450
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_THREE_ANCIENT_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 45, BULLET = 45, LASER = 45, ENERGY = 45, BOMB = 0, BIO = 40, FIRE = 40, ACID = 40)
+	soft_armor = list(MELEE = 45, BULLET = 65, LASER = 65, ENERGY = 55, BOMB = 50, BIO = 50, FIRE = 50, ACID = 55)
 
 	// *** Pheromones *** //
 	aura_strength = 2.6 //Defilers aura begins at 1.7 and ends at 2.6. It's .1 better than a carrier at ancient.
@@ -161,7 +161,7 @@
 	upgrade = XENO_UPGRADE_FOUR
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 26
+	melee_damage = XENO_MELEE_DAM_MULT * 25
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -1
@@ -171,10 +171,10 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 35
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 375
+	max_health = XENO_HEALTH_MULT * 450
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 45, BULLET = 45, LASER = 45, ENERGY = 45, BOMB = 0, BIO = 40, FIRE = 40, ACID = 40)
+	soft_armor = list(MELEE = 45, BULLET = 65, LASER = 65, ENERGY = 55, BOMB = 50, BIO = 50, FIRE = 50, ACID = 55)
 
 	// *** Pheromones *** //
 	aura_strength = 2.6 //Defilers aura begins at 1.7 and ends at 2.6. It's .1 better than a carrier at ancient.

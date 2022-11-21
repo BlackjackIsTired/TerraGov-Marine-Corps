@@ -9,7 +9,7 @@
 	wound_type = "bull" //used to match appropriate wound overlays
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 19
+	melee_damage = XENO_MELEE_DAM_MULT * 15
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -0.7
@@ -19,7 +19,7 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 10
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 250
+	max_health = XENO_HEALTH_MULT * 300
 
 	// *** Evolution *** //
 	evolution_threshold = XENO_EVO_MULT * 180
@@ -33,7 +33,7 @@
 	can_flags = CASTE_CAN_BE_QUEEN_HEALED|CASTE_CAN_BE_GIVEN_PLASMA|CASTE_CAN_BE_LEADER|CASTE_CAN_BECOME_KING
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 25, BULLET = 35, LASER = 25, ENERGY = 25, BOMB = 0, BIO = 25, FIRE = 35, ACID = 25)
+	soft_armor = list(MELEE = 45, BULLET = 65, LASER = 65, ENERGY = 55, BOMB = 50, BIO = 50, FIRE = 50, ACID = 55)
 
 	// *** Minimap Icon *** //
 	minimap_icon = "bull"
@@ -67,13 +67,13 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 13
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 275
+	max_health = XENO_HEALTH_MULT * 300
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_TWO_MATURE_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 30, BULLET = 40, LASER = 30, ENERGY = 30, BOMB = 0, BIO = 28, FIRE = 40, ACID = 28)
+	soft_armor = list(MELEE = 45, BULLET = 65, LASER = 65, ENERGY = 55, BOMB = 50, BIO = 50, FIRE = 50, ACID = 55)
 
 /datum/xeno_caste/bull/elder
 	upgrade_name = "Elder"
@@ -82,7 +82,7 @@
 	upgrade = XENO_UPGRADE_TWO
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 21
+	melee_damage = XENO_MELEE_DAM_MULT * 15
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -0.7
@@ -98,7 +98,7 @@
 	upgrade_threshold = XENO_UPG_MULT * TIER_TWO_ELDER_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 35, BULLET = 45, LASER = 35, ENERGY = 35, BOMB = 0, BIO = 30, FIRE = 45, ACID = 30)
+	soft_armor = list(MELEE = 45, BULLET = 65, LASER = 65, ENERGY = 55, BOMB = 50, BIO = 50, FIRE = 50, ACID = 55)
 
 /datum/xeno_caste/bull/ancient
 	upgrade_name = "Ancient"
@@ -107,7 +107,7 @@
 	upgrade = XENO_UPGRADE_THREE
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 21
+	melee_damage = XENO_MELEE_DAM_MULT * 15
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -0.8
@@ -117,13 +117,13 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 18
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 325
+	max_health = XENO_HEALTH_MULT * 300
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_TWO_ANCIENT_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 40, BULLET = 50, LASER = 40, ENERGY = 40, BOMB = 0, BIO = 33, FIRE = 50, ACID = 33)
+	soft_armor = list(MELEE = 45, BULLET = 65, LASER = 65, ENERGY = 55, BOMB = 50, BIO = 50, FIRE = 50, ACID = 55)
 
 /datum/xeno_caste/bull/primordial
 	upgrade_name = "Primordial"
@@ -132,7 +132,7 @@
 	upgrade = XENO_UPGRADE_FOUR
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 21
+	melee_damage = XENO_MELEE_DAM_MULT * 15
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -0.8
@@ -142,8 +142,7 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 18
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 325
+	max_health = XENO_HEALTH_MULT * 300
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 40, BULLET = 50, LASER = 40, ENERGY = 40, BOMB = 0, BIO = 33, FIRE = 50, ACID = 33)
-
+	soft_armor = list(MELEE = 45, BULLET = 65, LASER = 65, ENERGY = 55, BOMB = 50, BIO = 50, FIRE = 50, ACID = 55)

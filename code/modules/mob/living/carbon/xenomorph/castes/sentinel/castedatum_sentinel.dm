@@ -8,7 +8,7 @@
 	upgrade = XENO_UPGRADE_BASETYPE
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 16
+	melee_damage = XENO_MELEE_DAM_MULT * 10
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -0.8
@@ -18,7 +18,7 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 10
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 225
+	max_health = XENO_HEALTH_MULT * 150
 
 	// *** Evolution *** //
 	evolution_threshold = XENO_EVO_MULT * 80
@@ -31,7 +31,7 @@
 	can_flags = CASTE_CAN_BE_QUEEN_HEALED|CASTE_CAN_VENT_CRAWL|CASTE_CAN_BE_GIVEN_PLASMA|CASTE_CAN_BE_LEADER|CASTE_CAN_BECOME_KING|CASTE_CAN_RIDE_CRUSHER
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 15, BULLET = 15, LASER = 15, ENERGY = 15, BOMB = 0, BIO = 15, FIRE = 15, ACID = 15)
+	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
 	spit_delay = 1.3 SECONDS
@@ -57,7 +57,7 @@
 
 /datum/xeno_caste/sentinel/mature
 	upgrade_name = "Mature"
-	caste_desc = "A ranged combat alien. It looks a little more dangerous."
+	caste_desc = "A ranged combat alien. This one has L-Class Defenses. It looks a little more dangerous."
 
 	upgrade = XENO_UPGRADE_ONE
 
@@ -69,26 +69,26 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 15
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 250
+	max_health = XENO_HEALTH_MULT * 150
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_ONE_MATURE_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 20, BULLET = 20, LASER = 20, ENERGY = 20, BOMB = 0, BIO = 20, FIRE = 20, ACID = 20)
+	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
-	spit_delay = 1.3 SECONDS
+	spit_delay = 1.0 SECONDS
 	spit_types = list(/datum/ammo/xeno/toxin/upgrade1, /datum/ammo/xeno/acid)
 
 /datum/xeno_caste/sentinel/elder
 	upgrade_name = "Elder"
-	caste_desc = "A ranged combat alien. It looks pretty strong."
+	caste_desc = "A ranged combat alien. This one has L-Class Defenses. It looks pretty strong."
 
 	upgrade = XENO_UPGRADE_TWO
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 17
+	melee_damage = XENO_MELEE_DAM_MULT * 10
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -0.8
@@ -98,16 +98,16 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 18
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 275
+	max_health = XENO_HEALTH_MULT * 150
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_ONE_ELDER_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 23, BULLET = 23, LASER = 23, ENERGY = 23, BOMB = 0, BIO = 23, FIRE = 23, ACID = 23)
+	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
-	spit_delay = 1.3 SECONDS
+	spit_delay = 1.0 SECONDS
 	spit_types = list(/datum/ammo/xeno/toxin/upgrade2, /datum/ammo/xeno/acid)
 
 /datum/xeno_caste/sentinel/ancient
@@ -117,7 +117,7 @@
 	upgrade = XENO_UPGRADE_THREE
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 17
+	melee_damage = XENO_MELEE_DAM_MULT * 10
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -0.8
@@ -127,16 +127,16 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 20
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 300
+	max_health = XENO_HEALTH_MULT * 150
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_ONE_ANCIENT_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 26, BULLET = 26, LASER = 26, ENERGY = 26, BOMB = 0, BIO = 25, FIRE = 26, ACID = 25)
+	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
-	spit_delay = 1.3 SECONDS
+	spit_delay = 1.0 SECONDS
 	spit_types = list(/datum/ammo/xeno/toxin/upgrade3, /datum/ammo/xeno/acid)
 
 
@@ -148,7 +148,7 @@
 	upgrade = XENO_UPGRADE_FOUR
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 17
+	melee_damage = XENO_MELEE_DAM_MULT * 10
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -0.8
@@ -158,13 +158,13 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 20
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 300
+	max_health = XENO_HEALTH_MULT * 150
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 26, BULLET = 26, LASER = 26, ENERGY = 26, BOMB = 0, BIO = 25, FIRE = 26, ACID = 25)
+	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
-	spit_delay = 1.3 SECONDS
+	spit_delay = 1.0 SECONDS
 	spit_types = list(/datum/ammo/xeno/toxin/upgrade3, /datum/ammo/xeno/acid)
 
 	actions = list(

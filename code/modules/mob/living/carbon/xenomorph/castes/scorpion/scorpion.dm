@@ -1,11 +1,11 @@
 /mob/living/carbon/xenomorph/scorpion
-	caste_base_type = /mob/living/carbon/xenomorph/scorpion
-	name = "Scorpion"
+	caste_base_type = /mob/living/carbon/xenomorph/sentinel
+	name = "Sentinel Minion"
 	desc = "An eerie, four-legged alien with a hollow tail. A green, jelly-like texture characterizes its eyes and underbelly."
-	icon = 'icons/Xeno/2x2_Xenos.dmi'
-	icon_state = "Scorpion Walking"
-	health = XENO_HEALTH_MULT * 200
-	maxHealth = XENO_HEALTH_MULT * 200
+	icon = 'icons/Xeno/48x48_Xenos.dmi'
+	icon_state = "Sentinel Walking"
+	health = XENO_NPC_HEALTH_MULT * 150
+	maxHealth = XENO_NPC_HEALTH_MULT * 150
 	plasma_stored = 50
 	pixel_x = -16
 	old_x = -16

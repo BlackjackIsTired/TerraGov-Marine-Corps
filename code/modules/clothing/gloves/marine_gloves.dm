@@ -60,6 +60,15 @@
 	flags_item = SYNTH_RESTRICTED
 	soft_armor = list(MELEE = 35, BULLET = 15, LASER = 15, ENERGY = 15, BOMB = 25, BIO = 15, FIRE = 15, ACID = 20)
 	resistance_flags = UNACIDABLE
+	
+/obj/item/clothing/gloves/marine/specialist/b19
+	name = "\improper B19 experimental gauntlets"
+	desc = "A pair of heavily armored gloves."
+	icon_state = "armored"
+	item_state = "bgloves"
+	flags_item = SYNTH_RESTRICTED
+	soft_armor = list(MELEE = 50, BULLET = 30, LASER = 30, ENERGY = 30, BOMB = 30, BIO = 30, FIRE = 30, ACID = 30)
+	resistance_flags = UNACIDABLE
 
 /obj/item/clothing/gloves/marine/veteran/PMC
 	name = "armored gloves"

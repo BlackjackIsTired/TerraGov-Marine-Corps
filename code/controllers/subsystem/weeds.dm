@@ -2,7 +2,7 @@ SUBSYSTEM_DEF(weeds)
 	name = "Weed"
 	priority = FIRE_PRIORITY_WEED
 	runlevels = RUNLEVEL_LOBBY|RUNLEVEL_SETUP|RUNLEVEL_GAME|RUNLEVEL_POSTGAME
-	wait = 5 SECONDS
+	wait = 3 SECONDS
 
 	// This is a list of nodes on the map.
 	var/list/creating = list()

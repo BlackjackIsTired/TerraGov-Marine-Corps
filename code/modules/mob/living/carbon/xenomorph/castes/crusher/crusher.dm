@@ -1,13 +1,13 @@
 /mob/living/carbon/xenomorph/crusher
 	caste_base_type = /mob/living/carbon/xenomorph/crusher
-	name = "Crusher"
+	name = "Crusher Minion"
 	desc = "A huge alien with an enormous armored head crest."
 	icon = 'icons/Xeno/2x2_Xenos.dmi'
 	icon_state = "Crusher Walking"
-	health = XENO_HEALTH_MULT * 300
-	maxHealth = XENO_HEALTH_MULT * 300
+	health = XENO_NPC_HEALTH_MULT * 450
+	maxHealth = XENO_NPC_HEALTH_MULT * 450
 	plasma_stored = 200
-	tier = XENO_TIER_THREE
+	tier = XENO_TIER_MINION
 	upgrade = XENO_UPGRADE_ZERO
 	drag_delay = 6 //pulling a big dead xeno is hard
 	mob_size = MOB_SIZE_BIG

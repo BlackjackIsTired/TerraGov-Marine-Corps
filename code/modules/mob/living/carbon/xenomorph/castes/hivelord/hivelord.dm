@@ -1,17 +1,17 @@
 /mob/living/carbon/xenomorph/hivelord
 	caste_base_type = /mob/living/carbon/xenomorph/hivelord
-	name = "Hivelord"
+	name = "Hivelord Minion"
 	desc = "A huge ass xeno covered in weeds! Oh shit!"
 	icon = 'icons/Xeno/2x2_Xenos.dmi'
 	icon_state = "Hivelord Walking"
-	health = XENO_HEALTH_MULT * 250
-	maxHealth = XENO_HEALTH_MULT * 250
+	health = XENO_NPC_HEALTH_MULT * 300
+	maxHealth = XENO_NPC_HEALTH_MULT * 300
 	plasma_stored = 200
 	pixel_x = -16
 	old_x = -16
 	mob_size = MOB_SIZE_BIG
 	drag_delay = 6 //pulling a big dead xeno is hard
-	tier = XENO_TIER_TWO
+	tier = XENO_TIER_MINION
 	upgrade = XENO_UPGRADE_ZERO
 	var/list/tunnels = list() //list of active tunnels
 

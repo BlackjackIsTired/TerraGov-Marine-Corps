@@ -1,13 +1,13 @@
 /mob/living/carbon/xenomorph/hunter
 	caste_base_type = /mob/living/carbon/xenomorph/hunter
-	name = "Hunter"
+	name = "Hunter Minion"
 	desc = "A beefy, fast alien with sharp claws."
 	icon = 'icons/Xeno/48x48_Xenos.dmi'
 	icon_state = "Hunter Running"
-	health = XENO_HEALTH_MULT * 150
-	maxHealth = XENO_HEALTH_MULT * 150
+	health = XENO_NPC_HEALTH_MULT * 300
+	maxHealth = XENO_NPC_HEALTH_MULT * 300
 	plasma_stored = 50
-	tier = XENO_TIER_TWO
+	tier = XENO_TIER_MINION
 	upgrade = XENO_UPGRADE_ZERO
 	inherent_verbs = list(
 		/mob/living/carbon/xenomorph/proc/vent_crawl,

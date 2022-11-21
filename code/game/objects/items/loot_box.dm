@@ -184,6 +184,13 @@
 	new /obj/item/clothing/suit/storage/marine/specialist(loc)
 	return INITIALIZE_HINT_QDEL
 
+/obj/effect/supply_drop/heavy_armor/b19/Initialize()
+	. = ..()
+	new /obj/item/clothing/head/helmet/marine/specialist/b19(loc)
+	new /obj/item/clothing/gloves/marine/specialist/b19(loc)
+	new /obj/item/clothing/suit/storage/marine/specialist/b19(loc)
+	return INITIALIZE_HINT_QDEL
+
 /obj/effect/supply_drop/grenadier/Initialize()
 	. = ..()
 	new /obj/item/weapon/gun/grenade_launcher/multinade_launcher(loc)

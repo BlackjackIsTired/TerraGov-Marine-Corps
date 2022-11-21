@@ -9,7 +9,7 @@
 	wound_type = "king" //used to match appropriate wound overlays
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 20
+	melee_damage = XENO_MELEE_DAM_MULT * 35
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * 0
@@ -19,7 +19,7 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 40
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 450
+	max_health = XENO_HEALTH_MULT * 600
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_THREE_YOUNG_THRESHOLD
@@ -28,7 +28,7 @@
 	can_flags = CASTE_CAN_BE_QUEEN_HEALED|CASTE_CAN_BE_GIVEN_PLASMA|CASTE_CAN_BE_LEADER
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 50, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 30, BIO = 45, FIRE = 100, ACID = 45)
+	soft_armor = list(MELEE = 75, BULLET = 75, LASER = 75, ENERGY = 75, BOMB = 50, BIO = 75, FIRE = 75, ACID = 75)
 
 	// *** Pheromones *** //
 	aura_strength = 4
@@ -59,7 +59,7 @@
 	upgrade = XENO_UPGRADE_ZERO
 
 /datum/xeno_caste/king/mature
-	caste_desc = "The biggest and baddest xeno, crackling with psychic energy."
+	caste_desc = "The biggest and baddest xeno, crackling with psychic energy. This one has H-Class Defenses."
 
 	upgrade = XENO_UPGRADE_ONE
 
@@ -71,13 +71,13 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 50
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 500
+	max_health = XENO_HEALTH_MULT * 600
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_THREE_MATURE_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 55, BULLET = 55, LASER = 55, ENERGY = 55, BOMB = 30, BIO = 50, FIRE = 100, ACID = 50)
+	soft_armor = list(MELEE = 75, BULLET = 75, LASER = 75, ENERGY = 75, BOMB = 50, BIO = 75, FIRE = 75, ACID = 75)
 
 
 /datum/xeno_caste/king/elder
@@ -86,7 +86,7 @@
 	upgrade = XENO_UPGRADE_TWO
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 25
+	melee_damage = XENO_MELEE_DAM_MULT * 35
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -0.2
@@ -102,7 +102,7 @@
 	upgrade_threshold = XENO_UPG_MULT * TIER_THREE_ELDER_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 60, BULLET = 60, LASER = 60, ENERGY = 60, BOMB = 30, BIO = 55, FIRE = 100, ACID = 55)
+	soft_armor = list(MELEE = 75, BULLET = 75, LASER = 75, ENERGY = 75, BOMB = 50, BIO = 75, FIRE = 75, ACID = 75)
 
 	// *** Pheromones *** //
 	aura_strength = 5
@@ -113,7 +113,7 @@
 	upgrade = XENO_UPGRADE_THREE
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 30
+	melee_damage = XENO_MELEE_DAM_MULT * 35
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -0.3
@@ -123,13 +123,13 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 70
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 700
+	max_health = XENO_HEALTH_MULT * 600
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_THREE_ANCIENT_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 65, BULLET = 65, LASER = 65, ENERGY = 65, BOMB = 100, BIO = 60, FIRE = 100, ACID = 60)
+	soft_armor = list(MELEE = 75, BULLET = 75, LASER = 75, ENERGY = 75, BOMB = 100, BIO = 75, FIRE = 100, ACID = 75)
 
 	// *** Ranged Attack *** //
 	spit_delay = 1.1 SECONDS

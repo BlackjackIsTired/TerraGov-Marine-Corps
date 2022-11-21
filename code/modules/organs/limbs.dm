@@ -229,6 +229,8 @@
 				can_inflict = max(0, can_inflict - brute)
 				//How much brute damage is left to inflict
 				remain_brute = max(0, brute - temp)
+			if(brute <= 1)
+				remove_limb_flags(LIMB_BROKEN | LIMB_NECROTIZED)
 
 			if(burn > 0 && can_inflict)
 				//Inflict all burn damage we can

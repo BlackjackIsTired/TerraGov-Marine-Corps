@@ -2,7 +2,7 @@ SUBSYSTEM_DEF(weeds_decay)
 	name = "Weed Decay"
 	priority = FIRE_PRIORITY_WEED
 	runlevels = RUNLEVEL_LOBBY|RUNLEVEL_SETUP|RUNLEVEL_GAME|RUNLEVEL_POSTGAME
-	wait = 5 SECONDS
+	wait = 1 SECONDS
 
 	/// List of decaying weeds on the map
 	var/list/obj/alien/weeds/decaying_list = list()
@@ -26,6 +26,6 @@ SUBSYSTEM_DEF(weeds_decay)
 				decay_chance -= rand(15, 20)
 
 		if(prob(decay_chance))
-			addtimer(CALLBACK(weed, /obj/alien/weeds.proc/check_for_parent_node), rand(3, 10 SECONDS))
+			addtimer(CALLBACK(weed, /obj/alien/weeds.proc/check_for_parent_node), rand(1, 5 SECONDS))
 			decaying_list -= weed
 

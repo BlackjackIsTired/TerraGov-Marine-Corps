@@ -9,7 +9,7 @@
 	wound_type = "praetorian" //used to match appropriate wound overlays
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 20
+	melee_damage = XENO_MELEE_DAM_MULT * 25
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -0.2
@@ -19,7 +19,7 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 50
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 290
+	max_health = XENO_HEALTH_MULT * 450
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_THREE_YOUNG_THRESHOLD
@@ -30,10 +30,10 @@
 	can_flags = CASTE_CAN_BE_QUEEN_HEALED|CASTE_CAN_BE_GIVEN_PLASMA|CASTE_CAN_BE_LEADER|CASTE_CAN_BECOME_KING
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 30, BULLET = 35, LASER = 35, ENERGY = 35, BOMB = 0, BIO = 28, FIRE = 35, ACID = 28)
+	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
-	spit_delay = 1.3 SECONDS
+	spit_delay = 0.8 SECONDS
 	spit_types = list(/datum/ammo/xeno/toxin/heavy, /datum/ammo/xeno/acid/heavy)
 
 	acid_spray_duration = 10 SECONDS
@@ -70,7 +70,7 @@
 
 /datum/xeno_caste/praetorian/mature
 	upgrade_name = "Mature"
-	caste_desc = "A giant ranged monster. It looks a little more dangerous."
+	caste_desc = "A giant ranged monster. This one has L-Class Defenses. It looks a little more dangerous."
 	upgrade = XENO_UPGRADE_ONE
 
 	// *** Speed *** //
@@ -81,16 +81,16 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 60
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 320
+	max_health = XENO_HEALTH_MULT * 450
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_THREE_MATURE_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 35, BULLET = 40, LASER = 40, ENERGY = 40, BOMB = 0, BIO = 33, FIRE = 40, ACID = 33)
+	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
-	spit_delay = 1.2 SECONDS
+	spit_delay = 0.7 SECONDS
 	spit_types = list(/datum/ammo/xeno/toxin/heavy/upgrade1, /datum/ammo/xeno/acid/heavy)
 
 	acid_spray_damage_on_hit = XENO_ACID_DAM_MULT * 39
@@ -101,11 +101,11 @@
 
 /datum/xeno_caste/praetorian/elder
 	upgrade_name = "Elder"
-	caste_desc = "A giant ranged monster. It looks pretty strong."
+	caste_desc = "A giant ranged monster. This one has L-Class Defenses. It looks pretty strong."
 	upgrade = XENO_UPGRADE_TWO
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 23
+	melee_damage = XENO_MELEE_DAM_MULT * 25
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -0.4
@@ -115,16 +115,16 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 70
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 340
+	max_health = XENO_HEALTH_MULT * 450
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_THREE_ELDER_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 40, BULLET = 45, LASER = 45, ENERGY = 45, BOMB = 0, BIO = 35, FIRE = 45, ACID = 35)
+	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
-	spit_delay = 1.1 SECONDS
+	spit_delay = 0.7 SECONDS
 	spit_types = list(/datum/ammo/xeno/toxin/heavy/upgrade2, /datum/ammo/xeno/acid/heavy)
 
 	acid_spray_damage_on_hit = XENO_ACID_DAM_MULT * 43
@@ -140,7 +140,7 @@
 	ancient_message = "We are the strongest ranged fighter around. Our spit is devastating and we can fire nearly a constant stream."
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 23
+	melee_damage = XENO_MELEE_DAM_MULT * 25
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -0.5
@@ -150,16 +150,16 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 80
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 360
+	max_health = XENO_HEALTH_MULT * 450
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_THREE_ANCIENT_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 45, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 10, BIO = 38, FIRE = 50, ACID = 38)
+	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
-	spit_delay = 1 SECONDS
+	spit_delay = 0.6 SECONDS
 	spit_types = list(/datum/ammo/xeno/toxin/heavy/upgrade3, /datum/ammo/xeno/acid/heavy)
 
 	acid_spray_damage_on_hit = XENO_ACID_DAM_MULT * 47
@@ -175,7 +175,7 @@
 	primordial_message = "The strongest of acids flows through our veins, let's reduce them to dust."
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 23
+	melee_damage = XENO_MELEE_DAM_MULT * 25
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -0.5
@@ -188,10 +188,10 @@
 	max_health = XENO_HEALTH_MULT * 360
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 45, BULLET = 50, LASER = 50, ENERGY = 50, BOMB = 10, BIO = 38, FIRE = 50, ACID = 38)
+	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
-	spit_delay = 1 SECONDS
+	spit_delay = 0.6 SECONDS
 	spit_types = list(/datum/ammo/xeno/toxin/heavy/upgrade3, /datum/ammo/xeno/acid/heavy)
 
 	acid_spray_damage_on_hit = XENO_ACID_DAM_MULT * 47

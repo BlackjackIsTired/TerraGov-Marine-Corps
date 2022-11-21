@@ -136,13 +136,13 @@
 //How many psych point one gen gives every second
 #define GENERATOR_PSYCH_POINT_OUTPUT 1
 //How many psy points are gave for each marine psy drained at low pop
-#define PSY_DRAIN_REWARD_MAX 90
+#define PSY_DRAIN_REWARD_MAX 180
 //How many psy points are gave for each marine psy drained at high pop
-#define PSY_DRAIN_REWARD_MIN 30
+#define PSY_DRAIN_REWARD_MIN 60
 //How many psy points are gave every 5 second by a cocoon at low pop
-#define COCOON_PSY_POINTS_REWARD_MAX 3
+#define COCOON_PSY_POINTS_REWARD_MAX 6
 //How many psy points are gave every 5 second by a cocoon at high pop
-#define COCOON_PSY_POINTS_REWARD_MIN 1
+#define COCOON_PSY_POINTS_REWARD_MIN 2
 
 //The player pop consider to be very high pop
 #define HIGH_PLAYER_POP 80
@@ -158,9 +158,9 @@
 #define INFESTATION_MARINE_CRASHING 1
 #define INFESTATION_DROPSHIP_CAPTURED_XENOS 2
 
-#define DISTRESS_LARVA_POINTS_NEEDED 8
-#define CRASH_LARVA_POINTS_NEEDED 10
+#define DISTRESS_LARVA_POINTS_NEEDED 6
+#define CRASH_LARVA_POINTS_NEEDED 6
 
-#define FREE_XENO_AT_START 2
+#define FREE_XENO_AT_START 6
 
 #define MAX_UNBALANCED_RATIO_TWO_HUMAN_FACTIONS 1.1

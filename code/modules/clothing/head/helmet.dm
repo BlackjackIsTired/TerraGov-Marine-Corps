@@ -335,6 +335,11 @@
 	soft_armor = list(MELEE = 75, BULLET = 65, LASER = 50, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 	flags_item_map_variant = (ITEM_JUNGLE_VARIANT|ITEM_ICE_VARIANT|ITEM_PRISON_VARIANT|ITEM_ICE_PROTECTION)
 
+/obj/item/clothing/head/helmet/marine/specialist/b19
+	name = "\improper B19 experimental helmet"
+	desc = "The B19 Experimental Helmet that goes along with the B19 Experimental Armor. It's heavy, reinforced, and protects more of the face."
+	icon_state = "minigunner_helmet"
+	soft_armor = list(MELEE = 85, BULLET = 85, LASER = 85, ENERGY = 85, BOMB = 85, BIO = 85, FIRE = 85, ACID = 85)
 
 /obj/item/clothing/head/helmet/marine/specialist
 	name = "\improper B18 helmet"

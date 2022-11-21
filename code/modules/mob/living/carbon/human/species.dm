@@ -54,7 +54,7 @@
 	var/exhale_type = "carbon_dioxide"      // Exhaled gas type.
 
 	/// new maxHealth [/mob/living/carbon/human/var/maxHealth] of the human mob once species is applied
-	var/total_health = 100
+	var/total_health = 150
 	var/max_stamina = 50
 
 	var/cold_level_1 = BODYTEMP_COLD_DAMAGE_LIMIT_ONE  	// Cold damage level 1 below this point.
@@ -402,7 +402,7 @@ GLOBAL_VAR_INIT(join_as_robot_allowed, TRUE)
 	namepool = /datum/namepool/robotic
 
 	unarmed_type = /datum/unarmed_attack/punch/strong
-	total_health = 100
+	total_health = 150
 	slowdown = SHOES_SLOWDOWN * MARINE_BASE_SLOWDOWN_MULT //because they don't wear boots.
 
 	cold_level_1 = -1

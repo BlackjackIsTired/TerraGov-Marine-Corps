@@ -357,7 +357,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	sundering = 2
 
 /datum/ammo/bullet/pistol/hollow/on_hit_mob(mob/M,obj/projectile/P)
-	staggerstun(M, P, stagger = 1, slowdown = 0.5, knockback = 1)
+	staggerstun(M, P, stagger = 1, slowdown = 0.5, knockback = 0)
 
 /datum/ammo/bullet/pistol/ap
 	name = "armor-piercing pistol bullet"
@@ -452,7 +452,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	sundering = 3
 
 /datum/ammo/bullet/revolver/on_hit_mob(mob/M,obj/projectile/P)
-	staggerstun(M, P, stagger = 1, slowdown = 0.5, knockback = 1)
+	staggerstun(M, P, stagger = 1, slowdown = 0, knockback = 0)
 
 /datum/ammo/bullet/revolver/tp44
 	name = "standard revolver bullet"
@@ -461,7 +461,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	sundering = 1.5
 
 /datum/ammo/bullet/revolver/tp44/on_hit_mob(mob/M,obj/projectile/P)
-	staggerstun(M, P, stagger = 0, slowdown = 0.5, knockback = 1, shake = 0)
+	staggerstun(M, P, stagger = 0, slowdown = 0, knockback = 0, shake = 0)
 
 /datum/ammo/bullet/revolver/small
 	name = "small revolver bullet"
@@ -497,7 +497,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	sundering = 3
 
 /datum/ammo/bullet/revolver/highimpact/on_hit_mob(mob/M,obj/projectile/P)
-	staggerstun(M, P, weaken = 1, stagger = 1, slowdown = 1, knockback = 1, shake = 0.5)
+	staggerstun(M, P, weaken = 0, stagger = 1, slowdown = 0, knockback = 0, shake = 0.5)
 
 /datum/ammo/bullet/revolver/ricochet
 	bonus_projectiles_type = /datum/ammo/bullet/revolver/small
@@ -773,7 +773,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	sundering = 7.5
 
 /datum/ammo/bullet/shotgun/slug/on_hit_mob(mob/M,obj/projectile/P)
-	staggerstun(M, P, weaken = 1, stagger = 2, knockback = 1, slowdown = 2)
+	staggerstun(M, P, weaken = 0, stagger = 2, knockback = 2, slowdown = 0)
 
 
 /datum/ammo/bullet/shotgun/beanbag
@@ -807,7 +807,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	bullet_color = COLOR_TAN_ORANGE
 
 /datum/ammo/bullet/shotgun/incendiary/on_hit_mob(mob/M, obj/projectile/P)
-	staggerstun(M, P, shake = 0, knockback = 2, slowdown = 1)
+	staggerstun(M, P, shake = 0, knockback = 2, slowdown = 0)
 
 /datum/ammo/bullet/shotgun/flechette
 	name = "shotgun flechette shell"
@@ -857,7 +857,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 
 
 /datum/ammo/bullet/shotgun/buckshot/on_hit_mob(mob/M,obj/projectile/P)
-	staggerstun(M, P, weaken = 1, stagger = 1, knockback = 2, slowdown = 0.5, max_range = 3)
+	staggerstun(M, P, weaken = 0, stagger = 1, knockback = 2, slowdown = 0, max_range = 3)
 
 /datum/ammo/bullet/shotgun/spread
 	name = "additional buckshot"
@@ -937,7 +937,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	penetration = 20
 
 /datum/ammo/bullet/shotgun/sx16_slug/on_hit_mob(mob/M, obj/projectile/P)
-	staggerstun(M, P, slowdown = 1, knockback = 1)
+	staggerstun(M, P, slowdown = 0, knockback = 1)
 
 /datum/ammo/bullet/shotgun/tx15_flechette
 	name = "shotgun flechette shell"
@@ -974,7 +974,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	sundering = 3.5
 
 /datum/ammo/bullet/shotgun/tx15_slug/on_hit_mob(mob/M, obj/projectile/P)
-	staggerstun(M, P, slowdown = 2, knockback = 1)
+	staggerstun(M, P, slowdown = 0, knockback = 1)
 
 /datum/ammo/bullet/shotgun/mbx900_buckshot
 	name = "light shotgun buckshot shell" // If .410 is the smallest shotgun shell, then...
@@ -1060,7 +1060,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	damage_falloff = 4
 
 /datum/ammo/bullet/shotgun/mech/on_hit_mob(mob/M, obj/projectile/proj)
-	staggerstun(M, proj, weaken = 1, stagger = 1, knockback = 2, slowdown = 0.5, max_range = 3)
+	staggerstun(M, proj, weaken = 0, stagger = 1, knockback = 2, slowdown = 0, max_range = 3)
 
 /*
 //================================================
@@ -1125,7 +1125,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	sundering = 10
 
 /datum/ammo/bullet/sniper/martini/on_hit_mob(mob/M, obj/projectile/P)
-	staggerstun(M, P, weaken = 1, stagger = 1, knockback = 2, slowdown = 0.5, max_range = 5)
+	staggerstun(M, P, weaken = 0, stagger = 1, knockback = 2, slowdown = 0, max_range = 5)
 
 /datum/ammo/bullet/sniper/elite
 	name = "supersonic sniper bullet"
@@ -1155,7 +1155,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	damage_falloff = 0.25
 
 /datum/ammo/bullet/sniper/pfc/flak/on_hit_mob(mob/M, obj/projectile/P)
-	staggerstun(M, P, knockback = 4, slowdown = 1.5, stagger = 1, max_range = 17)
+	staggerstun(M, P, knockback = 4, slowdown = 0, stagger = 0, max_range = 17)
 
 
 /datum/ammo/bullet/sniper/auto
@@ -1295,7 +1295,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	on_pierce_multiplier = 0.85
 
 /datum/ammo/bullet/railgun/on_hit_mob(mob/M, obj/projectile/P)
-	staggerstun(M, P, weaken = 1, stagger = 3, slowdown = 2, knockback = 2, shake = 0)
+	staggerstun(M, P, weaken = 0, stagger = 3, slowdown = 0, knockback = 2, shake = 0)
 
 /datum/ammo/bullet/railgun/hvap
 	name = "high velocity railgun slug"
@@ -1306,7 +1306,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	sundering = 100
 
 /datum/ammo/bullet/railgun/hvap/on_hit_mob(mob/M, obj/projectile/P)
-	staggerstun(M, P, stagger = 2, knockback = 3, shake = 0)
+	staggerstun(M, P, stagger = 0, knockback = 3, shake = 0)
 
 /datum/ammo/bullet/railgun/smart
 	name = "smart armor piercing railgun slug"
@@ -1360,7 +1360,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	projectile_greyscale_colors = "#3ab0c9"
 
 /datum/ammo/tx54/on_hit_mob(mob/M, obj/projectile/proj)
-	staggerstun(M, proj, stagger = 0, slowdown = 0.5, knockback = 1, shake = 0)
+	staggerstun(M, proj, stagger = 0, slowdown = 0, knockback = 1, shake = 0)
 	bonus_projectiles_amount = 7
 	playsound(proj, sound(get_sfx("explosion_small")), 30, falloff = 5)
 	fire_directionalburst(proj, proj.firer, proj.shot_from, 4, 3, Get_Angle(proj.firer, M) )
@@ -2011,7 +2011,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 /datum/ammo/rocket/atgun_shell/apcr/on_hit_mob(mob/M, obj/projectile/P)
 	drop_nade(get_turf(M))
 	P.proj_max_range -= 5
-	staggerstun(M, P, max_range = 20, stagger = 0.5, slowdown = 0.5, knockback = 2, shake = 1,  hard_size_threshold = 3)
+	staggerstun(M, P, max_range = 20, stagger = 0, slowdown = 0, knockback = 2, shake = 1,  hard_size_threshold = 3)
 
 /datum/ammo/rocket/atgun_shell/apcr/on_hit_obj(obj/O, obj/projectile/P)
 	P.proj_max_range -= 5

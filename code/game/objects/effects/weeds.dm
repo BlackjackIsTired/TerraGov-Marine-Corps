@@ -5,7 +5,7 @@
 
 //Stat defines
 #define RESTING_BUFF 1.2
-#define WEED_SLOWDOWN 2
+#define WEED_SLOWDOWN 3
 
 // base weed type
 /obj/alien/weeds
@@ -215,12 +215,12 @@
 /obj/alien/weeds/node
 	name = WEED
 	desc = "A weird, pulsating purple node."
-	max_integrity = 60
+	max_integrity = 35
 	var/node_icon = "weednode"
 	/// list of all potential turfs that we can expand to
 	var/node_turfs = list()
 	/// How far this node can spread weeds
-	var/node_range = 2
+	var/node_range = 3
 	/// What type of weeds this node spreads
 	var/obj/alien/weeds/weed_type = /obj/alien/weeds
 	///The plasma cost multiplier for this node

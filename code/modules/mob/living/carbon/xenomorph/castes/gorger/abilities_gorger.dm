@@ -8,7 +8,7 @@
 	name = "Devour"
 	action_icon_state = "regurgitate"
 	mechanics_text = "Devour your victim to be able to carry it faster."
-	use_state_flags = XACT_USE_STAGGERED|XACT_USE_FORTIFIED|XACT_USE_CRESTED //can't use while staggered, defender fortified or crest down
+	use_state_flags = XACT_USE_FORTIFIED|XACT_USE_CRESTED //can't use while staggered, defender fortified or crest down
 	plasma_cost = 0
 	target_flags = XABB_MOB_TARGET
 	keybinding_signals = list(
@@ -244,7 +244,6 @@
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_REJUVENATE,
 	)
 	keybind_flags = XACT_KEYBIND_USE_ABILITY
-	use_state_flags = XACT_USE_STAGGERED
 
 /datum/action/xeno_action/activable/rejuvenate/can_use_ability(atom/A, silent, override_flags)
 	. = ..()
@@ -411,7 +410,6 @@
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_FEAST,
 	)
 	keybind_flags = XACT_KEYBIND_USE_ABILITY
-	use_state_flags = XACT_USE_STAGGERED
 
 /datum/action/xeno_action/activable/feast/can_use_ability(atom/target, silent, override_flags)
 	. = ..()

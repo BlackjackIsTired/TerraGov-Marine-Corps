@@ -1,15 +1,15 @@
 /mob/living/carbon/xenomorph/defiler
 	caste_base_type = /mob/living/carbon/xenomorph/defiler
-	name = "Defiler"
+	name = "Defiler Minion"
 	desc = "A large, powerfully muscled xeno replete with dripping spines and gas leaking dorsal vents."
 	icon = 'icons/Xeno/2x2_Xenos.dmi'
 	icon_state = "Defiler Walking"
-	health = XENO_HEALTH_MULT * 225
-	maxHealth = XENO_HEALTH_MULT * 225
+	health = XENO_NPC_HEALTH_MULT * 450
+	maxHealth = XENO_NPC_HEALTH_MULT * 450
 	plasma_stored = 400
 	pixel_x = -16
 	old_x = -16
-	tier = XENO_TIER_THREE
+	tier = XENO_TIER_MINION
 	upgrade = XENO_UPGRADE_ZERO
 	var/emitting_gas = FALSE
 	inherent_verbs = list(

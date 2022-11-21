@@ -2,7 +2,7 @@
 	caste_name = "Defender"
 	display_name = "Defender"
 	upgrade_name = ""
-	caste_desc = "An alien with an armored crest. It looks like it's still developing."
+	caste_desc = "An alien with an armored crest. This one has M-Class defenses. It looks like it's still developing."
 
 	caste_type_path = /mob/living/carbon/xenomorph/defender
 
@@ -11,7 +11,7 @@
 	wound_type = "defender" //used to match appropriate wound overlays
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 17
+	melee_damage = XENO_MELEE_DAM_MULT * 10
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -0.3
@@ -21,7 +21,7 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 10
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 260
+	max_health = XENO_HEALTH_MULT * 150
 
 	// *** Evolution *** //
 	evolution_threshold = XENO_EVO_MULT * 80
@@ -37,7 +37,7 @@
 	can_flags = CASTE_CAN_BE_QUEEN_HEALED|CASTE_CAN_BE_GIVEN_PLASMA|CASTE_CAN_BE_LEADER|CASTE_CAN_BECOME_KING
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 30, BULLET = 30, LASER = 25, ENERGY = 20, BOMB = 20, BIO = 20, FIRE = 30, ACID = 20)
+	soft_armor = list(MELEE = 45, BULLET = 65, LASER = 65, ENERGY = 55, BOMB = 50, BIO = 50, FIRE = 50, ACID = 55)
 
 	// *** Ranged Attack *** //
 	charge_type = CHARGE_TYPE_LARGE
@@ -46,9 +46,9 @@
 	minimap_icon = "defender"
 
 	// *** Defender Abilities *** //
-	crest_defense_armor = 22
+	crest_defense_armor = 13
 	crest_defense_slowdown = 0.8
-	fortify_armor = 50
+	fortify_armor = 25
 
 	actions = list(
 		/datum/action/xeno_action/xeno_resting,
@@ -68,7 +68,7 @@
 
 /datum/xeno_caste/defender/mature
 	upgrade_name = "Mature"
-	caste_desc = "An alien with an armored crest. It looks pretty durable."
+	caste_desc = "An alien with an armored crest. This one has M-Class defenses. It looks pretty durable."
 	upgrade = XENO_UPGRADE_ONE
 
 	// *** Speed *** //
@@ -85,13 +85,12 @@
 	upgrade_threshold = XENO_UPG_MULT * TIER_ONE_MATURE_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 33, BULLET = 33, LASER = 28, ENERGY = 25, BOMB = 20
-	, BIO = 25, FIRE = 33, ACID = 25)
+	soft_armor = list(MELEE = 45, BULLET = 65, LASER = 65, ENERGY = 55, BOMB = 50, BIO = 50, FIRE = 50, ACID = 55)
 
 	// *** Defender Abilities *** //
-	crest_defense_armor = 26
+	crest_defense_armor = 13
 	crest_defense_slowdown = 0.8
-	fortify_armor = 52
+	fortify_armor = 25
 
 /datum/xeno_caste/defender/elder
 	upgrade_name = "Elder"
@@ -99,7 +98,7 @@
 	upgrade = XENO_UPGRADE_TWO
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 21
+	melee_damage = XENO_MELEE_DAM_MULT * 10
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -0.5
@@ -109,18 +108,18 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 14
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 300
+	max_health = XENO_HEALTH_MULT * 400
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_ONE_ELDER_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 35, BULLET = 35, LASER = 30, ENERGY = 28, BOMB = 20, BIO = 28, FIRE = 35, ACID = 28)
+	soft_armor = list(MELEE = 45, BULLET = 65, LASER = 65, ENERGY = 55, BOMB = 50, BIO = 50, FIRE = 50, ACID = 55)
 
 	// *** Defender Abilities *** //
-	crest_defense_armor = 30
+	crest_defense_armor = 13
 	crest_defense_slowdown = 0.8
-	fortify_armor = 55
+	fortify_armor = 25
 
 /datum/xeno_caste/defender/ancient
 	upgrade_name = "Ancient"
@@ -129,7 +128,7 @@
 	ancient_message = "We are incredibly resilient, we can control the battle through sheer force."
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 21
+	melee_damage = XENO_MELEE_DAM_MULT * 10
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -0.6
@@ -139,18 +138,18 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 15
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 320
+	max_health = XENO_HEALTH_MULT * 400
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_ONE_ANCIENT_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 40, BULLET = 40, LASER = 40, ENERGY = 40, BOMB = 20, BIO = 30, FIRE = 40, ACID = 30)
+	soft_armor = list(MELEE = 45, BULLET = 65, LASER = 65, ENERGY = 55, BOMB = 50, BIO = 50, FIRE = 50, ACID = 55)
 
 	// *** Defender Abilities *** //
-	crest_defense_armor = 30
+	crest_defense_armor = 13
 	crest_defense_slowdown = 0.8
-	fortify_armor = 55
+	fortify_armor = 25
 
 /datum/xeno_caste/defender/primordial
 	upgrade_name = "Primordial"
@@ -159,7 +158,7 @@
 	primordial_message = "We are the aegis of the hive. Let nothing pierce our guard."
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 21
+	melee_damage = XENO_MELEE_DAM_MULT * 10
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -0.6
@@ -169,15 +168,15 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 15
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 320
+	max_health = XENO_HEALTH_MULT * 400
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 40, BULLET = 40, LASER = 40, ENERGY = 40, BOMB = 20, BIO = 30, FIRE = 40, ACID = 30)
+	soft_armor = list(MELEE = 45, BULLET = 65, LASER = 65, ENERGY = 55, BOMB = 50, BIO = 50, FIRE = 50, ACID = 55)
 
 	// *** Defender Abilities *** //
-	crest_defense_armor = 30
+	crest_defense_armor = 13
 	crest_defense_slowdown = 0.8
-	fortify_armor = 55
+	fortify_armor = 25
 
 	actions = list(
 		/datum/action/xeno_action/xeno_resting,

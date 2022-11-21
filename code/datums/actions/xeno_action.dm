@@ -73,7 +73,7 @@
 			X.balloon_alert(X, "Cannot while buckled")
 		return FALSE
 
-	if(!(flags_to_check & XACT_USE_STAGGERED) && X.stagger)
+	if(!(flags_to_check) && X.stagger)
 		if(!silent)
 			X.balloon_alert(X, "Cannot while staggered")
 		return FALSE
@@ -247,7 +247,7 @@
 
 /datum/action/xeno_action/activable/can_use_action(silent = FALSE, override_flags, selecting = FALSE)
 	if(selecting)
-		return ..(silent, XACT_IGNORE_COOLDOWN|XACT_IGNORE_PLASMA|XACT_USE_STAGGERED)
+		return ..(silent, XACT_IGNORE_COOLDOWN|XACT_IGNORE_PLASMA)
 	return ..()
 
 //override this

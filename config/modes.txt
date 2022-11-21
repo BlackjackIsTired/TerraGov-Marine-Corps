@@ -1,18 +1,18 @@
 # Settings for modes. deploytimelock is in minutes
 
 mode Crash
-	requiredplayers 2
+	requiredplayers 0
 	squadmaxnumber 1
 	maximumplayers 40
 	deploytimelock 45
 endmode
 
 mode Distress Signal
-	requiredplayers 2
+	requiredplayers 0
 endmode
 
 mode Nuclear War
-	requiredplayers 2
+	requiredplayers 0
 endmode
 
 mode Extended
@@ -21,13 +21,13 @@ mode Extended
 endmode
 
 mode Civil War
-	requiredplayers 2
+	requiredplayers 0
 endmode
 
 mode Combat Patrol
-	requiredplayers 2
+	requiredplayers 0
 endmode
 
 mode Sensor Capture
-	requiredplayers 2
+	requiredplayers 0
 endmode

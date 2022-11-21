@@ -2,7 +2,7 @@
 	caste_name = "Runner"
 	display_name = "Runner"
 	upgrade_name = ""
-	caste_desc = "A fast, four-legged terror, but weak in sustained combat."
+	caste_desc = "A fast, four-legged terror, but weak in sustained combat. This one has L-Class Defenses."
 	caste_type_path = /mob/living/carbon/xenomorph/runner
 	tier = XENO_TIER_ONE
 	upgrade = XENO_UPGRADE_BASETYPE
@@ -12,7 +12,7 @@
 	gib_flick = "gibbed-a-runner"
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 17
+	melee_damage = XENO_MELEE_DAM_MULT * 20
 	attack_delay = 6
 
 	savage_cooldown = 30 SECONDS
@@ -25,7 +25,7 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 5
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 175
+	max_health = XENO_HEALTH_MULT * 150
 
 	// *** Evolution *** //
 	evolution_threshold = XENO_EVO_MULT * 80
@@ -42,7 +42,7 @@
 	can_flags = CASTE_CAN_BE_QUEEN_HEALED|CASTE_CAN_VENT_CRAWL|CASTE_CAN_BE_GIVEN_PLASMA|CASTE_CAN_BE_LEADER|CASTE_CAN_BECOME_KING|CASTE_CAN_RIDE_CRUSHER
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 14, BULLET = 5, LASER = 5, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 5, ACID = 0)
+	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
 	charge_type = CHARGE_TYPE_SMALL
@@ -69,7 +69,7 @@
 
 /datum/xeno_caste/runner/mature
 	upgrade_name = "Mature"
-	caste_desc = "A fast, four-legged terror, but weak in sustained combat. It looks a little more dangerous."
+	caste_desc = "A fast, four-legged terror, but weak in sustained combat. This one has L-Class Defenses. It looks a little more dangerous."
 
 	upgrade = XENO_UPGRADE_ONE
 
@@ -83,25 +83,25 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 7
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 200
+	max_health = XENO_HEALTH_MULT * 150
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_ONE_MATURE_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 16, BULLET = 10, LASER = 10, ENERGY = 10, BOMB = 0, BIO = 3, FIRE = 10, ACID = 3)
+	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
 	pounce_delay = 13 SECONDS
 
 /datum/xeno_caste/runner/elder
 	upgrade_name = "Elder"
-	caste_desc = "A fast, four-legged terror, but weak in sustained combat. It looks pretty strong."
+	caste_desc = "A fast, four-legged terror, but weak in sustained combat. This one has L-Class Defenses. It looks pretty strong."
 
 	upgrade = XENO_UPGRADE_TWO
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 21
+	melee_damage = XENO_MELEE_DAM_MULT * 20
 
 	savage_cooldown = 30 SECONDS
 
@@ -113,13 +113,13 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 9
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 225
+	max_health = XENO_HEALTH_MULT * 150
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_ONE_ELDER_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 18, BULLET = 15, LASER = 15, ENERGY = 15, BOMB = 0, BIO = 5, FIRE = 15, ACID = 5)
+	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
 	pounce_delay = 13 SECONDS
@@ -133,7 +133,7 @@
 	savage_cooldown = 30 SECONDS
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 21
+	melee_damage = XENO_MELEE_DAM_MULT * 20
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -1.5
@@ -143,13 +143,13 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 11
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 240
+	max_health = XENO_HEALTH_MULT * 150
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_ONE_ANCIENT_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 20, BULLET = 19, LASER = 19, ENERGY = 19, BOMB = 0, BIO = 7, FIRE = 19, ACID = 7)
+	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
 	pounce_delay = 13 SECONDS
@@ -163,10 +163,10 @@
 	savage_cooldown = 30 SECONDS
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 21
+	melee_damage = XENO_MELEE_DAM_MULT * 20
 
 	// *** Speed *** //
-	speed = XENO_SPEED_MULT * -1.5
+	speed = XENO_SPEED_MULT * -1.6
 
 	// *** Plasma *** //
 	plasma_max = XENO_PLASMA_MULT * 200
@@ -176,7 +176,7 @@
 	max_health = XENO_HEALTH_MULT * 240
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 20, BULLET = 19, LASER = 19, ENERGY = 19, BOMB = 0, BIO = 7, FIRE = 19, ACID = 7)
+	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
 	pounce_delay = 13 SECONDS

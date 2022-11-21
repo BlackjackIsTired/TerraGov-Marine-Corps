@@ -1,11 +1,11 @@
 /mob/living/carbon/xenomorph/defender
 	caste_base_type = /mob/living/carbon/xenomorph/defender
-	name = "Defender"
+	name = "Defender Minion"
 	desc = "A alien with an armored head crest."
 	icon = 'icons/Xeno/2x2_Xenos.dmi'
 	icon_state = "Defender Walking"
-	health = XENO_HEALTH_MULT * 200
-	maxHealth = XENO_HEALTH_MULT * 200
+	health = XENO_NPC_HEALTH_MULT * 150
+	maxHealth = XENO_NPC_HEALTH_MULT * 150
 	plasma_stored = 50
 	pixel_x = -16
 	old_x = -16

@@ -750,6 +750,15 @@ ARMOR
 	contains = list(/obj/item/weapon/shield/riot/marine/deployable)
 	cost = 3
 
+/datum/supply_packs/armor/b19
+	name = "B19 Armor Set"
+	contains = list(
+		/obj/item/clothing/suit/storage/marine/specialist/b19,
+		/obj/item/clothing/head/helmet/marine/specialist/b19,
+		/obj/item/clothing/gloves/marine/specialist/b19,
+	)
+	cost = 400
+
 /datum/supply_packs/armor/b18
 	name = "B18 Armor Set"
 	contains = list(
