@@ -11,7 +11,7 @@
 	wound_type = "defender" //used to match appropriate wound overlays
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 10
+	melee_damage = XENO_MELEE_DAM_MULT * 15
 
 	// *** Speed *** //
 	speed = XENO_SPEED_MULT * -0.3

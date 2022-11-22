@@ -4,10 +4,10 @@
 	desc = "A bright red alien with a matching temper."
 	icon = 'icons/Xeno/2x2_Xenos.dmi'
 	icon_state = "Bull Walking"
-	health = XENO_NPC_HEALTH_MULT * 160
-	maxHealth = XENO_NPC_HEALTH_MULT * 160
+	health = XENO_NPC_HEALTH_MULT * 80
+	maxHealth = XENO_NPC_HEALTH_MULT * 80
 	plasma_stored = 200
-	tier = XENO_TIER_MINION
+	tier = XENO_TIER_MINION_T2
 	upgrade = XENO_UPGRADE_ZERO
 
 	pixel_x = -16

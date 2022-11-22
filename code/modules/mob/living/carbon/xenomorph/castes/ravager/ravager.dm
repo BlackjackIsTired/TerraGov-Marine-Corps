@@ -4,12 +4,12 @@
 	desc = "A huge, nasty red alien with enormous scythed claws."
 	icon = 'icons/Xeno/2x2_Xenos.dmi'
 	icon_state = "Ravager Walking"
-	health = XENO_NPC_HEALTH_MULT * 450
-	maxHealth = XENO_NPC_HEALTH_MULT * 450
+	health = XENO_NPC_HEALTH_MULT * 225
+	maxHealth = XENO_NPC_HEALTH_MULT * 225
 	plasma_stored = 50
 	mob_size = MOB_SIZE_BIG
 	drag_delay = 6 //pulling a big dead xeno is hard
-	tier = XENO_TIER_MINION
+	tier = XENO_TIER_MINION_T3
 	upgrade = XENO_UPGRADE_ZERO
 	pixel_x = -16
 	old_x = -16

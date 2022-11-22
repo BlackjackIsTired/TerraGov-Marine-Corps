@@ -1,8 +1,8 @@
 /datum/game_mode/infestation/crash
 	name = "Crash"
 	config_tag = "Crash"
-	flags_round_type = MODE_INFESTATION|MODE_XENO_SPAWN_PROTECT|MODE_DEAD_GRAB_FORBIDDEN
-	flags_xeno_abilities = ABILITY_CRASH
+	flags_round_type = MODE_INFESTATION|MODE_XENO_SPAWN_PROTECT|MODE_DEAD_GRAB_FORBIDDEN|MODE_SPAWNING_MINIONS
+	flags_xeno_abilities = ABILITY_DISTRESS
 	valid_job_types = list(
 		/datum/job/terragov/squad/standard = -1,
 		/datum/job/terragov/squad/engineer = 8,

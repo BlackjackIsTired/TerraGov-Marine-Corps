@@ -1,13 +1,16 @@
 //Generic template for application to a xeno/ mob, contains specific obstacle dealing alongside targeting only humans, xenos of a different hive and sentry turrets
 
 /datum/ai_behavior/xeno
-	sidestep_prob = 25
+	sidestep_prob = 40
 	identifier = IDENTIFIER_XENO
 	is_offered_on_creation = TRUE
 	///List of abilities to consider doing every Process()
 	var/list/ability_list = list()
 	///If the mob parent can heal itself and so should flee
 	var/can_heal = TRUE
+	minimum_health = 0.5
+	target_distance = 35
+	base_action = MOVING_TO_NODE
 
 /datum/ai_behavior/xeno/New(loc, parent_to_assign, escorted_atom, can_heal = TRUE)
 	..()
@@ -230,7 +233,7 @@
 	var/atom/next_target = get_nearest_target(mob_parent, target_distance, ALL, mob_parent.faction, mob_parent.get_xeno_hivenumber())
 	if(!next_target)
 		return
-	target_distance = 15
+	target_distance = 40
 	change_action(MOVING_TO_SAFETY, next_target, INFINITY)
 	UnregisterSignal(mob_parent, COMSIG_XENOMORPH_TAKING_DAMAGE)
 
@@ -242,4 +245,4 @@
 
 /datum/ai_behavior/xeno/ranged
 	distance_to_maintain = 5
-	minimum_health = 0.3
+	minimum_health = 0.5

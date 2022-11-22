@@ -150,14 +150,16 @@
 // xeno tiers
 
 #define XENO_TIER_MINION "ai"
+#define XENO_TIER_MINION_T2 "Minion T2"
+#define XENO_TIER_MINION_T3 "Minion T3"
 #define XENO_TIER_ZERO "zero" // god forgive me because i wont forgive myself
 #define XENO_TIER_ONE "one"
 #define XENO_TIER_TWO "two"
 #define XENO_TIER_THREE "three"
 #define XENO_TIER_FOUR "four"
 
-GLOBAL_LIST_INIT(xenotiers, list(XENO_TIER_MINION, XENO_TIER_ZERO, XENO_TIER_ONE, XENO_TIER_TWO, XENO_TIER_THREE, XENO_TIER_FOUR))
-GLOBAL_LIST_INIT(tier_as_number, list(XENO_TIER_MINION = -1, XENO_TIER_ZERO = 0, XENO_TIER_ONE = 1, XENO_TIER_TWO = 2, XENO_TIER_THREE = 3, XENO_TIER_FOUR = 4))
+GLOBAL_LIST_INIT(xenotiers, list(XENO_TIER_MINION, XENO_TIER_MINION_T2, XENO_TIER_MINION_T3, XENO_TIER_ZERO, XENO_TIER_ONE, XENO_TIER_TWO, XENO_TIER_THREE, XENO_TIER_FOUR))
+GLOBAL_LIST_INIT(tier_as_number, list(XENO_TIER_MINION = -3, XENO_TIER_MINION_T2 = -2, XENO_TIER_MINION_T3 = -1, XENO_TIER_ZERO = 0, XENO_TIER_ONE = 1, XENO_TIER_TWO = 2, XENO_TIER_THREE = 3, XENO_TIER_FOUR = 4))
 
 // =============================
 // xeno upgrades
@@ -609,7 +611,7 @@ GLOBAL_LIST_INIT(xenoupgradetiers, list(XENO_UPGRADE_BASETYPE, XENO_UPGRADE_INVA
 #define GORGER_DRAIN_DELAY 0.5 SECONDS // time needed to drain a marine once
 #define GORGER_DRAIN_HEAL 40 // overheal gained each time the target is drained
 #define GORGER_DRAIN_BLOOD_DRAIN 20 // amount of plasma drained when feeding on something
-#define GORGER_TRANSFUSION_HEAL 0.3 // in %
+#define GORGER_TRANSFUSION_HEAL 0.5 // in %
 #define GORGER_REJUVENATE_DURATION -1
 #define GORGER_REJUVENATE_COST 20
 #define GORGER_REJUVENATE_SLOWDOWN 6

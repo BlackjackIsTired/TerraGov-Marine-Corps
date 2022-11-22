@@ -41,7 +41,7 @@
 
 	// *** Regeneration Delay ***//
 	///Time after you take damage before a xenomorph can regen.
-	var/regen_delay = 1 SECONDS
+	var/regen_delay = 5 SECONDS
 	///Regeneration power increases by this amount evey decisecond.
 	var/regen_ramp_amount = 0.005
 
@@ -93,7 +93,7 @@
 
 	// *** Sunder *** //
 	///How much sunder is recovered per tick
-	var/sunder_recover = 1.5
+	var/sunder_recover = 0.5
 	///What is the max amount of sunder that can be applied to a xeno (100 = 100%)
 	var/sunder_max = 100
 

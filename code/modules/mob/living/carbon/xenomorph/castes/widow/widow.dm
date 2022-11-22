@@ -4,10 +4,10 @@
 	desc = "A large arachnid xenomorph, with fangs ready to bear and crawling with many little spiderlings ready to grow."
 	icon = 'icons/Xeno/2x2_Xenos.dmi'
 	icon_state = "Widow Walking"
-	health = XENO_NPC_HEALTH_MULT * 450
-	maxHealth = XENO_NPC_HEALTH_MULT * 450
+	health = XENO_NPC_HEALTH_MULT * 225
+	maxHealth = XENO_NPC_HEALTH_MULT * 225
 	plasma_stored = 150
-	tier = XENO_TIER_MINION
+	tier = XENO_TIER_MINION_T3
 	upgrade = XENO_UPGRADE_ZERO
 	buckle_flags = CAN_BUCKLE
 	pixel_x = -16

@@ -4,10 +4,10 @@
 	desc = "A beefy, fast alien with sharp claws."
 	icon = 'icons/Xeno/48x48_Xenos.dmi'
 	icon_state = "Hunter Running"
-	health = XENO_NPC_HEALTH_MULT * 300
-	maxHealth = XENO_NPC_HEALTH_MULT * 300
+	health = XENO_NPC_HEALTH_MULT * 150
+	maxHealth = XENO_NPC_HEALTH_MULT * 150
 	plasma_stored = 50
-	tier = XENO_TIER_MINION
+	tier = XENO_TIER_MINION_T2
 	upgrade = XENO_UPGRADE_ZERO
 	inherent_verbs = list(
 		/mob/living/carbon/xenomorph/proc/vent_crawl,

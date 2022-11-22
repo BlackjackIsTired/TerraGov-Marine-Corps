@@ -4,12 +4,12 @@
 	desc = "A beefy, alien with an armored carapace."
 	icon = 'icons/Xeno/2x2_Xenos.dmi'
 	icon_state = "Warrior Walking"
-	health = XENO_NPC_HEALTH_MULT * 300
-	maxHealth = XENO_NPC_HEALTH_MULT * 300
+	health = XENO_NPC_HEALTH_MULT * 150
+	maxHealth = XENO_NPC_HEALTH_MULT * 150
 	plasma_stored = 50
 	pixel_x = -16
 	old_x = -16
-	tier = XENO_TIER_MINION
+	tier = XENO_TIER_MINION_T2
 	upgrade = XENO_UPGRADE_ZERO
 	///How many stacks of combo do we have ? Interacts with every ability.
 	var/combo = 0

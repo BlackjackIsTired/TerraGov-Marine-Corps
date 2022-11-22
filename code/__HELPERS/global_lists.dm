@@ -86,6 +86,10 @@ GLOBAL_LIST_EMPTY(randomized_pill_icons)
 		var/tier = initial(caste.tier)
 		if(tier == XENO_TIER_MINION)
 			continue
+		if(tier == XENO_TIER_MINION_T2)
+			continue
+		if(tier == XENO_TIER_MINION_T3)
+			continue
 		if(isnull(per_tier_counter[tier]))
 			per_tier_counter[tier] = 0
 

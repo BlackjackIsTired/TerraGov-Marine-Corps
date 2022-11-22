@@ -10,6 +10,10 @@
 	switch(tier)
 		if(XENO_TIER_MINION)
 			. = 5
+		if(XENO_TIER_MINION_T2)
+			. = 10
+		if(XENO_TIER_MINION_T3)
+			. = 15
 		if(XENO_TIER_ZERO)
 			. = 15
 		if(XENO_TIER_ONE)

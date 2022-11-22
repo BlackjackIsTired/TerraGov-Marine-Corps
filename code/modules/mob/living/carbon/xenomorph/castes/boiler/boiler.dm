@@ -4,8 +4,8 @@
 	desc = "A huge, grotesque xenomorph covered in glowing, oozing acid slime."
 	icon = 'icons/Xeno/2x2_Xenos.dmi'
 	icon_state = "Boiler Walking"
-	health = XENO_NPC_HEALTH_MULT * 450
-	maxHealth = XENO_NPC_HEALTH_MULT * 450
+	health = XENO_NPC_HEALTH_MULT * 225
+	maxHealth = XENO_NPC_HEALTH_MULT * 225
 	plasma_stored = 450
 	pixel_x = -16
 	old_x = -16
@@ -18,7 +18,6 @@
 	//Boiler ammo
 	var/corrosive_ammo = 0
 	var/neuro_ammo = 0
-	tier = XENO_TIER_MINION
 
 ///updates the boiler's glow, based on its base glow/color, and its ammo reserves. More green ammo = more green glow; more yellow = more yellow.
 /mob/living/carbon/xenomorph/boiler/proc/update_boiler_glow()

@@ -11,9 +11,9 @@
 * Metal
 */
 GLOBAL_LIST_INIT(metal_recipes, list ( \
-	new/datum/stack_recipe("metal barricade", /obj/structure/barricade/metal, 4, time = 8 SECONDS, max_per_turf = STACK_RECIPE_ONE_DIRECTIONAL_PER_TILE, on_floor = TRUE, skill_req = SKILL_CONSTRUCTION_METAL), \
-	new/datum/stack_recipe("barbed wire", /obj/item/stack/barbed_wire, 2, 1, 20, time = 1 SECONDS, skill_req = SKILL_CONSTRUCTION_METAL), \
-	new/datum/stack_recipe("razor wire", /obj/item/stack/razorwire, 3, 1, 20, time = 5 SECONDS, skill_req = SKILL_CONSTRUCTION_METAL), \
+	new/datum/stack_recipe("metal barricade", /obj/structure/barricade/metal, 4, time = 8 SECONDS * BARRICADE_BUILDING_TIME_MULT, max_per_turf = STACK_RECIPE_ONE_DIRECTIONAL_PER_TILE, on_floor = TRUE, skill_req = SKILL_CONSTRUCTION_METAL), \
+	new/datum/stack_recipe("barbed wire", /obj/item/stack/barbed_wire, 2, 1, 20, time = 1 SECONDS * BARRICADE_BUILDING_TIME_MULT, skill_req = SKILL_CONSTRUCTION_METAL), \
+	new/datum/stack_recipe("razor wire", /obj/item/stack/razorwire, 3, 1, 20, time = 5 SECONDS * BARRICADE_BUILDING_TIME_MULT, skill_req = SKILL_CONSTRUCTION_METAL), \
 	null, \
 	new/datum/stack_recipe("apc frame", /obj/item/frame/apc, 2), \
 	new/datum/stack_recipe("wall girder", /obj/structure/girder, 8, time = 10 SECONDS, max_per_turf = STACK_RECIPE_ONE_PER_TILE, on_floor = TRUE, skill_req = SKILL_CONSTRUCTION_ADVANCED), \
@@ -96,7 +96,7 @@ GLOBAL_LIST_INIT(metal_radial_images, list(
 		if("recipes")
 			return TRUE
 		if("barricade")
-			create_object(user, new/datum/stack_recipe("metal barricade", /obj/structure/barricade/metal, 4, time = 8 SECONDS, max_per_turf = STACK_RECIPE_ONE_DIRECTIONAL_PER_TILE, on_floor = TRUE, skill_req = SKILL_CONSTRUCTION_METAL), 1)
+			create_object(user, new/datum/stack_recipe("metal barricade", /obj/structure/barricade/metal, 4, time = 8 SECONDS * BARRICADE_BUILDING_TIME_MULT, max_per_turf = STACK_RECIPE_ONE_DIRECTIONAL_PER_TILE, on_floor = TRUE, skill_req = SKILL_CONSTRUCTION_METAL), 1)
 		if("barbedwire")
 			create_object(user, new/datum/stack_recipe("barbed wire", /obj/item/stack/barbed_wire, 2, 1, 20, time = 1 SECONDS, skill_req = SKILL_CONSTRUCTION_METAL), 1)
 		if("razorwire")
@@ -123,7 +123,7 @@ GLOBAL_LIST_INIT(metal_radial_images, list(
 
 /obj/item/stack/sheet/plasteel/attack_self(mob/user)
 	. = ..()
-	create_object(user, new/datum/stack_recipe("plasteel barricade", /obj/structure/barricade/plasteel, 5, time = 8 SECONDS, max_per_turf = STACK_RECIPE_ONE_DIRECTIONAL_PER_TILE, on_floor = TRUE, skill_req =  SKILL_CONSTRUCTION_PLASTEEL), 1)
+	create_object(user, new/datum/stack_recipe("plasteel barricade", /obj/structure/barricade/plasteel, 5, time = 8 SECONDS * BARRICADE_BUILDING_TIME_MULT, max_per_turf = STACK_RECIPE_ONE_DIRECTIONAL_PER_TILE, on_floor = TRUE, skill_req =  SKILL_CONSTRUCTION_PLASTEEL), 1)
 
 
 /obj/item/stack/sheet/plasteel/small_stack

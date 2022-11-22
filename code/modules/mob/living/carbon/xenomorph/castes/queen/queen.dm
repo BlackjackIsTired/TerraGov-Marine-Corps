@@ -8,14 +8,14 @@
 	attack_sound = null
 	friendly = "nuzzles"
 	wall_smash = 0
-	health = XENO_NPC_HEALTH_MULT * 600
-	maxHealth = XENO_NPC_HEALTH_MULT * 600
+	health = XENO_NPC_HEALTH_MULT * 300
+	maxHealth = XENO_NPC_HEALTH_MULT * 300
 	plasma_stored = 300
 	pixel_x = -16
 	old_x = -16
 	mob_size = MOB_SIZE_BIG
 	drag_delay = 6 //pulling a big dead xeno is hard
-	tier = XENO_TIER_MINION //Queen doesn't count towards population limit.
+	tier = XENO_TIER_MINION_T3 //Queen doesn't count towards population limit.
 	upgrade = XENO_UPGRADE_ZERO
 
 	var/breathing_counter = 0

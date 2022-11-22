@@ -11,7 +11,7 @@
 	resistance_flags = XENO_DAMAGEABLE
 	climb_delay = 20 //Leaping a barricade is universally much faster than clumsily climbing on a table or rack
 	interaction_flags = INTERACT_CHECK_INCAPACITATED
-	max_integrity = 100
+	max_integrity = 100 * BARRICADE_HEALTH_MULT
 	flags_barrier = HANDLE_BARRIER_CHANCE
 	///The type of stack the barricade dropped when disassembled if any.
 	var/stack_type
@@ -430,7 +430,7 @@
 	name = "metal barricade"
 	desc = "A sturdy and easily assembled barricade made of metal plates, often used for quick fortifications. Use a blowtorch to repair."
 	icon_state = "metal_0"
-	max_integrity = 200
+	max_integrity = 200 * BARRICADE_HEALTH_MULT
 	soft_armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 100, "fire" = 80, "acid" = 40)
 	coverage = 128
 	stack_type = /obj/item/stack/sheet/metal
@@ -784,7 +784,7 @@
 	name = "plasteel barricade"
 	desc = "A very sturdy barricade made out of plasteel panels, the pinnacle of strongpoints. Use a blowtorch to repair. Can be flipped down to create a path."
 	icon_state = "plasteel_closed_0"
-	max_integrity = 500
+	max_integrity = 500 * BARRICADE_HEALTH_MULT
 	soft_armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 100, "fire" = 80, "acid" = 40)
 	coverage = 128
 	stack_type = /obj/item/stack/sheet/plasteel
@@ -1048,7 +1048,7 @@
 	name = "sandbag barricade"
 	desc = "A bunch of bags filled with sand, stacked into a small wall. Surprisingly sturdy, albeit labour intensive to set up. Trusted to do the job since 1914."
 	icon_state = "sandbag_0"
-	max_integrity = 300
+	max_integrity = 300 * BARRICADE_HEALTH_MULT
 	soft_armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 100, "fire" = 80, "acid" = 40)
 	coverage = 128
 	stack_type = /obj/item/stack/sandbags
@@ -1114,7 +1114,7 @@
 
 /obj/structure/barricade/metal/deployable
 	icon_state = "folding_0"
-	max_integrity = 300
+	max_integrity = 300 * BARRICADE_HEALTH_MULT
 	coverage = 100
 	barricade_type = "folding"
 	can_wire = TRUE

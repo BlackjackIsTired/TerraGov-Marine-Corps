@@ -90,7 +90,7 @@
 	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
-	spit_delay = 0.7 SECONDS
+	spit_delay = 0.8 SECONDS
 	spit_types = list(/datum/ammo/xeno/toxin/heavy/upgrade1, /datum/ammo/xeno/acid/heavy)
 
 	acid_spray_damage_on_hit = XENO_ACID_DAM_MULT * 39
@@ -124,7 +124,7 @@
 	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
-	spit_delay = 0.7 SECONDS
+	spit_delay = 0.8 SECONDS
 	spit_types = list(/datum/ammo/xeno/toxin/heavy/upgrade2, /datum/ammo/xeno/acid/heavy)
 
 	acid_spray_damage_on_hit = XENO_ACID_DAM_MULT * 43
@@ -159,7 +159,7 @@
 	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
-	spit_delay = 0.6 SECONDS
+	spit_delay = 0.8 SECONDS
 	spit_types = list(/datum/ammo/xeno/toxin/heavy/upgrade3, /datum/ammo/xeno/acid/heavy)
 
 	acid_spray_damage_on_hit = XENO_ACID_DAM_MULT * 47
@@ -191,7 +191,7 @@
 	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
-	spit_delay = 0.6 SECONDS
+	spit_delay = 0.8 SECONDS
 	spit_types = list(/datum/ammo/xeno/toxin/heavy/upgrade3, /datum/ammo/xeno/acid/heavy)
 
 	acid_spray_damage_on_hit = XENO_ACID_DAM_MULT * 47

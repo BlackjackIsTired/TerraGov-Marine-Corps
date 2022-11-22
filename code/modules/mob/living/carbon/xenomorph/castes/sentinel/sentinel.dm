@@ -4,8 +4,8 @@
 	desc = "A slithery, spitting kind of alien."
 	icon = 'icons/Xeno/48x48_Xenos.dmi'
 	icon_state = "Sentinel Walking"
-	health = XENO_NPC_HEALTH_MULT * 150
-	maxHealth = XENO_NPC_HEALTH_MULT * 150
+	health = XENO_NPC_HEALTH_MULT * 75
+	maxHealth = XENO_NPC_HEALTH_MULT * 75
 	plasma_stored = 75
 	pixel_x = -12
 	old_x = -12

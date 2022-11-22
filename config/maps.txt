@@ -39,9 +39,11 @@ map prison_station_fop
 endmap
 
 map vapor_processing
+	minplayers 0
 endmap
 
 map icy_caves
+	minplayers 0
 	maxplayers 50
 endmap
 
@@ -53,7 +55,7 @@ map whiskey_outpost_v2
 endmap
 
 map magmoor_digsite_iv
-	minplayers 20
+	minplayers 0
 endmap
 
 map orion_outpost

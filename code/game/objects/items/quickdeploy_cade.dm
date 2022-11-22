@@ -31,7 +31,7 @@
 /obj/item/quikdeploy/cade
 	thing_to_deploy = /obj/structure/barricade/metal
 	icon_state = "metal"
-	delay = 3 SECONDS
+	delay = 3 SECONDS * BARRICADE_BUILDING_TIME_MULT
 
 /obj/item/quikdeploy/cade/can_place(mob/user)
 	. = ..()
@@ -64,3 +64,4 @@
 /obj/item/quikdeploy/cade/plasteel
 	thing_to_deploy = /obj/structure/barricade/plasteel
 	icon_state = "plasteel"
+	delay = 3 SECONDS * BARRICADE_BUILDING_TIME_MULT

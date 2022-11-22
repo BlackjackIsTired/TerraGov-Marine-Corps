@@ -5,16 +5,16 @@ $include dbconfig.txt
 $include resources.txt
 
 ## Server name: This appears at the top of the screen in-game.
-SERVER_NAME Something
+SERVER_NAME Unofficial TGMC: Large Scale Balances and Tweaks WIP
 
 ## Hosted by name for unix platforms.
-HOSTEDBY yournamehere
+HOSTEDBY Someone with too much free time.
 
 ## The title of the main window.
-TITLE Change Me
+TITLE See below to play.
 
 ## Put on byond hub: Uncomment this to put your server on the byond hub.
-#HUB
+#UB
 
 ## Optional URL for faster resource downloading.
 #RESOURCE_URL url
@@ -200,4 +200,4 @@ DEFAULT_VIEW_SQUARE 15x15
 ## Uncomment if you think xenos are struggling against the marines
 #XENOS_ON_STRIKE
 
-AI_ANTI_STUCK_LAG_TIME_DILATION_THRESHOLD 20
+AI_ANTI_STUCK_LAG_TIME_DILATION_THRESHOLD 1

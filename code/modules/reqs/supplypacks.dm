@@ -757,7 +757,7 @@ ARMOR
 		/obj/item/clothing/head/helmet/marine/specialist/b19,
 		/obj/item/clothing/gloves/marine/specialist/b19,
 	)
-	cost = 400
+	cost = 240
 
 /datum/supply_packs/armor/b18
 	name = "B18 Armor Set"

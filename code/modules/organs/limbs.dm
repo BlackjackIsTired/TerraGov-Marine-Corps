@@ -229,8 +229,6 @@
 				can_inflict = max(0, can_inflict - brute)
 				//How much brute damage is left to inflict
 				remain_brute = max(0, brute - temp)
-			if(brute <= 1)
-				remove_limb_flags(LIMB_BROKEN | LIMB_NECROTIZED)
 
 			if(burn > 0 && can_inflict)
 				//Inflict all burn damage we can
@@ -382,6 +380,8 @@
 	// Process wounds, doing healing etc. Only do this every few ticks to save processing power
 	if(owner.life_tick % wound_update_accuracy == 0)
 		update_wounds()
+	if(brute_dam <= 59)
+		remove_limb_flags(LIMB_BROKEN | LIMB_NECROTIZED)
 
 	//Bone fractures
 	if(CONFIG_GET(flag/bones_can_break) && brute_dam > min_broken_damage && !(limb_status & LIMB_ROBOT))
@@ -409,6 +409,7 @@ INFECTION_LEVEL_THREE	above this germ level the player will take additional toxi
 
 Note that amputating the affected organ does in fact remove the infection from the player's body.
 */
+
 /datum/limb/proc/update_germs()
 
 	if(limb_status & (LIMB_ROBOT|LIMB_DESTROYED) || (owner.species && owner.species.species_flags & IS_PLANT)) //Robotic limbs shouldn't be infected, nor should nonexistant limbs.
@@ -500,7 +501,6 @@ Note that amputating the affected organ does in fact remove the infection from t
 	if(limb_status & LIMB_NECROTIZED)
 		for(var/datum/internal_organ/organ AS in internal_organs)
 			organ.take_damage(0.2, silent = TRUE) //1 point every 10 seconds, 100 seconds to bruise, five minutes to broken.
-
 
 ///Updating wounds. Handles natural damage healing from limb treatments and processes internal wounds
 /datum/limb/proc/update_wounds()

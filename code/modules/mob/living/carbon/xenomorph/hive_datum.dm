@@ -117,6 +117,10 @@
 	for(var/mob/living/carbon/xenomorph/xeno AS in get_all_xenos())
 		if(initial(xeno.tier) == XENO_TIER_MINION)
 			continue // Skipping minions
+		if(initial(xeno.tier) == XENO_TIER_MINION_T2)
+			continue // Skipping minions
+		if(initial(xeno.tier) == XENO_TIER_MINION_T3)
+			continue // Skipping minions
 		var/datum/xeno_caste/caste = xeno.xeno_caste
 		var/plasma_multi = caste.plasma_regen_limit == 0 ? 1 : caste.plasma_regen_limit // Division by 0 bad.
 		var/health = xeno.health > 0 ? xeno.health / xeno.maxHealth : -xeno.health / xeno.get_death_threshold()

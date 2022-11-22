@@ -1,4 +1,17 @@
-<h1>Welcome to the TGMC codebase!</h1>
+<h1>Welcome to Unofficial TGMC: Large Scale Balances and Tweaks.</h1>
 
-<i>Don't forget to set your own MOTD.</i>
+<i>These are just some large balancing and tweaks I've made to the TGMC codebase. Below are just some of the of the changes that have been made.</i>
+<br><br>
+<br>Fractures heal automatically when above the breaking threshold. I.E. You can take Bicardine and wait for it to repair your bones once it crosses the breaking threshold of 60.<br>
+<br>Xeno Spawners now spawn half max health T1 Xenomorph Minions with independent NPCs. Drones will travel the map planting weeds and fighting enemies it comes across, Defenders patrol the map searching for enemies and Sentinels spit their enemies to death. (These Xenomorph Minions only give 5 Req points on export.)<br>
+<br>Marine Max Health increased to 150, not much else to say. Helps you not die too quickly.<br>
+<br>Xenomorphs are now rated by tier based on how many Marines worth of health that tier has (T1 = 150 Health, T2 = 300, T3 = 450, T4 = 600.)<br>
+<br>Xenomorphs now have armour based balanced similarly to the average Marine's starting gear. You can identify generally what kind of armour a xeno has by examining them. Example: "Defender: An alien with an armored crest. This one has M(Medium Armour)-Class defenses. It looks like it's still developing."<br>
+<br>Barricades have 30% more health and take 15% longer to set up.<br>
+<br>Marine Squad Roles are now more specialized (Engineers better at Construction and Engineering, Medics better at Medical and Surgery, Marines are better than other Squad Roles at all forms of combat.(More Accuracy, Less Recoil, Lower Firing Delay and a 30% Melee Weapon Damage Increase.))<br>
+<br>Survivors added on Distress Signal.<br>
+<br>Shotguns no longer stun and instead have double knockback. Revolvers no longer slowdown or knockback.<br>
+<br>Stun durations have been reduced by half or more.<br>
+<br>Guns have been generally rebalanced, no more 2 shot kill shotgunning.<br>
+<br>Xeno AI improved. (Experience the pain of AI Runners dodging around you, slashing at you as you frantically try to hit those speedy son'sa bitches!<br>
 <br><br>

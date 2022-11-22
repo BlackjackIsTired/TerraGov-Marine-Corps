@@ -4,8 +4,8 @@
 	desc = "An eerie, four-legged alien with a hollow tail. A green, jelly-like texture characterizes its eyes and underbelly."
 	icon = 'icons/Xeno/48x48_Xenos.dmi'
 	icon_state = "Sentinel Walking"
-	health = XENO_NPC_HEALTH_MULT * 150
-	maxHealth = XENO_NPC_HEALTH_MULT * 150
+	health = XENO_NPC_HEALTH_MULT * 75
+	maxHealth = XENO_NPC_HEALTH_MULT * 75
 	plasma_stored = 50
 	pixel_x = -16
 	old_x = -16

@@ -42,7 +42,7 @@
 	minimap_icon = "spitter"
 
 	// *** Ranged Attack *** //
-	spit_delay = 0.6 SECONDS
+	spit_delay = 1 SECONDS
 	spit_types = list(/datum/ammo/xeno/acid/medium) //Gotta give them their own version of heavy acid; kludgy but necessary as 100 plasma is way too costly.
 
 	acid_spray_duration = 10 SECONDS
@@ -89,7 +89,7 @@
 	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
-	spit_delay = 0.5 SECONDS
+	spit_delay = 1 SECONDS
 
 
 
@@ -119,7 +119,7 @@
 	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
-	spit_delay = 0.5 SECONDS
+	spit_delay = 1 SECONDS
 
 
 
@@ -149,7 +149,7 @@
 	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
-	spit_delay = 0.4 SECONDS
+	spit_delay = 1 SECONDS
 
 /datum/xeno_caste/spitter/primordial
 	upgrade_name = "Primordial"
@@ -174,5 +174,5 @@
 	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
-	spit_delay = 0.4 SECONDS
+	spit_delay = 1 SECONDS
 	spit_types = list(/datum/ammo/xeno/acid/auto, /datum/ammo/xeno/acid/medium)

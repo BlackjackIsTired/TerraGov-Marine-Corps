@@ -212,15 +212,22 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 /datum/skills/civilian/survivor
 	name = "Survivor"
 	engineer = SKILL_ENGINEER_ENGI //to hack airlocks so they're never stuck in a room.
-	firearms = SKILL_FIREARMS_DEFAULT
 	construction = SKILL_CONSTRUCTION_METAL
 	medical = SKILL_MEDICAL_NOVICE
+	cqc = SKILL_CQC_MP
+	firearms = SKILL_FIREARMS_TRAINED
+	melee_weapons = SKILL_MELEE_TRAINED
+	pistols = SKILL_PISTOLS_TRAINED
+	rifles = SKILL_PISTOLS_TRAINED
+	smgs = SKILL_SMGS_TRAINED
+	shotguns = SKILL_SHOTGUNS_TRAINED
+	heavy_weapons = SKILL_HEAVY_WEAPONS_TRAINED
 
 /datum/skills/civilian/survivor/master
 	name = "Survivor"
-	firearms = SKILL_FIREARMS_DEFAULT
-	medical = SKILL_MEDICAL_EXPERT
-	surgery = SKILL_SURGERY_EXPERT
+	firearms = SKILL_FIREARMS_TRAINED
+	medical = SKILL_MEDICAL_COMPETENT
+	surgery = SKILL_SURGERY_TRAINED
 	construction = SKILL_CONSTRUCTION_MASTER
 	engineer = SKILL_ENGINEER_MASTER
 	powerloader = SKILL_POWERLOADER_MASTER
@@ -234,13 +241,13 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 
 /datum/skills/civilian/survivor/scientist
 	name = "Survivor Scientist"
-	medical = SKILL_MEDICAL_PRACTICED
+	medical = SKILL_MEDICAL_COMPETENT
 	surgery = SKILL_SURGERY_PROFESSIONAL
 	firearms = SKILL_FIREARMS_UNTRAINED
 
 /datum/skills/civilian/survivor/chef
 	name = "Survivor Chef"
-	melee_weapons = SKILL_MELEE_TRAINED
+	melee_weapons = SKILL_MELEE_SUPER
 	firearms = SKILL_FIREARMS_UNTRAINED
 
 /datum/skills/civilian/survivor/miner
@@ -250,35 +257,35 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 /datum/skills/civilian/survivor/atmos
 	name = "Survivor Atmos Tech"
 	engineer = SKILL_ENGINEER_MASTER
-	construction = SKILL_CONSTRUCTION_MASTER
+	construction = SKILL_CONSTRUCTION_ADVANCED
 
 /datum/skills/civilian/survivor/marshal
 	name = "Survivor Marshal"
 	cqc = SKILL_CQC_MP
-	firearms = SKILL_FIREARMS_DEFAULT
-	melee_weapons = SKILL_MELEE_DEFAULT
+	firearms = SKILL_FIREARMS_TRAINED
+	melee_weapons = SKILL_MELEE_TRAINED
 	pistols = SKILL_PISTOLS_TRAINED
 	police = SKILL_POLICE_MP
 
 /datum/skills/civilian/survivor/prisoner
 	name = "Survivor Prisoner"
-	cqc = SKILL_CQC_DEFAULT
-	firearms = SKILL_FIREARMS_DEFAULT
-	melee_weapons = SKILL_MELEE_DEFAULT
-	pistols = SKILL_PISTOLS_DEFAULT
+	cqc = SKILL_CQC_TRAINED
+	firearms = SKILL_FIREARMS_TRAINED
+	melee_weapons = SKILL_MELEE_TRAINED
+	pistols = SKILL_PISTOLS_TRAINED
 
 /datum/skills/combat_engineer
 	name = "Combat Engineer"
-	engineer = SKILL_ENGINEER_ENGI
-	construction = SKILL_CONSTRUCTION_ADVANCED
+	engineer = SKILL_ENGINEER_MASTER
+	construction = SKILL_CONSTRUCTION_MASTER
 	leadership = SKILL_LEAD_BEGINNER
 	powerloader = SKILL_POWERLOADER_DABBLING
 
 /datum/skills/combat_medic
 	name = "Combat Medic"
 	leadership = SKILL_LEAD_BEGINNER
-	medical = SKILL_MEDICAL_PRACTICED
-	surgery = SKILL_SURGERY_TRAINED
+	medical = SKILL_MEDICAL_COMPETENT
+	surgery = SKILL_SURGERY_PROFESSIONAL
 
 /datum/skills/combat_medic/crafty
 	name = "Crafty Combat Medic"
@@ -431,12 +438,18 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 	engineer = SKILL_ENGINEER_METAL
 	police = SKILL_POLICE_MP
 
+/datum/skills/marine
+	name = "Marine"
+	firearms = SKILL_FIREARMS_TRAINED
+	cqc = SKILL_CQC_TRAINED
+	melee_weapons = SKILL_MELEE_TRAINED
+
 /datum/skills/sl
 	name = SQUAD_LEADER
 	cqc = SKILL_CQC_TRAINED
-	construction = SKILL_CONSTRUCTION_PLASTEEL
-	engineer = SKILL_ENGINEER_PLASTEEL
-	leadership = SKILL_LEAD_EXPERT
+	construction = SKILL_CONSTRUCTION_METAL
+	engineer = SKILL_ENGINEER_METAL
+	leadership = SKILL_LEAD_MASTER
 	medical = SKILL_MEDICAL_NOVICE
 	surgery = SKILL_SURGERY_AMATEUR
 
@@ -474,7 +487,7 @@ engineer, construction, leadership, medical, surgery, pilot, police, powerloader
 	cqc = SKILL_CQC_TRAINED
 	construction = SKILL_CONSTRUCTION_METAL
 	engineer = SKILL_ENGINEER_METAL //to use c4 in scout set.
-	smartgun = SKILL_SMART_TRAINED
+	smartgun = SKILL_SMART_EXPERT
 	leadership = SKILL_LEAD_BEGINNER
 	melee_weapons = SKILL_MELEE_TRAINED
 

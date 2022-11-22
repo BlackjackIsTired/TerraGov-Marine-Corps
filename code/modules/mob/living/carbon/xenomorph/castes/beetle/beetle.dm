@@ -4,8 +4,8 @@
 	desc = "A bulky, six-legged alien with a horn. Its carapace seems quite durable."
 	icon = 'icons/Xeno/2x2_Xenos.dmi'
 	icon_state = "Defender Walking"
-	health = XENO_NPC_HEALTH_MULT * 150
-	maxHealth = XENO_NPC_HEALTH_MULT * 150
+	health = XENO_NPC_HEALTH_MULT * 75
+	maxHealth = XENO_NPC_HEALTH_MULT * 75
 	plasma_stored = 50
 	pixel_x = -16
 	old_x = -16
