@@ -42,13 +42,13 @@
 	minimap_icon = "spitter"
 
 	// *** Ranged Attack *** //
-	spit_delay = 1 SECONDS
+	spit_delay = SPIT_DELAY_MULT * 1 SECONDS
 	spit_types = list(/datum/ammo/xeno/acid/medium) //Gotta give them their own version of heavy acid; kludgy but necessary as 100 plasma is way too costly.
 
-	acid_spray_duration = 10 SECONDS
-	acid_spray_damage_on_hit = XENO_ACID_DAM_MULT * 35
-	acid_spray_damage = XENO_ACID_DAM_MULT * 16
-	acid_spray_structure_damage = 45
+	acid_spray_duration = XENO_ACID_SPRAY_DAM_MULT * 10 SECONDS
+	acid_spray_damage_on_hit = XENO_ACID_SPRAY_DAM_MULT * 35
+	acid_spray_damage = XENO_ACID_SPRAY_DAM_MULT * 16
+	acid_spray_structure_damage = XENO_ACID_SPRAY_DAM_MULT * 45
 
 	// *** Abilities *** //
 	actions = list(
@@ -80,7 +80,7 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 25
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 270
+	max_health = XENO_HEALTH_MULT * 300
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_TWO_MATURE_THRESHOLD
@@ -89,7 +89,7 @@
 	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
-	spit_delay = 1 SECONDS
+	spit_delay = SPIT_DELAY_MULT * 1 SECONDS
 
 
 
@@ -110,7 +110,7 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 28
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 290
+	max_health = XENO_HEALTH_MULT * 300
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_TWO_ELDER_THRESHOLD
@@ -119,7 +119,7 @@
 	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
-	spit_delay = 1 SECONDS
+	spit_delay = SPIT_DELAY_MULT * 1 SECONDS
 
 
 
@@ -140,7 +140,7 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 30
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 310
+	max_health = XENO_HEALTH_MULT * 300
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_TWO_ANCIENT_THRESHOLD
@@ -149,7 +149,7 @@
 	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
-	spit_delay = 1 SECONDS
+	spit_delay = SPIT_DELAY_MULT * 1 SECONDS
 
 /datum/xeno_caste/spitter/primordial
 	upgrade_name = "Primordial"
@@ -168,11 +168,11 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 30
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 310
+	max_health = XENO_HEALTH_MULT * 300
 
 	// *** Defense *** //
 	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
-	spit_delay = 1 SECONDS
+	spit_delay = SPIT_DELAY_MULT * 1 SECONDS
 	spit_types = list(/datum/ammo/xeno/acid/auto, /datum/ammo/xeno/acid/medium)

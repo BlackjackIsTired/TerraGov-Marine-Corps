@@ -257,7 +257,7 @@
 	desc = "It looks like a regular HSG-102, however glowing archaeic writing glows faintly on its sides and top. It beckons for blood."
 	icon = 'icons/Marine/marine-hmg.dmi'
 
-	aim_slowdown = 3
+	aim_slowdown = AIM_SLOWDOWN_MULT * 3
 	scatter = 30
 	deployed_scatter_change = -27
 	damage_mult = MOUNTED_DAMAGE_MULT
@@ -266,8 +266,8 @@
 	burst_amount = 3
 	burst_delay = 0.1 SECONDS
 
-	aim_slowdown = 3
-	wield_delay = 5 SECONDS
+	aim_slowdown = AIM_SLOWDOWN_MULT * 3
+	wield_delay = WIELD_DELAY_MULT * 5 SECONDS
 
 	flags_gun_features = GUN_AMMO_COUNTER|GUN_IFF
 
@@ -331,8 +331,8 @@
 	caliber = CALIBER_10x27_CASELESS // codex
 	max_shells = 100 //codex
 	force = 40
-	aim_slowdown = 1.2
-	wield_delay = 2 SECONDS
+	aim_slowdown = AIM_SLOWDOWN_MULT * 1.2
+	wield_delay = WIELD_DELAY_MULT * 2 SECONDS
 	fire_sound =  'sound/weapons/guns/fire/t27.ogg'
 	dry_fire_sound = 'sound/weapons/guns/fire/m41a_empty.ogg'
 	unload_sound = 'sound/weapons/guns/interact/T42_unload.ogg'
@@ -362,7 +362,7 @@
 	gun_firemode_list = list(GUN_FIREMODE_AUTOMATIC)
 	actions_types = list(/datum/action/item_action/aim_mode)
 	aim_fire_delay = 0.1 SECONDS
-	aim_speed_modifier = 5
+	aim_speed_modifier = AIM_SLOWDOWN_MULT * 5
 	soft_armor = list(MELEE = 0, BULLET = 50, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 100, FIRE = 0, ACID = 0)
 
 

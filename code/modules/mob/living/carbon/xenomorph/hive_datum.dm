@@ -117,10 +117,6 @@
 	for(var/mob/living/carbon/xenomorph/xeno AS in get_all_xenos())
 		if(initial(xeno.tier) == XENO_TIER_MINION)
 			continue // Skipping minions
-		if(initial(xeno.tier) == XENO_TIER_MINION_T2)
-			continue // Skipping minions
-		if(initial(xeno.tier) == XENO_TIER_MINION_T3)
-			continue // Skipping minions
 		var/datum/xeno_caste/caste = xeno.xeno_caste
 		var/plasma_multi = caste.plasma_regen_limit == 0 ? 1 : caste.plasma_regen_limit // Division by 0 bad.
 		var/health = xeno.health > 0 ? xeno.health / xeno.maxHealth : -xeno.health / xeno.get_death_threshold()
@@ -693,13 +689,9 @@
 	return living_xeno_ruler
 
 /*
-
 This is for hive-wide announcements like the queen dying
-
 The force parameter is for messages that should ignore a dead queen
-
 to_chat will check for valid clients itself already so no need to double check for clients
-
 */
 
 ///Used for Hive Message alerts
@@ -1057,14 +1049,9 @@ to_chat will check for valid clients itself already so no need to double check f
 
 ///updates and sets the t2 and t3 xeno limits
 /datum/hive_status/proc/update_tier_limits()
-	var/zeros = get_total_tier_zeros()
-	var/ones = length(xenos_by_tier[XENO_TIER_ONE])
-	var/twos = length(xenos_by_tier[XENO_TIER_TWO])
-	var/threes = length(xenos_by_tier[XENO_TIER_THREE])
-	var/fours = length(xenos_by_tier[XENO_TIER_FOUR])
 
-	tier3_xeno_limit = max(threes, FLOOR(((zeros + ones + twos + fours) * (evotowers.len * 0.2 + 1)) / 3 + 1, 1))
-	tier2_xeno_limit = max((twos + zeros + ones + fours) * (evotowers.len * 0.2 + 1) + 1 - threes)
+	tier3_xeno_limit = max((HUMAN_LIFE_ON_GROUND_WEIGHT + HUMAN_LIFE_WEIGHT_SHIPSIDE) * (evotowers.len * 0.5) / 3)
+	tier2_xeno_limit = max((HUMAN_LIFE_ON_GROUND_WEIGHT + HUMAN_LIFE_WEIGHT_SHIPSIDE) * (evotowers.len * 0.5) / 2)
 
 // ***************************************
 // *********** Corrupted Xenos

@@ -84,7 +84,7 @@ GLOBAL_LIST_INIT(tier_to_primo_upgrade, list(
 	///name of the category it belongs to, string, used in ui
 	var/category = "ERROR CATEGORY"
 	///Psy point cost, float
-	var/psypoint_cost = 10
+	var/psypoint_cost = XENO_BLESSING_COST * 10
 	///upgrade flag var
 	var/flags_upgrade = NONE
 	///gamemode flags to whether this upgrade is purchasable
@@ -173,7 +173,7 @@ GLOBAL_LIST_INIT(tier_to_primo_upgrade, list(
 /datum/hive_upgrade/building/silo
 	name = "Larva Silo"
 	desc = "Constructs a silo that generates xeno larvas over time. Requires open space and time to place."
-	psypoint_cost = SILO_PRICE
+	psypoint_cost = XENO_BLESSING_COST * SILO_PRICE
 	icon = "larvasilo"
 	flags_upgrade = ABILITY_DISTRESS
 	building_type = /obj/structure/xeno/silo
@@ -200,7 +200,7 @@ GLOBAL_LIST_INIT(tier_to_primo_upgrade, list(
 /datum/hive_upgrade/building/evotower
 	name = "Evolution Tower"
 	desc = "Constructs a tower that increases the rate of evolution point generation by 1.25 times per tower."
-	psypoint_cost = 300
+	psypoint_cost = XENO_BLESSING_COST * 300
 	icon = "evotower"
 	flags_upgrade = ABILITY_DISTRESS
 	building_type = /obj/structure/xeno/evotower
@@ -208,7 +208,7 @@ GLOBAL_LIST_INIT(tier_to_primo_upgrade, list(
 /datum/hive_upgrade/building/maturitytower
 	name = "Maturity Tower"
 	desc = "Constructs a tower that increases the rate of maturity point generation by 1.2 times per tower."
-	psypoint_cost = 300
+	psypoint_cost = XENO_BLESSING_COST * 300
 	icon = "maturitytower"
 	flags_upgrade = ABILITY_DISTRESS
 	building_type = /obj/structure/xeno/maturitytower
@@ -216,7 +216,7 @@ GLOBAL_LIST_INIT(tier_to_primo_upgrade, list(
 /datum/hive_upgrade/building/pherotower
 	name = "Pheromone Tower"
 	desc = "Constructs a tower that emanates a selectable type of pheromone."
-	psypoint_cost = 150
+	psypoint_cost = XENO_BLESSING_COST * 150
 	icon = "pherotower"
 	flags_upgrade = ABILITY_DISTRESS
 	building_type = /obj/structure/xeno/pherotower
@@ -226,7 +226,7 @@ GLOBAL_LIST_INIT(tier_to_primo_upgrade, list(
 /datum/hive_upgrade/building/spawner
 	name = "Spawner"
 	desc = "Constructs a spawner that generates ai xenos over time"
-	psypoint_cost = 600
+	psypoint_cost = XENO_BLESSING_COST * 600
 	icon = "spawner"
 	flags_upgrade = ABILITY_DISTRESS
 	building_type = /obj/structure/xeno/spawner
@@ -238,7 +238,7 @@ GLOBAL_LIST_INIT(tier_to_primo_upgrade, list(
 	name = "Acid turret"
 	desc = "Places a acid spitting resin turret under you. Must be at least 6 tiles away from other turrets, not near fog and on a weeded area."
 	icon = "acidturret"
-	psypoint_cost = XENO_TURRET_PRICE
+	psypoint_cost = XENO_BLESSING_COST * XENO_TURRET_PRICE
 	flags_gamemode = ABILITY_DISTRESS
 	///How long to build one turret
 	var/build_time = 10 SECONDS
@@ -294,7 +294,7 @@ GLOBAL_LIST_INIT(tier_to_primo_upgrade, list(
 	name = "Sticky resin turret"
 	desc = "Places a sticky spit spitting resin turret under you. Must be at least 6 tiles away from other turrets, not near fog and on a weeded area."
 	icon = "resinturret"
-	psypoint_cost = 50
+	psypoint_cost = XENO_BLESSING_COST * 50
 	turret_type = /obj/structure/xeno/xeno_turret/sticky
 
 /datum/hive_upgrade/xenos
@@ -305,7 +305,7 @@ GLOBAL_LIST_INIT(tier_to_primo_upgrade, list(
 	desc = "Places a Psychic Echo chamber that tallhosts can detect, then after a summon time selects a random sister to take over the mind of the gravity manipulating King."
 	icon = "king"
 	flags_gamemode = ABILITY_DISTRESS
-	psypoint_cost = 1800
+	psypoint_cost = XENO_BLESSING_COST * 1800
 
 /datum/hive_upgrade/xenos/king/can_buy(mob/living/carbon/xenomorph/buyer, silent = TRUE)
 	. = ..()
@@ -334,7 +334,7 @@ GLOBAL_LIST_INIT(tier_to_primo_upgrade, list(
 	icon = "smartminions"
 	flags_gamemode = ABILITY_DISTRESS
 	flags_upgrade = UPGRADE_FLAG_ONETIME|UPGRADE_FLAG_MESSAGE_HIVE
-	psypoint_cost = 500
+	psypoint_cost = XENO_BLESSING_COST * 500
 
 /datum/hive_upgrade/primordial
 	category = "Xenos"
@@ -351,23 +351,23 @@ GLOBAL_LIST_INIT(tier_to_primo_upgrade, list(
 /datum/hive_upgrade/primordial/tier_four
 	name = PRIMORDIAL_TIER_FOUR
 	desc = "Unlocks the primordial for the last tier"
-	psypoint_cost = 600
+	psypoint_cost = XENO_BLESSING_COST * 600
 	icon = "primoqueen"
 
 /datum/hive_upgrade/primordial/tier_three
 	name = PRIMORDIAL_TIER_THREE
 	desc = "Unlocks the primordial for the third tier"
-	psypoint_cost = 600
+	psypoint_cost = XENO_BLESSING_COST * 600
 	icon = "primorav"
 
 /datum/hive_upgrade/primordial/tier_two
 	name = PRIMORDIAL_TIER_TWO
 	desc = "Unlocks the primordial for the second tier"
-	psypoint_cost = 600
+	psypoint_cost = XENO_BLESSING_COST * 600
 	icon = "primowarrior"
 
 /datum/hive_upgrade/primordial/tier_one
 	name = PRIMORDIAL_TIER_ONE
 	desc = "Unlocks the primordial for the first tier"
-	psypoint_cost = 600
+	psypoint_cost = XENO_BLESSING_COST * 600
 	icon = "primosent"

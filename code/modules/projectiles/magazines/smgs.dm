@@ -99,7 +99,7 @@
 	scatter_mod = 5
 	scatter_unwielded_mod = 10
 	wield_delay_mod = 0.2 SECONDS
-	aim_speed_mod = 0.3
+	aim_speed_mod = AIM_SLOWDOWN_MULT * 0.3
 
 //-------------------------------------------------------
 //GENERIC UZI //Based on the uzi submachinegun, of course.
@@ -150,4 +150,4 @@
 	max_rounds = 75
 	icon_state_mini = "mag_smg_yellow"
 	w_class = WEIGHT_CLASS_NORMAL
-	aim_speed_mod = 0.1
+	aim_speed_mod = AIM_SLOWDOWN_MULT * 0.1

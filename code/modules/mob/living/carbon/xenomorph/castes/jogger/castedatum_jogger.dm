@@ -1,10 +1,10 @@
-/datum/xeno_caste/runner
-	caste_name = "Runner"
-	display_name = "Runner"
+/datum/xeno_caste/jogger
+	caste_name = "Jogger"
+	display_name = "Jogger"
 	upgrade_name = ""
 	caste_desc = "A fast, four-legged terror, but weak in sustained combat. This one has L-Class Defenses."
-	caste_type_path = /mob/living/carbon/xenomorph/runner
-	tier = XENO_TIER_ONE
+	caste_type_path = /mob/living/carbon/xenomorph/jogger
+	tier = XENO_TIER_MINION
 	upgrade = XENO_UPGRADE_BASETYPE
 	wound_type = "runner" //used to match appropriate wound overlays
 
@@ -25,16 +25,13 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 5
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 150
+	max_health = XENO_HEALTH_MULT * 75
 
 	// *** Evolution *** //
 	evolution_threshold = XENO_EVO_MULT * 80
 	upgrade_threshold = XENO_UPG_MULT * TIER_ONE_YOUNG_THRESHOLD
 
 	evolves_to = list(
-		/mob/living/carbon/xenomorph/hunter,
-		/mob/living/carbon/xenomorph/bull,
-		/mob/living/carbon/xenomorph/wraith,
 	)
 
 	// *** Flags *** //
@@ -62,16 +59,16 @@
 		/datum/action/xeno_action/evasion,
 	)
 
-/datum/xeno_caste/runner/young
+/datum/xeno_caste/jogger/young
 	upgrade_name = "Young"
 
 	upgrade = XENO_UPGRADE_ZERO
 
-/datum/xeno_caste/runner/mature
+/datum/xeno_caste/jogger/mature
 	upgrade_name = "Mature"
 	caste_desc = "A fast, four-legged terror, but weak in sustained combat. This one has L-Class Defenses. It looks a little more dangerous."
 
-	upgrade = XENO_UPGRADE_ONE
+
 
 	savage_cooldown = 30 SECONDS
 
@@ -83,7 +80,7 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 7
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 150
+	max_health = XENO_HEALTH_MULT * 75
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_ONE_MATURE_THRESHOLD
@@ -94,7 +91,7 @@
 	// *** Ranged Attack *** //
 	pounce_delay = 13 SECONDS
 
-/datum/xeno_caste/runner/elder
+/datum/xeno_caste/jogger/elder
 	upgrade_name = "Elder"
 	caste_desc = "A fast, four-legged terror, but weak in sustained combat. This one has L-Class Defenses. It looks pretty strong."
 
@@ -113,7 +110,7 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 9
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 150
+	max_health = XENO_HEALTH_MULT * 75
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_ONE_ELDER_THRESHOLD
@@ -124,7 +121,7 @@
 	// *** Ranged Attack *** //
 	pounce_delay = 13 SECONDS
 
-/datum/xeno_caste/runner/ancient
+/datum/xeno_caste/jogger/ancient
 	upgrade_name = "Ancient"
 	caste_desc = "Not what you want to run into in a dark alley. It looks extremely deadly."
 	ancient_message = "We are the fastest assassin of all time. Our speed is unmatched."
@@ -143,7 +140,7 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 11
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 150
+	max_health = XENO_HEALTH_MULT * 75
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_ONE_ANCIENT_THRESHOLD
@@ -154,7 +151,7 @@
 	// *** Ranged Attack *** //
 	pounce_delay = 13 SECONDS
 
-/datum/xeno_caste/runner/primordial
+/datum/xeno_caste/jogger/primordial
 	upgrade_name = "Primordial"
 	caste_desc = "A sprinting terror of the hive. It looks ancient and menacing."
 	primordial_message = "Nothing can outrun us. We are the swift death."
@@ -173,7 +170,7 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 11
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 150
+	max_health = XENO_HEALTH_MULT * 75
 
 	// *** Defense *** //
 	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)

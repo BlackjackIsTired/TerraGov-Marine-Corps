@@ -7,7 +7,7 @@
 	health = XENO_NPC_HEALTH_MULT * 80
 	maxHealth = XENO_NPC_HEALTH_MULT * 80
 	plasma_stored = 200
-	tier = XENO_TIER_MINION_T2
+	tier = XENO_TIER_TWO
 	upgrade = XENO_UPGRADE_ZERO
 
 	pixel_x = -16

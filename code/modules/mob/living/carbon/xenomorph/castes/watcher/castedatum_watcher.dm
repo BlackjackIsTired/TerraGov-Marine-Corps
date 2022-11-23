@@ -1,9 +1,9 @@
-/datum/xeno_caste/sentinel
-	caste_name = "Sentinel"
-	display_name = "Sentinel"
+/datum/xeno_caste/watcher
+	caste_name = "Watcher"
+	display_name = "Watcher"
 	upgrade_name = ""
 	caste_desc = "A weak ranged combat alien."
-	caste_type_path = /mob/living/carbon/xenomorph/sentinel
+	caste_type_path = /mob/living/carbon/xenomorph/watcher
 	tier = XENO_TIER_ONE
 	upgrade = XENO_UPGRADE_BASETYPE
 
@@ -18,13 +18,14 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 10
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 150
+	max_health = XENO_HEALTH_MULT * 75
 
 	// *** Evolution *** //
 	evolution_threshold = XENO_EVO_MULT * 80
 	upgrade_threshold = XENO_UPG_MULT * TIER_ONE_YOUNG_THRESHOLD
 
-	evolves_to = list(/mob/living/carbon/xenomorph/spitter)
+	evolves_to = list(
+	)
 
 	// *** Flags *** //
 	caste_flags = CASTE_EVOLUTION_ALLOWED
@@ -50,12 +51,12 @@
 		/datum/action/xeno_action/activable/neurotox_sting,
 	)
 
-/datum/xeno_caste/sentinel/young
+/datum/xeno_caste/watcher/young
 	upgrade_name = "Young"
 
 	upgrade = XENO_UPGRADE_ZERO
 
-/datum/xeno_caste/sentinel/mature
+/datum/xeno_caste/watcher/mature
 	upgrade_name = "Mature"
 	caste_desc = "A ranged combat alien. This one has L-Class Defenses. It looks a little more dangerous."
 
@@ -69,7 +70,7 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 15
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 150
+	max_health = XENO_HEALTH_MULT * 75
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_ONE_MATURE_THRESHOLD
@@ -81,7 +82,7 @@
 	spit_delay = SPIT_DELAY_MULT * 1.0 SECONDS
 	spit_types = list(/datum/ammo/xeno/toxin/upgrade1, /datum/ammo/xeno/acid)
 
-/datum/xeno_caste/sentinel/elder
+/datum/xeno_caste/watcher/elder
 	upgrade_name = "Elder"
 	caste_desc = "A ranged combat alien. This one has L-Class Defenses. It looks pretty strong."
 
@@ -98,7 +99,7 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 18
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 150
+	max_health = XENO_HEALTH_MULT * 75
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_ONE_ELDER_THRESHOLD
@@ -110,7 +111,7 @@
 	spit_delay = SPIT_DELAY_MULT * 1.0 SECONDS
 	spit_types = list(/datum/ammo/xeno/toxin/upgrade2, /datum/ammo/xeno/acid)
 
-/datum/xeno_caste/sentinel/ancient
+/datum/xeno_caste/watcher/ancient
 	upgrade_name = "Ancient"
 	caste_desc = "Neurotoxin Factory, don't let it get you."
 	ancient_message = "We are the stun master. We will take down any opponent."
@@ -127,7 +128,7 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 20
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 150
+	max_health = XENO_HEALTH_MULT * 75
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_ONE_ANCIENT_THRESHOLD
@@ -141,7 +142,7 @@
 
 
 
-/datum/xeno_caste/sentinel/primordial
+/datum/xeno_caste/watcher/primordial
 	upgrade_name = "Primordial"
 	caste_desc = "A doctors worst nightmare. It's stinger drips with poison."
 	ancient_message = "All will succumb to our toxins. Leave noone standing."
@@ -158,7 +159,7 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 20
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 150
+	max_health = XENO_HEALTH_MULT * 75
 
 	// *** Defense *** //
 	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)

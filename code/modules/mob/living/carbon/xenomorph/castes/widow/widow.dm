@@ -7,7 +7,7 @@
 	health = XENO_NPC_HEALTH_MULT * 225
 	maxHealth = XENO_NPC_HEALTH_MULT * 225
 	plasma_stored = 150
-	tier = XENO_TIER_MINION_T3
+	tier = XENO_TIER_THREE
 	upgrade = XENO_UPGRADE_ZERO
 	buckle_flags = CAN_BUCKLE
 	pixel_x = -16

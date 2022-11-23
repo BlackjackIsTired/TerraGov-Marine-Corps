@@ -7,7 +7,7 @@
 	health = XENO_NPC_HEALTH_MULT * 225
 	maxHealth = XENO_NPC_HEALTH_MULT * 225
 	plasma_stored = 200
-	tier = XENO_TIER_MINION_T3
+	tier = XENO_TIER_THREE
 	upgrade = XENO_UPGRADE_ZERO
 	drag_delay = 6 //pulling a big dead xeno is hard
 	mob_size = MOB_SIZE_BIG

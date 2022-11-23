@@ -8,7 +8,7 @@
 	load_method = MAGAZINE //codex
 	force = 8
 	w_class = WEIGHT_CLASS_BULKY
-	wield_delay = 0.4 SECONDS
+	wield_delay = WIELD_DELAY_MULT * 0.4 SECONDS
 	attachable_allowed = list(
 		/obj/item/attachable/suppressor,
 		/obj/item/attachable/reddot,
@@ -67,7 +67,7 @@
 	scatter = 0
 	fire_delay = 0.15 SECONDS
 	scatter_unwielded = 4
-	aim_slowdown = 0.15
+	aim_slowdown = AIM_SLOWDOWN_MULT * 0.15
 	burst_amount = 5
 	movement_acc_penalty_mult = 2
 	akimbo_additional_delay = 1.3
@@ -96,7 +96,7 @@
 	caliber = CALIBER_10X20_CASELESS //codex
 	max_shells = 50 //codex
 	flags_equip_slot = ITEM_SLOT_BACK
-	wield_delay = 0.5 SECONDS
+	wield_delay = WIELD_DELAY_MULT * 0.5 SECONDS
 	force = 20
 	type_of_casings = null
 	default_ammo_type = /obj/item/ammo_magazine/smg/standard_smg
@@ -121,13 +121,13 @@
 	attachable_offset = list("muzzle_x" = 31, "muzzle_y" = 15,"rail_x" = 22, "rail_y" = 22, "under_x" = 26, "under_y" = 12, "stock_x" = 24, "stock_y" = 10)
 	actions_types = list(/datum/action/item_action/aim_mode)
 	aim_fire_delay = 0.1 SECONDS
-	aim_speed_modifier = 0.55
+	aim_speed_modifier = AIM_SLOWDOWN_MULT * 0.55
 	accuracy_mult = 1.05
 	accuracy_mult_unwielded = 0.9
 	scatter = 1
 	fire_delay = 0.15 SECONDS
 	scatter_unwielded = 8
-	aim_slowdown = 0.2
+	aim_slowdown = AIM_SLOWDOWN_MULT * 0.2
 	burst_amount = 0
 	upper_akimbo_accuracy = 4
 	lower_akimbo_accuracy = 2
@@ -188,7 +188,7 @@
 	scatter = 4
 	fire_delay = 0.2 SECONDS
 	scatter_unwielded = 10
-	aim_slowdown = 0.15
+	aim_slowdown = AIM_SLOWDOWN_MULT * 0.15
 	burst_amount = 3
 
 /obj/item/weapon/gun/smg/m25/holstered
@@ -223,7 +223,7 @@
 	accuracy_mult = 1.1
 	accuracy_mult_unwielded = 1
 	damage_mult = SMG_DAMAGE_MULT * 1.2
-	aim_slowdown = 0.2
+	aim_slowdown = AIM_SLOWDOWN_MULT * 0.2
 	scatter = 3
 
 /obj/item/weapon/gun/smg/m25/elite/pmc
@@ -290,8 +290,8 @@
 	scatter = 2
 	scatter_unwielded = 6
 	fire_delay = 0.1 SECONDS
-	aim_slowdown = 0.3
-	wield_delay = 0.3 SECONDS
+	aim_slowdown = AIM_SLOWDOWN_MULT * 0.3
+	wield_delay = WIELD_DELAY_MULT * 0.3 SECONDS
 
 /obj/item/weapon/gun/smg/skorpion/mag_harness
 	starting_attachment_types = list(/obj/item/attachable/magnetic_harness)
@@ -338,7 +338,7 @@
 	attachable_offset = list("muzzle_x" = 38, "muzzle_y" = 19,"rail_x" = 13, "rail_y" = 21, "under_x" = 26, "under_y" = 15, "stock_x" = 19, "stock_y" = 13)
 	actions_types = list(/datum/action/item_action/aim_mode)
 	aim_fire_delay = 0.15 SECONDS
-	aim_speed_modifier = 2.5
+	aim_speed_modifier = AIM_SLOWDOWN_MULT * 2.5
 
 	starting_attachment_types = list(
 		/obj/item/attachable/stock/irremoveable/ppsh,
@@ -350,8 +350,8 @@
 	accuracy_mult_unwielded = 0.8
 	scatter = 5
 	scatter_unwielded = 15
-	aim_slowdown = 0.3
-	wield_delay = 0.35 SECONDS
+	aim_slowdown = AIM_SLOWDOWN_MULT * 0.3
+	wield_delay = WIELD_DELAY_MULT * 0.35 SECONDS
 
 
 //-------------------------------------------------------
@@ -377,8 +377,8 @@
 	accuracy_mult_unwielded = 0.9
 	scatter = 0
 	scatter_unwielded = 4
-	aim_slowdown = 0.15
-	wield_delay = 0.2 SECONDS
+	aim_slowdown = AIM_SLOWDOWN_MULT * 0.15
+	wield_delay = WIELD_DELAY_MULT * 0.2 SECONDS
 
 /obj/item/weapon/gun/smg/uzi/mag_harness
 	default_ammo_type = /obj/item/ammo_magazine/smg/uzi/extended
@@ -419,8 +419,8 @@
 	attachable_offset = list("muzzle_x" = 38, "muzzle_y" = 20,"rail_x" = 13, "rail_y" = 22, "under_x" = 31, "under_y" = 15, "stock_x" = 24, "stock_y" = 10)
 
 	fire_delay = 0.15 SECONDS
-	aim_slowdown = 0.15
-	wield_delay = 0.4 SECONDS
+	aim_slowdown = AIM_SLOWDOWN_MULT * 0.15
+	wield_delay = WIELD_DELAY_MULT * 0.4 SECONDS
 
 	accuracy_mult = 1.05
 	accuracy_mult_unwielded = 0.9

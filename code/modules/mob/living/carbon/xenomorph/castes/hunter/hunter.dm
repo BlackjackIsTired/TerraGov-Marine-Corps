@@ -7,7 +7,7 @@
 	health = XENO_NPC_HEALTH_MULT * 150
 	maxHealth = XENO_NPC_HEALTH_MULT * 150
 	plasma_stored = 50
-	tier = XENO_TIER_MINION_T2
+	tier = XENO_TIER_TWO
 	upgrade = XENO_UPGRADE_ZERO
 	inherent_verbs = list(
 		/mob/living/carbon/xenomorph/proc/vent_crawl,

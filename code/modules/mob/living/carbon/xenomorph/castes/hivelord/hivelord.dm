@@ -11,7 +11,7 @@
 	old_x = -16
 	mob_size = MOB_SIZE_BIG
 	drag_delay = 6 //pulling a big dead xeno is hard
-	tier = XENO_TIER_MINION_T2
+	tier = XENO_TIER_TWO
 	upgrade = XENO_UPGRADE_ZERO
 	var/list/tunnels = list() //list of active tunnels
 

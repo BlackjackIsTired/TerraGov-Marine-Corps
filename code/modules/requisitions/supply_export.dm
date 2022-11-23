@@ -17,9 +17,9 @@
 		if(XENO_TIER_ZERO)
 			. = 15
 		if(XENO_TIER_ONE)
-			. = 30
+			. = 20
 		if(XENO_TIER_TWO)
-			. = 40
+			. = 35
 		if(XENO_TIER_THREE)
 			. = 50
 		if(XENO_TIER_FOUR)

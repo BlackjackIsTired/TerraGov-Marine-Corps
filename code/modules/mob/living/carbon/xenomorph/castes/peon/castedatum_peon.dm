@@ -1,11 +1,11 @@
-/datum/xeno_caste/drone
-	caste_name = "Drone"
-	display_name = "Drone"
+/datum/xeno_caste/peon
+	caste_name = "Peon"
+	display_name = "Peon"
 	upgrade_name = ""
 	caste_desc = "A builder of hives. Only drones may evolve into Shrikes."
-	caste_type_path = /mob/living/carbon/xenomorph/drone
+	caste_type_path = /mob/living/carbon/xenomorph/peon
 
-	tier = XENO_TIER_ONE
+	tier = XENO_TIER_MINION
 	upgrade = XENO_UPGRADE_BASETYPE
 
 	// *** Melee Attacks *** //
@@ -20,18 +20,13 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 25
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 150
+	max_health = XENO_HEALTH_MULT * 75
 
 	// *** Evolution *** //
 	evolution_threshold = XENO_EVO_MULT * 80
 	upgrade_threshold = XENO_UPG_MULT * TIER_ONE_YOUNG_THRESHOLD
 
 	evolves_to = list(
-		/mob/living/carbon/xenomorph/shrike,
-		/mob/living/carbon/xenomorph/queen,
-		/mob/living/carbon/xenomorph/carrier,
-		/mob/living/carbon/xenomorph/hivelord,
-		/mob/living/carbon/xenomorph/hivemind,
 	)
 
 	// *** Flags *** //
@@ -67,12 +62,12 @@
 		/datum/action/xeno_action/pheromones/emit_frenzy,
 	)
 
-/datum/xeno_caste/drone/young
+/datum/xeno_caste/peon/young
 	upgrade_name = "Young"
 
 	upgrade = XENO_UPGRADE_ZERO
 
-/datum/xeno_caste/drone/mature
+/datum/xeno_caste/peon/mature
 	upgrade_name = "Mature"
 	caste_desc = "The workhorse of the hive. This one has L-Class Defenses. It looks a little more dangerous."
 
@@ -86,7 +81,7 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 30
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 150
+	max_health = XENO_HEALTH_MULT * 75
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_ONE_MATURE_THRESHOLD
@@ -97,7 +92,7 @@
 	// *** Pheromones *** //
 	aura_strength = 1.5
 
-/datum/xeno_caste/drone/elder
+/datum/xeno_caste/peon/elder
 	upgrade_name = "Elder"
 	caste_desc = "The workhorse of the hive. This one has L-Class Defenses. It looks a little more dangerous."
 
@@ -114,7 +109,7 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 35
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 150
+	max_health = XENO_HEALTH_MULT * 75
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_ONE_ELDER_THRESHOLD
@@ -125,7 +120,7 @@
 	// *** Pheromones *** //
 	aura_strength = 1.8
 
-/datum/xeno_caste/drone/ancient
+/datum/xeno_caste/peon/ancient
 	upgrade_name = "Ancient"
 	caste_desc = "A very mean architect."
 	ancient_message = "We are the ultimate worker of the Hive. Time to clock in, and clock the tallhosts out."
@@ -142,7 +137,7 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 40
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 150
+	max_health = XENO_HEALTH_MULT * 75
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_ONE_ANCIENT_THRESHOLD
@@ -153,7 +148,7 @@
 	// *** Pheromones *** //
 	aura_strength = 2
 
-/datum/xeno_caste/drone/primordial
+/datum/xeno_caste/peon/primordial
 	upgrade_name = "Primordial"
 	caste_desc = "The perfect worker."
 	primordial_message = "We shall build wonders with our claws. Glory to the hive."
@@ -170,7 +165,7 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 40
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 150
+	max_health = XENO_HEALTH_MULT * 75
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * 660

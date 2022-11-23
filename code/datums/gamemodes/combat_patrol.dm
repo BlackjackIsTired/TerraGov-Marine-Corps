@@ -28,7 +28,7 @@
 	/// Timer used to calculate how long till next respawn wave
 	var/wave_timer
 	///The length of time until next respawn wave.
-	var/wave_timer_length = 5 MINUTES
+	var/wave_timer_length = 2 MINUTES
 	///Whether the max game time has been reached
 	var/max_time_reached = FALSE
 	/// Time between two bioscan

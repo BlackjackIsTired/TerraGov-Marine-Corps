@@ -115,9 +115,10 @@ GLOBAL_LIST_INIT(resin_images_list, list(
 #define GHOSTS_CAN_TAKE_MINIONS "Smart Minions"
 
 GLOBAL_LIST_INIT(xeno_ai_spawnable, list(
-	/mob/living/carbon/xenomorph/beetle/ai,
-	/mob/living/carbon/xenomorph/mantis/ai,
-	/mob/living/carbon/xenomorph/scorpion/ai,
+	/mob/living/carbon/xenomorph/protector/ai,
+	/mob/living/carbon/xenomorph/peon/ai,
+	/mob/living/carbon/xenomorph/watcher/ai,
+	/mob/living/carbon/xenomorph/jogger/ai,
 ))
 
 ///Heals a xeno, respecting different types of damage

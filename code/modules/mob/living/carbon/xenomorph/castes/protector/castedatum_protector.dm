@@ -1,10 +1,10 @@
-/datum/xeno_caste/defender
-	caste_name = "Defender"
-	display_name = "Defender"
+/datum/xeno_caste/protector
+	caste_name = "Protector"
+	display_name = "Protector"
 	upgrade_name = ""
 	caste_desc = "An alien with an armored crest. This one has M-Class defenses. It looks like it's still developing."
 
-	caste_type_path = /mob/living/carbon/xenomorph/defender
+	caste_type_path = /mob/living/carbon/xenomorph/protector
 
 	tier = XENO_TIER_ONE
 	upgrade = XENO_UPGRADE_BASETYPE
@@ -28,8 +28,6 @@
 	upgrade_threshold = XENO_UPG_MULT * TIER_ONE_YOUNG_THRESHOLD
 
 	evolves_to = list(
-		/mob/living/carbon/xenomorph/warrior,
-		/mob/living/carbon/xenomorph/bull,
 	)
 
 	// *** Flags *** //
@@ -61,12 +59,12 @@
 		/datum/action/xeno_action/regenerate_skin,
 	)
 
-/datum/xeno_caste/defender/young
+/datum/xeno_caste/protector/young
 	upgrade_name = "Young"
 
 	upgrade = XENO_UPGRADE_ZERO
 
-/datum/xeno_caste/defender/mature
+/datum/xeno_caste/protector/mature
 	upgrade_name = "Mature"
 	caste_desc = "An alien with an armored crest. This one has M-Class defenses. It looks pretty durable."
 	upgrade = XENO_UPGRADE_ONE
@@ -92,7 +90,7 @@
 	crest_defense_slowdown = 0.8
 	fortify_armor = 25
 
-/datum/xeno_caste/defender/elder
+/datum/xeno_caste/protector/elder
 	upgrade_name = "Elder"
 	caste_desc = "An alien with a heavily armored head crest. It looks very tough."
 	upgrade = XENO_UPGRADE_TWO
@@ -121,7 +119,7 @@
 	crest_defense_slowdown = 0.8
 	fortify_armor = 25
 
-/datum/xeno_caste/defender/ancient
+/datum/xeno_caste/protector/ancient
 	upgrade_name = "Ancient"
 	caste_desc = "An alien with a heavily armored head crest. It looks like it could stop bullets!"
 	upgrade = XENO_UPGRADE_THREE
@@ -151,7 +149,7 @@
 	crest_defense_slowdown = 0.8
 	fortify_armor = 25
 
-/datum/xeno_caste/defender/primordial
+/datum/xeno_caste/protector/primordial
 	upgrade_name = "Primordial"
 	caste_desc = "Alien with an incredibly tough and armored head crest able to endure even the strongest hits."
 	upgrade = XENO_UPGRADE_FOUR

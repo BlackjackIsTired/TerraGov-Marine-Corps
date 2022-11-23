@@ -24,27 +24,27 @@
 #define SHIPSIDE "shipside"
 
 //The weight of each statistics in the state calculator when GROUNDSIDE
-#define XENOS_LIFE_WEIGHT -180
-#define HUMAN_LIFE_ON_GROUND_WEIGHT 100
-#define HUMAN_LIFE_ON_SHIP_WEIGHT 70
-#define BURROWED_LARVA_WEIGHT -20
-#define REQ_POINTS_WEIGHT 2
-#define ELDER_T2_WEIGHT -40
-#define ANCIENT_T2_WEIGHT -60
-#define ELDER_T3_WEIGHT -60
-#define ANCIENT_T3_WEIGHT -100
-#define ELDER_T4_WEIGHT -80
-#define ANCIENT_T4_WEIGHT -120
-#define KING_WEIGHT -200 //king is also counted as a T4
-#define SPAWNING_POOL_WEIGHT -100
+#define XENOS_LIFE_WEIGHT -1
+#define HUMAN_LIFE_ON_GROUND_WEIGHT 1
+#define HUMAN_LIFE_ON_SHIP_WEIGHT 0.5
+#define BURROWED_LARVA_WEIGHT 0
+#define REQ_POINTS_WEIGHT 0.05
+#define ELDER_T2_WEIGHT -2
+#define ANCIENT_T2_WEIGHT -2
+#define ELDER_T3_WEIGHT -3
+#define ANCIENT_T3_WEIGHT -3
+#define ELDER_T4_WEIGHT -4
+#define ANCIENT_T4_WEIGHT -4
+#define KING_WEIGHT -4 //king is also counted as a T4
+#define SPAWNING_POOL_WEIGHT 0
 
 //The weight of each statistics in the state calculator before shutters drop
-#define XENOS_LIFE_WEIGHT_PREGAME -300
-#define HUMAN_LIFE_WEIGHT_PREGAME 100
+#define XENOS_LIFE_WEIGHT_PREGAME 1
+#define HUMAN_LIFE_WEIGHT_PREGAME 1
 
 //The weight of each statistics in the state calculator when shipside
-#define XENOS_LIFE_WEIGHT_SHIPSIDE -200
-#define HUMAN_LIFE_WEIGHT_SHIPSIDE 100
+#define XENOS_LIFE_WEIGHT_SHIPSIDE 1
+#define HUMAN_LIFE_WEIGHT_SHIPSIDE 1
 
 //Minimum proportion of burrowed larvas compared to live xenos for the unbalance join detector to show up
 #define TOO_MUCH_BURROWED_PROPORTION 0.2

@@ -471,7 +471,7 @@ GLOBAL_VAR_INIT(join_as_robot_allowed, TRUE)
 	unarmed_type = /datum/unarmed_attack/punch
 	rarity_value = 2
 
-	total_health = 125 //more health than regular humans
+	total_health = 175 //more health than regular humans
 
 	brute_mod = 0.70
 	burn_mod = 0.70 //Synthetics should not be instantly melted by acid compared to humans - This is a test to hopefully fix very glaring issues involving synthetics taking 2.6 trillion damage when so much as touching acid
@@ -525,7 +525,7 @@ GLOBAL_VAR_INIT(join_as_robot_allowed, TRUE)
 	default_language_holder = /datum/language_holder/synthetic
 	unarmed_type = /datum/unarmed_attack/punch
 	rarity_value = 1.5
-	total_health = 125
+	total_health = 175
 	brute_mod = 0.70
 	burn_mod = 0.70
 	slowdown = 1 * MARINE_BASE_SLOWDOWN_MULT

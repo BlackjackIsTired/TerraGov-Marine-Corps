@@ -3,6 +3,7 @@
 	config_tag = "Crash"
 	flags_round_type = MODE_INFESTATION|MODE_XENO_SPAWN_PROTECT|MODE_DEAD_GRAB_FORBIDDEN|MODE_SPAWNING_MINIONS
 	flags_xeno_abilities = ABILITY_DISTRESS
+	respawn_time = 2 MINUTES
 	valid_job_types = list(
 		/datum/job/terragov/squad/standard = -1,
 		/datum/job/terragov/squad/engineer = 8,
@@ -37,7 +38,7 @@
 	if(!.)
 		return
 	var/datum/job/xeno_job = SSjob.GetJobType(/datum/job/xenomorph)
-	xeno_job.job_points_needed  = CRASH_LARVA_POINTS_NEEDED
+	xeno_job.job_points_needed  = 6
 
 
 /datum/game_mode/infestation/crash/pre_setup()

@@ -180,7 +180,7 @@
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_SECRETE_RESIN,
 	)
 	///Minimum time to build a resin structure
-	var/base_wait = 1 SECONDS
+	var/base_wait = 1 SECONDS * XENO_BUILD_TIME_MULT
 	///Multiplicator factor to add to the building time, depends on the health of the structure built
 	var/scaling_wait = 1 SECONDS
 	///List of buildable structures. Order corresponds with resin_images_list.
@@ -901,7 +901,7 @@
 	action_icon_state = "neuro_sting"
 	mechanics_text = "A channeled melee attack that injects the target with neurotoxin over a few seconds, temporarily stunning them."
 	ability_name = "neurotoxin sting"
-	cooldown_timer = 12 SECONDS
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 12 SECONDS
 	plasma_cost = 150
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_NEUROTOX_STING,
@@ -955,7 +955,7 @@
 	action_icon_state = "drone_sting"
 	mechanics_text = "A channeled melee attack that injects the target with Ozelomelyn over a few seconds, purging chemicals and dealing minor toxin damage to a moderate cap while inside them."
 	ability_name = "ozelomelyn sting"
-	cooldown_timer = 25 SECONDS
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 25 SECONDS
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_OZELOMELYN_STING,
 	)
@@ -1011,7 +1011,7 @@
 	name = "Lay Egg"
 	action_icon_state = "lay_egg"
 	plasma_cost = 200
-	cooldown_timer = 12 SECONDS
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 12 SECONDS
 	keybinding_signals = list(
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_LAY_EGG,
 	)
@@ -1057,7 +1057,7 @@
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_RALLY_HIVE,
 	)
 	keybind_flags = XACT_KEYBIND_USE_ABILITY
-	cooldown_timer = 60 SECONDS
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 60 SECONDS
 	use_state_flags = XACT_USE_LYING|XACT_USE_BUCKLED
 
 /datum/action/xeno_action/rally_hive/action_activate()
@@ -1082,7 +1082,7 @@
 		KEYBINDING_NORMAL = COMSIG_XENOABILITY_RALLY_MINION,
 	)
 	keybind_flags = XACT_KEYBIND_USE_ABILITY
-	cooldown_timer = 10 SECONDS
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 10 SECONDS
 	use_state_flags = XACT_USE_LYING|XACT_USE_BUCKLED
 
 /datum/action/xeno_action/rally_minion/action_activate()
@@ -1132,7 +1132,7 @@
 		qdel(action_datum)
 
 /datum/action/xeno_action/rally_hive/hivemind //Halve the cooldown for Hiveminds as their relative omnipresence means they can actually make use of this lower cooldown.
-	cooldown_timer = 30 SECONDS
+	cooldown_timer = XENO_ABILITY_COOLDOWN * 30 SECONDS
 
 //*********
 // Psy Drain

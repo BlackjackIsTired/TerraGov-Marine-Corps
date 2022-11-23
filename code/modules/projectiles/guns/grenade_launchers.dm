@@ -104,10 +104,10 @@ The Grenade Launchers
 	fire_animation = "t70_fire"
 	flags_equip_slot = ITEM_SLOT_BACK
 	max_shells = 6 //codex
-	wield_delay = 1 SECONDS
+	wield_delay = WIELD_DELAY_MULT * 1 SECONDS
 	fire_sound = 'sound/weapons/guns/fire/underbarrel_grenadelauncher.ogg'
 	fire_rattle = 'sound/weapons/guns/fire/underbarrel_grenadelauncher.ogg'
-	aim_slowdown = 1.2
+	aim_slowdown = AIM_SLOWDOWN_MULT * 1.2
 	attachable_allowed = list(
 		/obj/item/attachable/magnetic_harness,
 		/obj/item/attachable/flashlight,
@@ -178,8 +178,8 @@ The Grenade Launchers
 	item_state = "m81"
 	max_shells = 1 //codex
 	flags_equip_slot = ITEM_SLOT_BACK|ITEM_SLOT_BELT
-	wield_delay = 0.2 SECONDS
-	aim_slowdown = 1
+	wield_delay = WIELD_DELAY_MULT * 0.2 SECONDS
+	aim_slowdown = AIM_SLOWDOWN_MULT * 1
 	flags_gun_features = GUN_AMMO_COUNTER
 	attachable_allowed = list()
 	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 18,"rail_x" = 14, "rail_y" = 22, "under_x" = 19, "under_y" = 14, "stock_x" = 19, "stock_y" = 14)

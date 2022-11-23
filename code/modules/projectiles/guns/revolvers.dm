@@ -14,9 +14,9 @@
 	load_method = SINGLE_CASING|SPEEDLOADER //codex
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_NO_PITCH_SHIFT_NEAR_EMPTY
 	actions_types = list(/datum/action/item_action/aim_mode)
-	aim_speed_modifier = 0.75
+	aim_speed_modifier = AIM_SLOWDOWN_MULT * 0.75
 	aim_fire_delay = 0.25 SECONDS
-	wield_delay = 0.2 SECONDS //If you modify your revolver to be two-handed, it will still be fast to aim
+	wield_delay = WIELD_DELAY_MULT * 0.2 SECONDS //If you modify your revolver to be two-handed, it will still be fast to aim
 	gun_skill_category = GUN_SKILL_PISTOLS
 
 	reciever_flags = AMMO_RECIEVER_HANDFULS|AMMO_RECIEVER_ROTATES_CHAMBER|AMMO_RECIEVER_TOGGLES_OPEN|AMMO_RECIEVER_TOGGLES_OPEN_EJECTS

@@ -4,7 +4,7 @@ SUBSYSTEM_DEF(silo)
 	can_fire = FALSE
 	init_order = INIT_ORDER_SPAWNING_POOL
 	///How many larva points are added every minutes in total
-	var/current_larva_spawn_rate = 0
+	var/current_larva_spawn_rate = 0.5
 	///A temporary buff for larva generation, that comes from the monitor system detecting a stalemate
 	var/larva_spawn_rate_temporary_buff = 0
 

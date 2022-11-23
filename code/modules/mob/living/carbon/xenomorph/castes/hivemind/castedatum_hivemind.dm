@@ -18,7 +18,7 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 60
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 100
+	max_health = XENO_HEALTH_MULT * 150
 
 	// *** Flags *** //
 	caste_flags = CASTE_INNATE_PLASMA_REGEN|CASTE_FIRE_IMMUNE|CASTE_IS_BUILDER|CASTE_DO_NOT_ALERT_LOW_LIFE
@@ -31,7 +31,7 @@
 	minimap_icon = "hivemind"
 
 	// *** Ranged Attack *** //
-	spit_delay = 0 SECONDS
+	spit_delay = SPIT_DELAY_MULT * 0 SECONDS
 	spit_types = list()
 
 	aura_strength = 0

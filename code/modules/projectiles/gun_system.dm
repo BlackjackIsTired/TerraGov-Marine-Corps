@@ -213,7 +213,7 @@
 	///Holds the values modifying aim_fire_delay
 	var/list/aim_fire_delay_mods = list()
 	///Determines character slowdown from aim mode. Default is 66%
-	var/aim_speed_modifier = 6
+	var/aim_speed_modifier = AIM_SLOWDOWN_MULT * 6
 	/// Time to enter aim mode, generally one second.
 	var/aim_time = 1 SECONDS
 
@@ -227,7 +227,7 @@
 	var/autoburst_delay = 0
 
 	///Slowdown for wielding
-	var/aim_slowdown = 0
+	var/aim_slowdown = AIM_SLOWDOWN_MULT * 0
 	///How long between wielding and firing in tenths of seconds
 	var/wield_delay	= 0.4 SECONDS
 	///Extra wield delay for untrained operators

@@ -66,7 +66,7 @@ GLOBAL_LIST_INIT(restricted_camera_networks, list( //Those networks can only be 
 // Shuttle defines
 
 #define SHUTTLE_OPTIMIZE_FACTOR_RECHARGE 0.75
-#define SHUTTLE_OPTIMIZE_FACTOR_TRAVEL 0.5
+#define SHUTTLE_OPTIMIZE_FACTOR_TRAVEL 1
 #define SHUTTLE_COOLING_FACTOR_RECHARGE 0.5
 #define SHUTTLE_FUEL_ENHANCE_FACTOR_TRAVEL 0.75
 

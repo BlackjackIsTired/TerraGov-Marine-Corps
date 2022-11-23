@@ -34,7 +34,7 @@
 	soft_armor = list(MELEE = 75, BULLET = 75, LASER = 75, ENERGY = 75, BOMB = 50, BIO = 75, FIRE = 75, ACID = 75)
 
 	// *** Ranged Attack *** //
-	spit_delay = 1.3 SECONDS
+	spit_delay = SPIT_DELAY_MULT * 1.3 SECONDS
 	spit_types = list(/datum/ammo/xeno/sticky, /datum/ammo/xeno/acid/medium)
 
 	// *** Pheromones *** //
@@ -101,7 +101,7 @@
 	soft_armor = list(MELEE = 75, BULLET = 75, LASER = 75, ENERGY = 75, BOMB = 50, BIO = 75, FIRE = 75, ACID = 75)
 
 	// *** Ranged Attack *** //
-	spit_delay = 1.2 SECONDS
+	spit_delay = SPIT_DELAY_MULT * 1.2 SECONDS
 
 	// *** Pheromones *** //
 	aura_strength = 4
@@ -134,7 +134,7 @@
 	soft_armor = list(MELEE = 75, BULLET = 75, LASER = 75, ENERGY = 75, BOMB = 50, BIO = 75, FIRE = 75, ACID = 75)
 
 	// *** Ranged Attack *** //
-	spit_delay = 1.2 SECONDS
+	spit_delay = SPIT_DELAY_MULT * 1.2 SECONDS
 
 	// *** Pheromones *** //
 	aura_strength = 4.5
@@ -167,7 +167,7 @@
 	soft_armor = list(MELEE = 75, BULLET = 75, LASER = 75, ENERGY = 75, BOMB = 50, BIO = 75, FIRE = 75, ACID = 75)
 
 	// *** Ranged Attack *** //
-	spit_delay = 1.1 SECONDS
+	spit_delay = SPIT_DELAY_MULT * 1.1 SECONDS
 
 	// *** Pheromones *** //
 	aura_strength = 5
@@ -197,7 +197,7 @@
 	soft_armor = list(MELEE = 75, BULLET = 75, LASER = 75, ENERGY = 75, BOMB = 50, BIO = 75, FIRE = 75, ACID = 75)
 
 	// *** Ranged Attack *** //
-	spit_delay = 1.1 SECONDS
+	spit_delay = SPIT_DELAY_MULT * 1.1 SECONDS
 
 	// *** Pheromones *** //
 	aura_strength = 5

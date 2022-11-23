@@ -4,6 +4,7 @@
 	flags_round_type = MODE_INFESTATION|MODE_LZ_SHUTTERS|MODE_XENO_RULER|MODE_PSY_POINTS|MODE_PSY_POINTS_ADVANCED|MODE_DEAD_GRAB_FORBIDDEN|MODE_HIJACK_POSSIBLE|MODE_SILO_RESPAWN|MODE_SPAWNING_MINIONS
 	flags_landmarks = MODE_LANDMARK_SPAWN_XENO_TURRETS
 	flags_xeno_abilities = ABILITY_DISTRESS
+	respawn_time = 2 MINUTES
 	valid_job_types = list(
 		/datum/job/terragov/command/captain = 1,
 		/datum/job/terragov/command/fieldcommander = 1,
@@ -45,7 +46,7 @@
 	if(!.)
 		return
 	var/datum/job/scaled_job = SSjob.GetJobType(/datum/job/xenomorph) //Xenos
-	scaled_job.job_points_needed  = DISTRESS_LARVA_POINTS_NEEDED
+	scaled_job.job_points_needed  = 6
 
 
 /datum/game_mode/infestation/distress/orphan_hivemind_collapse()

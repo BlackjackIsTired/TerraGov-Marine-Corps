@@ -14,8 +14,8 @@
 	reciever_flags = AMMO_RECIEVER_HANDFULS
 	type_of_casings = "shell"
 	allowed_ammo_types = list()
-	aim_slowdown = 0.35
-	wield_delay = 0.6 SECONDS //Shotguns are really easy to put up to fire, since they are designed for CQC (at least compared to a rifle)
+	aim_slowdown = AIM_SLOWDOWN_MULT * 0.35
+	wield_delay = WIELD_DELAY_MULT * 0.6 SECONDS //Shotguns are really easy to put up to fire, since they are designed for CQC (at least compared to a rifle)
 	gun_skill_category = GUN_SKILL_SHOTGUNS
 	flags_item_map_variant = NONE
 
@@ -66,7 +66,7 @@
 	damage_mult = SHOTGUN_DAMAGE_MULT * 0.75  //normalizing gun for vendors; damage reduced by 25% to compensate for faster fire rate; still higher DPS than T-32.
 	recoil = 2
 	recoil_unwielded = 4
-	aim_slowdown = 0.4
+	aim_slowdown = AIM_SLOWDOWN_MULT * 0.4
 
 
 //-------------------------------------------------------
@@ -110,7 +110,7 @@
 	damage_mult = SHOTGUN_DAMAGE_MULT * 0.7  //30% less damage. Faster firerate.
 	recoil = 0 //It has a stock on the sprite.
 	recoil_unwielded = 2
-	wield_delay = 1 SECONDS
+	wield_delay = WIELD_DELAY_MULT * 1 SECONDS
 	akimbo_additional_delay = 0.9
 
 /obj/item/weapon/gun/shotgun/combat/masterkey
@@ -167,7 +167,7 @@
 	scatter_unwielded = 8
 	recoil = 2
 	recoil_unwielded = 4
-	aim_slowdown = 0.6
+	aim_slowdown = AIM_SLOWDOWN_MULT * 0.6
 
 /obj/item/weapon/gun/shotgun/double/sawn
 	name = "sawn-off shotgun"
@@ -265,7 +265,7 @@
 	scatter_unwielded = 10
 	recoil = 2
 	recoil_unwielded = 4
-	aim_slowdown = 0.45
+	aim_slowdown = AIM_SLOWDOWN_MULT * 0.45
 
 /obj/item/weapon/gun/shotgun/pump/standard
 	starting_attachment_types = list(
@@ -309,7 +309,7 @@
 	recoil = 0 // It has a stock. It's on the sprite.
 	recoil_unwielded = 0
 	cock_delay = 12
-	aim_slowdown = 0.4
+	aim_slowdown = AIM_SLOWDOWN_MULT * 0.4
 
 /obj/item/weapon/gun/shotgun/pump/cmb/mag_harness
 	starting_attachment_types = list(
@@ -362,7 +362,7 @@
 	actions_types = list(/datum/action/item_action/aim_mode)
 	force = 20
 	aim_fire_delay = 0.75 SECONDS
-	aim_speed_modifier = 0.8
+	aim_speed_modifier = AIM_SLOWDOWN_MULT * 0.8
 
 	fire_delay = 1.75 SECONDS
 	accuracy_mult = 1.15
@@ -372,8 +372,8 @@
 	recoil = -3
 	recoil_unwielded = 4
 	cock_delay = 12
-	aim_slowdown = 1
-	wield_delay = 1.2 SECONDS
+	aim_slowdown = AIM_SLOWDOWN_MULT * 1
+	wield_delay = WIELD_DELAY_MULT * 1.2 SECONDS
 	movement_acc_penalty_mult = 4.5
 
 	placed_overlay_iconstate = "wood"
@@ -426,8 +426,8 @@
 	recoil = 2
 	recoil_unwielded = 4
 
-	aim_slowdown = 1
-	wield_delay = 1 SECONDS
+	aim_slowdown = AIM_SLOWDOWN_MULT * 1
+	wield_delay = WIELD_DELAY_MULT * 1 SECONDS
 	movement_acc_penalty_mult = 5
 
 	placed_overlay_iconstate = "wood"
@@ -458,8 +458,8 @@
 	scatter = 2
 	recoil = 1
 	recoil_unwielded = 1
-	aim_slowdown = 0
-	wield_delay = 0.5 SECONDS
+	aim_slowdown = AIM_SLOWDOWN_MULT * 0
+	wield_delay = WIELD_DELAY_MULT * 0.5 SECONDS
 
 /obj/item/weapon/gun/shotgun/double/derringer/Initialize()
 	. = ..()
@@ -540,7 +540,7 @@
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
 	actions_types = list(/datum/action/item_action/aim_mode)
 	aim_fire_delay = 0.3 SECONDS
-	aim_speed_modifier = 2
+	aim_speed_modifier = AIM_SLOWDOWN_MULT * 2
 
 	fire_delay = 10
 	accuracy_mult = 1
@@ -551,7 +551,7 @@
 	recoil = 0
 	recoil_unwielded = 2
 	cock_delay = 2
-	aim_slowdown = 0.6
+	aim_slowdown = AIM_SLOWDOWN_MULT * 0.6
 	movement_acc_penalty_mult = 5
 
 //------------------------------------------------------
@@ -636,7 +636,7 @@
 	scatter_unwielded = 10
 	recoil = 2
 	recoil_unwielded = 4
-	aim_slowdown = 0.45
+	aim_slowdown = AIM_SLOWDOWN_MULT * 0.45
 	cock_delay = 14
 
 	placed_overlay_iconstate = "t35"
@@ -665,7 +665,7 @@
 	load_method = SINGLE_CASING //codex
 	fire_sound = 'sound/weapons/guns/fire/shotgun_light.ogg'
 	default_ammo_type = /datum/ammo/bullet/shotgun/buckshot
-	aim_slowdown = 0.45
+	aim_slowdown = AIM_SLOWDOWN_MULT * 0.45
 	attachable_allowed = list(
 		/obj/item/attachable/bayonet,
 		/obj/item/attachable/reddot,
@@ -683,7 +683,7 @@
 
 	fire_delay = 1.75 SECONDS
 	damage_mult = SHOTGUN_DAMAGE_MULT * 0.9
-	wield_delay = 0.75 SECONDS
+	wield_delay = WIELD_DELAY_MULT * 0.75 SECONDS
 	burst_amount = 2
 	burst_delay = 0.01 SECONDS //basically instantaneous two shots
 	extra_delay = 0.5 SECONDS
@@ -731,8 +731,8 @@
 	damage_mult = SHOTGUN_DAMAGE_MULT * 0.85
 	recoil = 1
 	recoil_unwielded = 4
-	aim_slowdown = 0.35
-	wield_delay = 0.65 SECONDS
+	aim_slowdown = AIM_SLOWDOWN_MULT * 0.35
+	wield_delay = WIELD_DELAY_MULT * 0.65 SECONDS
 
 /obj/item/weapon/gun/shotgun/som/pointman
 	starting_attachment_types = list(/obj/item/attachable/bayonet, /obj/item/attachable/motiondetector)

@@ -604,7 +604,7 @@ inaccurate. Don't worry if force is ever negative, it won't runtime.
 	icon_state = "sniperscope"
 	desc = "A rail mounted zoom sight scope. Allows zoom by activating the attachment. Use F12 if your HUD doesn't come back."
 	slot = ATTACHMENT_SLOT_RAIL
-	aim_speed_mod = 0.5 //Extra slowdown when aiming
+	aim_speed_mod = AIM_SLOWDOWN_MULT * 0.5 //Extra slowdown when aiming
 	wield_delay_mod = 0.4 SECONDS
 	scoped_accuracy_mod = SCOPE_RAIL //accuracy mod of 0.4 when scoped
 	flags_attach_features = ATTACH_REMOVABLE|ATTACH_ACTIVATION
@@ -642,7 +642,7 @@ inaccurate. Don't worry if force is ever negative, it won't runtime.
 	icon_state = "imagerscope"
 	desc = "A rail-mounted scope designed for the AR-55 and GL-54. Features low light optical imaging capabilities and assists with precision aiming. Allows zoom by activating the attachment. Use F12 if your HUD doesn't come back."
 	has_nightvision = TRUE
-	aim_speed_mod = 0.3
+	aim_speed_mod = AIM_SLOWDOWN_MULT * 0.3
 	wield_delay_mod = 0.2 SECONDS
 	zoom_tile_offset = 7
 	zoom_viewsize = 2
@@ -660,7 +660,7 @@ inaccurate. Don't worry if force is ever negative, it won't runtime.
 /obj/item/attachable/scope/unremovable/flaregun
 	name = "long range ironsights"
 	desc = "An unremovable set of long range ironsights for a flaregun."
-	aim_speed_mod = 0
+	aim_speed_mod = AIM_SLOWDOWN_MULT * 0
 	wield_delay_mod = 0
 	zoom_tile_offset = 5
 	zoom_viewsize = 0
@@ -670,7 +670,7 @@ inaccurate. Don't worry if force is ever negative, it won't runtime.
 /obj/item/attachable/scope/unremovable/tl127
 	name = "T-45 rail scope"
 	icon_state = "sniperscope_invisible"
-	aim_speed_mod = 0
+	aim_speed_mod = AIM_SLOWDOWN_MULT * 0
 	wield_delay_mod = 0
 	desc = "A rail mounted zoom sight scope specialized for the AR-127 sniper rifle. Allows zoom by activating the attachment. Use F12 if your HUD doesn't come back."
 	flags_attach_features = ATTACH_ACTIVATION
@@ -791,7 +791,7 @@ inaccurate. Don't worry if force is ever negative, it won't runtime.
 	slot = ATTACHMENT_SLOT_RAIL
 	wield_delay_mod = 0.2 SECONDS
 	accuracy_unwielded_mod = -0.05
-	aim_speed_mod = 0.2
+	aim_speed_mod = AIM_SLOWDOWN_MULT * 0.2
 	scoped_accuracy_mod = SCOPE_RAIL_MINI
 	scope_zoom_mod = TRUE
 	has_nightvision = FALSE

@@ -33,14 +33,14 @@
 	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
-	spit_delay = 0.8 SECONDS
+	spit_delay = SPIT_DELAY_MULT * 0.8 SECONDS
 	spit_types = list(/datum/ammo/xeno/toxin/heavy, /datum/ammo/xeno/acid/heavy)
 
-	acid_spray_duration = 10 SECONDS
+	acid_spray_duration = XENO_ACID_SPRAY_DAM_MULT * 10 SECONDS
 	acid_spray_range = 5
-	acid_spray_damage = XENO_ACID_DAM_MULT * 16
-	acid_spray_damage_on_hit = XENO_ACID_DAM_MULT * 35
-	acid_spray_structure_damage = 45
+	acid_spray_damage = XENO_ACID_SPRAY_DAM_MULT * 16
+	acid_spray_damage_on_hit = XENO_ACID_SPRAY_DAM_MULT * 35
+	acid_spray_structure_damage = XENO_ACID_SPRAY_DAM_MULT * 45
 
 	// *** Pheromones *** //
 	aura_strength = 3 //Praetorian's aura starts strong. They are the Queen's right hand. Climbs by 1 to 4.5
@@ -90,11 +90,11 @@
 	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
-	spit_delay = 0.8 SECONDS
+	spit_delay = SPIT_DELAY_MULT * 0.8 SECONDS
 	spit_types = list(/datum/ammo/xeno/toxin/heavy/upgrade1, /datum/ammo/xeno/acid/heavy)
 
-	acid_spray_damage_on_hit = XENO_ACID_DAM_MULT * 39
-	acid_spray_structure_damage = 53
+	acid_spray_damage_on_hit = XENO_ACID_SPRAY_DAM_MULT * 39
+	acid_spray_structure_damage = XENO_ACID_SPRAY_DAM_MULT * 53
 
 	// *** Pheromones *** //
 	aura_strength = 3.5
@@ -124,11 +124,11 @@
 	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
-	spit_delay = 0.8 SECONDS
+	spit_delay = SPIT_DELAY_MULT * 0.8 SECONDS
 	spit_types = list(/datum/ammo/xeno/toxin/heavy/upgrade2, /datum/ammo/xeno/acid/heavy)
 
-	acid_spray_damage_on_hit = XENO_ACID_DAM_MULT * 43
-	acid_spray_structure_damage = 61
+	acid_spray_damage_on_hit = XENO_ACID_SPRAY_DAM_MULT * 43
+	acid_spray_structure_damage = XENO_ACID_SPRAY_DAM_MULT * 61
 
 	// *** Pheromones *** //
 	aura_strength = 4
@@ -159,11 +159,11 @@
 	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
-	spit_delay = 0.8 SECONDS
+	spit_delay = SPIT_DELAY_MULT * 0.8 SECONDS
 	spit_types = list(/datum/ammo/xeno/toxin/heavy/upgrade3, /datum/ammo/xeno/acid/heavy)
 
-	acid_spray_damage_on_hit = XENO_ACID_DAM_MULT * 47
-	acid_spray_structure_damage = 69
+	acid_spray_damage_on_hit = XENO_ACID_SPRAY_DAM_MULT * 47
+	acid_spray_structure_damage = XENO_ACID_SPRAY_DAM_MULT * 69
 
 	// *** Pheromones *** //
 	aura_strength = 4.5
@@ -185,17 +185,17 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 80
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 360
+	max_health = XENO_HEALTH_MULT * 450
 
 	// *** Defense *** //
 	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
-	spit_delay = 0.8 SECONDS
+	spit_delay = SPIT_DELAY_MULT * 0.8 SECONDS
 	spit_types = list(/datum/ammo/xeno/toxin/heavy/upgrade3, /datum/ammo/xeno/acid/heavy)
 
-	acid_spray_damage_on_hit = XENO_ACID_DAM_MULT * 47
-	acid_spray_structure_damage = 69
+	acid_spray_damage_on_hit = XENO_ACID_SPRAY_DAM_MULT * 47
+	acid_spray_structure_damage = XENO_ACID_SPRAY_DAM_MULT * 69
 
 	// *** Pheromones *** //
 	aura_strength = 4.5

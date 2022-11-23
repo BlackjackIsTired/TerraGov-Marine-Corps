@@ -39,7 +39,7 @@
 	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
-	spit_delay = 4 SECONDS
+	spit_delay = SPIT_DELAY_MULT * 4 SECONDS
 	spit_types = list(/datum/ammo/xeno/boiler_gas, /datum/ammo/xeno/boiler_gas/corrosive)
 
 	// *** Minimap Icon *** //
@@ -51,10 +51,10 @@
 	bomb_delay = 32 SECONDS
 	ammo_multiplier = 1.5 SECONDS
 
-	acid_spray_duration = 10 SECONDS
-	acid_spray_damage = XENO_ACID_DAM_MULT * 34
-	acid_spray_damage_on_hit = XENO_ACID_DAM_MULT * 44
-	acid_spray_structure_damage = 55
+	acid_spray_duration = XENO_ACID_SPRAY_DAM_MULT * 10 SECONDS
+	acid_spray_damage = XENO_ACID_SPRAY_DAM_MULT * 34
+	acid_spray_damage_on_hit = XENO_ACID_SPRAY_DAM_MULT * 44
+	acid_spray_structure_damage = XENO_ACID_SPRAY_DAM_MULT * 55
 
 	actions = list(
 		/datum/action/xeno_action/xeno_resting,
@@ -87,7 +87,7 @@
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 35
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 270
+	max_health = XENO_HEALTH_MULT * 450
 
 	// *** Evolution *** //
 	upgrade_threshold = XENO_UPG_MULT * TIER_THREE_MATURE_THRESHOLD
@@ -96,10 +96,10 @@
 	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
-	spit_delay = 3 SECONDS
+	spit_delay = SPIT_DELAY_MULT * 3 SECONDS
 
-	acid_spray_damage_on_hit = XENO_ACID_DAM_MULT * 44
-	acid_spray_structure_damage = 60
+	acid_spray_damage_on_hit = XENO_ACID_SPRAY_DAM_MULT * 44
+	acid_spray_structure_damage = XENO_ACID_SPRAY_DAM_MULT * 60
 
 	// *** Boiler Abilities *** //
 	max_ammo = 5
@@ -132,10 +132,10 @@
 	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
-	spit_delay = 2 SECONDS
+	spit_delay = SPIT_DELAY_MULT * 2 SECONDS
 
-	acid_spray_damage_on_hit = XENO_ACID_DAM_MULT * 44
-	acid_spray_structure_damage = 60
+	acid_spray_damage_on_hit = XENO_ACID_SPRAY_DAM_MULT * 44
+	acid_spray_structure_damage = XENO_ACID_SPRAY_DAM_MULT * 60
 
 	// *** Boiler Abilities *** //
 	max_ammo = 6
@@ -169,10 +169,10 @@
 	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
-	spit_delay = 1 SECONDS
+	spit_delay = SPIT_DELAY_MULT * 1 SECONDS
 
-	acid_spray_damage_on_hit = XENO_ACID_DAM_MULT * 44
-	acid_spray_structure_damage = 60
+	acid_spray_damage_on_hit = XENO_ACID_SPRAY_DAM_MULT * 44
+	acid_spray_structure_damage = XENO_ACID_SPRAY_DAM_MULT * 60
 
 	// *** Boiler Abilities *** //
 	max_ammo = 7
@@ -203,11 +203,11 @@
 	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
 
 	// *** Ranged Attack *** //
-	spit_delay = 1 SECONDS
+	spit_delay = SPIT_DELAY_MULT * 1 SECONDS
 	spit_types = list(/datum/ammo/xeno/boiler_gas, /datum/ammo/xeno/boiler_gas/lance, /datum/ammo/xeno/boiler_gas/corrosive, /datum/ammo/xeno/boiler_gas/corrosive/lance)
 
-	acid_spray_damage_on_hit = XENO_ACID_DAM_MULT * 44
-	acid_spray_structure_damage = 60
+	acid_spray_damage_on_hit = XENO_ACID_SPRAY_DAM_MULT * 44
+	acid_spray_structure_damage = XENO_ACID_SPRAY_DAM_MULT * 60
 
 	// *** Boiler Abilities *** //
 	max_ammo = 7

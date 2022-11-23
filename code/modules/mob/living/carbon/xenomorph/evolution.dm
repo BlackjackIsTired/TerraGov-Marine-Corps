@@ -32,6 +32,8 @@
 			tiers_to_pick_from = GLOB.xeno_types_tier_one
 		if(XENO_TIER_THREE)
 			tiers_to_pick_from = GLOB.xeno_types_tier_two
+		if(XENO_TIER_FOUR)
+			tiers_to_pick_from = GLOB.xeno_types_tier_one
 		else
 			CRASH("side_evolve() called without a valid tier")
 

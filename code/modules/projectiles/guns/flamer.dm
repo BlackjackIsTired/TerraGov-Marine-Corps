@@ -13,7 +13,7 @@
 	unload_sound = 'sound/weapons/guns/interact/flamethrower_unload.ogg'
 	reload_sound = 'sound/weapons/guns/interact/flamethrower_reload.ogg'
 	muzzle_flash = null
-	aim_slowdown = 1.75
+	aim_slowdown = AIM_SLOWDOWN_MULT * 1.75
 	damage_mult = FLAMER_DAMAGE_MULT
 	general_codex_key = "flame weapons"
 	attachable_allowed = list( //give it some flexibility.
@@ -61,7 +61,7 @@
 	///Travel speed of the flames in seconds.
 	var/flame_spread_time = 0.1 SECONDS
 	///Gun based modifier for burn level. Percentage based.
-	var/burn_level_mod = 1
+	var/burn_level_mod = FLAMER_DAMAGE_MULT * 1
 	///Gun based modifier for burn time. Percentage based.
 	var/burn_time_mod = 1
 	///Bitfield flags for flamer specific traits.
@@ -73,7 +73,7 @@
 	///Pixel offset on the Y axis for the pilot light overlay.
 	var/lit_overlay_offset_y = 0
 	///Damage multiplier for mobs caught in the initial stream of fire.
-	var/mob_flame_damage_mod = 2
+	var/mob_flame_damage_mod = FLAMER_DAMAGE_MULT * 2
 	///how wide of a cone the flamethrower produces on wide mode.
 	var/cone_angle = 55
 
@@ -339,8 +339,8 @@
 	pixel_shift_x = 15
 	pixel_shift_y = 18
 
-	mob_flame_damage_mod = 1
-	burn_level_mod = 0.6
+	mob_flame_damage_mod = FLAMER_DAMAGE_MULT * 1
+	burn_level_mod = FLAMER_DAMAGE_MULT * 0.6
 	flame_max_range = 4
 
 	wield_delay_mod	= 0.2 SECONDS

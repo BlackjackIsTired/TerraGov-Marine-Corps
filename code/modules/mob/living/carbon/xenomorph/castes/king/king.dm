@@ -15,7 +15,7 @@
 	old_x = -16
 	mob_size = MOB_SIZE_BIG
 	drag_delay = 6
-	tier = XENO_TIER_MINION_T3 //King, like queen, doesn't count towards population limit.
+	tier = XENO_TIER_THREE //King, like queen, doesn't count towards population limit.
 	upgrade = XENO_UPGRADE_ZERO
 
 /mob/living/carbon/xenomorph/king/Initialize(mapload)

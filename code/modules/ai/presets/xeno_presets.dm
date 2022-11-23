@@ -94,3 +94,28 @@
 	. = ..()
 	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno)
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Minions/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/mob/living/carbon/xenomorph/protector/ai
+
+/mob/living/carbon/xenomorph/protector/ai/Initialize()
+	. = ..()
+	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno)
+	
+/mob/living/carbon/xenomorph/peon/ai
+
+/mob/living/carbon/xenomorph/peon/ai/Initialize()
+	. = ..()
+	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno)
+	
+/mob/living/carbon/xenomorph/jogger/ai
+
+/mob/living/carbon/xenomorph/jogger/ai/Initialize()
+	. = ..()
+	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno)
+	
+/mob/living/carbon/xenomorph/watcher/ai
+
+/mob/living/carbon/xenomorph/watcher/ai/Initialize()
+	. = ..()
+	AddComponent(/datum/component/ai_controller, /datum/ai_behavior/xeno/ranged)

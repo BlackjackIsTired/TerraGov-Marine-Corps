@@ -9,7 +9,7 @@
 	plasma_stored = 50
 	pixel_x = -16
 	old_x = -16
-	tier = XENO_TIER_MINION_T2
+	tier = XENO_TIER_TWO
 	upgrade = XENO_UPGRADE_ZERO
 	///How many stacks of combo do we have ? Interacts with every ability.
 	var/combo = 0

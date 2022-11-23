@@ -13,7 +13,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	force = 6
 	movement_acc_penalty_mult = 2
-	wield_delay = 0.2 SECONDS //If you modify your pistol to be two-handed, it will still be fast to aim
+	wield_delay = WIELD_DELAY_MULT * 0.2 SECONDS //If you modify your pistol to be two-handed, it will still be fast to aim
 	type_of_casings = "bullet"
 	gun_skill_category = GUN_SKILL_PISTOLS
 	attachable_allowed = list(
@@ -32,7 +32,7 @@
 
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
 	actions_types = list(/datum/action/item_action/aim_mode) // all pistols can aim mode
-	aim_speed_modifier = 0.65
+	aim_speed_modifier = AIM_SLOWDOWN_MULT * 0.65
 	scatter = -2
 	scatter_unwielded = 4
 	akimbo_additional_delay = 0.9
@@ -98,7 +98,7 @@
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_ENERGY|GUN_AMMO_COUNTER|GUN_IS_ATTACHMENT
 	reciever_flags = AMMO_RECIEVER_MAGAZINES|AMMO_RECIEVER_AUTO_EJECT|AMMO_RECIEVER_DO_NOT_EJECT_HANDFULS
 	actions_types = list()
-	wield_delay = 0.5 SECONDS
+	wield_delay = WIELD_DELAY_MULT * 0.5 SECONDS
 	muzzle_flash_color = COLOR_GREEN
 
 	fire_delay = 1.5 SECONDS
@@ -270,7 +270,7 @@
 	burst_amount = 3
 	accuracy_mult = 1.15
 	scatter_unwielded = 0
-	aim_slowdown = 0.2
+	aim_slowdown = AIM_SLOWDOWN_MULT * 0.2
 	fire_delay = 0.2 SECONDS
 
 /obj/item/weapon/gun/pistol/g22/tranq
@@ -379,7 +379,7 @@
 	accuracy_mult = 1.3
 	scatter_unwielded = 2
 	damage_mult = PISTOL_DAMAGE_MULT * 1.3
-	aim_slowdown = 0.1
+	aim_slowdown = AIM_SLOWDOWN_MULT * 0.1
 
 /obj/item/weapon/gun/pistol/c99/tranq
 	desc = "An updated variant of an old eastern design, dating back to from the 20th century. Features an integrated silencer, and chambered in the razor small .22 rounds. This one is usually loaded with special low-recoil .22 dart rounds, which act as a dangerous tranquilizer."
@@ -446,7 +446,7 @@
 	recoil = -2
 	recoil_unwielded = -2
 	scatter_unwielded = 0
-	aim_speed_modifier = 0
+	aim_speed_modifier = AIM_SLOWDOWN_MULT * 0
 
 
 //-------------------------------------------------------
@@ -518,7 +518,7 @@
 	accuracy_mult = 1.2
 	accuracy_mult_unwielded = 0.95
 	recoil = 0
-	aim_slowdown = 0.2
+	aim_slowdown = AIM_SLOWDOWN_MULT * 0.2
 	scatter = 0
 	scatter_unwielded = 6
 
@@ -587,7 +587,7 @@
 	accuracy_mult = 1.2
 	accuracy_mult_unwielded = 0.95
 	recoil = -2
-	aim_slowdown = 0.1
+	aim_slowdown = AIM_SLOWDOWN_MULT * 0.1
 	scatter = -1
 	scatter_unwielded = 4
 
@@ -667,7 +667,7 @@ It is a modified Beretta 93R, and can fire three round burst or single fire. Whe
 	w_class = WEIGHT_CLASS_NORMAL
 	force = 25
 	movement_acc_penalty_mult = 3
-	wield_delay = 0.2 SECONDS
+	wield_delay = WIELD_DELAY_MULT * 0.2 SECONDS
 	fire_sound = 'sound/weapons/guns/fire/pistol_service.ogg'
 	type_of_casings = "bullet"
 	gun_skill_category = GUN_SKILL_PISTOLS
@@ -723,8 +723,8 @@ It is a modified Beretta 93R, and can fire three round burst or single fire. Whe
 
 	attachable_offset = list("muzzle_x" = 29, "muzzle_y" = 20,"rail_x" = 13, "rail_y" = 23, "under_x" = 19, "under_y" = 13, "stock_x" = 21, "stock_y" = 17)
 
-	aim_slowdown = 0.2
-	wield_delay = 0.4 SECONDS
+	aim_slowdown = AIM_SLOWDOWN_MULT * 0.2
+	wield_delay = WIELD_DELAY_MULT * 0.4 SECONDS
 	fire_delay = 0.2 SECONDS
 	accuracy_mult = 1.2
 	accuracy_mult_unwielded = 0.85

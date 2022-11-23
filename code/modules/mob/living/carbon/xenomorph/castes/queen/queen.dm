@@ -15,7 +15,7 @@
 	old_x = -16
 	mob_size = MOB_SIZE_BIG
 	drag_delay = 6 //pulling a big dead xeno is hard
-	tier = XENO_TIER_MINION_T3 //Queen doesn't count towards population limit.
+	tier = XENO_TIER_THREE //Queen doesn't count towards population limit.
 	upgrade = XENO_UPGRADE_ZERO
 
 	var/breathing_counter = 0

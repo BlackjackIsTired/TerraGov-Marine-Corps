@@ -34,6 +34,38 @@
 	spawndelay = 10 SECONDS
 	maxamount = 1
 
+/////////////Minion Spawners
+
+/obj/effect/ai_node/spawner/xeno/jogger	// RUNNNER GANG RUNNER GANG
+	spawntypes = /mob/living/carbon/xenomorph/jogger/ai
+	spawnamount = 1
+	spawndelay = 10 SECONDS
+	maxamount = 1
+
+/obj/effect/ai_node/spawner/xeno/protector
+	spawntypes = /mob/living/carbon/xenomorph/protector/ai
+	spawnamount = 1
+	spawndelay = 10 SECONDS
+	maxamount = 1
+
+/obj/effect/ai_node/spawner/xeno/watcher
+	spawntypes = /mob/living/carbon/xenomorph/watcher/ai
+	spawnamount = 1
+	spawndelay = 10 SECONDS
+	maxamount = 1
+
+/obj/effect/ai_node/spawner/xeno/peon
+	spawntypes = /mob/living/carbon/xenomorph/peon/ai
+	spawnamount = 1
+	spawndelay = 10 SECONDS
+	maxamount = 1
+
+/obj/effect/ai_node/spawner/xeno/tierones
+	spawntypes = list(/mob/living/carbon/xenomorph/jogger/ai, /mob/living/carbon/xenomorph/watcher/ai, /mob/living/carbon/xenomorph/protector/ai, /mob/living/carbon/xenomorph/peon/ai)
+	spawnamount = 1
+	spawndelay = 10 SECONDS
+	maxamount = 1
+
 /////////////Tier twos
 
 /obj/effect/ai_node/spawner/xeno/spitter

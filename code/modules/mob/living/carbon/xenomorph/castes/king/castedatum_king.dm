@@ -132,7 +132,7 @@
 	soft_armor = list(MELEE = 75, BULLET = 75, LASER = 75, ENERGY = 75, BOMB = 100, BIO = 75, FIRE = 100, ACID = 75)
 
 	// *** Ranged Attack *** //
-	spit_delay = 1.1 SECONDS
+	spit_delay = SPIT_DELAY_MULT * 1.1 SECONDS
 
 	// *** Pheromones *** //
 	aura_strength = 6
