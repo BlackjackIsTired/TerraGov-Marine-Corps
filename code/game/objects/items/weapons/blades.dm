@@ -25,8 +25,8 @@
 	item_state = "claymore"
 	flags_atom = CONDUCT
 	flags_equip_slot = ITEM_SLOT_BELT
-	force = MELEE_WEP_DAM_MULT * 40
-	throwforce = MELEE_WEP_DAM_MULT * 10
+	force = MELEE_DAMAGE_MULT * 40
+	throwforce = MELEE_DAMAGE_MULT * 10
 	sharp = IS_SHARP_ITEM_BIG
 	edge = 1
 	w_class = WEIGHT_CLASS_NORMAL
@@ -45,7 +45,7 @@
 	desc = "TerraGov Marine Corps' experimental High Point-Singularity 'Harvester' blade. An advanced weapon that trades sheer force for the ability to apply a variety of debilitating effects when loaded with certain reagents. Activate after loading to prime a single use of an effect. It also harvests substances from alien lifeforms it strikes when connected to the Vali system."
 	icon_state = "energy_sword"
 	item_state = "energy_katana"
-	force = MELEE_WEP_DAM_MULT * 60
+	force = MELEE_DAMAGE_MULT * 60
 	attack_speed = 12
 	w_class = WEIGHT_CLASS_BULKY
 	flags_item = DRAINS_XENO
@@ -83,20 +83,20 @@
 	desc = "A dusty sword commonly seen in historical museums. Where you got this is a mystery, for sure. Only a mercenary would be nuts enough to carry one of these. Sharpened to deal massive damage."
 	icon_state = "mercsword"
 	item_state = "machete"
-	force = MELEE_WEP_DAM_MULT * 39
+	force = MELEE_DAMAGE_MULT * 39
 
 /obj/item/weapon/claymore/mercsword/captain
 	name = "Ceremonial Sword"
 	desc = "A fancy ceremonial sword passed down from generation to generation. Despite this, it has been very well cared for, and is in top condition."
 	icon_state = "mercsword"
 	item_state = "machete"
-	force = MELEE_WEP_DAM_MULT * 55
+	force = MELEE_DAMAGE_MULT * 55
 
 /obj/item/weapon/claymore/mercsword/machete
 	name = "\improper M2132 machete"
 	desc = "Latest issue of the TGMC Machete. Great for clearing out jungle or brush on outlying colonies. Found commonly in the hands of scouts and trackers, but difficult to carry with the usual kit."
 	icon_state = "machete"
-	force = MELEE_WEP_DAM_MULT * 75
+	force = MELEE_DAMAGE_MULT * 75
 	attack_speed = 12
 	w_class = WEIGHT_CLASS_BULKY
 
@@ -115,7 +115,7 @@
 	desc = "This appears to be a rather old blade that has been well taken care of, it is probably a family heirloom. Oddly despite its probable non-combat purpose it is sharpened and not blunt."
 	icon_state = "officer_sword"
 	item_state = "officer_sword"
-	force = MELEE_WEP_DAM_MULT * 75
+	force = MELEE_DAMAGE_MULT * 75
 	attack_speed = 12
 	w_class = WEIGHT_CLASS_BULKY
 
@@ -132,7 +132,7 @@
 	desc = "The pride of an imperial commissar, held high as they charge into battle."
 	icon_state = "comsword"
 	item_state = "comsword"
-	force = MELEE_WEP_DAM_MULT * 80
+	force = MELEE_DAMAGE_MULT * 80
 	attack_speed = 10
 	w_class = WEIGHT_CLASS_BULKY
 
@@ -145,8 +145,8 @@
 	desc = "A finely made Japanese sword, with a well sharpened blade. The blade has been filed to a molecular edge, and is extremely deadly. Commonly found in the hands of mercenaries and yakuza."
 	icon_state = "katana"
 	flags_atom = CONDUCT
-	force = MELEE_WEP_DAM_MULT * 50
-	throwforce = MELEE_WEP_DAM_MULT * 10
+	force = MELEE_DAMAGE_MULT * 50
+	throwforce = MELEE_DAMAGE_MULT * 10
 	sharp = IS_SHARP_ITEM_BIG
 	edge = 1
 	w_class = WEIGHT_CLASS_NORMAL
@@ -160,14 +160,14 @@
 /obj/item/weapon/katana/replica
 	name = "replica katana"
 	desc = "A cheap knock-off commonly found in regular knife stores. Can still do some damage."
-	force = MELEE_WEP_DAM_MULT * 27
-	throwforce = MELEE_WEP_DAM_MULT * 7
+	force = MELEE_DAMAGE_MULT * 27
+	throwforce = MELEE_DAMAGE_MULT * 7
 
 /obj/item/weapon/katana/samurai
 	name = "\improper tachi"
 	desc = "A genuine replica of an ancient blade. This one is in remarkably good condition. It could do some damage to everyone, including yourself."
 	icon_state = "samurai_open"
-	force = MELEE_WEP_DAM_MULT * 60
+	force = MELEE_DAMAGE_MULT * 60
 	attack_speed = 12
 	w_class = WEIGHT_CLASS_BULKY
 
@@ -185,9 +185,9 @@
 	flags_atom = CONDUCT
 	sharp = IS_SHARP_ITEM_ACCURATE
 	materials = list(/datum/material/metal = 200)
-	force = MELEE_WEP_DAM_MULT * 30
+	force = MELEE_DAMAGE_MULT * 30
 	w_class = WEIGHT_CLASS_SMALL
-	throwforce = MELEE_WEP_DAM_MULT * 20
+	throwforce = MELEE_DAMAGE_MULT * 20
 	throw_speed = 3
 	throw_range = 6
 	attack_speed = 8
@@ -226,8 +226,8 @@
 	icon_state = "upp_knife"
 	item_state = "knife"
 	desc = "The standard issue survival knife of the UPP forces, the Type 30 is effective, but humble. It is small enough to be non-cumbersome, but lethal none-the-less."
-	force = MELEE_WEP_DAM_MULT * 20
-	throwforce = MELEE_WEP_DAM_MULT * 10
+	force = MELEE_DAMAGE_MULT * 20
+	throwforce = MELEE_DAMAGE_MULT * 10
 	throw_speed = 2
 	throw_range = 8
 
@@ -240,9 +240,9 @@
 	flags_atom = CONDUCT
 	sharp = IS_SHARP_ITEM_ACCURATE
 	materials = list(/datum/material/metal = 200)
-	force = MELEE_WEP_DAM_MULT * 30
+	force = MELEE_DAMAGE_MULT * 30
 	w_class = WEIGHT_CLASS_SMALL
-	throwforce = MELEE_WEP_DAM_MULT * 20
+	throwforce = MELEE_DAMAGE_MULT * 20
 	throw_speed = 3
 	throw_range = 6
 	attack_speed = 8
@@ -283,9 +283,9 @@
 	singular_name = "knife"
 	flags_atom = CONDUCT|DIRLOCK
 	sharp = IS_SHARP_ITEM_ACCURATE
-	force = MELEE_WEP_DAM_MULT * 20
+	force = MELEE_DAMAGE_MULT * 20
 	w_class = WEIGHT_CLASS_TINY
-	throwforce = MELEE_WEP_DAM_MULT * 45
+	throwforce = MELEE_DAMAGE_MULT * 45
 	throw_speed = 5
 	throw_range = 7
 	hitsound = 'sound/weapons/slash.ogg'
@@ -363,8 +363,8 @@
 	icon = 'icons/obj/items/weapons.dmi'
 	icon_state = "chainswordoff"
 	attack_verb = list("gored", "slashed", "cut")
-	force = MELEE_WEP_DAM_MULT * 10
-	throwforce = MELEE_WEP_DAM_MULT * 5
+	force = MELEE_DAMAGE_MULT * 10
+	throwforce = MELEE_DAMAGE_MULT * 5
 	var/on = FALSE
 
 /obj/item/weapon/chainsword/attack_self(mob/user)
@@ -372,13 +372,13 @@
 	if(!on)
 		on = !on
 		icon_state = "chainswordon"
-		force = MELEE_WEP_DAM_MULT * 40
-		throwforce = MELEE_WEP_DAM_MULT * 30
+		force = MELEE_DAMAGE_MULT * 40
+		throwforce = MELEE_DAMAGE_MULT * 30
 	else
 		on = !on
 		icon_state = initial(icon_state)
-		force = MELEE_WEP_DAM_MULT * initial(force)
-		throwforce = MELEE_WEP_DAM_MULT * initial(icon_state)
+		force = MELEE_DAMAGE_MULT * initial(force)
+		throwforce = MELEE_DAMAGE_MULT * initial(icon_state)
 
 /obj/item/weapon/chainsword/attack(mob/living/carbon/M as mob, mob/living/carbon/user as mob)
 	playsound(loc, 'sound/weapons/chainsawhit.ogg', 100, 1)

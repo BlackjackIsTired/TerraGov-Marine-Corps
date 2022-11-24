@@ -380,7 +380,7 @@
 	// Process wounds, doing healing etc. Only do this every few ticks to save processing power
 	if(owner.life_tick % wound_update_accuracy == 0)
 		update_wounds()
-	if(brute_dam <= 59)
+	if(brute_dam <= 36)
 		remove_limb_flags(LIMB_BROKEN | LIMB_NECROTIZED)
 
 	//Bone fractures

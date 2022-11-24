@@ -1050,8 +1050,8 @@ to_chat will check for valid clients itself already so no need to double check f
 ///updates and sets the t2 and t3 xeno s
 /datum/hive_status/proc/update_tier_limits()
 
-	tier3_xeno_limit = FLOOR((GLOB.alive_human_list.len / 3), 1)
-	tier2_xeno_limit = FLOOR((GLOB.alive_human_list.len / 2), 1)
+	tier3_xeno_limit = floor((HUMAN_LIFE_ON_GROUND_WEIGHT + HUMAN_LIFE_WEIGHT_SHIPSIDE) / 3)
+	tier2_xeno_limit = floor((HUMAN_LIFE_ON_GROUND_WEIGHT + HUMAN_LIFE_WEIGHT_SHIPSIDE) / 2)
 
 // ***************************************
 // *********** Corrupted Xenos

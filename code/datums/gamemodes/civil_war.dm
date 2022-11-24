@@ -5,7 +5,7 @@
 	flags_landmarks = MODE_LANDMARK_SPAWN_SPECIFIC_SHUTTLE_CONSOLE
 	shutters_drop_time = 18 MINUTES
 	flags_xeno_abilities = ABILITY_CRASH
-	respawn_time = 2 MINUTES
+	respawn_time = 1.3 MINUTES
 	time_between_round = 36 HOURS
 	factions = list(FACTION_TERRAGOV, FACTION_TERRAGOV_REBEL)
 	valid_job_types = list(

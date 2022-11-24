@@ -2,7 +2,7 @@ SUBSYSTEM_DEF(monitor)
 	name = "Monitor"
 	init_order = INIT_ORDER_MONITOR
 	runlevels = RUNLEVEL_GAME
-	wait = 5 MINUTES
+	wait = 0.05 MINUTES
 	can_fire = TRUE
 	///The current state
 	var/current_state = STATE_BALANCED
@@ -15,11 +15,11 @@ SUBSYSTEM_DEF(monitor)
 	///The number of time we had the same state consecutively
 	var/stale_counter = 0
 	///The number of humans on ground
-	var/human_on_ground = 0
+	var/human_on_ground = 1
 	///The number of humans being in either lz1 or lz2
-	var/human_in_FOB = 0
+	var/human_in_FOB = 1
 	///The number of humans on the ship
-	var/human_on_ship = 0
+	var/human_on_ship = 1
 	///The number of time most of humans are in FOB consecutively
 	var/humans_all_in_FOB_counter = 0
 	///TRUE if we detect a state of FOB hugging
@@ -105,6 +105,7 @@ SUBSYSTEM_DEF(monitor)
 	var/datum/job/xeno_job = SSjob.GetJobType(/datum/job/xenomorph)
 	switch(gamestate)
 		if(GROUNDSIDE)
+			GLOB.alive_human_list.len = LIVING_HUMAN_COUNT
 			. += stats.ancient_T2 * ANCIENT_T2_WEIGHT
 			. += stats.ancient_T3 * ANCIENT_T3_WEIGHT
 			. += stats.elder_T2 * ELDER_T2_WEIGHT
@@ -131,9 +132,9 @@ SUBSYSTEM_DEF(monitor)
 
 ///Keep the monitor informed about the position of humans
 /datum/controller/subsystem/monitor/proc/process_human_positions()
-	human_on_ground = 0
-	human_in_FOB = 0
-	human_on_ship = 0
+	human_on_ground = 1
+	human_in_FOB = 1
+	human_on_ship = 1
 	for(var/human in GLOB.alive_human_list)
 		var/turf/TU = get_turf(human)
 		var/area/myarea = TU.loc

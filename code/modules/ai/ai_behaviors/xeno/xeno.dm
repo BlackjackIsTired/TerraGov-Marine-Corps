@@ -8,7 +8,7 @@
 	var/list/ability_list = list()
 	///If the mob parent can heal itself and so should flee
 	var/can_heal = TRUE
-	minimum_health = 0.5
+	minimum_health = 0.25
 	target_distance = 35
 	base_action = MOVING_TO_NODE
 

@@ -5,8 +5,8 @@
 	icon_state = "body_m_s"
 	blocks_emissive = EMISSIVE_BLOCK_UNIQUE
 	hud_possible = list(HEALTH_HUD, STATUS_HUD_SIMPLE, STATUS_HUD, XENO_EMBRYO_HUD, XENO_REAGENT_HUD, WANTED_HUD, SQUAD_HUD_TERRAGOV, SQUAD_HUD_REBEL, SQUAD_HUD_SOM, ORDER_HUD, PAIN_HUD, XENO_DEBUFF_HUD, HEART_STATUS_HUD)
-	health_threshold_crit = -50
-	melee_damage = 5
+	health_threshold_crit = 0
+	melee_damage = 5 * MELEE_DAMAGE_MULT
 	m_intent = MOVE_INTENT_WALK
 	buckle_flags = CAN_BE_BUCKLED|CAN_BUCKLE
 	resistance_flags = XENO_DAMAGEABLE

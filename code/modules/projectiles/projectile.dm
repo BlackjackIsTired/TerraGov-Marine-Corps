@@ -104,7 +104,7 @@
 
 	var/proj_max_range = 30
 	///A damage multiplier applied when a mob from the same faction as the projectile firer is hit
-	var/friendly_fire_multiplier = 0.5
+	var/friendly_fire_multiplier = 0.25
 	///The "point blank" range of the projectile. Inside this range the projectile gets a bonus to hit
 	var/point_blank_range = 0
 	/// List of atoms already hit by that projectile. Will only matter for projectiles capable of passing through multiple atoms
@@ -854,7 +854,7 @@ So if we are on the 32th absolute pixel coordinate we are on tile 1, but if we a
 /atom/proc/bullet_act(obj/projectile/proj)
 	if(HAS_TRAIT(proj, TRAIT_PROJ_HIT_SOMETHING))
 		proj.damage *= proj.ammo.on_pierce_multiplier
-		proj.penetration *= proj.ammo.on_pierce_multiplier
+		proj.penetration *= proj.ammo.on_pierce_multiplier * PROJ_PEN_MULT
 		proj.sundering *= proj.ammo.on_pierce_multiplier
 	ADD_TRAIT(proj, TRAIT_PROJ_HIT_SOMETHING, BULLET_ACT_TRAIT)
 	SEND_SIGNAL(src, COMSIG_ATOM_BULLET_ACT, proj)
@@ -889,7 +889,7 @@ So if we are on the 32th absolute pixel coordinate we are on tile 1, but if we a
 		if(proj.penetration > 0)
 			if(proj.shot_from && src == proj.shot_from.sniper_target(src))
 				damage *= SNIPER_LASER_DAMAGE_MULTIPLIER
-				proj.penetration *= SNIPER_LASER_ARMOR_MULTIPLIER
+				proj.penetration *= SNIPER_LASER_ARMOR_MULTIPLIER * SNIPER_LASER_PEN_MULT
 				add_slowdown(SNIPER_LASER_SLOWDOWN_STACKS)
 			if(living_hard_armor)
 				living_hard_armor = max(0, living_hard_armor - (living_hard_armor * proj.penetration * 0.01)) //AP reduces a % of hard armor.
@@ -906,18 +906,18 @@ So if we are on the 32th absolute pixel coordinate we are on tile 1, but if we a
 		else
 			if(living_hard_armor)
 				damage = max(0, damage - living_hard_armor) //Damage soak.
-			if(!damage) //Damage fully negated by hard armor.
+			if(!damage) //Damage fully negated by hard armor	
 				bullet_soak_effect(proj)
 				feedback_flags |= BULLET_FEEDBACK_IMMUNE
 			else if(living_soft_armor >= 100) //Damage fully negated by soft armor.
-				damage = 0
+				damage = (damage - ((living_soft_armor + living_hard_armor) * 0.005))
 				bullet_soak_effect(proj)
 				feedback_flags |= BULLET_FEEDBACK_SOAK
 			else if(living_soft_armor) //Soft armor/padding, damage reduction.
 				damage = max(0, damage - (damage * living_soft_armor * 0.01))
 
 	if(proj.ammo.flags_ammo_behavior & AMMO_INCENDIARY)
-		adjust_fire_stacks(proj.ammo.incendiary_strength)
+		adjust_fire_stacks(proj.ammo.incendiary_strength * PROJ_INCENDIARY_FIRE_STACK_MULT)
 		if(IgniteMob())
 			feedback_flags |= (BULLET_FEEDBACK_FIRE)
 

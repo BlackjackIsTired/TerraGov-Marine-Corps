@@ -314,7 +314,7 @@
 	flags_inv_hide = HIDEEARS
 	flags_armor_features = ARMOR_NO_DECAP
 	attachments_by_slot = list(ATTACHMENT_SLOT_HEAD_MODULE)
-	attachments_allowed = list(/obj/item/armor_module/module/binoculars)
+	attachments_allowed = list(/obj/item/armor_module/module/binoculars, /obj/item/armor_module/module/antenna, /obj/item/armor_module/module/welding)
 	starting_attachments = list(/obj/item/armor_module/module/binoculars)
 
 /obj/item/clothing/head/frelancer/beret

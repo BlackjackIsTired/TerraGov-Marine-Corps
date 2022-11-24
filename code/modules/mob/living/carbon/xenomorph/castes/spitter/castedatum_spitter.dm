@@ -15,7 +15,7 @@
 	speed = XENO_SPEED_MULT * -0.3
 
 	// *** Plasma *** //
-	plasma_max = XENO_PLASMA_MULT * 650
+	plasma_max = XENO_PLASMA_MULT * 300
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 21
 
 	// *** Health *** //

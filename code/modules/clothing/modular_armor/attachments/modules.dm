@@ -178,7 +178,7 @@
 	desc = "Designed for mounting on modular armor. This older model provides minor resistance to acid, biological, and radiological attacks. Pairing this with a Mimir helmet module and mask will make the user impervious to xeno gas clouds. Will impact mobility."
 	icon_state = "mod_biohazard"
 	item_state = "mod_biohazard_a"
-	soft_armor = list("bio" = 15, ACID = 15)
+	soft_armor = list("bio" = 20, ACID = 15)
 	slowdown = 0.2
 
 //SOM version

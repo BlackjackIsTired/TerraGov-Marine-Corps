@@ -4,7 +4,7 @@
 	upgrade_name = ""
 	caste_desc = "A weak ranged combat alien."
 	caste_type_path = /mob/living/carbon/xenomorph/watcher
-	tier = XENO_TIER_ONE
+	tier = XENO_TIER_MINION
 	upgrade = XENO_UPGRADE_BASETYPE
 
 	// *** Melee Attacks *** //
@@ -14,7 +14,7 @@
 	speed = XENO_SPEED_MULT * -0.8
 
 	// *** Plasma *** //
-	plasma_max = XENO_PLASMA_MULT * 300
+	plasma_max = XENO_PLASMA_MULT * 150
 	plasma_gain = XENO_PLASMA_GAIN_MULT * 10
 
 	// *** Health *** //

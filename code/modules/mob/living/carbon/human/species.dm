@@ -115,9 +115,9 @@
 		"eyes" =     /datum/internal_organ/eyes
 		)
 
-	var/knock_down_reduction = 2 //how much the knocked_down effect is reduced per Life call.
-	var/stun_reduction = 2 //how much the stunned effect is reduced per Life call.
-	var/knock_out_reduction = 2 //same thing
+	var/knock_down_reduction = 4 //how much the knocked_down effect is reduced per Life call.
+	var/stun_reduction = 4 //how much the stunned effect is reduced per Life call.
+	var/knock_out_reduction = 4 //same thing
 	var/lighting_alpha
 	var/see_in_dark
 
@@ -790,7 +790,7 @@ GLOBAL_VAR_INIT(join_as_robot_allowed, TRUE)
 	attack_verb = list("bite") // 'x has biteed y', needs work.
 	attack_sound = 'sound/weapons/bite.ogg'
 	shredding = 0
-	damage = 5
+	damage = 5 * MELEE_DAMAGE_MULT
 	sharp = 1
 	edge = 1
 
@@ -801,28 +801,28 @@ GLOBAL_VAR_INIT(join_as_robot_allowed, TRUE)
 
 /datum/unarmed_attack/punch
 	attack_verb = list("punch")
-	damage = 3
+	damage = 3 * MELEE_DAMAGE_MULT
 
 /datum/unarmed_attack/punch/strong
 	attack_verb = list("punch","bust","jab")
-	damage = 10
+	damage = 10 * MELEE_DAMAGE_MULT
 
 /datum/unarmed_attack/claws
 	attack_verb = list("scratch", "claw")
 	attack_sound = 'sound/weapons/slice.ogg'
 	miss_sound = 'sound/weapons/slashmiss.ogg'
-	damage = 5
+	damage = 5 * MELEE_DAMAGE_MULT
 	sharp = 1
 	edge = 1
 
 /datum/unarmed_attack/claws/strong
 	attack_verb = list("slash")
-	damage = 10
+	damage = 10 * MELEE_DAMAGE_MULT
 	shredding = 1
 
 /datum/unarmed_attack/bite/strong
 	attack_verb = list("maul")
-	damage = 15
+	damage = 15 * MELEE_DAMAGE_MULT
 	shredding = 1
 
 /datum/hud_data
