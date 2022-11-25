@@ -29,7 +29,7 @@
 	var/enabled = FALSE
 
 	var/damage_threshold = 50
-	var/pain_threshold = 70
+	var/pain_threshold = 50
 
 	var/list/burn_chems
 	var/list/oxy_chems

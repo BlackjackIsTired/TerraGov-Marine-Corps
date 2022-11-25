@@ -31,7 +31,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	var/damage_type 				= BRUTE 	// BRUTE, BURN, TOX, OXY, CLONE are the only things that should be in here
 	var/penetration					= 0 		// How much armor it ignores before calculations take place
 	var/shrapnel_chance 			= 0 		// The % chance it will imbed in a human
-	var/shell_speed 				= 2 		// How fast the projectile moves
+	var/shell_speed 				= PROJECTILE_SPEED_MULT * 2 		// How fast the projectile moves
 	var/bonus_projectiles_type 					// Type path of the extra projectiles
 	var/bonus_projectiles_amount 	= 0 		// How many extra projectiles it shoots out. Works kind of like firing on burst, but all of the projectiles travel together
 	var/bonus_projectiles_scatter	= 8			// Degrees scattered per two projectiles, each in a different direction.
@@ -300,7 +300,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	sound_bounce = "ballistic_bounce"
 	point_blank_range = 2
 	accurate_range_min = 0
-	shell_speed = 3
+	shell_speed = PROJECTILE_SPEED_MULT * 3
 	damage = 10
 	shrapnel_chance = 10
 	bullet_color = COLOR_VERY_SOFT_YELLOW
@@ -426,7 +426,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	ping = null //no bounce off.
 	damage_type = BURN
 	flags_ammo_behavior = AMMO_INCENDIARY|AMMO_IGNORE_ARMOR
-	shell_speed = 2
+	shell_speed = PROJECTILE_SPEED_MULT * 2
 	damage = 15
 
 
@@ -757,7 +757,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 
 /datum/ammo/bullet/shotgun
 	hud_state_empty = "shotgun_empty"
-	shell_speed = 2
+	shell_speed = PROJECTILE_SPEED_MULT * 2
 	handful_amount = 5
 
 
@@ -766,7 +766,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	handful_icon_state = "shotgun slug"
 	hud_state = "shotgun_slug"
 	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING
-	shell_speed = 3
+	shell_speed = PROJECTILE_SPEED_MULT * 3
 	max_range = 15
 	damage = 100
 	penetration = 20
@@ -862,7 +862,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 /datum/ammo/bullet/shotgun/spread
 	name = "additional buckshot"
 	icon_state = "buckshot"
-	shell_speed = 2
+	shell_speed = PROJECTILE_SPEED_MULT * 2
 	accuracy_var_low = 9
 	accuracy_var_high = 9
 	accurate_range = 3
@@ -931,7 +931,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	name = "shotgun slug"
 	handful_icon_state = "shotgun slug"
 	hud_state = "shotgun_slug"
-	shell_speed = 3
+	shell_speed = PROJECTILE_SPEED_MULT * 3
 	max_range = 15
 	damage = 40
 	penetration = 20
@@ -967,7 +967,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	handful_icon_state = "shotgun slug"
 	hud_state = "shotgun_slug"
 	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING
-	shell_speed = 3
+	shell_speed = PROJECTILE_SPEED_MULT * 3
 	max_range = 15
 	damage = 60
 	penetration = 30
@@ -1006,7 +1006,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	icon_state = "shotgun_slug"
 	hud_state = "shotgun_slug"
 	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING
-	shell_speed = 5
+	shell_speed = PROJECTILE_SPEED_MULT * 5
 	max_range = 30
 	damage = 50
 	penetration = 40
@@ -1017,7 +1017,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	handful_icon_state = "light shotgun tracker round"
 	icon_state = "shotgun_slug"
 	hud_state = "shotgun_flechette"
-	shell_speed = 4
+	shell_speed = PROJECTILE_SPEED_MULT * 4
 	max_range = 30
 	damage = 5
 	penetration = 100
@@ -1030,7 +1030,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	handful_icon_state = "shotgun tracker shell"
 	icon_state = "shotgun_slug"
 	hud_state = "shotgun_flechette"
-	shell_speed = 4
+	shell_speed = PROJECTILE_SPEED_MULT * 4
 	max_range = 30
 	damage = 5
 	penetration = 100
@@ -1075,7 +1075,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	damage_falloff = 0
 	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SNIPER|AMMO_SUNDERING
 	accurate_range_min = 7
-	shell_speed = 4
+	shell_speed = PROJECTILE_SPEED_MULT * 4
 	accurate_range = 30
 	max_range = 40
 	damage = 90
@@ -1286,7 +1286,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	hud_state = "alloy_spike"
 	icon_state 	= "blue_bullet"
 	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING|AMMO_PASS_THROUGH_TURF|AMMO_PASS_THROUGH_MOVABLE
-	shell_speed = 4
+	shell_speed = PROJECTILE_SPEED_MULT * 4
 	max_range = 14
 	damage = 150
 	penetration = 100
@@ -1299,7 +1299,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 
 /datum/ammo/bullet/railgun/hvap
 	name = "high velocity railgun slug"
-	shell_speed = 5
+	shell_speed = PROJECTILE_SPEED_MULT * 5
 	max_range = 21
 	damage = 100
 	penetration = 30
@@ -1323,7 +1323,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	hud_state = "alloy_spike"
 	icon_state 	= "blue_bullet"
 	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING|AMMO_PASS_THROUGH_TURF|AMMO_PASS_THROUGH_MOVABLE
-	shell_speed = 4
+	shell_speed = PROJECTILE_SPEED_MULT * 4
 	max_range = 14
 	damage = 150
 	penetration = 100
@@ -1343,7 +1343,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	flags_ammo_behavior = AMMO_EXPLOSIVE|AMMO_ROCKET|AMMO_SUNDERING
 	armor_type = "bomb"
 	damage_falloff = 0.5
-	shell_speed = 2
+	shell_speed = PROJECTILE_SPEED_MULT * 2
 	accurate_range = 12
 	max_range = 15
 	damage = EXPLOSIVE_DAMAGE_MULT * 12			//impact damage from a grenade to the dome
@@ -1468,7 +1468,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	hud_state_empty = "grenade_empty_flash"
 	handful_icon_state = "micro_grenade_airburst"
 	flags_ammo_behavior = AMMO_BALLISTIC
-	shell_speed = 2
+	shell_speed = PROJECTILE_SPEED_MULT * 2
 	handful_amount = 3
 	max_range = 3 //failure to detonate if the target is too close
 	damage = 15
@@ -1568,7 +1568,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	sound_armor  = "ballistic_armor"
 	sound_miss	 = "ballistic_miss"
 	sound_bounce = "ballistic_bounce"
-	shell_speed = 2
+	shell_speed = PROJECTILE_SPEED_MULT * 2
 	damage = EXPLOSIVE_DAMAGE_MULT * 5
 	accuracy = -60 //stop you from just emptying all the bomblets into one guys face for big damage
 	shrapnel_chance = 0
@@ -1617,7 +1617,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	sound_armor  = "ballistic_armor"
 	sound_miss	 = "ballistic_miss"
 	sound_bounce = "ballistic_bounce"
-	shell_speed = 2
+	shell_speed = PROJECTILE_SPEED_MULT * 2
 	damage = 5
 	shrapnel_chance = 0
 	max_range = 6
@@ -1661,7 +1661,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	flags_ammo_behavior = AMMO_EXPLOSIVE|AMMO_ROCKET|AMMO_SUNDERING
 	armor_type = "bomb"
 	damage_falloff = 0
-	shell_speed = 2
+	shell_speed = PROJECTILE_SPEED_MULT * 2
 	accuracy = 40
 	accurate_range = 20
 	max_range = 30
@@ -1726,7 +1726,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	accuracy = 40
 	accurate_range = 15
 	max_range = 40
-	shell_speed = 3
+	shell_speed = PROJECTILE_SPEED_MULT * 3
 	penetration = 200
 	damage = EXPLOSIVE_DAMAGE_MULT * 200
 	sundering = 50
@@ -1802,7 +1802,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	flags_ammo_behavior = AMMO_EXPLOSIVE|AMMO_ROCKET|AMMO_SUNDERING
 	armor_type = "bomb"
 	damage_falloff = 0
-	shell_speed = 2
+	shell_speed = PROJECTILE_SPEED_MULT * 2
 	accurate_range = 20
 	max_range = 30
 	damage = EXPLOSIVE_DAMAGE_MULT * 100
@@ -1984,7 +1984,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	hud_state = "shell_heat"
 	hud_state_empty = "shell_empty"
 	flags_ammo_behavior = AMMO_EXPLOSIVE|AMMO_ROCKET|AMMO_SUNDERING|AMMO_PASS_THROUGH_TURF
-	shell_speed = 2
+	shell_speed = PROJECTILE_SPEED_MULT * 2
 	damage = EXPLOSIVE_DAMAGE_MULT * 90
 	penetration = 30
 	sundering = 10
@@ -2000,7 +2000,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	name = "tungsten penetrator"
 	hud_state = "shell_he"
 	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING|AMMO_PASS_THROUGH_TURF|AMMO_PASS_THROUGH_MOVABLE
-	shell_speed = 4
+	shell_speed = PROJECTILE_SPEED_MULT * 4
 	damage = EXPLOSIVE_DAMAGE_MULT * 200
 	penetration = 40
 	sundering = 65
@@ -2037,7 +2037,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	name = "80mm shell"
 	icon_state = "mortar"
 	flags_ammo_behavior = AMMO_EXPLOSIVE|AMMO_PASS_THROUGH_TURF|AMMO_PASS_THROUGH_MOVABLE
-	shell_speed = 1.10
+	shell_speed = PROJECTILE_SPEED_MULT * 1.10
 	damage = 0
 	penetration = 0
 	sundering = 0
@@ -2078,7 +2078,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 /datum/ammo/mortar/howi
 	name = "150mm shell"
 	icon_state = "howi"
-	shell_speed = 1.25
+	shell_speed = PROJECTILE_SPEED_MULT * 1.25
 
 /datum/ammo/mortar/howi/drop_nade(turf/T)
 	explosion(T, 1, 6, 7, 12)
@@ -2091,7 +2091,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 /datum/ammo/mortar/smoke/howi
 	name = "150mm shell"
 	icon_state = "howi"
-	shell_speed = 1.25
+	shell_speed = PROJECTILE_SPEED_MULT * 1.25
 
 /datum/ammo/mortar/smoke/howi/wp
 	smoketype = /datum/effect_system/smoke_spread/phosphorus
@@ -2118,7 +2118,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 /datum/ammo/mortar/rocket
 	name = "rocket"
 	icon_state = "rocket"
-	shell_speed = 1.5
+	shell_speed = PROJECTILE_SPEED_MULT * 1.5
 
 /datum/ammo/mortar/rocket/drop_nade(turf/T)
 	explosion(T, 1, 2, 5, 3)
@@ -2133,7 +2133,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	mine.deploy_mine(null, TGMC_LOYALIST_IFF)
 
 /datum/ammo/mortar/rocket/mlrs
-	shell_speed = 2.5
+	shell_speed = PROJECTILE_SPEED_MULT * 2.5
 
 /datum/ammo/mortar/rocket/mlrs/drop_nade(turf/T)
 	explosion(T, 0, 0, 4, 2, small_animation = TRUE)
@@ -2186,7 +2186,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	hud_state = "taser"
 	hud_state_empty = "battery_empty"
 	flags_ammo_behavior = AMMO_ENERGY|SPECIAL_PROCESS
-	shell_speed = 0.1
+	shell_speed = PROJECTILE_SPEED_MULT * 0.1
 	damage = 20
 	penetration = 20
 	bullet_color = COLOR_TESLA_BLUE
@@ -2196,7 +2196,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 
 /datum/ammo/energy/tesla/focused
 	flags_ammo_behavior = AMMO_ENERGY|SPECIAL_PROCESS|AMMO_IFF
-	shell_speed = 0.1
+	shell_speed = PROJECTILE_SPEED_MULT * 0.1
 	damage = 10
 	penetration = 10
 	bullet_color = COLOR_TESLA_BLUE
@@ -2216,7 +2216,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	hud_state = "laser"
 	armor_type = "laser"
 	flags_ammo_behavior = AMMO_ENERGY|AMMO_SUNDERING
-	shell_speed = 4
+	shell_speed = PROJECTILE_SPEED_MULT * 4
 	accurate_range = 15
 	damage = 20
 	penetration = 10
@@ -2265,7 +2265,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 /datum/ammo/energy/lasgun/M43/spread
 	name = "additional laser blast"
 	icon_state = "laser2"
-	shell_speed = 2
+	shell_speed = PROJECTILE_SPEED_MULT * 2
 	accuracy_var_low = 9
 	accuracy_var_high = 9
 	accurate_range = 5
@@ -2355,7 +2355,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 /datum/ammo/energy/lasgun/marine/spread
 	name = "additional laser blast"
 	icon_state = "laser2"
-	shell_speed = 2
+	shell_speed = PROJECTILE_SPEED_MULT * 2
 	accuracy_var_low = 9
 	accuracy_var_high = 9
 	accurate_range = 5
@@ -2391,7 +2391,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	name = "sniper heat bolt"
 	icon_state = "microwavelaser"
 	hud_state = "laser_heat"
-	shell_speed = 2.5
+	shell_speed = PROJECTILE_SPEED_MULT * 2.5
 	damage = 40
 	penetration = 0
 	accurate_range_min = 5
@@ -2419,7 +2419,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	icon_state = "microwavelaser"
 	hud_state = "laser_heat"
 	damage = 20
-	shell_speed = 2.5
+	shell_speed = PROJECTILE_SPEED_MULT * 2.5
 	penetration = 10
 	flags_ammo_behavior = AMMO_ENERGY|AMMO_INCENDIARY|AMMO_SUNDERING|AMMO_HITSCAN
 	sundering = 0.5
@@ -2497,7 +2497,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	icon_state = "pulse2"
 	hud_state = "plasma"
 	armor_type = "laser"
-	shell_speed = 4
+	shell_speed = PROJECTILE_SPEED_MULT * 4
 	accurate_range = 15
 	damage = 40
 	penetration = 15
@@ -2513,7 +2513,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	damage = 40
 	max_range = 14
 	penetration = 5
-	shell_speed = 1.5
+	shell_speed = PROJECTILE_SPEED_MULT * 1.5
 	flags_ammo_behavior = AMMO_ENERGY|AMMO_INCENDIARY|AMMO_EXPLOSIVE
 	bullet_color = COLOR_VIBRANT_LIME
 
@@ -2561,7 +2561,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	armor_type = "energy"
 	max_range = 14
 	accurate_range = 5 //for charger
-	shell_speed = 4
+	shell_speed = PROJECTILE_SPEED_MULT * 4
 	accuracy_var_low = 5
 	accuracy_var_high = 5
 	accuracy = 5
@@ -2614,7 +2614,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	var/added_spit_delay = 0 //used to make cooldown of the different spits vary.
 	var/spit_cost = 5
 	armor_type = "bio"
-	shell_speed = 1
+	shell_speed = PROJECTILE_SPEED_MULT * 1
 	accuracy = 40
 	accurate_range = 15
 	max_range = 15
@@ -2830,7 +2830,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 /datum/ammo/xeno/acid/heavy/turret
 	damage = ACID_SPIT_DAM_MULT * 20
 	name = "acid turret splash"
-	shell_speed = 2
+	shell_speed = PROJECTILE_SPEED_MULT * 2
 	max_range = 9
 
 /datum/ammo/xeno/acid/heavy/on_hit_mob(mob/M,obj/projectile/P)
@@ -3033,7 +3033,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	fixed_spread_range = 2
 	accuracy = 100
 	accurate_range = 30
-	shell_speed = 1.5
+	shell_speed = PROJECTILE_SPEED_MULT * 1.5
 
 /datum/ammo/xeno/boiler_gas/corrosive/lance
 	name = "pressurized glob of acid"
@@ -3052,7 +3052,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	fixed_spread_range = 2
 	accuracy = 100
 	accurate_range = 30
-	shell_speed = 1.5
+	shell_speed = PROJECTILE_SPEED_MULT * 1.5
 
 /datum/ammo/xeno/hugger
 	name = "hugger ammo"
@@ -3060,7 +3060,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	flags_ammo_behavior = AMMO_XENO
 	damage = 0
 	max_range = 6
-	shell_speed = 1
+	shell_speed = PROJECTILE_SPEED_MULT * 1
 	bullet_color = ""
 	icon_state = "facehugger"
 	///The type of hugger thrown
@@ -3142,7 +3142,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	ping = null
 	damage = 0
 	armor_type = BIO
-	shell_speed = 1.5
+	shell_speed = PROJECTILE_SPEED_MULT * 1.5
 	accurate_range = 8
 	max_range = 8
 
@@ -3180,13 +3180,13 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	accurate_range = 15
 	damage_type = STAMINA
 	armor_type = "bio"
-	damage = 70
-	penetration = 0
+	damage = 35
+	penetration = 3
 	shrapnel_chance = 0
 	///percentage of xenos total plasma to drain when hit by a pepperball
-	var/drain_multiplier = 0.05
+	var/drain_multiplier = PROJ_DAM_MULT * 0.05
 	/// Flat plasma to drain, unaffected by caste plasma amount.
-	var/plasma_drain = 25
+	var/plasma_drain = PROJ_DAM_MULT * 25
 
 /datum/ammo/bullet/pepperball/on_hit_mob(mob/living/victim, obj/projectile/proj)
 	if(isxeno(victim))
@@ -3225,7 +3225,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	max_range = 7
 	damage = FIRE_DAMAGE_MULT * 31
 	damage_falloff = 0
-	incendiary_strength = 30 //Firestacks cap at 20, but that's after armor.
+	incendiary_strength = FIRE_DAMAGE_MULT * 30 //Firestacks cap at 20, but that's after armor.
 	bullet_color = LIGHT_COLOR_FIRE
 	var/fire_color = "red"
 	var/burntime = 17
@@ -3295,7 +3295,7 @@ GLOBAL_LIST_INIT(no_sticky_resin, typecacheof(list(/obj/item/clothing/mask/faceh
 	var/nade_type = /obj/item/explosive/grenade
 	icon_state = "grenade"
 	armor_type = "bomb"
-	damage = EXPLOSIVE_DAMAGE_MULT * 15
+	damage = EXPLOSIVE_DAMAGE_MULT * 35
 	accuracy = 15
 	max_range = 10
 

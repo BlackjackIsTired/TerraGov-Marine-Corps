@@ -31,7 +31,7 @@
 	can_flags = CASTE_CAN_BE_QUEEN_HEALED|CASTE_CAN_VENT_CRAWL|CASTE_CAN_BE_GIVEN_PLASMA|CASTE_CAN_BE_LEADER|CASTE_CAN_BECOME_KING|CASTE_CAN_RIDE_CRUSHER
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 40, BULLET = 40, LASER = 40, ENERGY = 40, BOMB = 40, BIO = 40, FIRE = 40, ACID = 40)
 
 	// *** Ranged Attack *** //
 	spit_delay = SPIT_DELAY_MULT * 1.3 SECONDS
@@ -75,7 +75,7 @@
 	upgrade_threshold = XENO_UPG_MULT * TIER_ONE_MATURE_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 40, BULLET = 40, LASER = 40, ENERGY = 40, BOMB = 40, BIO = 40, FIRE = 40, ACID = 40)
 
 	// *** Ranged Attack *** //
 	spit_delay = SPIT_DELAY_MULT * 1.0 SECONDS
@@ -104,7 +104,7 @@
 	upgrade_threshold = XENO_UPG_MULT * TIER_ONE_ELDER_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 40, BULLET = 40, LASER = 40, ENERGY = 40, BOMB = 40, BIO = 40, FIRE = 40, ACID = 40)
 
 	// *** Ranged Attack *** //
 	spit_delay = SPIT_DELAY_MULT * 1.0 SECONDS
@@ -133,7 +133,7 @@
 	upgrade_threshold = XENO_UPG_MULT * TIER_ONE_ANCIENT_THRESHOLD
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 40, BULLET = 40, LASER = 40, ENERGY = 40, BOMB = 40, BIO = 40, FIRE = 40, ACID = 40)
 
 	// *** Ranged Attack *** //
 	spit_delay = SPIT_DELAY_MULT * 1.0 SECONDS
@@ -161,7 +161,7 @@
 	max_health = XENO_HEALTH_MULT * 150
 
 	// *** Defense *** //
-	soft_armor = list(MELEE = 40, BULLET = 60, LASER = 60, ENERGY = 50, BOMB = 50, BIO = 50, FIRE = 50, ACID = 50)
+	soft_armor = list(MELEE = 40, BULLET = 40, LASER = 40, ENERGY = 40, BOMB = 40, BIO = 40, FIRE = 40, ACID = 40)
 
 	// *** Ranged Attack *** //
 	spit_delay = SPIT_DELAY_MULT * 1.0 SECONDS

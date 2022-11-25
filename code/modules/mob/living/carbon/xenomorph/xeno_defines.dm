@@ -55,9 +55,9 @@
 
 	// *** Health *** //
 	///Maximum health a caste has.
-	var/max_health = 100
+	var/max_health = 150
 	///What negative health amount they die at.
-	var/crit_health = -100
+	var/crit_health = -150
 
 	///Set to TRUE in New() when Whiskey Outpost is active. Prevents healing and queen evolution
 	var/hardcore = FALSE

@@ -4,6 +4,10 @@
 //Just about ALL the procs are tied to the parent, not to the children
 //This is so they can be easily transferred between them without copypasta
 
+/mob/living/carbon/xenomorph
+	health_threshold_crit = 0
+	health_threshold_dead = -150
+
 /mob/living/carbon/xenomorph/Initialize(mapload)
 	setup_verbs()
 	if(mob_size == MOB_SIZE_BIG)
@@ -330,8 +334,8 @@
 	hud_to_add.add_hud_to(src)
 	hud_to_add = GLOB.huds[DATA_HUD_MEDICAL_PAIN]
 	hud_to_add.add_hud_to(src)
-	hud_to_add = GLOB.huds[DATA_HUD_XENO_DEBUFF]
-	hud_to_add.add_hud_to(src)
+//	hud_to_add = GLOB.huds[DATA_HUD_XENO_DEBUFF]
+//	hud_to_add.add_hud_to(src)
 
 /mob/living/carbon/xenomorph/get_permeability_protection()
 	return XENO_PERM_COEFF

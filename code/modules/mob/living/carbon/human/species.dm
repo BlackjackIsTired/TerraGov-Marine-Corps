@@ -55,7 +55,7 @@
 
 	/// new maxHealth [/mob/living/carbon/human/var/maxHealth] of the human mob once species is applied
 	var/total_health = 150
-	var/max_stamina = 50
+	var/max_stamina = 100
 
 	var/cold_level_1 = BODYTEMP_COLD_DAMAGE_LIMIT_ONE  	// Cold damage level 1 below this point.
 	var/cold_level_2 = BODYTEMP_COLD_DAMAGE_LIMIT_TWO  	// Cold damage level 2 below this point.
@@ -443,12 +443,12 @@ GLOBAL_VAR_INIT(join_as_robot_allowed, TRUE)
 /datum/species/robot/on_species_gain(mob/living/carbon/human/H, datum/species/old_species)
 	. = ..()
 	H.speech_span = SPAN_ROBOT
-	H.health_threshold_crit = -100
+	H.health_threshold_crit = -50
 
 /datum/species/robot/post_species_loss(mob/living/carbon/human/H)
 	. = ..()
 	H.speech_span = initial(H.speech_span)
-	H.health_threshold_crit = -50
+	H.health_threshold_crit = 0
 
 /mob/living/carbon/human/species/robot/handle_regular_hud_updates()
 	. = ..()

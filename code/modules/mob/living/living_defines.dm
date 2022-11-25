@@ -7,11 +7,11 @@
 
 	/* Health and life related vars */
 	/// Maximum health that should be possible.
-	var/maxHealth = 100
+	var/maxHealth = 150
 	/// Mob's current health
-	var/health = 100
+	var/health = 150
 	/// Health at which a mob dies
-	var/health_threshold_dead = -100
+	var/health_threshold_dead = -150
 	/// Health at which a mob goes into crit
 	var/health_threshold_crit = 0
 

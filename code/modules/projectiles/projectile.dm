@@ -67,9 +67,9 @@
 
 	var/damage = 0
 	///ammo penetration value
-	var/penetration = 0
+	var/penetration = 2
 	///ammo sundering value
-	var/sundering = 0
+	var/sundering = 1
 	var/accuracy = 90 //Base projectile accuracy. Can maybe be later taken from the mob if desired.
 
 	///how many damage points the projectile loses per tiles travelled
@@ -90,7 +90,7 @@
 	var/ricochet_count = 0
 
 	/// The maximum number of times this can bounce
-	var/ricochet_limit = 0
+	var/ricochet_limit = 1
 
 	var/projectile_speed = 1 //Tiles travelled per full tick.
 	var/armor_type = null
@@ -894,7 +894,7 @@ So if we are on the 32th absolute pixel coordinate we are on tile 1, but if we a
 			if(living_hard_armor)
 				living_hard_armor = max(0, living_hard_armor - (living_hard_armor * proj.penetration * 0.01)) //AP reduces a % of hard armor.
 			if(living_soft_armor)
-				living_soft_armor = max(0, living_soft_armor - proj.penetration) //Flat removal.
+				living_soft_armor = max(0, living_soft_armor - (proj.penetration)) //Flat removal.
 
 		if(iscarbon(proj.firer))
 			var/mob/living/carbon/shooter_carbon = proj.firer
@@ -905,16 +905,16 @@ So if we are on the 32th absolute pixel coordinate we are on tile 1, but if we a
 			feedback_flags |= BULLET_FEEDBACK_PEN
 		else
 			if(living_hard_armor)
-				damage = max(0, damage - living_hard_armor) //Damage soak.
+				damage = max(0, damage - living_hard_armor - proj.penetration) //Damage soak.
 			if(!damage) //Damage fully negated by hard armor	
 				bullet_soak_effect(proj)
 				feedback_flags |= BULLET_FEEDBACK_IMMUNE
 			else if(living_soft_armor >= 100) //Damage fully negated by soft armor.
-				damage = (damage - ((living_soft_armor + living_hard_armor) * 0.005))
+				damage = (damage - (living_soft_armor * 0.01) - (proj.penetration + melee_damage))
 				bullet_soak_effect(proj)
 				feedback_flags |= BULLET_FEEDBACK_SOAK
 			else if(living_soft_armor) //Soft armor/padding, damage reduction.
-				damage = max(0, damage - (damage * living_soft_armor * 0.01))
+				damage = max(0, damage - (living_soft_armor * 0.01) - (proj.penetration + melee_damage))
 
 	if(proj.ammo.flags_ammo_behavior & AMMO_INCENDIARY)
 		adjust_fire_stacks(proj.ammo.incendiary_strength * PROJ_INCENDIARY_FIRE_STACK_MULT)

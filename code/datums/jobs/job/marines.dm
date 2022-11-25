@@ -24,7 +24,7 @@ Make your way to the cafeteria for some post-cryosleep chow, and then get equipp
 	title = SQUAD_MARINE
 	paygrade = "E1"
 	comm_title = "Mar"
-	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_DROPSHIP, ACCESS_MARINE_MEDBAY)
+	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_DROPSHIP, ACCESS_MARINE_MEDBAY, ACCESS_CIVILIAN_ENGINEERING)
 	minimal_access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_DROPSHIP, ACCESS_MARINE_MEDBAY)
 	skills_type = /datum/skills/marine
 	display_order = JOB_DISPLAY_ORDER_SQUAD_MARINE
@@ -222,7 +222,7 @@ Your squaddies will look to you when it comes to construction in the field of ba
 	paygrade = "E3"
 	comm_title = "Med"
 	total_positions = 16
-	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_MEDPREP, ACCESS_MARINE_MEDBAY, ACCESS_MARINE_CHEMISTRY, ACCESS_MARINE_DROPSHIP)
+	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_MEDPREP, ACCESS_MARINE_MEDBAY, ACCESS_MARINE_CHEMISTRY, ACCESS_MARINE_DROPSHIP, ACCESS_CIVILIAN_ENGINEERING)
 	minimal_access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_MEDPREP, ACCESS_MARINE_MEDBAY, ACCESS_MARINE_CHEMISTRY, ACCESS_MARINE_DROPSHIP)
 	skills_type = /datum/skills/combat_medic
 	display_order = JOB_DISPLAY_ORDER_SQUAD_CORPSMAN
@@ -328,7 +328,7 @@ You may not be a fully-fledged doctor, but you stand between life and death when
 	paygrade = "E3"
 	comm_title = "SGnr"
 	total_positions = 4
-	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_SMARTPREP, ACCESS_MARINE_DROPSHIP, ACCESS_MARINE_MEDBAY)
+	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_SMARTPREP, ACCESS_MARINE_DROPSHIP, ACCESS_MARINE_MEDBAY, ACCESS_CIVILIAN_ENGINEERING)
 	minimal_access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_SMARTPREP, ACCESS_MARINE_DROPSHIP, ACCESS_MARINE_MEDBAY)
 	skills_type = /datum/skills/smartgunner
 	display_order = JOB_DISPLAY_ORDER_SQUAD_SMARTGUNNER
@@ -425,7 +425,7 @@ You may not be a fully-fledged doctor, but you stand between life and death when
 	comm_title = "Spec"
 	total_positions = 0
 	max_positions = 0
-	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_DROPSHIP, ACCESS_MARINE_MEDBAY)
+	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_DROPSHIP, ACCESS_MARINE_MEDBAY, ACCESS_CIVILIAN_ENGINEERING)
 	minimal_access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_DROPSHIP, ACCESS_MARINE_MEDBAY)
 	skills_type = /datum/skills/specialist
 	outfit = /datum/outfit/job/marine/specialist
@@ -460,7 +460,7 @@ You can serve a variety of roles, so choose carefully."})
 	comm_title = JOB_COMM_TITLE_SQUAD_LEADER
 	total_positions = 4
 	supervisors = "the acting field commander"
-	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_LEADER, ACCESS_MARINE_DROPSHIP, ACCESS_MARINE_MEDBAY, ACCESS_MARINE_RO)
+	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_LEADER, ACCESS_MARINE_DROPSHIP, ACCESS_MARINE_MEDBAY, ACCESS_MARINE_RO, ACCESS_CIVILIAN_ENGINEERING)
 	minimal_access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_LEADER, ACCESS_MARINE_DROPSHIP, ACCESS_MARINE_MEDBAY)
 	skills_type = /datum/skills/sl
 	display_order = JOB_DISPLAY_ORDER_SQUAD_LEADER
@@ -574,7 +574,7 @@ You are also in charge of communicating with command and letting them know about
 	title = SQUAD_MARINE
 	paygrade = "VM"
 	comm_title = "Mar"
-	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_DROPSHIP, ACCESS_MARINE_MEDBAY)
+	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_DROPSHIP, ACCESS_MARINE_MEDBAY, ACCESS_CIVILIAN_ENGINEERING)
 	minimal_access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_DROPSHIP, ACCESS_MARINE_MEDBAY)
 	display_order = JOB_DISPLAY_ORDER_SQUAD_MARINE
 	outfit = /datum/outfit/job/marine/vatgrown

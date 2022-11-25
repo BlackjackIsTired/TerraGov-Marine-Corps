@@ -200,7 +200,7 @@ Contains most of the procs that are called when a mob is attacked by something
 		switch(hit_area)
 			if("head")//Harder to score a stun but if you do it lasts a bit longer
 				if(prob(damage) && stat == CONSCIOUS)
-					Paralyze(20 /(armor+1) * 20)
+					Paralyze(10 /(armor+1) * 10)
 					visible_message(span_danger("[src] has been knocked unconscious!"),
 									span_danger("You have been knocked unconscious!"), null, 5)
 					hit_report += "(KO)"
@@ -218,7 +218,7 @@ Contains most of the procs that are called when a mob is attacked by something
 
 			if("chest")//Easier to score a stun but lasts less time
 				if(prob((damage + 10)) && !incapacitated())
-					apply_effect(6, WEAKEN, armor)
+					apply_effect(3, WEAKEN, armor)
 					visible_message(span_danger("[src] has been knocked down!"),
 									span_danger("You have been knocked down!"), null, 5)
 					hit_report += "(KO)"
@@ -302,7 +302,7 @@ Contains most of the procs that are called when a mob is attacked by something
 
 	thrown_item.set_throwing(FALSE) // Hit the limb.
 
-	var/armor = get_soft_armor("melee", affecting) //I guess "melee" is the best fit here
+	var/armor = get_soft_armor("melee", affecting)//I guess "melee" is the best fit here
 
 	if(armor >= 100)
 		visible_message(span_notice("\The [thrown_item] bounces on [src]'s armor!"), null, null, 5)

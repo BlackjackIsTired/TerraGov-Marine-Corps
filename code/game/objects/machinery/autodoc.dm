@@ -40,7 +40,7 @@
 	var/list/surgery_todo_list = list() //a list of surgeries to do.
 //	var/surgery_t = 0 //Surgery timer in seconds.
 	var/surgery = FALSE
-	var/surgery_mod = 1 //What multiple to increase the surgery timer? This is used for any non-WO maps or events that are done.
+	var/surgery_mod = 0.5 //What multiple to increase the surgery timer? This is used for any non-WO maps or events that are done.
 	var/filtering = 0
 	var/blood_transfer = 0
 	var/heal_brute = 0
@@ -191,7 +191,7 @@
 #define ORGAN_SURGERY 2
 #define EXTERNAL_SURGERY 3
 
-#define UNNEEDED_DELAY 100 // how long to waste if someone queues an unneeded surgery
+#define UNNEEDED_DELAY 50 // how long to waste if someone queues an unneeded surgery
 
 /datum/autodoc_surgery
 	var/datum/limb/limb_ref = null
