@@ -368,8 +368,8 @@
 		amount += recovery_aura * maxHealth * 0.01
 	var/remainder = max(0, amount - getBruteLoss())
 	adjustBruteLoss(-amount)
-	adjustFireLoss(-remainder, updating_health = XENO_HEALTH_MULT * TRUE)
-	adjust_sunder(-amount/20)
+	adjustFireLoss(-remainder, updating_health = TRUE)
+	adjust_sunder(-amount/5)
 
 // ***************************************
 // *********** Queen plasma

@@ -8,17 +8,17 @@
 	upgrade = XENO_UPGRADE_BASETYPE
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 16
+	melee_damage = 14
 
 	// *** Speed *** //
-	speed = XENO_SPEED_MULT * -0.8
+	speed = -0.8
 
 	// *** Plasma *** //
 	plasma_max = 300
 	plasma_gain = 10
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 225
+	max_health = 225
 
 	// *** Evolution *** //
 	evolution_threshold = 80
@@ -35,7 +35,10 @@
 
 	// *** Ranged Attack *** //
 	spit_delay = 1.3 SECONDS
-	spit_types = list(/datum/ammo/xeno/toxin, /datum/ammo/xeno/acid)
+	spit_types = list(/datum/ammo/xeno/acid/toxic_spit)
+
+	// *** Sentinel Abilities ***
+	additional_stacks = 0
 
 	// *** Minimap Icon *** //
 	minimap_icon = "sentinel"
@@ -46,8 +49,9 @@
 		/datum/action/xeno_action/watch_xeno,
 		/datum/action/xeno_action/activable/psydrain,
 		/datum/action/xeno_action/activable/corrosive_acid/drone,
-		/datum/action/xeno_action/activable/xeno_spit,
-		/datum/action/xeno_action/activable/neurotox_sting,
+		/datum/action/xeno_action/activable/xeno_spit/toxic_spit,
+		/datum/action/xeno_action/toxic_slash,
+		/datum/action/xeno_action/activable/drain_sting,
 	)
 
 /datum/xeno_caste/sentinel/young
@@ -62,14 +66,14 @@
 	upgrade = XENO_UPGRADE_ONE
 
 	// *** Speed *** //
-	speed = XENO_SPEED_MULT * -0.8
+	speed = -0.8
 
 	// *** Plasma *** //
 	plasma_max = 450
 	plasma_gain = 15
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 250
+	max_health = 250
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_ONE_MATURE_THRESHOLD
@@ -78,8 +82,11 @@
 	soft_armor = list(MELEE = 20, BULLET = 20, LASER = 20, ENERGY = 20, BOMB = 0, BIO = 20, FIRE = 20, ACID = 20)
 
 	// *** Ranged Attack *** //
-	spit_delay = 1.3 SECONDS
-	spit_types = list(/datum/ammo/xeno/toxin/upgrade1, /datum/ammo/xeno/acid)
+	spit_delay = 1.2 SECONDS
+	spit_types = list(/datum/ammo/xeno/acid/toxic_spit/upgrade1)
+
+	// *** Sentinel Abilities ***
+	additional_stacks = 1
 
 /datum/xeno_caste/sentinel/elder
 	upgrade_name = "Elder"
@@ -88,17 +95,17 @@
 	upgrade = XENO_UPGRADE_TWO
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 17
+	melee_damage = 16
 
 	// *** Speed *** //
-	speed = XENO_SPEED_MULT * -0.8
+	speed = -0.9
 
 	// *** Plasma *** //
 	plasma_max = 550
 	plasma_gain = 18
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 275
+	max_health = 275
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_ONE_ELDER_THRESHOLD
@@ -107,8 +114,11 @@
 	soft_armor = list(MELEE = 23, BULLET = 23, LASER = 23, ENERGY = 23, BOMB = 0, BIO = 23, FIRE = 23, ACID = 23)
 
 	// *** Ranged Attack *** //
-	spit_delay = 1.3 SECONDS
-	spit_types = list(/datum/ammo/xeno/toxin/upgrade2, /datum/ammo/xeno/acid)
+	spit_delay = 1.1 SECONDS
+	spit_types = list(/datum/ammo/xeno/acid/toxic_spit/upgrade2)
+
+	// *** Sentinel Abilities ***
+	additional_stacks = 2
 
 /datum/xeno_caste/sentinel/ancient
 	upgrade_name = "Ancient"
@@ -117,17 +127,17 @@
 	upgrade = XENO_UPGRADE_THREE
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 17
+	melee_damage = 16
 
 	// *** Speed *** //
-	speed = XENO_SPEED_MULT * -0.8
+	speed = -0.9
 
 	// *** Plasma *** //
 	plasma_max = 600
 	plasma_gain = 20
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 300
+	max_health = 300
 
 	// *** Evolution *** //
 	upgrade_threshold = TIER_ONE_ANCIENT_THRESHOLD
@@ -136,10 +146,11 @@
 	soft_armor = list(MELEE = 26, BULLET = 26, LASER = 26, ENERGY = 26, BOMB = 0, BIO = 25, FIRE = 26, ACID = 25)
 
 	// *** Ranged Attack *** //
-	spit_delay = 1.3 SECONDS
-	spit_types = list(/datum/ammo/xeno/toxin/upgrade3, /datum/ammo/xeno/acid)
+	spit_delay = 1.0 SECONDS
+	spit_types = list(/datum/ammo/xeno/acid/toxic_spit/upgrade3)
 
-
+	// *** Sentinel Abilities ***
+	additional_stacks = 3
 
 /datum/xeno_caste/sentinel/primordial
 	upgrade_name = "Primordial"
@@ -148,31 +159,35 @@
 	upgrade = XENO_UPGRADE_FOUR
 
 	// *** Melee Attacks *** //
-	melee_damage = XENO_MELEE_DAM_MULT * 17
+	melee_damage = 16
 
 	// *** Speed *** //
-	speed = XENO_SPEED_MULT * -0.8
+	speed = -0.9
 
 	// *** Plasma *** //
 	plasma_max = 600
 	plasma_gain = 20
 
 	// *** Health *** //
-	max_health = XENO_HEALTH_MULT * 300
+	max_health = 300
 
 	// *** Defense *** //
 	soft_armor = list(MELEE = 26, BULLET = 26, LASER = 26, ENERGY = 26, BOMB = 0, BIO = 25, FIRE = 26, ACID = 25)
 
 	// *** Ranged Attack *** //
-	spit_delay = 1.3 SECONDS
-	spit_types = list(/datum/ammo/xeno/toxin/upgrade3, /datum/ammo/xeno/acid)
+	spit_delay = 1.0 SECONDS
+	spit_types = list(/datum/ammo/xeno/acid/toxic_spit/upgrade3)
+
+	// *** Sentinel Abilities ***
+	additional_stacks = 3
 
 	actions = list(
 		/datum/action/xeno_action/xeno_resting,
 		/datum/action/xeno_action/watch_xeno,
 		/datum/action/xeno_action/activable/psydrain,
 		/datum/action/xeno_action/activable/corrosive_acid/drone,
-		/datum/action/xeno_action/activable/xeno_spit,
-		/datum/action/xeno_action/activable/neurotox_sting,
-		/datum/action/xeno_action/activable/neurogas_grenade,
+		/datum/action/xeno_action/activable/xeno_spit/toxic_spit,
+		/datum/action/xeno_action/toxic_slash,
+		/datum/action/xeno_action/activable/drain_sting,
+		/datum/action/xeno_action/activable/toxic_grenade,
 	)
